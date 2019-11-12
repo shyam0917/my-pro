@@ -1,0 +1,137 @@
+<div class="library-header_container">
+  <span data-ctrl="LibTitle" id="libtitle"></span>
+  <div class="cnt-wide">
+        <span data-ctrl="BreadCrumbs" id="breadcrumbs"></span>
+  </div>
+</div>
+
+<div class="inner-page inner-page--library">
+    <div class="cnt-wide">
+
+        <div class="inner-page__row clearfix" style="">
+          <div class="inner-page__sidebar">
+            <div data-ctrl="Sidebar" id="Sidebar" class="library_sidebar" >
+              <!-- loading sidebar -->
+              <div style="height:76px">
+
+              </div>
+              <div style="padding:20px">
+                <ul class="o-vertical-spacing o-vertical-spacing--l">
+                  <li class="blog-post o-media">
+                    <div class="o-media__body">
+                      <div>
+                        <div class="skeleton-box skeleton-header" style=""></div>
+                        <div class="skeleton-box skeleton4" ></div>
+                        <div class="skeleton-box skeleton3" ></div>
+                        <div class="skeleton-box skeleton2" ></div>
+                        <div class="skeleton-box skeleton3" ></div>
+                        <div class="skeleton-box skeleton2" ></div>
+                        <div class="skeleton-box skeleton4"></div>
+                        <hr style="border: 1px solid #f5f5f5;">
+                        <div class="skeleton-box skeleton-header2"></div>
+                        <div class="skeleton-box skeleton-category" style=""></div>
+                        <div class="skeleton-box skeleton-category" style=""></div>
+                        <div class="skeleton-box skeleton-category" style=""></div>
+                        <div class="skeleton-box skeleton-category" style=""></div>
+                        <div class="skeleton-box skeleton-category" style=""></div>
+                        <div class="skeleton-box skeleton-category" style=""></div>
+                      </div>
+                    </div>
+
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="inner-page__content">
+            <div id="course-container">
+              <div id="clTop"></div>
+              <div class="library-item normalCursor library-item_header" style="">
+                  <div class="library-item_counters">
+                      <span id="totalLessons" class="text-bold"></span>  {{mui.pageContent.course.totallessons}}
+                  </div>
+                  <!-- <span id="totalCourses" class="text-bold"></span> {{mui.pageContent.course.totalcourses}} /  -->
+                  <div  class="library-item_controls" style="">
+                    <div class="library-item_controls_dd">
+                      <span>  {{mui.pageContent.course.sortPage}}:</span>
+                      <select name="sortBy"  class="library_sort_dropdown" style="text-align: center;text-align-last: center;"  data-handler="onChangeSort" id="selectSorter">
+                        <option value=""  style="text-align: right;"  disabled selected>{{mui.pageContent.course.selectOption}}</option>
+                        <option value="durationASC" class="text-left" >{{mui.pageContent.course.durationAsc}}</option>
+                        <option value="durationDSC" class="text-left" >{{mui.pageContent.course.durationDsc}}</option>
+                        <option value="lessonsASC"  class="text-left" >{{mui.pageContent.course.lessonsAsc}}</option>
+                        <option value="lessonsDSC"  class="text-left" >{{mui.pageContent.course.lessonsDsc}}</option>
+                        <option value="newAdded"    class="text-left" >{{mui.pageContent.course.newAdded}}</option>
+                      </select>
+                    </div>
+                    <div class="view table-style" rel="view" style="float:right">
+                      <i class="view__btn view__btn--list active" data-handler="onChangeViewMode" data-view="list" id="btn-library_list"></i>
+                      <i class="view__btn view__btn--flat" data-handler="onChangeViewMode" data-view="flat" id="btn-library_flat"></i>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="inner-page__items">
+
+                <div data-ctrl="Items" id="items" class="library_items" >
+
+                    <div style="height:20px">
+
+                    </div>
+                    <div class="skeleton-container">
+                      <div><div class="skeleton-box skeleton5"></div></div>
+                      <div>
+                        <div class="skeleton-box skeleton6"></div>
+                        <div class="skeleton-box skeleton7" ></div>
+                      </div>
+                      <div>
+                        <div class="skeleton-box skeleton6"></div>
+                        <div class="skeleton-box skeleton7" ></div>
+                      </div>
+                    </div>
+
+                    <div class="skeleton-container">
+                      <div><div class="skeleton-box skeleton5" ></div></div>
+                      <div>
+                        <div class="skeleton-box skeleton6"></div>
+                        <div class="skeleton-box skeleton7" ></div>
+                      </div>
+                      <div>
+                        <div class="skeleton-box skeleton6"></div>
+                        <div class="skeleton-box skeleton7" ></div>
+                      </div>
+                    </div>
+
+                    <div class="skeleton-container">
+                      <div> <div class="skeleton-box skeleton5" ></div></div>
+                      <div>
+                        <div class="skeleton-box skeleton6"></div>
+                        <div class="skeleton-box skeleton7" ></div>
+                      </div>
+                      <div>
+                        <div class="skeleton-box skeleton6" ></div>
+                        <div class="skeleton-box skeleton7" ></div>
+                      </div>
+                    </div>
+
+                    <div class="skeleton-container">
+                      <div><div class="skeleton-box skeleton5" ></div></div>
+                      <div>
+                        <div class="skeleton-box skeleton6" ></div>
+                        <div class="skeleton-box skeleton7" ></div>
+                      </div>
+                      <div>
+                        <div class="skeleton-box skeleton6"></div>
+                        <div class="skeleton-box skeleton7" ></div>
+                      </div>
+                    </div>
+
+                </div>
+
+              </div>
+              <div id="clBottom" ></div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>

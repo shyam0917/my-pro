@@ -1,0 +1,102 @@
+<div class="inner-header inner-header--features">
+    <div class="cnt">
+        <h1 class="inner-header__title">
+            {{title}}
+        </h1>
+        <p class="inner-header__subtitle">
+            {{subTitle}}
+        </p>
+    </div>
+</div>
+
+
+<div class="inner-page features-page article">
+
+    <div class="features-page__row features-page__row--even">
+        <div class="cnt">
+            <div class="inner-page__row">
+                <div class="features-page__description">
+                    <h3 class="article__title">{{Header4}}</h3>
+                    {{{Text4}}}
+                </div>
+                <img src="{{VIEW}}images/feature-4.png" class="features-page__img">
+            </div>
+        </div>
+    </div>
+
+    <div class="features-page__row">
+        <div class="cnt">
+            <div class="inner-page__row">
+                <div class="features-page__description">
+                    <h3 class="article__title">{{Header6}}</h3>
+                    {{{Text6}}}
+                </div>
+                <img src="{{VIEW}}images/feature-6.png" class="features-page__img">
+            </div>
+        </div>
+    </div>
+
+    <div class="features-page__row features-page__row--even">
+        <div class="cnt">
+            <div class="inner-page__row">
+                <div class="features-page__description">
+                    <h3 class="article__title">{{Header5}}</h3>
+                    {{{Text5}}}
+                </div>
+                <img src="{{VIEW}}images/feature-5.png" class="features-page__img">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="features-page__row">
+            <div class="cnt">
+                <div class="inner-page__row">
+                    <div class="features-page__description">
+                        <h3 class="article__title">{{Header1}}</h3>
+                        {{{Text1}}}
+                    </div>
+                    <img src="{{VIEW}}images/feature-1.png" class="features-page__img">
+                </div>
+            </div>
+        </div>
+
+        <div class="features-page__row features-page__row--even">
+            <div class="cnt">
+                <div class="inner-page__row">
+                    <div class="features-page__description">
+                        <h3 class="article__title">{{Header3}}</h3>
+                        {{{Text3}}}
+                    </div>
+                    <img src="{{VIEW}}images/feature-3.png" class="features-page__img">
+                </div>
+            </div>
+        </div>
+
+        <div class="features-page__row">
+            <div class="cnt">
+                <div class="inner-page__row">
+                    <div class="features-page__description">
+                        <h3 class="article__title">{{Header7}}</h3>
+                        {{{Text7}}}
+                    </div>
+                    <img src="{{VIEW}}images/feature-7.png" class="features-page__img">
+                </div>
+            </div>
+        </div>
+
+    <!--<div class="features-page__row features-page__row&#45;&#45;even">-->
+        <!--<div class="cnt">-->
+            <!--<div class="inner-page__row">-->
+                <!--<div class="features-page__description">-->
+                    <!--<h3 class="article__title">{{Header2}}</h3>-->
+                    <!--{{{Text2}}}-->
+                <!--</div>-->
+                <!--<img src="{{VIEW}}images/feature-2.png" class="features-page__img">-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+</div>

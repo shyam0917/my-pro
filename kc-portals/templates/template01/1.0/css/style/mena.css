@@ -1,0 +1,27 @@
+.course-item__img--business {
+  background: url(../../images/style/mena/course-item-1.jpg) no-repeat center/cover;
+}
+
+.course-item__img--computer {
+  background: url(../../images/style/mena/course-item-2.jpg) no-repeat center/cover;
+}
+
+.course-item__img--safety {
+  background: url(../../images/style/mena/course-item-3.jpg) no-repeat center 0/cover;
+}
+
+.course-item__img--banking {
+  background: url(../../images/style/mena/course-item-4.jpg) no-repeat center 0/cover;
+}
+
+.top-library__section-link {
+  color: #E68234;
+}
+
+.top-library__section-link:hover {
+  color: #E68234;
+}
+
+.top-library__category-link:hover {
+  color: #E68234;
+}

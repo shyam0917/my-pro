@@ -1,0 +1,19 @@
+<div class="inner-top">
+    <div class="cnt">
+        <div class="inner-top__library">
+            <h2 class="inner-top__title">&nbsp;</h2>
+            <p class="inner-top__subtitle">&nbsp;</p>
+        </div>
+        <div class="inner-top__current">
+            <h2 class="inner-top__title">&nbsp;</h2>
+            <p class="inner-top__subtitle">&nbsp;</p>
+        </div>
+    </div>
+</div>
+
+<div class="inner-page">
+    <div class="cnt">
+        <h1>404 Not found</h1>
+    </div>
+</div>
+

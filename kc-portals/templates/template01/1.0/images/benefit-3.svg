@@ -1,0 +1,54 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 223.97 211.5">
+	<defs>
+		<style>
+			.cls-1{fill:rgb( 85, 85, 85);}
+			.cls-2{fill:rgb(255,255,255);}
+			.cls-3{fill:rgb(255,255,255);}
+		</style>
+	</defs>
+	<title>Icon</title>
+	<circle class="cls-1" cx="114.8" cy="106.55" r="93.5"/>
+	<path class="cls-2" d="M119.74,141.48c7.47.84,11.55,8,8.66,15-.64,1.56-1.82,1.33-3,1.33q-10.08,0-20.16,0c-1,0-2,.15-2.59-1.07-3.24-6.51,1.19-14.48,9-15.27-1.86-2.56-4.31-4.78-3.49-8.21a7.16,7.16,0,0,1,2.6-4.34c3.35-2.4,6.79-2.41,9.92.3C124,132.1,123.6,136,119.74,141.48Z"/>
+	<path class="cls-2" d="M150.41,141.48c7.47.84,11.55,8,8.66,15-.64,1.56-1.82,1.33-3,1.33q-10.06,0-20.15,0c-1,0-2,.15-2.59-1.07-3.24-6.51,1.19-14.48,9-15.27-1.86-2.56-4.31-4.78-3.49-8.21a7.1,7.1,0,0,1,2.59-4.34c3.36-2.4,6.8-2.41,9.93.3C154.66,132.1,154.27,136,150.41,141.48Z"/>
+	<path class="cls-2" d="M89.07,141.48c7.47.84,11.55,8,8.66,15-.64,1.56-1.81,1.33-3,1.33q-10.08,0-20.15,0c-1,0-2,.15-2.59-1.07-3.25-6.51,1.18-14.48,9-15.27-1.86-2.56-4.31-4.78-3.48-8.21A7.1,7.1,0,0,1,80.11,129c3.35-2.4,6.79-2.41,9.92.3C93.33,132.1,92.93,136,89.07,141.48Z"/>
+	<rect class="cls-3" x="134.17" y="55.8" width="4.5" height="64.75" rx="2.25" ry="2.25" transform="translate(272.83 176.36) rotate(180)"/>
+	<rect class="cls-3" x="143.9" y="64.47" width="4.5" height="64.75" rx="2.25" ry="2.25" transform="translate(313.5 149.11) rotate(163.81)"/>
+	<rect class="cls-3" x="125.02" y="64.47" width="4.5" height="64.75" rx="2.25" ry="2.25" transform="translate(32.05 -31.64) rotate(16.19)"/>
+	<rect class="cls-2" x="110" y="59.93" width="52.83" height="38.83" rx="2.88" ry="2.88"/>
+	<rect class="cls-1" x="112.3" y="62.22" width="48.24" height="34.25"/>
+	<circle class="cls-2" cx="90.37" cy="65.93" r="7.29"/>
+	<path class="cls-2" d="M73.07,97.08l5-18.44s1.67-4.38,13.34-4.17c10.25.18,25.75,7.83,25.75,7.83a3.56,3.56,0,0,1,.91,3.75c-.79,2.09-3.33,1.42-3.33,1.42l-16-5.5.37,18.92,1.17,25.46A2.44,2.44,0,0,1,98,128.84c-2.68.24-3.23-1.66-3.23-1.66L90.33,103.3l-2.75,23s-.29,2.35-3.82,2.19-3.18-2.44-3.18-2.44l2.17-27.29-.46-14.41L78.73,98.76a3.38,3.38,0,0,1-4.06,2.07C72.25,100.22,73.07,97.08,73.07,97.08Z"/>
+	<polygon class="cls-1" points="90.38 74.47 88.1 88.99 90.38 93.64 92.35 88.99 90.38 74.47"/>
+	<script xmlns="http://www.w3.org/2000/svg" type="text/javascript">
+		
+		var params = {};
+        location.search.replace(/[?&amp;]+([^=&amp;]+)=([^&amp;]*)/gi,function(s,k,v){params[k]=v});
+
+        var color1 = params['cls1'];
+        if( !color1 || color1 == '' ) color1 = 'rgb( 85, 85, 85)';
+        var color2 = params['cls2'];
+        if( !color2 || color2 == '' ) color2 = 'rgb(255,255,255)';
+        
+		var cls1 = document.getElementsByClassName("cls-1");
+		var i = 0;
+		while(typeof cls1[i] !== 'undefined') {
+			cls1[i].style.fill = color1;
+			i++;
+		}
+
+		var cls2 = document.getElementsByClassName("cls-2");
+		var i = 0;
+		while(typeof cls2[i] !== 'undefined') {
+			cls2[i].style.fill = color2;
+			i++;
+		}
+
+		var cls3 = document.getElementsByClassName("cls-3");
+		var i = 0;
+		while(typeof cls3[i] !== 'undefined') {
+			cls3[i].style.fill = color2;
+			i++;
+		}
+
+	</script>
+</svg>

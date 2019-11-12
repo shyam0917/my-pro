@@ -1,0 +1,51 @@
+.main-library__list .course-item:nth-child(1) .course-item__list li:nth-child(1)::before {
+  background-image: url('../../images/assets/featured-categories/business/icon1--v123456.png');
+}
+.main-library__list .course-item:nth-child(1) .course-item__list li:nth-child(2)::before {
+  background-image: url('../../images/assets/featured-categories/business/icon2--v123456.png');
+}
+.main-library__list .course-item:nth-child(1) .course-item__list li:nth-child(3)::before {
+  background-image: url('../../images/assets/featured-categories/business/icon3--v123456.png');
+}
+
+.main-library__list .course-item:nth-child(2) .course-item__list li:nth-child(1)::before {
+  background-image: url('../../images/assets/featured-categories/finance/icon1--v123456.png');
+}
+.main-library__list .course-item:nth-child(2) .course-item__list li:nth-child(2)::before {
+  background-image: url('../../images/assets/featured-categories/finance/icon2--v123456.png');
+}
+.main-library__list .course-item:nth-child(2) .course-item__list li:nth-child(3)::before {
+  background-image: url('../../images/assets/featured-categories/finance/icon3--v123456.png');
+}
+
+.main-library__list .course-item:nth-child(3) .course-item__list li:nth-child(1)::before {
+  background-image: url('../../images/assets/featured-categories/computer/icon1--v123456.png');
+}
+.main-library__list .course-item:nth-child(3) .course-item__list li:nth-child(2)::before {
+  background-image: url('../../images/assets/featured-categories/computer/icon2--v123456.png');
+}
+.main-library__list .course-item:nth-child(3) .course-item__list li:nth-child(3)::before {
+  background-image: url('../../images/assets/featured-categories/computer/icon3--v123456.png');
+}
+
+.main-library__list .course-item:nth-child(4) .course-item__list li:nth-child(1)::before {
+  background-image: url('../../images/assets/featured-categories/safety/icon1--v123456.png');
+}
+.main-library__list .course-item:nth-child(4) .course-item__list li:nth-child(2)::before {
+  background-image: url('../../images/assets/featured-categories/safety/icon2--v123456.png');
+}
+.main-library__list .course-item:nth-child(4) .course-item__list li:nth-child(3)::before {
+  background-image: url('../../images/assets/featured-categories/safety/icon3--v123456.png');
+}
+
+.top-library__section-link {
+  color: #E68234;
+}
+
+.top-library__section-link:hover {
+  color: #E68234;
+}
+
+.top-library__category-link:hover {
+  color: #E68234;
+}

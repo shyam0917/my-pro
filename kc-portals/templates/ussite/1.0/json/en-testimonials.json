@@ -1,0 +1,43 @@
+[
+	{
+		"text": "The KnowledgeCity Platform allowed us to enter the Learning Management System space with ease. The platform is user-friendly, adaptable and economical. Every step of the way, we received exceptional customer-service and useful updates.",
+		"name": "Omar Small",
+		"title": "Deputy City Manager",
+		"company": "New Rochelle, New York",
+		"image": "omar.png",
+		"class": "activo"
+	},
+	{
+		"text": "KnowledgeCity has provided an excellent learning platform for our company.  Time is of essence.  The courses allow our employees to quickly learn a topic and get back to work.  And, the Customer Service is A plus!",
+		"name": "Jeff Long",
+		"title": "Online Training Specialist",
+		"company": "Hytrol Conveyor Co., Inc.",
+		"image": "jeff.png"
+	},
+	{
+		"text": "KnowledgeCity has provided the City of Lancaster with excellent customer service. The staff have been prompt, diligent, and very supportive in answering questions I have had in becoming familiar with the LMS.  In addition, the City of Lancaster staff have been very impressed with the training site and have shown tremendous interest and enthusiasm with using the library of training videos to expand their skills and professional knowledge base.",
+		"name": "Araxie Kahramanian",
+		"title": "Management Analyst",
+		"image": "araxie.png"
+	},
+	{
+		"text": "KnowledgeCity has been a breath of fresh air for our organization. It has provided our employees with a platform for continued growth in an easy-to-access online platform.  We are extremely satisfied with the quality of the solution we have been provided.",
+		"name": "Patrick Kenny",
+		"title": "Chief Operating Officer",
+		"company": "<a href=\"https://www.northwestcareercollege.edu/facultystaff.html\">www.northwestcareercollege.edu</a>",
+		"image": "patrick.png"
+	},
+	{
+		"text": "After moving up within my company to a outside sales position, I found myself a bit behind with my computer skills. Knowledge City was the key to getting me up to speed on the necessary programs. Easy to navigate, clear and concise courses. I am recommending Knowledge City to my boss for all new hires and promotions.",
+		"name": "Michael Balay",
+		"title": "Sales Representative",
+		"image": "michael.jpg"
+	},
+	{
+		"text": "I could not be more excited about our recent purchase of the KnowledgeCity Learning Management System. So far it has been a very easy process of learning the LMS and the support has been amazing. Our Leadership staff look forward to how easy managing our training will be since acquiring this data base and staff are elated to begin having such a great resource for so many trainings. Everyone loves what they have seen and done so far.",
+		"name": "Sheryl Schwab",
+		"title": "Executive Director",
+		"company": "Domestic Abuse Shelter (Located in Florida)",		
+		"image": "sheryl.png"
+	}
+]

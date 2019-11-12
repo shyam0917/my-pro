@@ -1,0 +1,127 @@
+<div class="inner-header inner-header--press-release">
+
+  {{^press-release-one}}
+  <div class="cnt">
+    <h1 class="inner-header__title inner-header__title--dark inner-header__title--pressRelease">
+      {{mui.header.pressRelease.title}}
+    </h1>
+    <div class="inner-header__subtitle inner-header__subtitle--dark inner-header__subtitle--pressRelease">
+      {{mui.header.pressRelease.subtitle}}
+    </div>
+  </div>
+  {{/press-release-one}}
+
+</div>
+
+{{^press-release-one}}
+<section class="press-release press-release--shift js-press-release-all">
+
+  <div class="cnt">
+    <div class="press-release__wrapper">
+
+      {{#press-release}}
+      <div class="press-release__item {{^is_preview}}press-release__item--hidden{{/is_preview}}">
+        <div class="press-release__item-publishedon">{{{added}}}</div>
+        <h3 class="press-release__item-title">
+          <a class="press-release__item-title-link" href="{{{myurl}}}">{{{title}}}</a>
+        </h3>
+
+        <div class="press-release__item-introtext">
+          {{{info.short}}}
+        </div>
+        <div class="press-release__item-actions">
+          <a class="press-release__item-link" href="{{{myurl}}}">{{{mui.buttonLabel.rmore}}}</a>
+        </div>
+      </div>
+      {{/press-release}}
+
+    </div>
+  </div>
+</section>
+
+<div class="block-actions" id="more-release">
+  <div class="center-align pressRelease-padding">
+    <a class="btn btn--lg btn--wide" data-handler="onShowMorePressRelease">{{mui.buttonLabel.View_All}}</a>
+  </div>
+</div>
+
+{{/press-release-one}}
+
+{{#press-release-one}}
+<section class="press-release press-release-one press-release-one--shift ">
+  <div class="cnt">
+    <div class="pressRelease-block">
+      <div class="pressRelease-block--item">
+        <small>{{{added}}}</small>
+        <h1>{{{title}}}</h1>
+        <p>{{{info.full}}}</p>
+      </div>
+
+      <div class="center-align pressRelease-padding">
+        <a class="btn btn--lg btn--wide" href="{{{back_btn}}}">{{mui.buttonLabel.Back}}</a>
+      </div>
+    </div>
+  </div>
+</section>
+{{/press-release-one}}
+
+<div class="press-release__another">
+
+  <section class="bottom-links" style="padding-top:40px;">
+    <div class="cnt-wide">
+      <div class="bot-columns about-us">
+        <div class="">
+          <a href="{{site.url_with_lang}}learningLibrary">
+            <div class="bottom-link__img">
+              <img src="{{VIEW}}images/Bottom-link_LL--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+                height:auto" alt="">
+            </div>
+          </a>
+          <h2>{{botlink.learningTitle}}</h2>
+          <p>{{botlink.learningDescription}} <a href="{{site.url_with_lang}}learningLibrary">{{botlink.learnMore}}</a>
+          </p>
+        </div>
+        <div class="">
+          <a href="{{site.url_with_lang}}lms">
+            <div class="bottom-link__img">
+              <img src="{{VIEW}}images/bottom-link_LMS--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+                height:auto" alt="">
+            </div>
+          </a>
+          <h2>{{botlink.lmsTitle}}</h2>
+          <p>{{botlink.lmsDescription}} <a href="{{site.url_with_lang}}lms">{{botlink.learnMore}}</a>
+          </p>
+        </div>
+        <div class="">
+          <a href="{{site.url_with_lang}}contentCreation">
+            <div class="bottom-link__img">
+              <img src="{{VIEW}}images/Bottom-link_CC--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+                height:auto">
+            </div>
+          </a>
+          <h2>{{botlink.contentTitle}}</h2>
+          <p>{{botlink.contentDescription}} <a href="{{site.url_with_lang}}contentCreation">
+            {{botlink.learnMore}}</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="index-clients">
+    <div class="cnt">
+      <!-- <h2 class="index-title">{{ourClients}}</h2> -->
+      <div class="index-clients__carousel owl-carousel" id="clientsCarousel">
+        {{#clients}}
+        <div class="index-client">
+          <img class="index-client__img" src="{{logo}}"/>
+        </div>
+        {{/clients}}
+      </div>
+      <div class="owl-nav">
+        <span class="owl-nav__prev" data-handler="onPrevClients"></span>
+        <span class="owl-nav__next" data-handler="onNextClients"></span>
+      </div>
+    </div>
+  </section>
+
+</div>

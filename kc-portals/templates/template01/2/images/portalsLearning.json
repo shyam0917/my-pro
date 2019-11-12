@@ -1,0 +1,387 @@
+{
+    "code": 200,
+    "status": "OK",
+    "response": {
+        "student": {
+            "api_users_id": "f0b18e91-a240-4ea3-b1dc-190861c0a21d",
+            "first_name": "Oleg",
+            "last_name": "Osipov",
+            "email": "test1@example.com",
+            "gender": "m",
+            "national_id": "",
+            "employee_id": 12345678,
+            "extra": "",
+            "lang": "en",
+            "active": 1,
+            "cc_emails": "",
+            "send_progress": 0,
+            "first_login": 0,
+            "is_test": 0,
+            "license": {
+                "id": "0303efe9-0f51-460c-8701-0f12f883698f",
+                "student_id": "a5fce35f-7071-49f5-9f21-82ca1640cf32",
+                "subscription_id": "85e5eaa7-88d3-40b5-8170-d46155ce7647",
+                "assign_date": null,
+                "expire_date": null
+            },
+            "username": "oleg.o",
+            "general_stat": [
+                {
+                    "id": "08f71299-d33c-4695-89f0-81af81c5df21",
+                    "student_id": "a5fce35f-7071-49f5-9f21-82ca1640cf32",
+                    "course_id": "BUS1021",
+                    "begin_date": 1477943869,
+                    "watchedAll_date": 1478645510,
+                    "passed_date": null,
+                    "certificate_number": null
+                },
+                {
+                    "id": "12e335ff-8ac6-4a72-812c-1e5011e5eb34",
+                    "student_id": "a5fce35f-7071-49f5-9f21-82ca1640cf32",
+                    "course_id": "BUS1002",
+                    "begin_date": 1478709234,
+                    "watchedAll_date": null,
+                    "passed_date": null,
+                    "certificate_number": null
+                },
+                {
+                    "id": "19316589-a87b-4976-a0bc-4041f0edd059",
+                    "student_id": "a5fce35f-7071-49f5-9f21-82ca1640cf32",
+                    "course_id": "CMP1057",
+                    "begin_date": 1478647229,
+                    "watchedAll_date": null,
+                    "passed_date": null,
+                    "certificate_number": null
+                },
+                {
+                    "id": "2ddb5439-8b6c-47dc-bef3-401255d4638b",
+                    "student_id": "a5fce35f-7071-49f5-9f21-82ca1640cf32",
+                    "course_id": "SAF1025",
+                    "begin_date": 1478645980,
+                    "watchedAll_date": null,
+                    "passed_date": null,
+                    "certificate_number": null
+                },
+                {
+                    "id": "afbaf630-e64d-4c42-86c1-53e0b4f1d798",
+                    "student_id": "a5fce35f-7071-49f5-9f21-82ca1640cf32",
+                    "course_id": "CMP1048",
+                    "begin_date": 1478644428,
+                    "watchedAll_date": null,
+                    "passed_date": null,
+                    "certificate_number": null
+                },
+                {
+                    "id": "b56e67df-6a7b-462a-ad6a-fee8d3334a8e",
+                    "student_id": "a5fce35f-7071-49f5-9f21-82ca1640cf32",
+                    "course_id": "SAF1004",
+                    "begin_date": 1478661076,
+                    "watchedAll_date": null,
+                    "passed_date": null,
+                    "certificate_number": null
+                },
+                {
+                    "id": "c98a7a2f-a253-4720-b416-27a120af984b",
+                    "student_id": "a5fce35f-7071-49f5-9f21-82ca1640cf32",
+                    "course_id": "BUS1020",
+                    "begin_date": 1478644399,
+                    "watchedAll_date": null,
+                    "passed_date": null,
+                    "certificate_number": null
+                },
+                {
+                    "id": "e6cb8b9a-659b-4f79-b209-4d7cc7afe6f2",
+                    "student_id": "a5fce35f-7071-49f5-9f21-82ca1640cf32",
+                    "course_id": "SAF1006",
+                    "begin_date": 1478645736,
+                    "watchedAll_date": null,
+                    "passed_date": null,
+                    "certificate_number": null
+                }
+            ],
+            "users_courses": {
+                "88e229c3-fae5-47fa-95b7-d6aa88eb15e1": {
+                    "category": {
+                        "id": "352dc778-d4c0-4b32-8b4b-aff0acc2029f",
+                        "portalCategory_id": "88e229c3-fae5-47fa-95b7-d6aa88eb15e1",
+                        "title": "Management",
+                        "description": "",
+                        "tag": "Possess effective leadership skills to bring out the best in your team.",
+                        "lang": "en"
+                    },
+                    "course": {
+                        "BUS1002": {
+                            "name": "Managing \u0026 Supervising",
+                            "progress": 5,
+                            "viewed": 1,
+                            "start": 1478709234,
+                            "finish": null,
+                            "attempts": 0,
+                            "points": null,
+                            "result": null,
+                            "quiz": {
+                                "attemptsCount": 0,
+                                "maxCount": 1,
+                                "isAllowed": true,
+                                "success": null
+                            }
+                        }
+                    }
+                },
+                "bc4ec935-5def-4e2a-8709-f4c4670c77ea": {
+                    "category": {
+                        "id": "51866786-f43d-4101-8b5e-f57c993beefa",
+                        "portalCategory_id": "bc4ec935-5def-4e2a-8709-f4c4670c77ea",
+                        "title": "Adobe CS4",
+                        "description": "",
+                        "tag": "Acquire the knowledge to design and create beautiful art on your computer.",
+                        "lang": "en"
+                    },
+                    "course": {
+                        "CMP1048": {
+                            "name": "Photoshop CS4 Advanced",
+                            "progress": 1,
+                            "viewed": 1,
+                            "start": 1478644428,
+                            "finish": null,
+                            "attempts": 0,
+                            "points": null,
+                            "result": null,
+                            "quiz": {
+                                "attemptsCount": 0,
+                                "maxCount": 1,
+                                "isAllowed": true,
+                                "success": null
+                            }
+                        }
+                    }
+                },
+                "fd6ddd8e-f403-4752-99ee-ffdd14a4edfd": {
+                    "category": {
+                        "id": "ee576d39-7d7c-4fd2-8e55-4d88f6837316",
+                        "portalCategory_id": "fd6ddd8e-f403-4752-99ee-ffdd14a4edfd",
+                        "title": "Workplace Physical Safety",
+                        "description": "",
+                        "tag": "",
+                        "lang": "en"
+                    },
+                    "course": {
+                        "SAF1004": {
+                            "name": "Hand, Wrist and Finger Safety",
+                            "progress": 14,
+                            "viewed": 1,
+                            "start": 1478661076,
+                            "finish": null,
+                            "attempts": 0,
+                            "points": null,
+                            "result": null,
+                            "quiz": {
+                                "attemptsCount": 0,
+                                "maxCount": 1,
+                                "isAllowed": true,
+                                "success": null
+                            }
+                        },
+                        "SAF1006": {
+                            "name": "Workplace Stress",
+                            "progress": 12,
+                            "viewed": 1,
+                            "start": 1478645736,
+                            "finish": null,
+                            "attempts": 0,
+                            "points": null,
+                            "result": null,
+                            "quiz": {
+                                "attemptsCount": 0,
+                                "maxCount": 1,
+                                "isAllowed": true,
+                                "success": null
+                            }
+                        }
+                    }
+                },
+                "5a5e8e7f-25eb-42a6-a140-2b93dbdb87a4": {
+                    "category": {
+                        "id": "87e5cffc-3ea9-4fe7-8ede-8080cc4762ce",
+                        "portalCategory_id": "5a5e8e7f-25eb-42a6-a140-2b93dbdb87a4",
+                        "title": "Sexual Harassment Prevention",
+                        "description": "",
+                        "tag": "",
+                        "lang": "en"
+                    },
+                    "course": {
+                        "SAF1025": {
+                            "name": "Sexual Harassment for Employees",
+                            "progress": 37,
+                            "viewed": 3,
+                            "start": 1478645980,
+                            "finish": null,
+                            "attempts": 0,
+                            "points": null,
+                            "result": null,
+                            "quiz": {
+                                "attemptsCount": 0,
+                                "maxCount": 1,
+                                "isAllowed": true,
+                                "success": null
+                            },
+                            "assigned": true
+                        },
+                        "SAF1026": {
+                            "name": "Sexual Harassment for Managers",
+                            "progress": 0,
+                            "viewed": 0,
+                            "start": null,
+                            "finish": null,
+                            "attempts": 0,
+                            "points": null,
+                            "result": null,
+                            "quiz": {
+                                "attemptsCount": 0,
+                                "maxCount": 1,
+                                "isAllowed": true,
+                                "success": null
+                            },
+                            "assigned": true
+                        },
+                        "SAF1027": {
+                            "name": "Sexual Harassment Investigation",
+                            "progress": 0,
+                            "viewed": 0,
+                            "start": null,
+                            "finish": null,
+                            "attempts": 0,
+                            "points": null,
+                            "result": null,
+                            "quiz": {
+                                "attemptsCount": 0,
+                                "maxCount": 1,
+                                "isAllowed": true,
+                                "success": null
+                            },
+                            "assigned": true
+                        }
+                    }
+                },
+                "c66d220e-b41c-47c2-9c75-ef8ea0bbe9e1": {
+                    "category": {
+                        "id": "b8ab8b72-3d52-4a64-9331-03ae4c40adf6",
+                        "portalCategory_id": "c66d220e-b41c-47c2-9c75-ef8ea0bbe9e1",
+                        "title": "Languages",
+                        "description": "",
+                        "tag": "Master new languages from all over the world.",
+                        "lang": "en"
+                    },
+                    "course": {
+                        "BUS1015": {
+                            "name": "Spanish Basics",
+                            "progress": 0,
+                            "viewed": 0,
+                            "start": null,
+                            "finish": null,
+                            "attempts": 0,
+                            "points": null,
+                            "result": null,
+                            "quiz": {
+                                "attemptsCount": 0,
+                                "maxCount": 1,
+                                "isAllowed": true,
+                                "success": null
+                            },
+                            "assigned": true
+                        },
+                        "BUS1016": {
+                            "name": "French Basics",
+                            "progress": 0,
+                            "viewed": 0,
+                            "start": null,
+                            "finish": null,
+                            "attempts": 0,
+                            "points": null,
+                            "result": null,
+                            "quiz": {
+                                "attemptsCount": 0,
+                                "maxCount": 1,
+                                "isAllowed": true,
+                                "success": null
+                            },
+                            "assigned": true
+                        },
+                        "BUS1020": {
+                            "name": "Russian Basics",
+                            "progress": 5,
+                            "viewed": 1,
+                            "start": 1478644399,
+                            "finish": null,
+                            "attempts": 0,
+                            "points": null,
+                            "result": null,
+                            "quiz": {
+                                "attemptsCount": 0,
+                                "maxCount": 1,
+                                "isAllowed": true,
+                                "success": null
+                            },
+                            "assigned": true
+                        },
+                        "BUS1021": {
+                            "name": "English Basics",
+                            "progress": 100,
+                            "viewed": 20,
+                            "start": 1477943869,
+                            "finish": 1478645510,
+                            "attempts": 0,
+                            "points": null,
+                            "result": null,
+                            "quiz": {
+                                "attemptsCount": 0,
+                                "maxCount": 1,
+                                "isAllowed": true,
+                                "success": null
+                            },
+                            "assigned": true
+                        }
+                    }
+                },
+                "2d7cb98b-accc-4b81-83d4-45232b4fa34f": {
+                    "category": {
+                        "id": "48ee37ff-5343-4d1f-b9b3-bef9022101f1",
+                        "portalCategory_id": "2d7cb98b-accc-4b81-83d4-45232b4fa34f",
+                        "title": "Computer Basics",
+                        "description": "",
+                        "tag": "Expand your computer knowledge.",
+                        "lang": "en"
+                    },
+                    "course": {
+                        "CMP1057": {
+                            "name": "How to Burn a CD",
+                            "progress": 3,
+                            "viewed": 1,
+                            "start": 1478647229,
+                            "finish": null,
+                            "attempts": 0,
+                            "points": null,
+                            "result": null,
+                            "quiz": {
+                                "attemptsCount": 0,
+                                "maxCount": 1,
+                                "isAllowed": true,
+                                "success": null
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "simple_stats": {
+            "activation_date": null,
+            "license_duaration": 0,
+            "expiration_date": null,
+            "in_progress": 8,
+            "viewed": 1,
+            "tests_passed": 0,
+            "last_login_time": "2016-11-11 15:47:43",
+            "first_login_time": "2016-10-31 19:57:40"
+        }
+    }
+}

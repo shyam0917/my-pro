@@ -1,0 +1,24 @@
+<!--<div id="previewModal" class="modal modal&#45;&#45;howitworks">-->
+
+    <!--<a class="modal__close modal_close">×</a>-->
+    <!--<div class="content">-->
+        <!--<div-->
+                <!--class="course-video__preview"-->
+                <!--id="courseVideoEmbed"-->
+        <!--&gt;-->
+    <!--</div>-->
+<!--</div>-->
+
+<div id="previewModal" class="modal modal--howitworks">
+    <a class="modal__close modal_close">×</a>
+    <div class="content">
+        <div class="embed-responsive">
+            <iframe
+                    src="https://www.youtube.com/embed/videoseries?list={{playlist}}&autoplay=1"
+                    frameborder="0"
+                    allowfullscreen
+            ></iframe>
+        </div>
+    </div>
+</div>
+

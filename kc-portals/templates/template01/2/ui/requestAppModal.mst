@@ -1,0 +1,30 @@
+<div id="requestAppModal" class="popupWindow">
+    <div class="progressOverlay hidden"><div class="progressOverlayBg"></div><div class="progressOverlaySpinner"><i class="fa fa-spinner fa-pulse"></i></div></div>
+    <a class="modal_close"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-times fa-stack-1x fa-inverse"></i></span></a>
+    <div class="title-h1">
+        <div class="h1">
+            {{mui.pageContent.requestAppForm.title}}
+            {{#android}}
+                <i class="fa fa-android" aria-hidden="true"></i>
+            {{/android}}
+            {{#ios}}
+                <i class="fa fa-apple" aria-hidden="true"></i>
+            {{/ios}}
+        </div>
+    </div>
+    <div class="content">
+        <div class="alert alert-danger text-align hidden" id="form-message"></div>
+        <form class="flex-form" method="post" action="" id="" data-handler="onSubmitAppRequest">
+            <div class="flex-form__row">
+                <label class="flex-form__label" for="requestapp-email">{{mui.pageContent.formlabel.email}}:</label>
+                <input type="email" class="flex-form__input" value="" name="email" id="requestapp-email"
+                       placeholder="{{mui.pageContent.formlabel.email}}"
+                       required="true" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+            </div>
+            <div class="flex-form__row">
+                <input type="submit" name="submit" value="{{mui.buttonLabel.sendRequest}}" class="button" />
+            </div>
+        </form>
+    </div>
+</div>
+

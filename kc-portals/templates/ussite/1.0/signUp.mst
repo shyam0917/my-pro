@@ -1,0 +1,45 @@
+<div data-ctrl="SignContent" id="SignContent" class="sign-up-page">
+
+  <div class="sign-up-types hidden" id="signUpTypes">
+    <h1 class="sign-up-types__title">
+      {{sign_up.title}}
+    </h1>
+    <div class="sign-up-types__subtitle">
+      {{sign_up.subtitle}}
+    </div>
+
+    <div class="sign-up-types__enum">
+
+     <a href="{{site.url_with_lang}}signUp/type/business" class="sign-up-types__item sign-up-types__item--business">
+        <div class="sign-up-types__item-title">
+          {{sign_up.type.business}}
+        </div>
+      </a>
+      <a href="{{site.url_with_lang}}signUp/type/government" class="sign-up-types__item sign-up-types__item--government">
+        <div class="sign-up-types__item-title">
+          {{sign_up.type.government}}
+        </div>
+      </a>
+
+      <a href="{{site.url_with_lang}}signUp/type/academic" class="sign-up-types__item sign-up-types__item--academic">
+        <div class="sign-up-types__item-title">
+          {{sign_up.type.academic}}
+        </div>
+      </a>
+
+      <a href="{{site.url_with_lang}}signUp/type/library" class="sign-up-types__item sign-up-types__item--library">
+        <div class="sign-up-types__item-title">
+          {{sign_up.type.library}}
+        </div>
+      </a>
+
+      <a href="{{site.url_with_lang}}signUp/type/individual" class="sign-up-types__item sign-up-types__item--individual">
+        <div class="sign-up-types__item-title">
+          {{sign_up.type.individual}}
+        </div>
+      </a>
+
+    </div>
+  </div> <!-- sign-up-types -->
+
+</div>

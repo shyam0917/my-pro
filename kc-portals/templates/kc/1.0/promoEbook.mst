@@ -1,0 +1,49 @@
+<section class="bl-promo">
+	<div class="cnt">
+		<div class="content-header">
+			<h2>{{mui.ebook.promo.title}}</h2>
+			<p>{{mui.ebook.promo.subtitle.1}} {{main_ebook.name}} {{mui.ebook.promo.subtitle.2}}</p>
+		</div>
+		<div class="block-wrapper">
+			<div class="pdf-block">
+				<div class="content-pdf">
+					<div class="ebook-preview" > <img src="{{main_ebook.previewURL}}"  ></div>
+					<div class="pdf-wrapper">
+						<span class="ebook-name">{{main_ebook.name}}</span>
+						<span class="ebook-download"><a href="{{main_ebook.fileURL}}" class=" btn">{{mui.tryit.downloadNow}}</a></span>
+					</div>
+				</div>
+			</div>
+			<div class="trial-block">
+				<div class="pdf-block">
+					<div class="content-pdf">
+						<div class="ebook-preview" > <img src="{{second_ebook.previewUrl}}"  ></div>
+						<div class="pdf-wrapper">
+							<span class="ebook-name">{{second_ebook.name}}</span>
+							<span class="ebook-download"><a data-handler="onLandingEbook" data-ceid="{{second_ebook.ceid}}" data-course="{{second_ebook.course_id}}" class="btn" href="#">{{mui.tryit.downloadNow}}</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		{{#rnd}}
+		<div class="content-header other-ebooks">
+			<h2>{{mui.ebook.promo.secondTitle}}</h2>
+		</div>
+		<div class="block-wrapper other-ebooks">
+			{{#randomEbooks}}
+			<div class="pdf-block">
+				<div class="content-pdf">
+					<div class="ebook-preview" > <img src="{{previewUrl}}"  ></div>
+					<div class="pdf-wrapper">
+						<span class="ebook-name">{{name}}</span>
+						<span class="ebook-download"><a data-handler="onLandingEbook" data-ceid="{{ceid}}" data-course="{{course_id}}" class="btn" href="#">{{mui.tryit.downloadNow}}</a></span>
+					</div>
+				</div>
+			</div>
+			{{/randomEbooks}}
+		</div> 
+		{{/rnd}}
+	</div>
+</section>

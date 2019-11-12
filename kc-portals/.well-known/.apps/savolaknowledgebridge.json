@@ -1,0 +1,17 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.knowledgecity.savolaknowledgebridge",
+    "sha256_cert_fingerprints":
+    ["33:76:ED:56:99:4F:06:DD:B2:D7:1F:C1:18:BE:17:6C:1C:68:83:A8:0C:30:05:63:82:9E:AC:0F:10:BD:00:0B"]
+  }
+},{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.knowledgecity.savolaknowledgebridge",
+    "sha256_cert_fingerprints":
+    ["51:1B:5F:3A:77:20:04:09:57:56:4A:AC:B3:88:76:56:67:37:79:D4:77:B2:9D:90:10:D8:DA:E6:F3:3E:71:74"]
+  }
+}]

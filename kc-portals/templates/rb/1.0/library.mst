@@ -1,0 +1,59 @@
+<div class="inner-top">
+    <div class="cnt">
+        <div class="inner-top__library">
+            <h2 class="inner-header__title">{{mui.txtLabels.sidebarTitle}}</h2>
+            <p class="inner-header__subtitle">{{mui.txtLabels.sidebarText}}</p>
+        </div>
+        <div class="inner-top__current" data-ctrl="LibTitle"  id="libtitle"></div>
+    </div>
+</div>
+
+<div class="inner-page">
+    <div class="cnt">
+        <div class="inner-page__sidebar inner-page__sidebar--library">
+          <div data-ctrl="Sidebar" id="sidebar">
+              Loading sidebar...
+          </div>
+        </div>
+
+        <div class="inner-page__content" >
+          <div data-ctrl="Items" id="items">
+            Loading items...
+          </div>
+        </div>
+    </div>
+</div>
+
+<div id="addedCourseModal" class="modalWindow" style="display: none;">
+    <a rel="closeModal" class="modal_close">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+            </span>
+    </a>
+    <div class="content">
+        <div class="text" rel="text">
+            {{{AddMessage}}}
+        </div>
+        <div class="text-center">
+          <a href="#" id="printFormLink" class="button" target="_blank">{{PrintRequest}}</a> <a href="{{myLearningUrl}}" rel="close">{{goToLearning}}</a>
+        </div>
+    </div>
+</div>
+
+<div id="approvedEventModal" class="modalWindow" style="display: none;">
+  <a rel="closeModal" class="modal_close">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+            </span>
+  </a>
+  <div class="content">
+    <div class="text" rel="text" data-role="approvedEventModal-text">
+    </div>
+    <div class="text-center">
+
+      <a href="{{myLearningUrl}}" rel="close" class="hidden">{{goToLearning}}</a>
+    </div>
+  </div>
+</div>

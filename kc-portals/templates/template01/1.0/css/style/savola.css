@@ -1,0 +1,359 @@
+@font-face{
+  font-family:Avenir;
+  src:url(../../fonts/avenir-book.eot);
+  src:url(../../fonts/avenir-book.eot?#iefix) format("embedded-opentype"),
+  url(../../fonts/avenir-book.woff) format("woff"),
+  url(../../fonts/avenir-book.ttf) format("truetype"),
+  url(../../fonts/avenir-book.svg) format("svg");
+  font-weight:400;
+  font-style:normal
+}
+@font-face{
+  font-family:Avenir Medium;
+  src:url(../../fonts/avenir-medium.eot);
+  src:url(../../fonts/avenir-medium.eot?#iefix) format("embedded-opentype"),
+  url(../../fonts/avenir-medium.woff) format("woff"),
+  url(../../fonts/avenir-medium.ttf) format("truetype"),
+  url(../../fonts/avenir-medium.svg) format("svg");
+  font-weight:700;
+  font-style:normal
+}
+@font-face{
+  font-family:Avenir;
+  src:url(../../fonts/avenir-heavy.eot);
+  src:url(../../fonts/avenir-heavy.eot?#iefix) format("embedded-opentype"),
+  url(../../fonts/avenir-heavy.woff) format("woff"),
+  url(../../fonts/avenir-heavy.ttf) format("truetype"),
+  url(../../fonts/avenir-heavy.svg) format("svg");
+  font-weight:800;
+  font-style:normal
+}
+@font-face{
+  font-family:Avenir;
+  src:url(../../fonts/avenir-black.eot);
+  src:url(../../fonts/avenir-black.eot?#iefix) format("embedded-opentype"),
+  url(../../fonts/avenir-black.woff) format("woff"),
+  url(../../fonts/avenir-black.ttf) format("truetype"),
+  url(../../fonts/avenir-black.svg) format("svg");
+  font-weight:900;
+}
+
+@font-face{
+  font-family:"Avenir";
+  font-style:normal;
+  font-weight:400;
+  src:local("thesansarab-semilight"),
+  url(../../fonts/thesansarab-semilight.woff2) format("woff2"),
+  url(../../fonts/thesansarab-semilight.woff) format("woff"),
+  url(../../fonts/thesansarab-semilight.ttf) format("truetype");
+  unicode-range:U+600-6FF,U+200C-200E,U+2010-2011,U+FB50-FDFF,U+FE80-FEFC;
+}
+
+@font-face{
+  font-family:"Avenir";
+  font-style:normal;
+  font-weight:400;
+  src:local("thesansarab-semilight"),
+  url(../../fonts/thesansarab-semilight.woff2) format("woff2"),
+  url(../../fonts/thesansarab-semilight.woff) format("woff"),
+  url(../../fonts/thesansarab-semilight.ttf) format("truetype");
+  unicode-range:U+100-24F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face{
+  font-family:"Avenir";
+  font-style:normal;
+  font-weight:400;
+  src:local("thesansarab-semilight"),
+  url(../../fonts/thesansarab-semilight.woff2) format("woff2"),
+  url(../../fonts/thesansarab-semilight.woff) format("woff"),
+  url(../../fonts/thesansarab-semilight.ttf) format("truetype");
+  unicode-range:U+0-FF,U+131,U+152-153,U+2C6,U+2DA,U+2DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;
+}
+
+@font-face{
+  font-family:"Avenir";
+  font-style:normal;
+  font-weight:700;
+  src:local("thesansarab-semibold"),
+  url(../../fonts/thesansarab-semibold.woff2) format("woff2"),
+  url(../../fonts/thesansarab-semibold.woff) format("woff"),
+  url(../../fonts/thesansarab-semibold.ttf) format("truetype");
+  unicode-range:U+600-6FF,U+200C-200E,U+2010-2011,U+FB50-FDFF,U+FE80-FEFC;
+}
+@font-face{
+  font-family:"Avenir";
+  font-style:normal;
+  font-weight:700;
+  src:local("thesansarab-semibold"),
+  url(../../fonts/thesansarab-semibold.woff2) format("woff2"),
+  url(../../fonts/thesansarab-semibold.woff) format("woff"),
+  url(../../fonts/thesansarab-semibold.ttf) format("truetype");
+  unicode-range:U+100-24F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face{
+  font-family:"Avenir";
+  font-style:normal;
+  font-weight:700;
+  src:local("thesansarab-semibold"),
+  url(../../fonts/thesansarab-semibold.woff2) format("woff2"),
+  url(../../fonts/thesansarab-semibold.woff) format("woff"),
+  url(../../fonts/thesansarab-semibold.ttf) format("truetype");
+  unicode-range:U+0-FF,U+131,U+152-153,U+2C6,U+2DA,U+2DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;
+}
+@font-face{
+  font-family:"Avenir";
+  font-style:normal;
+  font-weight:800;
+  src:local("thesansarab-bold"),
+  url(../../fonts/thesansarab-bold.woff2) format("woff2"),
+  url(../../fonts/thesansarab-bold.woff) format("woff"),
+  url(../../fonts/thesansarab-bold.ttf) format("truetype");
+  unicode-range:U+600-6FF,U+200C-200E,U+2010-2011,U+FB50-FDFF,U+FE80-FEFC;
+}
+@font-face{
+  font-family:"Avenir";
+  font-style:normal;
+  font-weight:800;
+  src:local("thesansarab-bold"),
+  url(../../fonts/thesansarab-bold.woff2) format("woff2"),
+  url(../../fonts/thesansarab-bold.woff) format("woff"),
+  url(../../fonts/thesansarab-bold.ttf) format("truetype");
+  unicode-range:U+100-24F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face{
+  font-family:"Avenir";
+  font-style:normal;
+  font-weight:800;
+  src:local("thesansarab-bold"),
+  url(../../fonts/thesansarab-bold.woff2) format("woff2"),
+  url(../../fonts/thesansarab-bold.woff) format("woff"),
+  url(../../fonts/thesansarab-bold.ttf) format("truetype");
+  unicode-range:U+0-FF,U+131,U+152-153,U+2C6,U+2DA,U+2DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;
+}
+@font-face {
+  font-family: "Avenir";
+  font-weight: 900;
+  src: local("thesansarab-bold"), url(../../fonts/thesansarab-bold.woff2) format("woff2"), url(../../fonts/thesansarab-bold.woff) format("woff"), url(../../fonts/thesansarab-bold.ttf) format("truetype");
+  unicode-range: U+600-6FF, U+200C-200E, U+2010-2011, U+FB50-FDFF, U+FE80-FEFC;
+}
+@font-face {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 900;
+  src: local("thesansarab-bold"), url(../../fonts/thesansarab-bold.woff2) format("woff2"), url(../../fonts/thesansarab-bold.woff) format("woff"), url(../../fonts/thesansarab-bold.ttf) format("truetype");
+  unicode-range: U+600-6FF, U+200C-200E, U+2010-2011, U+FB50-FDFF, U+FE80-FEFC;
+}
+@font-face {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 900;
+  src: local("thesansarab-bold"), url(../../fonts/thesansarab-bold.woff2) format("woff2"), url(../../fonts/thesansarab-bold.woff) format("woff"), url(../../fonts/thesansarab-bold.ttf) format("truetype");
+  unicode-range: U+100-24F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 900;
+  src: local("thesansarab-bold"), url(../../fonts/thesansarab-bold.woff2) format("woff2"), url(../../fonts/thesansarab-bold.woff) format("woff"), url(../../fonts/thesansarab-bold.ttf) format("truetype");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+body {
+  font-family: 'Avenir', sans-serif;
+}
+
+
+.course-item__name:hover {
+  color: #A9C23F;
+}
+
+.usermenu > ul > li .submenu__title:hover,
+.usermenu > ul > li > a:hover {
+  background: #A9C23F;
+  color: #ffffff;
+}
+
+.usermenu .dropdown-menu > li > a:active, .usermenu .dropdown-menu > li > a:focus, .usermenu .dropdown-menu > li > a:hover {
+  background: #A9C23F;
+  color: #5b6770;
+}
+
+.search-form__open:hover {
+  color: #A9C23F;
+}
+
+.search-form__close:hover {
+  color: #A9C23F;
+}
+
+.submenu__content li a:hover {
+  background: #A9C23F;
+}
+
+.menu > ul > li span > a,
+.menu > ul > li > a {
+  background: #A9C23F;
+  color: #ffffff;
+}
+
+.menu > ul > li span > a:active, .menu > ul > li span > a:hover,
+.menu > ul > li > a:active,
+.menu > ul > li > a:hover {
+  color: #5b6770;
+  background: #ffffff;
+}
+
+.menu > ul > li span > a:focus,
+.menu > ul > li > a:focus {
+  color: #ffffff;
+  background: #A9C23F;
+}
+
+.menu > ul > li span > a.active,
+.menu > ul > li > a.active {
+  color: #5b6770;
+}
+
+.menu > ul > li span > a.active:focus,
+.menu > ul > li > a.active:focus {
+  color: #5b6770;
+}
+
+.course-card__link:hover {
+  color: #ffffff;
+  border-color: #A9C23F;
+  background: #A9C23F;
+}
+
+.course-card__link:hover span {
+  color: #ffffff;
+}
+
+.course-card__link:hover i {
+  color: #ffffff;
+}
+
+.lessons-menu__fav .fa-star {
+  color: #A9C23F;
+}
+
+.library-menu__category-header a:hover {
+  color: #A9C23F;
+}
+
+.library-menu__category-header a:focus {
+  color: #A9C23F;
+}
+
+.library-menu__icon:hover .library-menu__minus, .library-menu__icon:hover .library-menu__plus {
+  color: #A9C23F;
+}
+
+.course-progress__item.watched {
+  background: #A9C23F;
+}
+
+.course-info__tab.active:after, .course-info__tab:hover:after {
+  background: #A9C23F;
+}
+
+.course-info__test:hover {
+  border-color: #A9C23F !important;
+  background: #A9C23F;
+  color: #ffffff !important;
+}
+
+.course-info__test:focus {
+  color: #ffffff !important;
+}
+
+.pagination li.active > a:hover {
+  border-color: #A9C23F;
+}
+
+.bookmarks .bookmark.active {
+  background: #A9C23F;
+  color: #5b6770;
+}
+
+.learning-progress__bar {
+  background: #A9C23F;
+}
+
+.button:focus, .button:hover {
+  border-color: #A9C23F;
+  color: #ffffff;
+  background: #A9C23F;
+}
+
+.course-info__tab.active a:after {
+  background: #A9C23F;
+}
+
+.pagination li.active > a:hover {
+  border-color: #A9C23F;
+}
+
+.bookmarks .bookmark.active {
+  background: #A9C23F;
+  color: #ffffff;
+}
+
+.learning-progress__bar {
+  background: #A9C23F;
+}
+
+.faq .question.active .faq-question {
+  border-top-color: #A9C23F;
+}
+
+.faq-question {
+  border-left-color: #A9C23F;
+}
+
+.faq .question.active .faq-icon {
+  color: #A9C23F;
+  border-color: #A9C23F;
+}
+
+.faq .question.active .faq-question:hover {
+  border-top-color: #A9C23F;
+}
+
+div.title-h1 {
+  border-left-color: #A9C23F;
+}
+
+.modal_close:hover {
+  color: #A9C23F;
+}
+
+.course-info__tab a.active:after, .course-info__tab a:hover:after {
+  background: #A9C23F;
+}
+
+.course-info__test:hover {
+  border-color: #A9C23F !important;
+}
+
+body.ar .faq-question {
+  border-left: none;
+  border-right-color: #A9C23F !important;
+}
+
+.inner-header {
+  background: #ecedeb;
+  border: solid #acadae;
+  border-width: 1px 0;
+  color: #747678;
+}
+
+.modalWindow .content:after {
+  background: #A9C23F;
+}
+.inner-top {
+  background: #5a6770;
+}
+
+.top-library__dropdown {
+  font-family:"Avenir", sans-serif;
+}

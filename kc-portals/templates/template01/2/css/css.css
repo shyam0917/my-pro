@@ -1,0 +1,192 @@
+@charset "utf-8";
+.clear{clear: both;}
+.float{float: left;}
+.rtl{direction: rtl;}
+.transition{-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;}
+.text-align{text-align: left;direction: ltr;}
+
+#lean_overlay, #leanOverlay {position: fixed;z-index:100;top: 0px;left: 0px;height:100%;width:100%;background: #000;display: none;}
+.videoPopUp {display: none;box-shadow: 0px 0px 10px #676566;}
+.videoPopUp div.videoPreviewBlock{width: 800px;height: 600px;}
+.modal_close{position: absolute;z-index: 999;right: 0px;top: 0px;margin-top: -16px;margin-right: -16px;color: #747474;font-size: 12px;cursor:pointer;}
+.modal_close:hover{color:#d3882b;}
+.videoPopUp div.courseTitle{background: #ccc;text-align: center;padding: 10px;font-weight: bold;font-size: 17px;}
+
+.popupWindow{display: none;padding:0px 30px 25px 15px; background: #fff;border: #676566 solid 2px;box-shadow: 0px 0px 10px #676566;width:450px;}
+.popupWindow .content{margin-top: 30px;}
+
+@media (max-width: 800px) {
+    .videoPopUp {width:100%;margin-left: -50% !important;}
+    .videoPopUp .videoPreviewBlock{width:100%;}
+    .videoPopUp .modal_close{margin-right: 0px;}
+}
+
+.popupWindow div.title-h1 h1, .popupWindow div.title-h1 .h1 {padding-top: 15px;}
+div.orange-title{font-size: 18px;font-weight: bold;color: #d3882b;margin-bottom: 10px;}
+
+input[type="text"], input[type="password"], input[type="number"], input[type="email"], textarea, textarea.form-control{border: 2px solid #c1c1c1;border-radius: 0px;box-shadow: none;padding:5px 12px;height: 40px;-webkit-appearance: none;}
+textarea, textarea.form-control{height: 120px;}
+textarea, textarea.form-control{padding: 10px;}
+
+.form-control:focus{box-shadow: none;border-color:#c1c1c1;}
+form.form .label{text-align: right;font-weight: bold;font-size: 16px;color: #333;padding-right: 18px;line-height: 31px;}
+div.form-label{font-weight: bold;font-size: 18px;color: #333;margin-bottom: 30px;}
+div.form-line{margin-bottom: 15px;}
+
+div.terms-and-condition{color: #676566;font-size: 14px;}
+div.terms-and-condition div.title{font-weight: bold;}
+div.terms-and-condition div.text{}
+
+input[type='submit'], input[type='button'] {border: 2px solid #be0b26;border-radius: 0px;box-shadow: none;font-weight: bold;background: #e51837;color: #f7cdd1;font-size: 18px;text-transform: uppercase;height: 40px;width: 176px;}
+input[type='submit']:hover, input[type='button']:hover {border-color: #be0b26;background: #f00;color:#fff;}
+input[type='submit']:focus, input[type='button']:focus {border-color: #be0b26;background: #f00;color:#fff;box-shadow: none;outline: none;}
+
+div.progressOverlay{position: absolute;width: 100%;height: 100%;z-index: 100;}
+div.progressOverlay div.progressOverlayBg{width: 100%;height: 100%;background: #000;opacity: 0.4;position: absolute;margin-left: -15px;z-index: 100;}
+div.progressOverlay div.progressOverlaySpinner{text-align: center;padding-top: 25%;font-size: 60px;}
+
+
+div.courseInfoItem{margin-bottom: 10px;}
+.orangeTitle{font-weight: bold;color:#d3882b;}
+
+
+.red{color: #f00;}
+span.lessonWatched {color: #489F48;}
+
+#noVideoFastForwardingMessage{}
+#noVideoFastForwardingMessage div.wrap{position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;}
+#noVideoFastForwardingMessage div.inner{color: #000;background: #fff;text-align: center;padding: 20px;box-shadow: 0px 0px 10px #000;width: 90%;margin: 260px auto 0px auto;}
+#noVideoFastForwardingMessage div.inner input{margin-top: 10px;width: 50px;cursor: pointer;text-align: center;}
+
+div.lessonArrow{font-size: 30px;padding: 0px 10px;color: #333;}
+div.lessonArrow a{color: #333;}
+div.lessonArrow.prevlesson{float: left;}
+div.lessonArrow.nextlesson{float: right;}
+
+#signInMessagePopup div.content{background: #fff;padding: 20px;font-size: 17px;line-height: 20px;}
+
+div.modalWindow{overflow: hidden;}
+div.modalWindow div.content{position: fixed;left: 50%;top: 300px;width: 300px;margin-left: -160px;padding: 10px;background: #fff;z-index: 1000;border: 1px solid #333;box-shadow: 0px 0px 10px;}
+div.modalWindow div.content div.text{font-size: 16px;margin-bottom: 10px;}
+div.modalWindow div.content div.button input{width:50px; text-align: center;}
+div.modalWindow div.overlay{position: fixed;top: 0px;left: 0px;background: #000;width: 100%;height: 100%;z-index: 999;opacity: 0.4;}
+
+
+div.bookmarks {overflow: hidden;border-bottom: 4px solid #676566;padding-left: 20px;}
+div.bookmark {float: left;line-height: 30px;text-align: center;padding: 0px 5px;width: 130px;background: #f0efef;margin-right: 5px;color: #989697;font-size: 14px;font-weight: bold;cursor: pointer;}
+div.bookmark.active {background: #676566;color: #fff;cursor: default;}
+div.bookmark-content {padding-top: 10px;}
+div.myCourses div.title {font-size: 20px;font-weight: bold;color: #333;margin-bottom: 20px;}
+div.myCourses div.daysLeftIco {float: right;text-align: center;margin: 0px 75px 0px 0px;}
+div.myCourses div.daysLeftIco div.ico {color: #676566;font-size: 55px;}
+div.myCourses div.daysLeftIco div.text {font-size: 18px;font-weight: bold;color: #d3882b;}
+div.myCourses div.totals {overflow: hidden;margin-left: 20px;margin-bottom: 45px;}
+div.myCourses div.totals div.item {overflow: hidden;overflow: hidden;font-size: 16px;font-weight: bold;color: #333;}
+div.myCourses div.totals div.item div.lablel {float: left;width:175px;margin-right:10px;background-position: 0px 10px;background-repeat: repeat-x;background-image: url(data:image/gif;base64,R0lGODlhAgABAIAAAGdlZv///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4zLWMwMTEgNjYuMTQ1NjYxLCAyMDEyLzAyLzA2LTE0OjU2OjI3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjkzMDAyMzAzRjM2NzExRTU4RDAzRDZCNUM5MTUwQjZGIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjkzMDAyMzA0RjM2NzExRTU4RDAzRDZCNUM5MTUwQjZGIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QTUyQjA1QjJGMzUxMTFFNThEMDNENkI1QzkxNTBCNkYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OTMwMDIzMDJGMzY3MTFFNThEMDNENkI1QzkxNTBCNkYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4B//79/Pv6+fj39vX08/Lx8O/u7ezr6uno5+bl5OPi4eDf3t3c29rZ2NfW1dTT0tHQz87NzMvKycjHxsXEw8LBwL++vby7urm4t7a1tLOysbCvrq2sq6qpqKempaSjoqGgn56dnJuamZiXlpWUk5KRkI+OjYyLiomIh4aFhIOCgYB/fn18e3p5eHd2dXRzcnFwb25tbGtqaWhnZmVkY2JhYF9eXVxbWllYV1ZVVFNSUVBPTk1MS0pJSEdGRURDQkFAPz49PDs6OTg3NjU0MzIxMC8uLSwrKikoJyYlJCMiISAfHh0cGxoZGBcWFRQTEhEQDw4NDAsKCQgHBgUEAwIBAAAh+QQAAAAAACwAAAAAAgABAAACAkQKADs=);}
+div.myCourses div.totals div.item div.lablel span{background: #fff;padding-right: 10px;}
+div.myCourses div.totals div.item div.number {float: left;}
+div.titleLined {color: #333;font-size: 20px;font-weight: bold;border-bottom: 1px solid #676566;padding-bottom: 10px;margin-bottom: 20px;}
+div.titleLined span.smaller{font-size: 18px;font-weight: normal;}
+div.myCourses div.coursesProgress div.item {overflow: hidden;clear: both;margin-bottom: 5px;font-size: 16px;}
+div.myCourses div.coursesProgress div.item div.courseTitle {width:295px;margin-right:5px;background-position: 0px 11px;background-repeat: repeat-x;background-image: url(data:image/gif;base64,R0lGODlhAgABAIAAAGdlZv///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4zLWMwMTEgNjYuMTQ1NjYxLCAyMDEyLzAyLzA2LTE0OjU2OjI3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjkzMDAyMzAzRjM2NzExRTU4RDAzRDZCNUM5MTUwQjZGIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjkzMDAyMzA0RjM2NzExRTU4RDAzRDZCNUM5MTUwQjZGIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QTUyQjA1QjJGMzUxMTFFNThEMDNENkI1QzkxNTBCNkYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OTMwMDIzMDJGMzY3MTFFNThEMDNENkI1QzkxNTBCNkYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4B//79/Pv6+fj39vX08/Lx8O/u7ezr6uno5+bl5OPi4eDf3t3c29rZ2NfW1dTT0tHQz87NzMvKycjHxsXEw8LBwL++vby7urm4t7a1tLOysbCvrq2sq6qpqKempaSjoqGgn56dnJuamZiXlpWUk5KRkI+OjYyLiomIh4aFhIOCgYB/fn18e3p5eHd2dXRzcnFwb25tbGtqaWhnZmVkY2JhYF9eXVxbWllYV1ZVVFNSUVBPTk1MS0pJSEdGRURDQkFAPz49PDs6OTg3NjU0MzIxMC8uLSwrKikoJyYlJCMiISAfHh0cGxoZGBcWFRQTEhEQDw4NDAsKCQgHBgUEAwIBAAAh+QQAAAAAACwAAAAAAgABAAACAkQKADs=);}
+div.myCourses div.coursesProgress div.item div.courseTitle span{background: #fff;padding-right: 10px;}
+div.myCourses div.coursesProgress div.item div.progressBlock {margin-right: 10px;width: 110px;}
+div.myCourses div.coursesProgress div.item div.progressBlock div.progressBar {margin-top:6px;background: #c1c1c1;width: 60px;height: 10px;padding-top: 0px;overflow: hidden;}
+div.myCourses div.coursesProgress div.item div.progressBlock div.progressBar div.in{height: 10px;background: #d3882b;}
+div.myCourses div.coursesProgress div.item div.progressBlock div.progressNum {color: #d3882b;margin-left: 65px;}
+div.myCourses div.coursesProgress div.item div.progressBlock.complete div.progressBar div.in{background: #388414;}
+div.myCourses div.coursesProgress div.item div.progressBlock.complete div.progressNum {color: #388414;}
+div.myCourses div.coursesProgress div.item div.info {color: #676566;}
+
+.btm-red-line{border-bottom: 1px solid #e51837;}
+
+
+div.onlogin_alert{}
+div.onlogin_alert div.content{width:800px;margin-left: -400px;top:200px;}
+body.en div.courseContent div.chapter .lesson.lock div.title { padding-left: 9px; }
+body.en .courseContent .lesson.lock i.fa.fa-lock {display:inline;float:left; padding-top:3px;}
+body.ar div.courseContent div.chapter .lesson.lock div.title { padding-right: 9px; }
+body.ar .courseContent .lesson.lock i.fa.fa-lock {display:inline;float:right; padding-top:3px;}
+
+
+@media (max-width: 500px) {
+    .loginPopUp {
+        width: 90%;
+    }
+    .sendFeedback {
+        width: 90%;
+    }
+}
+.menu-btn {
+    background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAARCAMAAAAFWBeyAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAGUExURf///////1V89WwAAAACdFJOU/8A5bcwSgAAABZJREFUeNpiYKAYMGIDVBAdxi4DCDAAfC4AqVVwCqsAAAAASUVORK5CYII=');
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    display: none;
+    height: 44px;
+    width: 21px;
+}
+@media (max-width: 800px) {
+    div.onlogin_alert div.content{
+        display: none;
+        width: 90%;
+        margin-left: auto;
+        top: 10px;
+    }
+}
+div.popupText{
+    font-size: 18px;
+    text-align: center;
+    margin: 15px 0px 15px 0px;
+    overflow: hidden;
+}
+div.popupButtons{
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+div.popupButtons div:first-child{
+	float: left;
+	margin-left: 15px;
+	margin-right: 5px;
+}
+div.popupButtons div:last-child{
+	float: right;
+	margin-right: 15px;
+	margin-left: 5px;
+}
+
+#saveLessonProgressErrorMessage{
+	position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 999999;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #000;
+    box-shadow: 0px 0px 15px #000;
+    font-size: 15px;
+    text-align: center;
+}
+#saveLessonProgressErrorMessage input{
+	margin-top:10px;
+	text-align: center;
+}
+#quizFrame{
+    width: 80%;
+    height: 90%;
+    border: 10pt solid #aaaaaa;
+    border-radius: 10pt;
+}
+#CertificateWindow{
+    width: 80%;
+    height: 90%;
+    border: 10pt solid #aaaaaa;
+    border-radius: 10pt;
+}
+#quizFrame iframe, #CertificateWindow iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.button {
+    text-transform: capitalize;
+}

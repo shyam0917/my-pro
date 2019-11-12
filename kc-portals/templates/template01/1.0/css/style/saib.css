@@ -1,0 +1,129 @@
+.course-item__name:hover {
+  color: #ffcd00;
+}
+
+.course-item__img--business {
+  background: url(../../images/style/saib/course-item-1.jpg) no-repeat center/cover;
+}
+
+.course-item__img--computer {
+  background: url(../../images/style/saib/course-item-2.jpg) no-repeat center/cover;
+}
+
+.course-item__img--safety {
+  background: url(../../images/style/saib/course-item-3.jpg) no-repeat center/cover;
+}
+
+.course-item__img--banking {
+  background: url(../../images/style/saib/course-item-4.jpg) no-repeat center/cover;
+}
+
+.course-item__img--saibwb {
+  background: url(../../images/style/saib/course-item-5.jpg) no-repeat top right/cover;
+}
+
+.usermenu > ul > li .submenu__title:hover,
+.usermenu > ul > li > a:hover {
+  background: #ffcd00;
+  color: #333333;
+}
+
+.usermenu .dropdown-menu > li > a:hover {
+  background: #ffcd00;
+  color: #333333;
+}
+
+.search-form__open:hover {
+  color: #ffcd00;
+}
+
+.search-form__close:hover {
+  color: #ffcd00;
+}
+
+.submenu__content li a:hover {
+  background: #ffcd00;
+}
+
+.menu > ul > li span > a,
+.menu > ul > li > a {
+  background: #ffcd00;
+}
+
+.menu > ul > li span > a:focus, .menu > ul > li span > a:active, .menu > ul > li span > a:hover,
+.menu > ul > li > a:focus,
+.menu > ul > li > a:active,
+.menu > ul > li > a:hover {
+  background: #ffd21a;
+}
+
+.course-card__link:hover {
+  color: #333333;
+  border-color: #ffcd00;
+  background: #ffcd00;
+}
+
+.course-card__link:hover span {
+  color: #333333;
+}
+
+.course-card__link:hover i {
+  color: #333333;
+}
+
+.lessons-menu__fav .fa-star {
+  color: #ffcd00;
+}
+
+.library-menu__category-header a:hover {
+  color: #ffcd00;
+}
+
+.library-menu__category-header a:focus {
+  color: #ffcd00;
+}
+
+.library-menu__icon:hover .library-menu__minus, .library-menu__icon:hover .library-menu__plus {
+  color: #ffcd00;
+}
+
+.course-progress__item.watched {
+  background: #ffcd00;
+}
+
+.course-info__tab.active:after, .course-info__tab:hover:after {
+  background: #ffcd00;
+}
+
+.course-info__test:hover {
+  border-color: #ffcd00 !important;
+  background: #ffcd00;
+  color: #333333 !important;
+}
+
+.course-info__test:focus {
+  color: #333333 !important;
+}
+
+.pagination li.active > a:hover {
+  border-color: #ffcd00;
+}
+
+.bookmarks .bookmark.active {
+  background: #ffcd00;
+  color: #333333;
+}
+
+.learning-progress__bar {
+  background: #ffcd00;
+}
+
+.button:focus, .button:hover {
+  border-color: #ffcd00;
+  color: #000000;
+  background: #ffcd00;
+}
+
+.modalWindow .content:after {
+  background: #ffcd00;
+}

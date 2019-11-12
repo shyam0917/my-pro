@@ -1,0 +1,9 @@
+{
+    "APIUrl": "\/\/api.knowledgecity.com\/v2\/",
+    "quizSite": "\/\/kcquiz.knowledgecity.com\/",
+    "CDNPortal": "\/\/cdn0.knowledgecity.com\/",
+    "CDNJson": "\/\/cdn0.knowledgecity.com\/",
+    "CDNVendors": "\/\/cdn0.knowledgecity.com\/vendors\/",
+    "LocalStorageStamp": 1,
+    "allowPortalRedirect2Domain": false
+}

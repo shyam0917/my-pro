@@ -1,0 +1,8 @@
+<h2 class="inner-header__title">
+	<span class="text-capitalize">{{title}}</span>
+</h2>
+<p class="inner-header__subtitle">
+	{{#subtitle}}
+	<span class="text-capitalize">{{subtitle}}</span>
+	{{/subtitle}}
+</p>

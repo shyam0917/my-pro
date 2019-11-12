@@ -1,0 +1,126 @@
+<section class="inner-header inner-header--signup-content">
+	<div class="cnt-wide">
+        <h1 class="inner-hero__title">{{heroTitle}}</h1>
+        <p class="inner-hero__subtitle">{{{heroSubtitle}}}</p>
+	</div>
+</section>
+<section id="contact-us-cc" class="cc-cta sign-up-cc">
+    <div class="cnt-wide">
+        <div class="cta cc-cta">
+            <h2>{{contactFormTitle}}</h2>
+            <hr align="center" class="orangebar">
+            <!-- <p style="padding-top:0px;padding-bottom:0px;">{{contactFormDescription}}</p> -->
+            <p style="padding-top:0px;padding-bottom:0px;"></p>
+            <form id="cc-contact" class="cc-contact_form" data-handler="onSubmitForm" method="post" action="">
+            <div class="cc-contact__column">
+                <input
+                        type="text"
+                        class="cc-contact__input"
+                        value=""
+                        id="name_f"
+                        name="name_f"
+                        placeholder="{{mui.pageContent.formlabel.name}}"
+                        required="true"
+                        data-invalidMessage="{{mui.form.requiredField.invalidName}}"
+                />
+                <input
+                        type="email"
+                        class="cc-contact__input"
+                        value=""
+                        id="email"
+                        name="email"
+                        placeholder="{{mui.pageContent.formlabel.email}}"
+                        required="true"
+                        data-invalidMessage="{{mui.form.requiredField.invalidEmail}}"
+                        data-invalidMessageWrongType="{{mui.form.requiredField.invalidTypeEmail}}"
+                />
+                <textarea
+                        class="cc-contact__textarea"
+                        id="comments"
+                        name="comments"
+                        placeholder="{{mui.pageContent.formlabel.message}}"
+                        required="true"
+                        data-invalidMessage="{{mui.form.requiredField.invalidHowWeCanHelp}}"
+                ></textarea>
+            </div>
+            <div class="cc-contact__column">
+                <select name="subject" 
+                        class="cc-contact__subject"
+                        value=""
+                        id="subject"
+                        name="subject"
+                        placeholder="{{mui.pageContent.formlabel.subject}}"
+                        required="true"
+                        data-invalidMessage="{{mui.form.requiredField.invalidSubject}}">
+                    <option value="Content Creation">{{contactFormSubject}} {{contactFormSubjectContent}}</option>
+                    <option value="Learning Library">{{contactFormSubject}} {{contactFormSubjectLearning}}</option>
+                    <option value="LMS">{{contactFormSubject}} {{contactFormSubjectLms}}</option>
+                    <option value="General">{{contactFormSubject}} {{contactFormSubjectGeneral}}</option>
+                </select>
+                <div class="select-boxes-wrapper">
+                    <p class="select-boxes-title">{{contactFormCheckboxTitle}}</p>
+                    <div class="select-boxes first">
+                        <label><input type="checkbox" name="cc" value="Script Writing" > {{contactFormCheckboxList1}}</label>
+                        <label><input type="checkbox" name="cc" value="Copy Editing" > {{contactFormCheckboxList2}}</label>
+                        <label><input type="checkbox" name="cc" value="3D Animation"> {{contactFormCheckboxList3}}</label>
+                        <label><input type="checkbox" name="cc" value="Language Localization"> {{contactFormCheckboxList4}}</label>
+                        <label><input type="checkbox" name="cc" value="Course Design"> {{contactFormCheckboxList5}}</label>
+                     </div>
+                     <div class="select-boxes second" >
+                        <label><input type="checkbox" name="cc" value="Proof Reading"> {{contactFormCheckboxList6}}</label>
+                        <label><input type="checkbox" name="cc" value="Motion Graphics"> {{contactFormCheckboxList7}}</label>
+                        <label><input type="checkbox" name="cc" value="Greenscreen Shooting"> {{contactFormCheckboxList8}}</label>
+                        <label><input type="checkbox" name="cc" value="Gamification"> {{contactFormCheckboxList9}}</label>
+                        <label><input type="checkbox" name="cc" value="Course Deployment"> {{contactFormCheckboxList10}}</label>
+                    </div>
+                    <div class="select-boxes third">
+                        <label><input type="checkbox" name="cc" value="Storyboarding"> {{contactFormCheckboxList11}}</label>
+                        <label><input type="checkbox" name="cc" value="Voiceover Recording"> {{contactFormCheckboxList12}}</label>
+                        <label><input type="checkbox" name="cc" value="Character Creation"> {{contactFormCheckboxList13}}</label>
+                        <label><input type="checkbox" name="cc" value="Test Creation"> {{contactFormCheckboxList14}}</label>
+                        <label><input type="checkbox" name="cc" value="Course Hosting"> {{contactFormCheckboxList15}}</label>
+                    </div>
+                </div>
+            </div>
+            <div class="cc-contact__row"><button class="cc-contact__btn btn" type="submit">{{mui.buttonLabel.submit}}</button>
+            </div>
+            
+        </form>
+        </div>
+    </div>
+</section>
+
+
+<section class="bottom-links" style="padding-top:40px;">
+    <div class="cnt-wide">
+    	<div class="bottom-title-wrapper"><h2> {{bottomLinksTitle}}</h2></div>
+        <div class="bot-columns about-us">
+            <div class="">
+                <a href="{{site.url_with_lang}}learningLibrary"><div class="bottom-link__img">
+                <img src="{{VIEW}}images/Bottom-link_LL--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+                height:auto" alt="">
+                </div>
+                </a>
+                <h2>{{botLinksLearningTitle}}</h2>
+                 <p>{{botLinksLearningDesc}} <a href="{{site.url_with_lang}}learningLibrary">{{learnMore}}</a></p>
+            </div>
+            <div class="">
+                <a href="{{site.url_with_lang}}lms"><div class="bottom-link__img">
+                    <img src="{{VIEW}}images/bottom-link_LMS--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+                height:auto" alt="">
+                </div>
+                </a>
+                <h2>{{botLinksLmsTitle}}</h2>
+                 <p>{{botLinksLmsDesc}} <a href="{{site.url_with_lang}}lms">{{learnMore}}</a></p>
+            </div>
+            <div class="">
+                <a href="{{site.url_with_lang}}contentCreation"><div class="bottom-link__img">
+                <img src="{{VIEW}}images/Bottom-link_CC--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+                height:auto alt=""">
+                </div></a>
+                <h2>{{botLinksContentTitle}}</h2>
+                 <p>{{botLinksContentDesc}} <a href="{{site.url_with_lang}}contentCreation"> {{learnMore}}</a></p>
+            </div>
+        </div>
+    </div>
+</section>

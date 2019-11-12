@@ -1,0 +1,208 @@
+.course-item__img--ddsca {
+  background: url(../../images/style/ddsca/ddsca.png) no-repeat center, #D9D9D9;
+}
+
+.course-item__img--business {
+  background: url(../../images/style/ddsca/course-item-1.jpg) no-repeat center/cover;
+}
+
+.course-item__img--computer {
+  background: url(../../images/style/ddsca/course-item-2.jpg) no-repeat center/cover;
+}
+
+.course-item__img--safety {
+  background: url(../../images/style/ddsca/safety.png) no-repeat center/cover;
+}
+
+.course-item__img--banking {
+  background: url(../../images/style/ddsca/course-item-4.jpg) no-repeat center 0/cover;
+}
+
+.course-item__name:hover {
+  color: #911f1f;
+}
+
+.usermenu > ul > li .submenu__title:hover,
+.usermenu > ul > li > a:hover {
+  background: #911f1f;
+  color: #ffffff;
+}
+
+.usermenu .dropdown-menu > li > a:active, .usermenu .dropdown-menu > li > a:focus, .usermenu .dropdown-menu > li > a:hover {
+  background: #911f1f;
+  color: #333333;
+}
+
+.search-form__open:hover {
+  color: #911f1f;
+}
+
+.search-form__close:hover {
+  color: #911f1f;
+}
+
+.submenu__content li a:hover {
+  background: #911f1f;
+}
+
+.menu > ul > li span > a,
+.menu > ul > li > a {
+  background: #911f1f;
+  color: #ffffff;
+}
+
+.menu > ul > li span > a:active, .menu > ul > li span > a:hover,
+.menu > ul > li > a:active,
+.menu > ul > li > a:hover {
+  color: #333333;
+  background: #ffffff;
+}
+
+.menu > ul > li span > a:focus,
+.menu > ul > li > a:focus {
+  color: #ffffff;
+  background: #911f1f;
+}
+
+.menu > ul > li span > a.active,
+.menu > ul > li > a.active {
+  color: #333333;
+}
+
+.menu > ul > li span > a.active:focus,
+.menu > ul > li > a.active:focus {
+  color: #333333;
+}
+
+.course-card__link:hover {
+  color: #ffffff;
+  border-color: #911f1f;
+  background: #911f1f;
+}
+
+.course-card__link:hover span {
+  color: #ffffff;
+}
+
+.course-card__link:hover i {
+  color: #ffffff;
+}
+
+.lessons-menu__fav .fa-star {
+  color: #911f1f;
+}
+
+.library-menu__category-header a:hover {
+  color: #911f1f;
+}
+
+.library-menu__category-header a:focus {
+  color: #911f1f;
+}
+
+.library-menu__icon:hover .library-menu__minus, .library-menu__icon:hover .library-menu__plus {
+  color: #911f1f;
+}
+
+.course-progress__item.watched {
+  background: #911f1f;
+}
+
+.course-info__tab.active:after, .course-info__tab:hover:after {
+  background: #911f1f;
+}
+
+.course-info__test:hover {
+  border-color: #911f1f !important;
+  background: #911f1f;
+  color: #ffffff !important;
+}
+
+.course-info__test:focus {
+  color: #ffffff !important;
+}
+
+.pagination li.active > a:hover {
+  border-color: #911f1f;
+}
+
+.bookmarks .bookmark.active {
+  background: #911f1f;
+  color: #333333;
+}
+
+.learning-progress__bar {
+  background: #911f1f;
+}
+
+.button:focus, .button:hover {
+  border-color: #911f1f;
+  color: #ffffff;
+  background: #911f1f;
+}
+
+.course-info__tab.active a:after {
+  background: #911f1f;
+}
+
+.pagination li.active > a:hover {
+  border-color: #911f1f;
+}
+
+.bookmarks .bookmark.active {
+  background: #911f1f;
+  color: #ffffff;
+}
+
+.learning-progress__bar {
+  background: #911f1f;
+}
+
+.faq .question.active .faq-question {
+  border-top-color: #911f1f;
+}
+
+.faq-question {
+  border-left-color: #911f1f;
+}
+
+.faq .question.active .faq-icon {
+  color: #911f1f;
+  border-color: #911f1f;
+}
+
+.faq .question.active .faq-question:hover {
+  border-top-color: #911f1f;
+}
+
+div.title-h1 {
+  border-left-color: #911f1f;
+}
+
+.modal_close:hover {
+  color: #911f1f;
+}
+
+.course-info__tab a.active:after, .course-info__tab a:hover:after {
+  background: #911f1f;
+}
+
+.course-info__test:hover {
+  border-color: #911f1f !important;
+}
+
+body.ar .faq-question {
+  border-left: none;
+  border-right-color: #911f1f !important;
+}
+
+.inner-header {
+  background: #ecedeb;
+  border: solid #acadae;
+  border-width: 1px 0;
+  color: #747678;
+}
+
+.modalWindow .content:after {
+  background: #911f1f;
+}

@@ -1,0 +1,290 @@
+<section class="inner-header inner-header--lms">
+    <div class="cnt-wide">
+        <h1>{{HeroTitle}}</h1>
+        <p class="inner-header__subtitle {{^isCountryAllowed}}NA{{/isCountryAllowed}}">
+            {{#isCountryAllowed}}
+            {{{HeroDescription}}}
+            {{/isCountryAllowed}}
+            {{^isCountryAllowed}}
+            {{{HeroDescriptionNoUs}}}
+            {{/isCountryAllowed}}
+        </p>
+        <div class="main-buttons">
+            {{#isCountryAllowed}}
+            <!-- <div class="lms-button" style="text-align:right;"><a data-handler="onScrollNode" data-to="#lms-content" class="lms-free">{{HeroFree}}</a></div> -->
+            {{/isCountryAllowed}}
+            <!-- <div class="lms-button" style="text-align:left;"> <a data-handler="onScrollNode" data-to="#lms-features" class="lms-features">{{HeroFeatures}}</a></div> -->
+        </div>
+        <!-- <div class="ipad">
+            <div class="bg-mainipad ipad-1" data-position="1"></div>
+            <div class="before-image ipad-2" style="position: absolute; height: 1px; width:1px;"></div>
+            <div class="before-image ipad-3" style="position: absolute; height: 1px; width:1px;"></div>
+        </div> -->
+        <div class="creator-wrapper">
+            <div class="creator-wrapper__image-wrapper">
+                <img src="{{VIEW}}images/LMS_Software--v{{site.LocalStorageStamp}}.png" alt="LMS Software">
+            </div>
+            <div class="creator-wrapper__form-wrapper">
+                <div class="creator-wrapper__message-container"></div>
+                <form id="lmsCreator" class="creator-wrapper__lms-form" autocomplete="false">
+                    <input autocomplete="false" name="hidden" type="text" style="display:none;">
+                    <input type="hidden" value="{{site.url}}lms/" name="url">
+                    <div class="creator-wrapper__form-row">
+                        <div class="input-wrapper">
+                            <input type="text" id="full_name" class="lms-form__input" name="full_name" placeholder="{{fullName}}" autocomplete="nope" required />
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="text" id="position" class="lms-form__input" name="position"  placeholder="{{position}}"  autocomplete="nope" required />
+                        </div>
+                    </div>
+                    {{#isAllowed}}
+                    <div class="creator-wrapper__form-row row--portal">
+                        <div class="input-wrapper">
+                            <input type="text" id="portal_code" class="lms-form__input" name="portal_code" placeholder="{{formPortalName}}" autocomplete="nope" required /><span class="lms-domain">.knowledgecity.com</span>
+                        </div>
+                    </div>
+                    {{/isAllowed}}
+                    <div class="creator-wrapper__form-row">
+                        <div class="input-wrapper">
+                            <input type="text" id="email" class="lms-form__input" name="email" placeholder="{{workEmail}}" autocomplete="nope" required />
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="text" id="phone_number" class="lms-form__input" name="phone_number" placeholder="{{phoneNumber}}" autocomplete="nope" required />
+                        </div>
+                    </div>
+                    <div class="creator-wrapper__form-row">
+                        <div class="input-wrapper">
+                          <input type="text" id="organization_name" class="lms-form__input" name="organization_name" placeholder="{{organizationName}}" autocomplete="nope" required />
+                        </div>
+                        <div class="input-wrapper" id="s2Container">
+                            <select id="employees" class="lms-form__select" name="employees" placeholder="{{organizationSize}}" required>
+                                <option value="false">{{organizationSize}}</option>
+                                <option value="5">1-5</option>
+                                <option value="25">6-25</option>
+                                <option value="100">26-100</option>
+                                <option value="500">101-500</option>
+                                <option value="1000">501-1000</option>
+                                <option value="1000">1000+</option>
+                            </select>
+                        </div>
+                    </div>
+                    {{#isAllowed}}
+                    <div class="creator-wrapper__form-row">
+                        <div class="lms-form__input-checkbox">
+                            <input id="terms" type="checkbox" class="input--checkbox" name="terms" required /> {{formTerms}} <a class="Terms" href="{{site.url}}lms/terms/{{site.language}}/" target="_blank" >{{formTermsLink}}</a>
+                        </div>
+                    </div>
+                    {{/isAllowed}}
+                    <div class="creator-wrapper__form-row last">
+                        {{#isAllowed}}
+                        <input type="submit" class="lms-form__btn btn" name="submitcreate" value="{{formButtonNA}}" />
+                        {{/isAllowed}}
+                        {{^isAllowed}}
+                        <input type="submit" class="lms-form__btn btn" name="submitcreate" value="{{formButton}}" />
+                        {{/isAllowed}}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="index-clients">
+    <div class="cnt">
+        <!-- <h2 class="index-title">{{ourClients}}</h2> -->
+        <div class="index-clients__carousel owl-carousel" id="clientsCarousel">
+            {{#clients}}
+            <div class="index-client">
+                <img class="index-client__img" src="{{logo}}"/>
+            </div>
+            {{/clients}}
+        </div>
+        <div class="owl-nav">
+            <span class="owl-nav__prev" data-handler="onPrevClients"></span>
+            <span class="owl-nav__next" data-handler="onNextClients"></span>
+        </div>
+    </div>
+</section>
+
+<section class="lms-intro">
+    <div class="cnt">
+        <div class="twocolumns">
+            <div><h2>{{chooseTitle}}</h2>
+                <p>
+                    {{#isCountryAllowed}}
+                    {{{chooseDescription}}}
+                    {{/isCountryAllowed}}
+                    {{^isCountryAllowed}}
+                    {{{chooseDescriptionNoUs}}}
+                    {{/isCountryAllowed}}
+                </p>
+            </div>
+            <div>
+                <a href="#videoWindow" data-handler="onShowVideo"><img src="{{VIEW}}images/laptop--v{{site.LocalStorageStamp}}.png" data-handler="onOpenPreview" style="width:100%;"></a></div>
+        </div>
+    </div>
+    <div class="cnt-wide">
+        <div class="clear-icon-boxes lms-boxes">
+            <div class="clear-icon-box">
+                <img src="{{VIEW}}images/Icon_Dashboard--v{{site.LocalStorageStamp}}.png">
+                <h4>{{benefitsDashboardTitle}}</h4>
+                <p class="icon-text">{{benefitsDashboardDescription}}</p>
+            </div>
+            <div class="clear-icon-box">
+                <img src="{{VIEW}}images/Icon_Administrator--v{{site.LocalStorageStamp}}.png">
+                <h4>{{benefitsCloudTitle}}</h4>
+                <p class="icon-text">{{benefitsCloudDescription}}.</p>
+            </div>
+            <div class="clear-icon-box">
+                <img src="{{VIEW}}images/Icon_Cloud_2--v{{site.LocalStorageStamp}}.png">
+                <h4>{{mappingTitle}}</h4>
+                <p class="icon-text">{{mappingDescription}}</p>
+            </div>
+            <div class="clear-icon-box">
+                <img src="{{VIEW}}images/Icon_Cert--v{{site.LocalStorageStamp}}.png">
+                <h4>{{testingTitle}}</h4>
+                <p class="icon-text">{{testingDescription}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="lms-cta">
+    <div class="cnt-wide">
+        <div class="cta">
+            <div class="cta-header">
+                {{#isCountryAllowed}}
+                {{ribbonTitle}}
+                {{/isCountryAllowed}}
+                {{^isCountryAllowed}}
+                {{ribbonTitleNA}}
+                {{/isCountryAllowed}}
+            </div>
+            <div class="cta-subheader">{{ribbonDescription}}</div>
+            <div class="header-button">
+                <div class="header-button-inner" style="padding-top:15px;">
+                    {{#isCountryAllowed}}
+                    <button data-handler="onScrollNode" data-to="#lms-content" class="btn sign-up freetrial">{{formButtonNA}}</button>
+                    {{/isCountryAllowed}}
+                    {{^isCountryAllowed}}
+                    <button data-handler="onScrollNode" data-to="#full_name" class="btn sign-up freetrial">{{formButton}}</button>
+                    {{/isCountryAllowed}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="lms-features" class="lms-section">
+    <div class="cnt-wide">
+        <div class="twocolumns">
+            <div><h2>{{featuresTitle}}</h2>
+                <hr align="left">
+                <p>{{featuresDescription}}</p>
+            </div>
+            <div><img src="{{VIEW}}images/screenshots--v{{site.LocalStorageStamp}}.jpg" style="width:100%;"></div>
+        </div>
+    </div>
+</section>
+
+<section class="lms-section" style="background-color:#f8f8f8;">
+    <div class="cnt-wide">
+        <div class="twocolumns">
+            <div class="twocolumns__1" style="padding-top:0px;"><img src="{{VIEW}}images/Learning_Paths--v{{site.LocalStorageStamp}}.png" style="width:100%;"></div>
+            <div class="twocolumns__1"><h2>{{learningPathTtitle}}</h2>
+                <hr align="left">
+                <p>{{learningPathDescription}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="lms-section">
+    <div class="cnt-wide">
+        <div class="twocolumns">
+            <div><h2>{{generateTitle}}</h2>
+                <hr align="left">
+                <p>{{generateDescription}}</p>
+            </div>
+            <div><img src="{{VIEW}}images/lms-devices--v{{site.LocalStorageStamp}}.png" style="width:100%;padding-top:20px;"></div>
+        </div>
+    </div>
+</section>
+
+<section class="icon-section">
+    <div class="cnt-wide" style="text-align:center;"><h2>{{featIconsTitle}}</h2>
+        <div class="threecolumns-row">
+            <div class="threecolumns">
+                <div class="icon-image"><img src="{{VIEW}}images/icon_upload_duo--v{{site.LocalStorageStamp}}.png"></div>
+                <div class="icon-blurb"><h4>{{featIconsUsersTitle}}</h4><p>{{featIconsUsersDescription}}</p></div>
+            </div>
+            <div class="threecolumns">
+                <div class="icon-image"><img src="{{VIEW}}images/icon_courses_duo--v{{site.LocalStorageStamp}}.png"></div>
+                <div class="icon-blurb"><h4>{{featIconsCoursesTitle}}</h4><p>{{featIconsCoursesDescription}}</p></div>
+            </div>
+            <div class="threecolumns">
+                <div class="icon-image"><img src="{{VIEW}}images/icon_video_duo--v{{site.LocalStorageStamp}}.png"></div>
+                <div class="icon-blurb"><h4>{{featIconsConentTitle}}</h4><p>{{featIconsConentDescription}}</p></div>
+            </div>
+            <div class="threecolumns">
+                <div class="icon-image"><img src="{{VIEW}}images/icon_test_duo--v{{site.LocalStorageStamp}}.png"></div>
+                <div class="icon-blurb"><h4>{{featIconsProficenyTitle}}</h4><p>{{featIconsProficenyDescription}}</p></div>
+            </div>
+            <div class="threecolumns">
+                <div class="icon-image"><img src="{{VIEW}}images/icon_certificate_duo--v{{site.LocalStorageStamp}}.png"></div>
+                <div class="icon-blurb"><h4>{{featIconsCertificatesTitle}}</h4><p>{{featIconsCertificatesDescription}}</p></div>
+            </div>
+            <div class="threecolumns">
+                <div class="icon-image"><img src="{{VIEW}}images/icon_ROI_duo--v{{site.LocalStorageStamp}}.png"></div>
+                <div class="icon-blurb"><h4>{{featIconsRoiTitle}}</h4><p>{{featIconsRoiDescription}}</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="lms-content" class="lms-cta">
+    <div class="cnt">
+        <div class="cta">
+            <div class="cta-header">{{{ribbonFormTitle}}}</div>
+            <div class="cta-subheader"> {{ribbonFormSubtitleNoUs}}</div>
+            <div class="header-button">
+                <div class="header-button-inner" style="padding-top:15px;">
+                    <button data-handler="onScrollNode" data-to="#full_name" class="btn sign-up freetrial">{{formButton}}</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<section class="bottom-links" style="padding-top:40px;">
+    <div class="cnt-wide">
+        <div class="bot-columns">
+            <div class="">
+                <a href="{{site.url_with_lang}}learningLibrary"><div class="bottom-link__img">
+                <img src="{{VIEW}}images/Bottom-link_LL--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+                height:auto">
+                </div>
+                </a>
+                <h2>{{bottomLinksLearningTitle}}</h2>
+                <p>{{bottomLinksLearningDescription}} <a href="{{site.url_with_lang}}learningLibrary">{{learnMore}}</a></p>
+            </div>
+            <div class="">
+                <a href="{{site.url_with_lang}}contentCreation"><div class="bottom-link__img">
+                <img src="{{VIEW}}images/Bottom-link_CC--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+                height:auto">
+                </div></a>
+                <h2>{{bottomLinksContentTitle}}</h2>
+                <p>{{bottomLinksContentDescription}} <a href="{{site.url_with_lang}}contentCreation"> {{learnMore}}</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="videoWindow" class="modal" style="display: none;">
+    <a  rel="closeModal" class="modal__close modal_close">×</a>
+    <div class="content">
+        <div class="modal__text previewLMS" id="modal__text"></div>
+    </div>
+</div>

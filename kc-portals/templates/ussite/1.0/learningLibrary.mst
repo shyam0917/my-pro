@@ -1,0 +1,447 @@
+<div class="inner-hero inner-hero--learningLibrary">
+    <div class="cnt-wide ll-hero-wrapper">
+        <div class='ll-hero-content'>
+            <div class='hero-slider-container'>
+                <div id="start" class="hero-slider-wrapper active">
+                    <h1 class="inner-hero__title">{{heroTitle}}</h1>
+                    <h3>{{heroTitleH3}}</h3>
+                    <p class="inner-hero__subtitle">{{heroSubtitle}}</p>
+                </div>
+                <div id="hero-business" class="hero-slider-wrapper">
+                    <h2 class="inner-hero__title">{{tabbusinessTitle}}</h2>
+                    <h3>{{tabbusinesSubtitle}}</h3>
+
+                    <p class="inner-hero__subtitle">{{tabbusinesDescription}}</p>
+                    <ul class='business'>
+                        {{#list_business}}
+                        <li class="{{class}}"><a href="{{url}}">{{name}}</a></li>
+                        {{/list_business}}
+                    </ul>
+                </div>
+                <div id="hero-computer" class="hero-slider-wrapper">
+                    <h2 class="inner-hero__title">{{tabcomputerTitle}}</br>{{tabcomputerSubtitle}}</h2>
+                    <p class="inner-hero__subtitle">{{tabcomputerDescription}}</p>
+                    <ul class='computer'>
+                        {{#list_computer}}
+                        <li class="{{class}}"><a href="{{url}}">{{name}}</a></li>
+                        {{/list_computer}}
+                    </ul>
+                </div>
+                <div id="hero-safety" class="hero-slider-wrapper">
+                    <h2 class="inner-hero__title">{{tabsafetyTitle}}</br>{{tabsafetySubtitle}}</h2>
+                    <p class="inner-hero__subtitle">{{tabsafetyDescription}}</p>
+                    <ul class='safety'>
+                        {{#list_safety}}
+                        <li class="{{class}}"><a href="{{url}}">{{name}}</a></li>
+                        {{/list_safety}}
+                    </ul>
+                </div>
+                <div id="hero-compliance" class="hero-slider-wrapper">
+                    <h2 class="inner-hero__title">{{tabcomplianceTitle}}</br>{{tabcomplianceSubtitle}}</h2>
+                    <p class="inner-hero__subtitle">{{tabcomplianceDescription}}</p>
+                    <ul class='compliance'>
+                        {{#list_compliance}}
+                        <li class="{{class}}"><a href="{{url}}">{{name}}</a></li>
+                        {{/list_compliance}}
+                    </ul>
+                </div>
+                <div id="hero-finance" class="hero-slider-wrapper">
+                    <h2 class="inner-hero__title">{{tabfinanceTitle}}</br>{{tabfinanceSubtitle}}</h2>
+                    <p class="inner-hero__subtitle">{{tabfinanceDescription}}</p>
+                    <ul class='finance'>
+                        {{#list_finance}}
+                        <li class="{{class}}"><a href="{{url}}">{{name}}</a></li>
+                        {{/list_finance}}
+                    </ul>
+                </div>
+            </div>
+            <div class="button-wrapper">
+                <div class="lms-button"><a href="{{site.url_with_lang}}signUp/type/business" class="lms-free">{{mui.buttonLabel.tryItFree}}</a></div>
+                <div class="lms-button"><a data-handler="onScrollNode" data-to="#library_tabs" class="lms-features">{{learnMore}}</a></div>
+            </div>
+            <ul class="dot-wrapper">
+                <li><span class="circle" data-handler="onDotClick" data-wrapper="business"></span><span class="tooltip">{{businessTitle}}</span></li>
+                <li><span class="circle" data-handler="onDotClick" data-wrapper="computer"></span><span class="tooltip">{{computerTitle}}</span></li>
+                <li><span class="circle" data-handler="onDotClick" data-wrapper="safety"></span><span class="tooltip">{{safetyTitle}}</span></li>
+                <li><span class="circle" data-handler="onDotClick" data-wrapper="compliance"></span><span class="tooltip">{{complianceTitle}}</span></li>
+                <li><span class="circle" data-handler="onDotClick" data-wrapper="finance"></span><span class="tooltip">{{financeTitle}}</span></li>
+            </ul>
+        </div>
+        <div class="ll-hero-library-images">
+            <a class="header-selector" data-handler="onChangeHeroContent" data-wrapper="business">
+                <div class="block">
+                    <div class="block-1 business">
+                        <div class="overlay"></div>
+                        <div class="centered">{{businessTitle}}</div>
+                    </div>
+                </div>
+            </a>
+            <a class="header-selector" data-handler="onChangeHeroContent" data-wrapper="computer">
+                <div class="block">
+                    <div class="block-1 computer">
+                        <div class="overlay"></div>
+                        <div class="centered">{{computerTitle}}</div>
+                    </div>
+                </div>
+            </a>
+            <a class="header-selector" data-handler="onChangeHeroContent" data-wrapper="safety">
+                <div class="block">
+                    <div class="block-1 safety">
+                        <div class="overlay">
+                        </div><div class="centered">{{safetyTitle}}</div>
+                    </div>
+                </div>
+            </a>
+            <a class="header-selector" data-handler="onChangeHeroContent" data-wrapper="compliance">
+                <div class="block">
+                    <div class="block-1 compliance">
+                        <div class="overlay"></div>
+                        <div class="centered">{{complianceTitle}}</div>
+                    </div>
+                </div>
+            </a>
+            <a class="header-selector" data-handler="onChangeHeroContent" data-wrapper="finance">
+                <div class="block">
+                    <div class="block-1 finance">
+                        <div class="overlay"></div>
+                        <div class="centered">{{financeTitle}}</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<section class="library-devices">
+    <div class="cnt-wide">
+        <div class="columns">
+            <img src="{{VIEW}}images/learning-library_devices--v{{site.LocalStorageStamp}}.jpg" alt="">
+            <div class="column-50">
+                <h2>{{devicesTitle}}</h2>
+                <p>{{devicesDescription}}</p>
+                <a href="{{site.url_with_lang}}library/6781/finance/">{{devicesLink}}</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <div id="library_tabs" class="library__tabs">
+        <div class="">
+                <div class="tab">
+                  <button id="defaultOpen" class="tablinks active" data-handler="onOpenTab" data-library="Business">{{businessTitle}}</button>
+                  <button class="tablinks" data-handler="onOpenTab" data-library="Computer">{{computerTitle}}</button>
+                  <button class="tablinks" data-handler="onOpenTab" data-library="Safety">{{safetyTitle}}</button>
+                  <button class="tablinks" data-handler="onOpenTab" data-library="Compliance">{{complianceTitle}}</button>
+                  <button class="tablinks" data-handler="onOpenTab" data-library="Finance">{{financeTitle}}</button>
+                </div>
+                <div class="tab-content-container">
+            <div id="Business" class="tabcontent inner-tab__business" style="display:block;">
+                <div class="inner-tab_copy">
+                    <h2>{{browseOurBusiness}}</h2>
+                    <div class="tab-categories">
+
+                        {{#businessCourses}}
+                        <div class="featured-course">
+                            <a  class="featured-course__link" href="{{url}}" data-id="{{id}}" data-course-id="{{course_id}}" data-lessonid="{{lesson_id}}" data-lesson-type="{{lesson_type}}" data-handler="onOpenPreview">
+                                <picture class="course-video__preview-img">
+                                    {{#preview.sources}}
+                                    <source media="(max-width: {{maxWidth}}px)"
+                                        srcset="{{preview.path}}{{src}}, {{preview.path}}{{src2x}} 2x">
+                                    {{/preview.sources}}
+                                    <img src="{{preview.path}}{{preview.src}}"
+                                         srcset="{{preview.path}}{{preview.src}}, {{preview.path}}{{preview.src2x}} 2x" alt="">
+                                </picture>
+                            </a>
+                            <div class="featured-course__footer">
+                                <a  class="featured-course__title" href="{{url}}">{{title}}</a>
+                                <span class="featured-course__runtime">{{runtime}}</span>
+                            </div>
+                        </div>
+                        {{/businessCourses}}
+
+                    </div>
+                    <div class="button-wrapper">
+                        <div class="lms-button"><a href="{{site.url_with_lang}}signUp/type/business" class="lms-free">{{mui.buttonLabel.tryItFree}}</a></div>
+                        <div class="lms-button"><a href="{{site.url_with_lang}}library/6781/business" class="lms-features">{{browseLibrary}}</a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="Computer" class="tabcontent inner-tab__business">
+                <div class="inner-tab_copy">
+                    <h2>{{browseOurComputer}}</h2>
+                    <div class="tab-categories">
+
+                        {{#computerCourses}}
+                        <div class="featured-course">
+                            <a  class="featured-course__link" href="{{url}}" data-id="{{id}}" data-course-id="{{course_id}}" data-lessonid="{{lesson_id}}" data-lesson-type="{{lesson_type}}" data-handler="onOpenPreview">
+                                <picture class="course-video__preview-img">
+                                    {{#preview.sources}}
+                                    <source media="(max-width: {{maxWidth}}px)"
+                                        srcset="{{preview.path}}{{src}}, {{preview.path}}{{src2x}} 2x">
+                                    {{/preview.sources}}
+                                    <img src="{{preview.path}}{{preview.src}}"
+                                         srcset="{{preview.path}}{{preview.src}}, {{preview.path}}{{preview.src2x}} 2x" alt="">
+                                </picture>
+                            </a>
+                            <div class="featured-course__footer">
+                                <a  class="featured-course__title" href="{{url}}">{{title}}</a>
+                                <span class="featured-course__runtime">{{runtime}}</span>
+                            </div>
+                        </div>
+                        {{/computerCourses}}
+
+                    </div>
+                    <div class="button-wrapper">
+                        <div class="lms-button"><a href="{{site.url_with_lang}}signUp/type/business" class="lms-free">{{mui.buttonLabel.tryItFree}}</a></div>
+                        <div class="lms-button"><a href="{{site.url_with_lang}}library/6263/computer" class="lms-features">{{browseLibrary}}</a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="Finance" class="tabcontent inner-tab__business">
+                <div class="inner-tab_copy">
+                    <h2>{{browseOurFinance}}</h2>
+                    <div class="tab-categories">
+
+                        {{#financeCourses}}
+                        <div class="featured-course">
+                            <a  class="featured-course__link" href="{{url}}" data-id="{{id}}" data-course-id="{{course_id}}" data-lessonid="{{lesson_id}}" data-lesson-type="{{lesson_type}}" data-handler="onOpenPreview">
+                                <picture class="course-video__preview-img">
+                                    {{#preview.sources}}
+                                    <source media="(max-width: {{maxWidth}}px)"
+                                        srcset="{{preview.path}}{{src}}, {{preview.path}}{{src2x}} 2x">
+                                    {{/preview.sources}}
+                                    <img src="{{preview.path}}{{preview.src}}"
+                                         srcset="{{preview.path}}{{preview.src}}, {{preview.path}}{{preview.src2x}} 2x" alt="">
+                                </picture>
+                            </a>
+                            <div class="featured-course__footer">
+                                <a  class="featured-course__title" href="{{url}}">{{title}}</a>
+                                <span class="featured-course__runtime">{{runtime}}</span>
+                            </div>
+                        </div>
+                        {{/financeCourses}}
+                    </div>
+                    <div class="button-wrapper">
+                        <div class="lms-button"><a href="{{site.url_with_lang}}signUp/type/business" class="lms-free">{{mui.buttonLabel.tryItFree}}</a></div>
+                        <div class="lms-button"><a href="{{site.url_with_lang}}library/6657/finance" class="lms-features">{{browseLibrary}}</a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="Safety" class="tabcontent inner-tab__business">
+                <div class="inner-tab_copy">
+                    <h2>{{browseOurSafety}}</h2>
+
+                    <div class="tab-categories">
+
+                        {{#safetyCourses}}
+                        <div class="featured-course">
+                            <a  class="featured-course__link" href="{{url}}" data-id="{{id}}" data-course-id="{{course_id}}" data-lessonid="{{lesson_id}}" data-lesson-type="{{lesson_type}}" data-handler="onOpenPreview">
+                                <picture class="course-video__preview-img">
+                                    {{#preview.sources}}
+                                    <source media="(max-width: {{maxWidth}}px)"
+                                        srcset="{{preview.path}}{{src}}, {{preview.path}}{{src2x}} 2x">
+                                    {{/preview.sources}}
+                                    <img src="{{preview.path}}{{preview.src}}"
+                                         srcset="{{preview.path}}{{preview.src}}, {{preview.path}}{{preview.src2x}} 2x" alt="">
+                                </picture>
+                            </a>
+                            <div class="featured-course__footer">
+                                <a  class="featured-course__title" href="{{url}}">{{title}}</a>
+                                <span class="featured-course__runtime">{{runtime}}</span>
+                            </div>
+                        </div>
+                        {{/safetyCourses}}
+                    </div>
+                    <div class="button-wrapper">
+                        <div class="lms-button"><a href="{{site.url_with_lang}}signUp/type/business" class="lms-free">{{mui.buttonLabel.tryItFree}}</a></div>
+                        <div class="lms-button"><a href="{{site.url_with_lang}}library/6767/safety" class="lms-features">{{browseLibrary}}</a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="Compliance" class="tabcontent inner-tab__business">
+                <div class="inner-tab_copy">
+                    <h2>{{browseOurCompliance}}</h2>
+                    <div class="tab-categories">
+
+                        {{#complianceCourses}}
+                        <div class="featured-course">
+                            <a  class="featured-course__link" href="{{url}}" data-id="{{id}}" data-course-id="{{course_id}}" data-lessonid="{{lesson_id}}" data-lesson-type="{{lesson_type}}" data-handler="onOpenPreview">
+                                <picture class="course-video__preview-img">
+                                    {{#preview.sources}}
+                                    <source media="(max-width: {{maxWidth}}px)"
+                                        srcset="{{preview.path}}{{src}}, {{preview.path}}{{src2x}} 2x">
+                                    {{/preview.sources}}
+                                    <img src="{{preview.path}}{{preview.src}}"
+                                         srcset="{{preview.path}}{{preview.src}}, {{preview.path}}{{preview.src2x}} 2x" alt="">
+                                </picture>
+                            </a>
+                            <div class="featured-course__footer">
+                                <a  class="featured-course__title" href="{{url}}">{{title}}</a>
+                                <span class="featured-course__runtime">{{runtime}}</span>
+                            </div>
+                        </div>
+                        {{/complianceCourses}}
+                    </div>
+                    <div class="button-wrapper">
+                        <div class="lms-button"><a href="{{site.url_with_lang}}signUp/type/business" class="lms-free">{{mui.buttonLabel.tryItFree}}</a></div>
+                        <div class="lms-button"><a href="{{site.url_with_lang}}library/6869/compliance" class="lms-features">{{browseLibrary}}</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+<section class="ll-icons">
+    <div class="cnt">
+            <div class="icons-title">{{iconsTitle}}</div>
+        <div class="ll-icons-3">
+            <div class="icon-block">
+                <img src="{{VIEW}}images/Icon_Access--v{{site.LocalStorageStamp}}.png" alt="">
+                <h5>{{iconUnlimitedTitle}}</h5>
+                <p class="icon-text">{{iconUnlimitedDescription}}</p>
+            </div>
+            <div class="icon-block">
+                <img src="{{VIEW}}images/Icon_Instructor--v{{site.LocalStorageStamp}}.png" alt="">
+                <h5>{{iconInstructorsTitle}}</h5>
+                <p class="icon-text">{{iconInstructorsDescription}}</p>
+            </div>
+            <div class="icon-block">
+                <img src="{{VIEW}}images/Icon_Tests--v{{site.LocalStorageStamp}}.png" alt="">
+                <h5>{{iconProficiencyTitle}}</h5>
+                <p class="icon-text">{{iconProficiencyDescription}}</p>
+            </div>
+            <div class="icon-block">
+                <img src="{{VIEW}}images/Icon_Progress--v{{site.LocalStorageStamp}}.png" alt="">
+                <h5>{{iconSkillsTitle}}</h5>
+                <p class="icon-text">{{iconSkillsDescription}}</p>
+            </div>
+            <div class="icon-block">
+                <img src="{{VIEW}}images/Icon_globes--v{{site.LocalStorageStamp}}.png" alt="">
+                <h5>{{iconLanguagesTitle}}</h5>
+                <p class="icon-text">{{iconLanguagesDescription}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ll-cta">
+    <div class="cnt-wide">
+        <div class="cta">
+            <div class="cta-title" >{{RibbonTitle}}</div>
+            <div class="cta-subtitle">{{{RibbonDescription}}}</div>
+            <div class="header-button">
+                <a class="btn sign-up freetrial" href="{{site.url_with_lang}}signUp/type/business">{{mui.buttonLabel.tryItFree}}</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ll-contact">
+    <div class="cnt-narrow">
+        <div class="ll-contact-inner">
+            <h2>{{contactTitle}}</h2>
+            <p>{{contactSubtitle}}</p>
+            <div class="ll-contact-form">
+                <form id="contactUs" class="ll-contact__form" data-handler="onSubmitForm" method="post" action="">
+            <div class="ll-contact__row">
+                <input
+                        type="text"
+                        class="ll-contact__input"
+                        value=""
+                        id="name_f"
+                        name="name_f"
+                        placeholder="{{mui.pageContent.formlabel.name}}"
+                        required="true"
+                        data-invalidMessage="{{mui.form.requiredField.invalidName}}"
+                />
+                <input
+                        type="email"
+                        class="ll-contact__input"
+                        value=""
+                        id="email"
+                        name="email"
+                        placeholder="{{mui.pageContent.formlabel.email}}"
+                        required="true"
+                        data-invalidMessage="{{mui.form.requiredField.invalidEmail}}"
+                        data-invalidMessageWrongType="{{mui.form.requiredField.invalidTypeEmail}}"
+                />
+            </div>
+            <div class="ll-contact__row">
+                <select class="ll-contact__subject"
+                        value=""
+                        id="subject"
+                        name="subject"
+                        placeholder="{{mui.pageContent.formlabel.subject}}"
+                        required="true"
+                        data-invalidMessage="{{mui.form.requiredField.invalidSubject}}">
+                    <option value="Learning Library">{{contactSubject}} {{contactLearning}}</option>
+                    <option value="LMS">{{contactSubject}} {{contactLms}}</option>
+                    <option value="Content Creation">{{contactSubject}} {{contactCustom}}</option>
+                    <option value="General">{{contactSubject}} {{contactGeneral}}</option>
+                </select>
+            </div>
+            <div class="ll-contact__row">
+                <textarea
+                        class="ll-contact__textarea"
+                        id="comments"
+                        name="comments"
+                        placeholder="{{mui.pageContent.formlabel.message}}"
+                        required="true"
+                        data-invalidMessage="{{mui.form.requiredField.invalidHowWeCanHelp}}"
+                ></textarea>
+            </div>
+            <input class="ll-contact__btn btn" type="submit"  name="submit" value="{{mui.buttonLabel.submit}}" class="button" rel="submit">
+        </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="bottom-links">
+    <div class="cnt-wide">
+        <div class="bot-columns">
+            <div class="">
+                <a href="{{site.url_with_lang}}lms"><div class="bottom-link__img">
+                    <img src="{{VIEW}}images/bottom-link_LMS--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+                height:auto" alt="">
+                </div>
+                </a>
+                <h2>{{bottomLmsTitle}}</h2>
+                <p>{{bottomLmsDescription}} <a href="{{site.url_with_lang}}lms">{{learnMore}}</a></p>
+            </div>
+            <div class="">
+                <a href="{{site.url_with_lang}}contentCreation"><div class="bottom-link__img">
+                    <img src="{{VIEW}}images/Bottom-link_CC--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+                    height:auto" alt="">
+                </div></a>
+                <div style="padding-top:20px;">
+                <h2>{{bottomContactTitle}}</h2>
+                <p>{{bottomContactDescription}} <a href="{{site.url_with_lang}}contentCreation">{{learnMore}}</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="index-clients">
+    <div class="cnt">
+        <!-- <h2 class="index-title">{{ourClients}}</h2> -->
+        <div class="index-clients__carousel owl-carousel" id="clientsCarousel">
+            {{#clients}}
+            <div class="index-client">
+                <img class="index-client__img" src="{{logo}}" alt=""/>
+            </div>
+            {{/clients}}
+        </div>
+        <div class="owl-nav">
+            <span class="owl-nav__prev" data-handler="onPrevClients"></span>
+            <span class="owl-nav__next" data-handler="onNextClients"></span>
+        </div>
+    </div>
+</section>

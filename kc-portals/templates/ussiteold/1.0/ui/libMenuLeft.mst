@@ -1,0 +1,12 @@
+<div class="drop_m_block">
+    <div class="drop_m_title"><span>{{library}}</span>
+        <div class="arrow-item__icon">
+            <div class="fa fa-angle-down"></div>
+        </div>
+    </div>
+    <div class="drop_m_sub">
+        {{#sections}}
+        <a class="header-item__subitem" href="{{url}}">{{name}}</a>
+        {{/sections}}
+    </div>
+</div>

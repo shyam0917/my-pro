@@ -1,0 +1,894 @@
+<div class="inner-header inner-header--certification">
+  <div class="cnt">
+    <h1 class="inner-header__title">
+      {{mui.pageTitle.mylearning}}
+    </h1>
+    <p class="inner-header__subtitle">
+      {{mui.pageSubTitle.mylearning}}
+    </p>
+  </div>
+</div>
+
+
+<div class="inner-page learning-page">
+
+  <div class="cnt">
+
+    <div class="table list-courses-table">
+      <div class="table__row">
+
+        <div class="table__col bookmarks-table" rel="bookmarks">
+          <div class="table__cell table__cell--h2">{{mui.mylearning.content.courses.myCourses}}</div>
+          {{#bookmarks}}
+          <a href="#" class="bookmark {{#isActive}} active{{/isActive}}" id="{{nodeId}}" data-handler="onBookmark"
+             title-text="{{text}}">
+            {{text}} <span>{{count}}</span>
+          </a>
+          {{/bookmarks}}
+          <div class="l-separator"></div>
+          <div class="course-cycles" style="display: none;">
+            <a class="get-course-history__btn" href="#" data-handler="onCourseCycles">{{mui.mylearning.content.getCourseHistory}}</a><br><br>
+          </div>
+          <div class="get-tna">
+            {{#isTnaBtn}}
+            <a class="get-tna__btn" href="#"
+               data-handler="onGetRecommended">{{mui.mylearning.content.getTna}}</a><br><br>
+            {{/isTnaBtn}}
+          </div>
+        </div>
+
+        <div class="table__col bookmarks-content-table">
+
+          <div id="coursesList">
+
+            <div class="table progress-license-table">
+              <div class="table__row">
+                <div class="table__col progress-table">
+
+                  <div class="table__cell table__cell--h2">
+                    {{mui.mylearning.content.progresstitle}}
+                  </div>
+                  <div class="table__row" data-ctrl="ListStats" id="ListStats">
+                    <div class="table__col">
+                      <div class="table__cell  table__head">
+                        {{mui.mylearning.content.courses.total}}: {{stats.total}}
+                      </div>
+                    </div>
+                    <div class="table__col">
+                      <div class="table__cell  table__head">
+                        {{mui.mylearning.content.courses.completed}}: {{stats.passed}}
+                      </div>
+                    </div>
+                    <div class="table__col">
+                      <div class="table__cell  table__head">
+                        {{mui.mylearning.content.courses.inprogress}}: {{stats.inProgress}}
+                      </div>
+                    </div>
+                    <div class="table__col">
+                      <div class="table__cell  table__head">
+                        {{mui.mylearning.content.courses.finished}}: {{stats.viewed}}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="table__col license-table">
+
+                  {{#isTrainingLimit}}
+                  {{#trainingLimit.limit}}
+                  <div class="table__cell table__cell--h2">
+                    {{mui.trainingLimit.title}}
+                  </div>
+
+                  <div class="table__row">
+                    <div class="table__col">
+                      <div class="table__cell  table__head">
+                        {{mui.trainingLimit.numofhours}}:<br/>{{trainingLimit.limit}}
+                      </div>
+                    </div>
+                    <div class="table__col">
+                      <div class="table__cell  table__head">
+                        {{mui.trainingLimit.remain}}:<br/>{{trainingLimit.remain}}
+                      </div>
+                    </div>
+                  </div>
+                  {{/trainingLimit.limit}}
+                  {{/isTrainingLimit}}
+
+                </div>
+
+
+              </div>
+            </div>
+
+            <div class="table__cell table__cell--h2 table__cell--mb30 table__cell--flex">
+              <div course-page-subtitle='text'><span id="selectedlistTitle">{{mui.pageSubTitle.mylearning}}</span></div>
+
+              <a href="#" data-id="" data-handler="onShowCycles" course-cycle-name="title"
+                 class="course-breadcrum hide"></a>&nbsp;
+              <div course-cycle-focus="title-plain" class="hide"></div>
+              <div course-cycle-focus="title" class="hide"></div>&nbsp;
+
+              <div class="view table-style" rel="view">
+                <a class="view__btn view__btn--list active" href="#" data-handler="onChangeView" data-view="list"></a>
+                <a class="view__btn view__btn--flat" href="#" data-handler="onChangeView" data-view="flat"></a>
+              </div>
+            </div>
+
+            <div>
+              <div class="table__row table__head table__learning__head table-head-courses" rel="learning-head">
+                <div class="table__cell courses-table--title">
+                  {{mui.mylearning.content.courses.courseName}}
+                  <div class="sort table-style" rel="sort">
+                    <a class="active" href="#" data-handler="onSortCourses" data-type="name" data-dir="asc">
+                      <i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                    <a href="#" data-handler="onSortCourses" data-type="name" data-dir="desc">
+                      <i class="fa fa-caret-right" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="table__cell courses-table--progress">
+                  {{mui.progress}}
+                  <div class="sort table-style" rel="sort">
+                    <a href="#" data-handler="onSortCourses" data-type="progress" data-dir="asc"><i
+                        class="fa fa-caret-left" aria-hidden="true"></i></a>
+                    <a href="#" data-handler="onSortCourses" data-type="progress" data-dir="desc"><i
+                        class="fa fa-caret-right" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+                <div class="table__cell  courses-table--started">
+                  {{mui.mylearning.content.chosenCourses.viewed}}
+                  <div class="sort table-style" rel="sort">
+                    <a href="#" data-handler="onSortCourses" data-type="viewed" data-dir="asc">
+                      <i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                    <a href="#" data-handler="onSortCourses" data-type="viewed" data-dir="desc">
+                      <i class="fa fa-caret-right" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="table__cell courses-table--started">
+                  {{mui.mylearning.content.chosenCourses.started}}
+                  <div class="sort table-style" rel="sort">
+                    <a href="#" data-handler="onSortCourses" data-type="date" data-dir="asc">
+                      <i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                    <a href="#" data-handler="onSortCourses" data-type="date" data-dir="desc">
+                      <i class="fa fa-caret-right" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="table__cell courses-table--started">
+                  {{mui.mylearning.content.courses.finishedShot}}
+                  <div class="sort table-style" rel="sort">
+                    <a href="#" data-handler="onSortCourses" data-type="date" data-dir="asc">
+                      <i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                    <a href="#" data-handler="onSortCourses" data-type="date" data-dir="desc">
+                      <i class="fa fa-caret-right" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="table__cell courses-table--certificate" data-history="change">
+                  {{mui.mylearning.content.courses.actions}}
+                </div>
+                <div class="table__cell  courses-table--actions hide">
+                  Actions
+                </div>
+                <div class="table__cell courses-table--remove">
+                </div>
+              </div>
+
+              <div class="table__row table__head table__learning__head table-head-cycles hide" rel="learning-head">
+                <div class="table__cell courses-table--title">
+                  {{mui.mylearning.content.tableCycles.title}}
+                </div>
+                <div class="table__cell courses-table--started">
+                  {{mui.mylearning.content.tableCycles.start}}
+                </div>
+                <div class="table__cell courses-table--started">
+                  {{mui.mylearning.content.tableCycles.finish}}
+                </div>
+                <div class="table__cell  courses-table--viewed">
+                  {{mui.mylearning.content.tableCycles.attempts}}
+                </div>
+                <div class="table__cell  courses-table--viewed">
+                  {{mui.mylearning.content.tableCycles.score}}
+                </div>
+                <div class="table__cell courses-table--started">
+                  {{mui.mylearning.content.tableCycles.resetdate}}
+                </div>
+              </div>
+
+              <div class="table__row table__head table__learning__head table-head-history hide" rel="learning-head">
+                <div class="table__cell courses-table--title">
+                  {{mui.mylearning.content.tableLessons.title}}
+                </div>
+                <div class="table__cell courses-table--started">
+                  {{mui.mylearning.content.tableLessons.start}}
+                </div>
+                <div class="table__cell courses-table--started">
+                  {{mui.mylearning.content.tableLessons.finish}}
+                </div>
+              </div>
+
+
+              <div class="table__row table__head table__learning__head table-head-quizzes hide" rel="learning-head">
+                <div class="table__cell courses-table--title">
+                  {{mui.mylearning.content.tableQuiz.question}}
+                </div>
+                <div class="table__cell courses-table--response">
+                  {{mui.mylearning.content.tableQuiz.response}}
+                </div>
+                <div class="table__cell courses-table--result">
+                  {{mui.mylearning.content.tableQuiz.result}}
+                </div>
+              </div>
+
+              <div class="courses-table hide" data-ctrl="Quizzes" id="QuizzesList">
+                <div class="courses-table__content">
+                  {{#quizDetails}}
+                  <div class="table__row table__row--hovered">
+                    <div class="table__cell courses-table--title">
+                      {{question}}
+                    </div>
+                    <div class="table__cell courses-table--response">
+                      {{answer}}
+                    </div>
+                    <div class="table__cell courses-table--result">
+                      {{#is_correct}}
+                      <i class="fa fa-check-circle" aria-hidden="true"></i>
+                      {{/is_correct}}
+                      {{^is_correct}}
+                      <i class="fa fa-times" aria-hidden="true"></i>
+
+                      {{/is_correct}}
+                    </div>
+                  </div>
+                  {{/quizDetails}}
+                </div>
+              </div>
+
+
+              <div class="courses-table hide" data-ctrl="History" id="LessonList">
+                <div class="courses-table__content">
+                  {{#userCourses}}
+                  <div class="table__row table__row--hovered">
+                    <div class="table__cell courses-table--title">
+                      {{#isQuiz}}
+                      <a href="#" data-id="{{id}}" data-handler="onQuizzesDetails">{{mui.mylearning.content.tableHistory.quizAttempt}}
+                        {{attempt}}</a>
+                      {{/isQuiz}}
+                      {{#lesson_quiz_id}}
+                      <a href="#" data-id="{{lesson_quiz_id}}" data-handler="onQuizzesDetails">{{lesson_name}}</a>
+                      {{/lesson_quiz_id}}
+
+                      {{^lesson_quiz_id}}
+                      {{lesson_name}}
+                      {{/lesson_quiz_id}}
+                    </div>
+                    <div class="table__cell courses-table--started">
+                      {{begin_time}}
+                      {{#isQuiz}}
+                      {{attempt_begin_date}}
+                      {{/isQuiz}}
+                    </div>
+                    <div class="table__cell  courses-table--started">
+                      {{#isQuiz}}
+                        {{#is_passed}}
+                          {{#certificate_number}}
+                            <a href="#"  data-handler="onShowCertificate" data-id="{{certificate_number}}">
+                              <img src="{{IMG}}certificate-icon.png"/> <span class="success">{{mui.txt.passed}}{{#score}} {{score}}{{/score}}</span>
+                            </a>
+                          {{/certificate_number}}
+                        {{/is_passed}}
+                        {{^is_passed}}
+                          {{mui.mylearning.content.tableHistory.notPassed}}{{#score}} {{score}}{{/score}}
+                        {{/is_passed}}
+                      {{/isQuiz}}
+                      {{^isQuiz}}
+                        {{#end_time}}
+                          {{end_time}}
+                        {{/end_time}}
+                        {{^end_time}}
+                          {{mui.mylearning.content.tableHistory.notCompleted}}
+                        {{/end_time}}
+                      {{/isQuiz}}
+                    </div>
+                  </div>
+                  {{/userCourses}}
+                </div>
+              </div>
+
+              <div class="courses-table hide" data-ctrl="Cycles" id="CyclesList">
+                <div class="courses-table__content">
+                  {{#userCourses}}
+                  <div class="table__row table__row--hovered">
+
+
+
+                    <div class="table__cell courses-table--title">
+                      <a href="#" data-id="{{id}}" data-handler="onShowHistory"> {{mui.mylearning.content.cycleCounter}}
+                        {{number}}</a>
+                    </div>
+                    <div class="table__cell courses-table--started">
+                      {{begin_date}}
+                    </div>
+                    <div class="table__cell courses-table--started">
+                      {{watchedAll_date}}
+                    </div>
+                    <div class="table__cell  courses-table--viewed">
+                      {{attempts}}
+                    </div>
+                    <div class="table__cell  courses-table--viewed">
+                      {{#certificate_number}}
+                      <a href="#"
+                         data-handler="onShowCertificate"
+                         data-id="{{certificate_number}}"
+                      >
+                        <span class="success underline">{{mui.txt.passed}}{{#score}} {{score}}%{{/score}}</span>
+                      </a>
+                      {{/certificate_number}}
+                      {{^certificate_number}}
+                      {{#score}}{{score}}%{{/score}}
+                      {{/certificate_number}}
+                    </div>
+                    <div class="table__cell courses-table--started">
+                      {{reset_date}}
+                    </div>
+
+
+
+                  </div>
+                  {{/userCourses}}
+                </div>
+              </div>
+
+              <div class="courses-table" data-ctrl="CoursesList" id="CoursesList">
+                <div class="courses-table__content">
+
+                  {{#view.style.list}}
+                  {{#userCourses}}
+                  <div class="table__row table__row--hovered" id="course_row_{{course_list_id}}_{{id}}">
+                    {{#history}}
+                    <div class="table__cell courses-table--title" style="display:block;">
+                      <a data-id="{{id}}" href="#" data-handler="onShowCycles">{{title}}</a>
+                      {{#availableDateEnd}}
+                      <p class="courselist-available-date">{{pageMui.availability}}: {{availableDateInit}} -
+                        {{availableDateEnd}}</p>
+                      {{/availableDateEnd}}
+                    </div>
+                    {{/history}}
+                    {{^history}}
+                    <div class="table__cell courses-table--title" style="display:block;">
+                      {{#is_archived}}
+                        {{title}}
+                      {{/is_archived}}
+                      {{^is_archived}}
+                        <a href="{{url}}">{{title}}</a>
+                        {{#availableDateEnd}}
+                          <p class="courselist-available-date">{{pageMui.availability}}: {{availableDateInit}} -
+                          {{availableDateEnd}}</p>
+                        {{/availableDateEnd}}
+                      {{/is_archived}}
+                    </div>
+                    {{/history}}
+                    <div class="table__cell courses-table--status-mobile {{status_mobile_h}}">
+                      {{status_mobile}}
+                    </div>
+                    <div class="table__cell courses-table--progress">
+                                        {{^is_class}}
+                                            <span class="courses-table__progress-percent">
+                                             {{progress}}%
+                                        </span>
+                                        {{/is_class}}
+                                        {{#is_class}}
+                                            <span class="light-grey-text italic">
+                                                {{mui.mylearning.content.courses.n_a}}
+                                            </span>
+                                        {{/is_class}}
+                    </div>
+                    <div class="table__cell courses-table--started">
+                      {{^is_class}}{{viewed}}/{{totalLessons}}{{/is_class}}
+                                        {{#is_class}}
+                                            <span class="light-grey-text italic">
+                                                {{mui.mylearning.content.courses.n_a}}
+                                            </span>
+                                        {{/is_class}}
+                    </div>
+                    <div class="table__cell  courses-table--started">
+                      {{startDate}}
+                      {{^startDate}}
+                      <span class="light-grey-text italic">
+                                                {{mui.mylearning.content.courses.notStarted}}
+                                            </span>
+                      {{/startDate}}
+                    </div>
+                    <div class="table__cell  courses-table--started">
+                      {{endDate}}
+                      {{^endDate}}
+                      <span class="light-grey-text italic">
+                                                {{mui.mylearning.content.courses.notFinished}}
+                                            </span>
+                      {{/endDate}}
+                    </div>
+                    <div class="table__cell  courses-table--certificate">
+
+                    <div class="table__cell  courses-table--certificate">
+                      <div class="progressBlock{{completedClass}}">
+
+                        {{#certificate}}
+                        <a href="#" data-handler="onShowCertificate"
+                           data-id="{{number}}"
+                        >
+                          <img src="{{IMG}}certificate-icon.png"/><span class="success">{{mui.txt.passed}}{{#points}} {{points}}%{{/points}}</span>
+                        </a>
+                        {{/certificate}}
+
+                        {{^certificate}}
+
+                        {{#quiz.showTest}}
+
+                        {{^quiz.isTestAvailable}}
+                        {{mui.mylearning.content.courses.passed}}
+                        {{/quiz.isTestAvailable}}
+
+                        {{#quiz.isTestAvailable}}
+                        <a href="#"
+                           data-handler="onTakeTest"
+                           data-id="{{courseID}}"
+                           class="success"
+                        >
+                          {{mui.takeTest}}
+                        </a>
+                        {{^quiz.unlimited}}
+                        ({{quiz.attemptsCount}}/{{quiz.maxCount}})
+                        {{/quiz.unlimited}}
+                        {{/quiz.isTestAvailable}}
+
+                        {{/quiz.showTest}}
+
+                        {{^quiz.showTest}}
+                        {{#history}}
+                        {{mui.mylearning.content.tableHistory.notPassed}}{{#points}} {{points}}%{{/points}}
+                        {{/history}}
+                        {{^history}}
+                        {{^is_archived}}
+                        <a href="{{url}}">{{mui.mylearning.content.courses.goToCourse}}</a>
+                        {{/is_archived}}
+                        {{/history}}
+                        {{/quiz.showTest}}
+
+                        {{/certificate}}
+
+                      </div>
+                    </div>
+
+                    </div>
+                    <div class="table__cell courses-table--actions courses-table--actions-btn hide">
+                      <span class="dropdown-action" id="{{courseID}}" data-handler="onDropdownBtn">...</span>
+                      <div class="dropdown-content hide" data-target="{{courseID}}">
+                        <a href="#" data-id="{{courseID}}" data-handler="onShowCycles">Course cycles</a>
+                      </div>
+                    </div>
+                    <div class="table__cell  courses-table--remove">
+                      {{#is_removable}}
+                      <a href="#"
+                         data-handler="onRemoveGeneratedCourse"
+                         data-list="{{course_list_id}}"
+                         data-progress="{{viewed}}"
+                         data-id="{{id}}"
+                         data-access="{{accessType}}"
+                         class="remove"><i class="fa fa-times" aria-hidden="true"></i></a>
+                      {{/is_removable}}
+                    </div>
+
+                  </div>
+                  {{/userCourses}}
+                  {{/view.style.list}}
+                  {{#view.style.flat}}
+                  <div class="flat-items">
+
+                    {{#userCourses}}
+
+                    <div class="flat-item
+                                    {{#quiz}}{{#showTest}}flat-item--certificate{{/showTest}}{{/quiz}}
+                                    {{#start}}flat-item--continue{{/start}}
+                                    ">
+
+                      <div class="flat-item__inner">
+
+                        <div class="flat-item__progress">
+                          {{#points}} {{points}}%{{/points}}
+
+                          {{#is_removable}}
+                          <div class="dropdown flat-menu">
+                            <a class="dropdown-link">&#8942;</a>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a href="#"
+                                   data-handler="onRemoveGeneratedCourse"
+                                   data-list="{{course_list_id}}"
+                                   data-progress="{{viewed}}"
+                                   data-id="{{id}}"
+                                   data-access="{{accessType}}">
+                                  {{pageMui.Remove}}
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          {{/is_removable}}
+
+                        </div>
+                        <div class="progress-bar">
+                          <div class="progress-bar__fill" style="width:{{progress}}%"></div>
+                        </div>
+
+                        <a class="flat-item__img" href="{{url}}">
+                          <picture class="flat-item__preview">
+                            {{#preview.sources}}
+                            <source
+                                media="(min-width: {{minWidth}}px)"
+                                srcset="{{preview.path}}{{src}}, {{preview.path}}{{src2x}} 2x">
+                            {{/preview.sources}}
+                            <img src="{{preview.path}}{{preview.src}}"
+                                 srcset="{{preview.path}}{{preview.src}}, {{preview.path}}{{preview.src2x}} 2x" alt="">
+                          </picture>
+                        </a>
+
+                        <div class="flat-item__title">
+                          <div class="flat-item--left">
+                            {{#is_archived}}
+                            {{title}}
+                            {{/is_archived}}
+                            {{^is_archived}}
+                            <a class="flat-item__link" href="{{url}}">{{title}}</a>
+                            {{/is_archived}}
+                                               </div>
+                                                <div class="flat-item--right">{{^is_class}}{{progress}}%{{/is_class}}</div>
+                        </div>
+
+                        <div class="flat-item__info general hidden">
+                                              {{^is_class}}
+                                                <div class="flat-item__info--left">
+                                                  {{mui.pageContent.course.lessons}}:
+                                                </div>
+                                                <div class="flat-item__info--right">
+                                                  {{viewed}}/{{totalLessons}}
+                                                </div>
+                                                <div class="flat-item__info--left">
+                                                  {{mui.pageContent.course.trt}}:
+                                                </div>
+                                                <div class="flat-item__info--right">
+                                                  {{runtime}}
+                                                </div>
+                                              {{/is_class}}
+                          <div class="flat-item__info--left link-free">
+                            {{mui.pageContent.course.author}}:
+                          </div>
+                          <div class="flat-item__info--right">
+                            {{author}}
+                          </div>
+                        </div>
+
+
+                        <div class="flat-item__info action ">
+
+                          <div class="flat-item__info--left">
+                            {{pageMui.availableFrom}}:
+                          </div>
+                          <div class="flat-item__info--right">
+                            {{#availableDateInit}}
+                            {{availableDateInit}}
+                            {{/availableDateInit}}
+                            {{^availableDateInit}}
+                            <span class="light-grey-text">{{pageMui.anyDay}}</span>
+                            {{/availableDateInit}}
+                          </div>
+                          <div class="flat-item__info--left">
+                            {{pageMui.dueDate}}:
+                          </div>
+                          <div class="flat-item__info--right">
+                            {{#availableDateEnd}}
+                            {{availableDateEnd}}
+                            {{/availableDateEnd}}
+                            {{^availableDateEnd}}
+                            <span class="light-grey-text">{{pageMui.notSet}}</span>
+                            {{/availableDateEnd}}
+                          </div>
+
+                          <div class="flat-item__info--left">
+                            {{mui.mylearning.content.chosenCourses.started}}:
+                          </div>
+                          <div class="flat-item__info--right">
+
+                            {{startDate}}
+                            {{^startDate}}
+                            <span class="light-grey-text">
+                                                            {{mui.mylearning.content.courses.notStarted}}
+                                                        </span>
+                            {{/startDate}}
+
+                          </div>
+                          <div class="flat-item__info--left">
+                            {{mui.mylearning.content.courses.finishedShot}}:
+                          </div>
+                          <div class="flat-item__info--right">
+                            {{#certificate}}
+                            {{passedDate}}
+                            {{/certificate}}
+
+                            {{#quiz}}
+                            {{#showTest}}
+                            {{endDate}}
+                            {{/showTest}}
+                            {{/quiz}}
+                            {{^endDate}}
+                            <span class="light-grey-text">
+                                                            {{mui.mylearning.content.courses.notFinished}}
+                                                        </span>
+                            {{/endDate}}
+                          </div>
+
+                          <div class="flat-item__info--left">
+                            {{#certificate}}
+                            <a href="#"
+                               data-handler="onShowCertificate"
+                               data-id="{{number}}">
+                              <span class="success">{{mui.certificate}}</span>
+                            </a>
+                            {{/certificate}}
+
+                            {{^certificate}}
+                            {{#quiz.showTest}}
+
+                            {{#quiz.isTestAvailable}}
+                            <a href="#" data-handler="onTakeTest" data-id="{{courseID}}"
+                               class="success">
+                              {{mui.takeTest}}
+                            </a>
+                            {{/quiz.isTestAvailable}}
+
+                            {{^quiz.isTestAvailable}}
+                            {{mui.mylearning.content.courses.passed}}
+                            {{/quiz.isTestAvailable}}
+                            {{/quiz.showTest}}
+
+                            {{/certificate}}
+
+                            {{^certificate}}
+                            {{^quiz.showTest}}
+                            {{#quiz.isTestAvailable}}
+                            <a href="{{url}}">{{mui.mylearning.content.courses.goToCourse}}</a>
+                            {{/quiz.isTestAvailable}}
+                            {{/quiz.showTest}}
+                            {{/certificate}}
+                          </div>
+                          <div class="flat-item__info--right">
+                            {{#certificate}}
+                            {{#points}} {{points}}%{{/points}}
+                            {{/certificate}}
+
+                            {{^certificate}}
+
+                            {{#quiz.showTest}}
+                            {{#quiz.isTestAvailable}}
+                            {{^quiz.unlimited}}
+                            ({{quiz.attemptsCount}}/{{quiz.maxCount}})
+                            {{/quiz.unlimited}}
+                            {{/quiz.isTestAvailable}}
+                            {{/quiz.showTest}}
+
+                            {{/certificate}}
+
+                            {{^certificate}}
+                            {{^quiz.showTest}}
+
+                            {{/quiz.showTest}}
+                            {{/certificate}}
+                          </div>
+                        </div>
+
+                        <div class="flat-item_bookmark">
+                          <a data-handler="onChangeFlatTab" data-tab="action" class="active"><i class="fa fa-circle"
+                                                                                                aria-hidden="true"></i></a>
+                          <a data-handler="onChangeFlatTab" data-tab="general"><i class="fa fa-circle"
+                                                                                  aria-hidden="true"></i></a>
+                        </div>
+
+
+                      </div>
+                    </div>
+                    {{/userCourses}}
+                  </div>
+
+                  {{/view.style.flat}}
+
+                  {{^userCourses}}
+
+                  <div class="table__row">
+                    <div class="table__cell">
+                      {{mui.NothingToShow}}
+                    </div>
+                  </div>
+
+                  {{/userCourses}}
+
+                  {{#showMoreBtn}}
+
+                  <div class="table__row">
+                    <div class="table__cell center-align">
+                      <a class="tr-btn" href="#" data-handler="onShowMore">{{mui.ShowMore}} ({{showMoreBtnCount}})</a>
+                    </div>
+                  </div>
+
+                  {{/showMoreBtn}}
+
+
+                  {{#userCourses.0.isNew}}
+                  <div class="table-usercourses__action mt3">
+                    <a href="#" class="button with-tooltip" data-id="{{userCourses.0.listId}}"
+                       data-handler="onSendForConsideration">{{pageMui.toApprove}}<span class="tooltip tooltip-left">{{pageMui.toApproveTooltip}}</span></a>
+                  </div>
+                  {{/userCourses.0.isNew}}
+
+                  {{#isConfirmation}}
+                  {{#accountConfig.availabilityCourseConfirmationForm}}
+                  <div class="table-usercourses__action">
+                    <a href="{{printURL}}" class="button with-tooltip" target="_blank">{{pageMui.PrintRequest}}<span
+                        class="tooltip tooltip-left">{{pageMui.PrintRequestTooltip}}</span></a>
+                  </div>
+                  {{/accountConfig.availabilityCourseConfirmationForm}}
+                  {{/isConfirmation}}
+
+                </div>
+
+
+
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <div class="courses-table" data-ctrl="EventsList" id="EventsList" style="margin-top: 65px">
+
+            <div class="table__cell table__cell--h2 table__cell--mb30 table__cell--flex">
+              <div class="tabs-header">
+                <a href="#" class="tab-toggle is_active" data-handler="onEventsTab" data-tab="my">
+                  {{mui.mylearning.content.myEvents}}</a>
+                <a href="#" class="tab-toggle" data-handler="onEventsTab" data-tab="all">
+                  {{mui.mylearning.content.allEvents}}</a>
+              </div>
+            </div>
+
+            <div class="table__row table__head table__learning__head table-head-courses">
+              <div class="table__cell events--type">
+                {{mui.mylearning.content.event.type}}
+              </div>
+              <div class="table__cell events--name">
+                {{mui.mylearning.content.event.name}}
+              </div>
+              <div class="table__cell events--date">
+                {{mui.mylearning.content.event.date}}
+              </div>
+              <div class="table__cell events--address">
+                {{mui.mylearning.content.event.address}}
+              </div>
+              <div class="table__cell events--action">
+                {{mui.mylearning.content.event.status}}
+              </div>
+              <div class="table__cell courses-table--remove"></div>
+            </div>
+
+            <div class="courses-table__content">
+              {{#events}}
+              <div class="table__row table__row--hovered">
+                <div class="table__cell events--type">
+                  {{type}}
+                </div>
+                <div class="table__cell events--name">
+                    {{#url}}<a href="{{url}}" target="_blank">{{title}}</a>{{/url}}
+                    {{^url}}{{title}}{{/url}}
+                </div>
+                <div class="table__cell events--date">
+                  {{date_start}}
+                </div>
+                <div class="table__cell events--address">
+                  {{address}}
+                </div>
+                <div class="table__cell events--action">
+                  {{#is_available}}
+                  <a class="btn btn-sm btn-info btn-wide100" href="#" data-handler="onRegisterEvent"
+                     data-id="{{event_id}}" data-status="{{status}}">
+                    <span>{{mui.mylearning.content.event.register}}</span>
+                  </a>
+                  {{/is_available}}
+                  {{#is_attended}}
+                  {{#certificate_number}}
+                  <a class="btn btn-sm btn-wide100" href="#" data-handler="onShowCertificate"
+                     data-id="{{certificate_number}}" data-status="{{status}}">
+                    <img src="{{IMG}}certificate-icon.png"/> <span>{{mui.mylearning.content.event.attended}}</span>
+                  </a>
+                  {{/certificate_number}}
+                  {{^certificate_number}}
+                  <span class="btn btn-sm btn-link events--approve btn-wide100" href="#" data-id="{{event_id}}"
+                        data-status="{{status}}">
+                                    <span>{{mui.mylearning.content.event.attended}}</span>
+                                  </span>
+                  {{/certificate_number}}
+                  {{/is_attended}}
+                  {{#is_missed}}
+                  <a class="btn btn-sm btn-warning btn-wide100" href="#" data-id="{{event_id}}"
+                     data-status="{{status}}">
+                    <span>{{mui.mylearning.content.event.missed}}</span>
+                  </a>
+                  {{/is_missed}}
+                  {{#is_review}}
+                  <a class="btn btn-sm btn-danger btn-wide100" href="#" data-handler="onUnRegisterEvent"
+                     data-id="{{event_id}}" data-status="{{status}}">
+                    <span>{{mui.mylearning.content.event.unregister}}</span>
+                  </a>
+                  {{/is_review}}
+                  {{#is_approved}}
+                  <span class="btn btn-sm btn-link events--approve btn-wide100" href="#" data-id="{{event_id}}"
+                        data-status="{{status}}">
+                                <span>{{mui.mylearning.event.approved}}</span>
+                              </span>
+                  {{/is_approved}}
+                  {{#is_rejected}}
+                  <span class="events--rejected btn-wide100" data-id="{{event_id}}" data-status="{{status}}">
+                                <span>{{mui.mylearning.event.rejected}}</span>
+                              </span>
+                  {{/is_rejected}}
+                </div>
+                <div class="table__cell  courses-table--remove">
+                  &nbsp;
+                </div>
+
+              </div>
+              {{/events}}
+              {{^events}}
+
+              <div class="table__row">
+                <div class="table__cell">
+                  {{mui.NothingToShow}}
+                </div>
+              </div>
+
+              {{/events}}
+
+              {{#showMoreBtn}}
+
+              <div class="table__row">
+                <div class="table__cell center-align">
+                  <a class="tr-btn" href="#" data-handler="onShowMore">{{mui.ShowMore}} ({{showMoreBtnCount}}
+                    )</a>
+                </div>
+              </div>
+
+              {{/showMoreBtn}}
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<div id="noticeWindow" class="modalWindow noticeWindow" style="display: none;">
+  <div class="content">
+    <a href="{{site.url_with_lang}}" class="logo logo-{{site.language}} text-center">
+      <img src="{{site.logo}}" alt="" title=""/>
+    </a>
+    <div class="text" rel="text"></div>
+    <div class="text-center btns-group">
+      <input type="button" rel="closeOk" value="{{mui.buttonLabel.ok}}" class="button closeNotice">
+    </div>
+  </div>
+</div>

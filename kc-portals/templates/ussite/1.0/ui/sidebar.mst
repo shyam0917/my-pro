@@ -1,0 +1,137 @@
+<div id="sbTop" style="position:absolute; top:-112px; width:100%"></div>
+
+<div class="library-menu">
+
+ {{#isLibrary}}
+ 	<div class="library-menu__category_nh"  >
+		<p class="sidebar-item_p_title">{{mui.pageContent.course.refineSearch}}</p>
+		<div id="div_search_libray" style="display:none">
+			<!-- Remove plahceholder onclick -->
+			<input type="text" name="" value="" placeholder="Search the Library" id="search_library" >
+				<button type="button" name="button" id="bnt_search_library" data-handler="onSearchInputType">
+						<i class="fa fa-search fa-2x orange_font" ></i>
+				</button>
+		</div>
+
+		<div>
+			<div class="library-menu__category_nh" style="padding-top:0px" >
+
+				<form id="sbForm" >
+					{{#user}}
+  					<div class="library-menu__category_nh "  id="availableToMe" >
+  						<p class="library-menu__category-name" style="padding:0px; padding-bottom:10px">{{mui.pageContent.course.availableToMe}}</p>
+  						<label class="containerCheckBox">{{mui.pageContent.course.yes}}
+  							<input type="checkbox" name="availableToMe" value="1" class="sidebarCheckbox" id="available1">
+  							<span class="checkmark"></span>
+  						</label>
+  					</div>
+					{{/user}}
+					<div class="library-menu__category_nh"  >
+							<p class="library-menu__category-name" style="padding:0px; padding-bottom:10px">{{mui.pageContent.course.languageIncluded}}</p>
+
+							<div class="checkbox-container">
+								<div class="">
+									<label class="containerCheckBox">{{mui.pageContent.course.english}}
+										<input type="checkbox"  class="sidebarCheckbox" id="ckbxEn">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+								<div class="">
+									<label class="containerCheckBox">{{mui.pageContent.course.spanish}}
+										<input type="checkbox" class="sidebarCheckbox" id="ckbxEs">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+							<!--
+								<label class="containerCheckBox">{{mui.pageContent.course.arabic}}
+									<input type="checkbox" class="sidebarCheckbox" id="ckbxAr">
+									<span class="checkmark"></span>
+								</label>
+							-->
+					</div>
+
+					<div class="library-menu__category_nh"  >
+							<p class="library-menu__category-name" style="padding:0px; padding-bottom:10px">{{mui.pageContent.course.courseType}}</p>
+							<div class="checkbox-container">
+								<div class="">
+								<label class="containerCheckBox">{{mui.pageContent.course.lessons}}
+									<input type="checkbox"  value="1" class="sidebarCheckbox" id="chbxCourses">
+									<span class="checkmark"></span>
+								</label>
+							</div>
+							<div class="">
+								<label class="containerCheckBox">{{mui.pageContent.course.classes}}
+									<input type="checkbox"  value="2" class="sidebarCheckbox" id="chbxClasses">
+									<span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="library-menu__category_nh clearfix"  >
+						<p class="library-menu__category-name" style="padding:0px; padding-bottom:10px">{{mui.pageContent.course.courseRuntime}}</p>
+						<section class="range-slider">
+							<div class="rangeValues">
+                <span class="fSlide"></span> - <span class="sSlide"></span>
+              </div>
+							<input value="0" min="0" max="" step="60" type="range" class="sidebarSlider" id="sliderR1">
+							<input value="" min="0" max="" step="60" oldMax="0" type="range" class="sidebarSlider" id="sliderR2">
+            </section>
+            <div style="display:grid; grid-template-columns: 1fr 1fr ">
+                <div class="newMinLabel " style="font-size: 0.6em; color: rgba(68,68,68,.6); text-align:left" ></div>
+                <div class="newMaxLabel " style="font-size: 0.6em; color: rgba(68,68,68,.6); text-align:right" ></div>
+            </div>
+						<div style="clear:both">
+						</div>
+					</div>
+
+
+					<p id="onClearFilters" class="clrFilter">{{mui.pageContent.course.clearFilter}}</p>
+
+
+				</form>
+
+
+			</div>
+		</div>
+		<div class="border__top "></div>
+		</div>
+ {{/isLibrary}}
+
+
+
+		<div class="library-menu__category_nh ">
+				<p class="sidebar-item_p_title">{{mui.pageContent.course.selectCategory}}</p>
+		</div>
+
+
+
+	{{#sections}}
+	<div class="library-menu__category {{#active}} active {{/active}}" data-lvl="1" data-handler="onToggleCategory">
+		<div class="library-menu__category-header" style="   ">
+			<div class="">
+				<img src="{{iconRoute}}" alt="Category Icon" class="library_category-icon" onError="this.onerror=null;this.src='{{blankIconRoute}}';">
+			</div>
+			<div class="">
+				<a href="{{url}}" class="library-menu__category-name">{{name}}</a>
+			</div>
+
+			<div class="library-menu__icon" >
+				<div class="library-menu__minus"><i class="fa fa-caret-up" aria-hidden="true"></i></div>
+				<div class="library-menu__plus"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+			</div>
+		</div>
+		<!-- 3107 page.js -->
+		<div class="library-menu__rubrics">
+			{{#categories_0}}
+			<div class="library-menu__rubric {{#active}} active {{/active}}"><a href="{{url}}">{{name}} <small>{{lessons}}</small> </a></div>
+			{{/categories_0}}
+		</div>
+	</div>
+	{{/sections}}
+
+
+</div>
+<div id="sbBottom" ></div>

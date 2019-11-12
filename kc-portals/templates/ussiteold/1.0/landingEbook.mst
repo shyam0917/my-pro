@@ -1,0 +1,80 @@
+<section class="bl-getbook">
+    <div class="bl-getbook-bnr">
+        <div class="bl-getbook-fe">
+            {{landing.title}}
+        </div>
+        <div class="cnt padding-top40">
+            <div class="bl-getbook-row">
+                <div class="bl-getbook-bnr-img"><img src="{{previewURL}}" alt=""></div>
+                <div class="bl-getbook-bnr-info">
+                    <h2>{{name}}</h2>
+                    <div>{{{quote}}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cnt padding-top40">
+        <div class="bl-getbook-row">
+            <div class="bl-getbook-text">
+                <h2>{{brief_title}}</h2>
+                <div>{{{brief}}}</div>
+            </div>
+            <div class="bl-getbook-form"><b>{{landing.formTitle}}</b>
+                
+                <form action="" id="sendContactEbookForm" method="POST" data-handler="onSubmitForm">
+                {{^emailSended}}
+                    <input required="required" type="text" name="f_name" id="f_name" placeholder="Name"  aria-required="true">
+                    <input required="required" type="email" name="email" id="email" class="valid-group" placeholder="E-Mail" aria-required="true">
+                {{/emailSended}}
+                    <input type="hidden" name="eBook" id="eBook" value="{{id}}" >
+                    <input type="hidden" name="name" id="name" value="{{name}}">   
+                {{#emailSended}}
+                    <a id="loginlink" data-handler="onGetEbook" style="margin-bottom: 10px;">{{labels.downloadNow}}</a>
+                {{/emailSended}}   
+                {{^emailSended}}
+                    <button type="submit">{{labels.downloadNow}}</button>
+                {{/emailSended}}
+                </form>
+                {{^isAuth}}
+                <span> {{labels.already}} <a id="loginlink" class="no-button" data-handler="onLoginForm">{{labels.login}}</a></span>
+                {{/isAuth}}
+                <div id="succesMessage"></div>
+                <div id="errorMessage"></div>
+            </div>
+        </div>
+        <div class="bl-getbook-chapters">
+            <h2>{{landing.chaptersTitle}}</h2>
+            {{#chapters}}
+                {{#isEven}}
+                    <div class="bl-getbook-chap">
+                        <div class="bl-getbook-chap-i">
+                            <b>{{title}}</b>
+                                {{{description}}}
+                            <ul>
+                                {{#lessons}}<li>{{title}}</li>{{/lessons}}
+                            </ul>
+                        </div>
+                        <div class="bl-getbook-chap-block bl-getbook-chap-tl"><span>{{landing.chaptersNumeration}} {{number}}</span></div>
+                    </div>
+                {{/isEven}}
+
+                {{^isEven}}
+                    <div class="bl-getbook-chap">
+                        <div class="bl-getbook-chap-block bl-getbook-chap-tr"><span>CH. {{number}}</span></div>
+                        <div class="bl-getbook-chap-i">
+                            <b>{{title}}</b>
+                            {{{description}}}
+                            <ul>
+                                {{#lessons}}<li>{{title}}</li>{{/lessons}}
+                            </ul>
+                        </div>
+                    </div>
+                {{/isEven}}
+           {{/chapters}}
+
+        </div>
+    </div>
+
+
+</section>

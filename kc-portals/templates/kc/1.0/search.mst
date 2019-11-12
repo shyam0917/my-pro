@@ -1,0 +1,61 @@
+<div class="inner-header inner-header--search">
+    <div class="cnt">
+        <h1 class="inner-header__title">
+            Search: {{query}}
+        </h1>
+        <p class="inner-header__subtitle">
+            &nbsp;
+        </p>
+    </div>
+</div>
+
+<div class="inner-page search-page">
+    <div class="cnt">
+        <div class="inner-page__row">
+            <div class="inner-page__sidebar inner-page__sidebar--library">
+                <div data-ctrl="Sidebar" id="sidebar">
+                    Loading sidebar...
+                </div>
+            </div>
+            <div class="inner-page__content">
+                <div class="search-page__title">
+
+                    {{#courses.0}}
+
+                    {{Search.ResultsFor1}} {{numFound}} {{Search.ResultsFor2}} <strong>{{query}}</strong>
+
+                    {{/courses.0}}
+
+                    {{^courses}}
+
+                    {{Search.NoResults1}} <strong>{{query}}</strong> {{Search.NoResults2}}
+
+                    {{/courses}}
+
+                </div>
+
+                {{#courses}}
+                <a class="search-result" href="{{url}}">
+                    <span class="search-result__link">
+                        <img class="search-result__img" src="{{img}}" alt="{{title}}">
+                    </span>
+                    <div class="search-result__info">
+                        <span class="search-result__title">{{title}}</span> <span class="search-result__runtime"><i class="fa fa-clock-o"></i> {{runtime}}</span>
+                        <span class="search-result__author">{{author}}</span>
+                        <span class="search-result__tagline">{{tagline}}</span>
+                        <p class="search-result__description">{{{description}}}</p>
+                    </div>
+                </a>
+                {{/courses}}
+
+                {{#pagination.1}}
+                <ul class="pagination search-pagination">
+                    {{#pagination}}
+                        <a class="pagination__item {{#active}}active{{/active}}" href="{{url}}">{{caption}}</a>
+                    {{/pagination}}
+                </ul>
+                {{/pagination.1}}
+            </div>
+        </div>
+    </div>
+</div>

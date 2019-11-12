@@ -1,0 +1,184 @@
+{{#featuredCategories}}
+<section class="main-library">
+	<div class="cnt">
+		<h2>{{mui.courseLibraryTitle}}</h2>
+		<p class="subtitle">{{mui.txtLabels.courseLibrarySubTitle}}</p>
+		<div class="main-library__list">
+			{{#default}}
+			{{#library}}
+			<div class="course-item">
+				<a href="{{url}}" class="course-item__link">
+					<div class="course-item__title text-align" title="{{title}}">{{title}}</div>
+					<div class="course-item__img" style="background-image:url('{{img}}'), url('{{defaultImg}}')"></div>
+				</a>
+				<div class="course-item__courses">
+					<a class="course-item__hidden-link" href="{{url}}"></a>
+					<ul class="course-item__list">
+						{{#categories}}
+						<li>
+							<a href="{{url}}" class="course-item__name">
+								{{title}}
+							</a>
+						</li>
+						{{/categories}}
+					</ul>
+					<a href="{{url}}" class="course-item__more">
+						<i class="fa fa-plus"></i>
+						{{mui.txtLabels.more}}
+					</a>
+				</div>
+			</div>
+			{{/library}}
+			{{/default}}
+
+			{{#tiles5}}
+			{{#library}}
+			{{#main}}
+			<div class="course-item">
+				<a href="{{url}}" class="course-item__link">
+					<div class="course-item__title text-align" title="{{title}}">{{title}}</div>
+					<div class="course-item__img" style="background-image:url('{{img}}'), url('{{defaultImg}}')"></div>
+				</a>
+				<div class="course-item__courses">
+					<a class="course-item__hidden-link" href="{{url}}"></a>
+					<ul class="course-item__list">
+						{{#categories}}
+						<li>
+							<a href="{{url}}" class="course-item__name">
+								{{title}}
+							</a>
+						</li>
+						{{/categories}}
+					</ul>
+					<a href="{{url}}" class="course-item__more">
+						<i class="fa fa-plus"></i>
+						{{mui.txtLabels.more}}
+					</a>
+				</div>
+			</div>
+			{{/main}}
+			{{#group}}
+
+				{{#sections}}
+				<div class="course-item">
+					<a href="{{url}}" class="course-item__link">
+						<div class="course-item__title text-align" title="{{title}}">{{title}}</div>
+						<div class="course-item__img" style="background-image:url('{{img}}'), url('{{defaultImg}}')"></div>
+					</a>
+					<div class="course-item__courses">
+						<a class="course-item__hidden-link" href="{{url}}"></a>
+						<ul class="course-item__list">
+							{{#categories}}
+							<li>
+								<a href="{{url}}" class="course-item__name">
+									{{title}}
+								</a>
+							</li>
+							{{/categories}}
+						</ul>
+						<a href="{{url}}" class="course-item__more">
+							<i class="fa fa-plus"></i>
+							{{mui.txtLabels.more}}
+						</a>
+					</div>
+				</div>
+				{{/sections}}
+
+			{{/group}}
+			{{/library}}
+			{{/tiles5}}
+		</div>
+	</div>
+</section>
+{{/featuredCategories}}
+{{#featuredCoursesShow}}
+<div class="main-previews" style="direction: ltr">
+	<div class="cnt">
+		<h2 class="main-h2">{{mui.pageContent.index.coursePreviews}}</h2>
+		<p class="subtitle">{{mui.pageContent.index.takeLook}}</p>
+		<div class="owl-carousel previews-carousel" id="previewsCarousel" style="max-width: 100%;">
+			{{#featuredCourses}}
+			<div class="preview-item">
+				<div class="preview-item__footer">
+					<a href="{{url}}">{{title}}</a>
+				</div>
+				<a href="{{url}}" data-id="{{id}}" data-course-id="{{course_id}}" data-lessonid="{{lesson_id}}" data-lesson-type="{{lesson_type}}" class="preview-item__href" data-handler="onOpenPreview">
+                    <picture class="course-video__preview-img">
+                        {{#preview.sources}}
+                        <source media="(max-width: {{maxWidth}}px)"
+                            srcset="{{preview.path}}{{src}}, {{preview.path}}{{src2x}} 2x">
+                        {{/preview.sources}}
+                        <img src="{{preview.path}}{{preview.src}}"
+                             srcset="{{preview.path}}{{preview.src}}, {{preview.path}}{{preview.src2x}} 2x" alt="">
+                    </picture>
+				</a>
+
+			</div>
+			{{/featuredCourses}}
+		</div>
+		<div class="owl-controls">
+			<span class="owl-controls__prev" data-handler="onPrevPreview"></span>
+			<span class="owl-controls__next" data-handler="onNextPreview"></span>
+		</div>
+	</div>
+</div>
+{{/featuredCoursesShow}}
+<div class="main-benefits">
+	<div class="cnt">
+		<h2 class="main-h2">{{mui.txtLabels.benefits}}</h2>
+		<div class="main-benefits__list">
+			<div class="main-benefits__item"><div class="main-benefits__img main-benefits__img--1"></div><span class="main-benefits__title">{{mui.mp.ico.1}}</span></div>
+			<div class="main-benefits__item"><div class="main-benefits__img main-benefits__img--2"></div><span class="main-benefits__title">{{mui.mp.ico.2}}</span></div>
+			<div class="main-benefits__item"><div class="main-benefits__img main-benefits__img--3"></div><span class="main-benefits__title">{{mui.mp.ico.3}}</span></div>
+			<div class="main-benefits__item"><div class="main-benefits__img main-benefits__img--4"></div><span class="main-benefits__title">{{mui.mp.ico.4}}</span></div>
+			<div class="main-benefits__item"><div class="main-benefits__img main-benefits__img--5"></div><span class="main-benefits__title">{{mui.mp.ico.5}}</span></div>
+			<div class="main-benefits__item"><div class="main-benefits__img main-benefits__img--6"></div><span class="main-benefits__title">{{mui.mp.ico.6}}</span></div>
+		</div>
+	</div>
+</div>
+
+
+
+{{#congrats}}{{#certificates.response.length}}
+ <div class="main-congratulations main-previews"  style="direction: ltr">
+    <div class="cnt">
+    	<h2 class="main-h2">{{mui.pageContent.index.congrats}}</h2>
+        <div class="main-certificate__list owl-carousel congrats-carousel" id="congratsCarousel" style="max-width: 100%;">
+              {{#certificates.response}}
+            <div class="main-certificates__item" >
+                <div class="certificate-text">
+	                <h2 class="full-name">{{#fullname}}{{fullname}}{{/fullname}}{{^fullname}}noname{{/fullname}}</h2>
+	                <p class="certificate-title">{{title}}</p>
+	                <p class="certificate-date">{{date}}</p>
+                </div>
+            </div>
+            {{/certificates.response}}
+
+        </div>
+        <div class="owl-controls">
+			<span class="owl-controls__prev" data-handler="onPrevCert"></span>
+			<span class="owl-controls__next" data-handler="onNextCert"></span>
+		</div>
+
+    </div>
+
+</div>
+{{/certificates.response.length}}{{/congrats}}
+
+
+<div class="main-contact">
+	<div id="formMessage" class=""></div>
+	<div class="cnt">
+		<h2 class="main-h2">{{mui.pageContent.index.contactUs}}</h2>
+		<p>{{mui.pageContent.index.readyToStart}}</p>
+		<form method="post" action="" data-handler="onSubmitForm" id="contactUs" class="main-contact__form">
+			<input class="form-control input form-control--half" type="text" id="requestform-name" name="name_f" placeholder="{{mui.pageContent.formlabel.name}}" value="{{name}}" required="true" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}">
+			<input class="form-control input form-control--half" type="text" id="requestform-phone"  name="phone" placeholder="{{mui.pageContent.index.phoneNo}}" required="true" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}">
+			<input class="form-control input form-control--half" type="text" id="requestform-email" name="email" placeholder="{{mui.pageContent.formlabel.email}}" required="true" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}">
+			<input class="form-control input form-control--half" type="text" id="requestform-employee" name="employee" placeholder="{{mui.pageContent.formlabel.employee}}" required="true" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}">
+			<input class="form-control input" type="text" id="requestform-subject" name="subject" placeholder="{{mui.pageContent.formlabel.subject}}" required="true" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}">
+			<textarea class="form-control input" id="requestform-message" name="comments" placeholder="{{mui.pageContent.formlabel.message}}" rows="8" required="true" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}" data-handler="onHidePlaceholder" data-handler-action="focus"></textarea>
+			<button class="button">{{mui.submit}}</button>
+		</form>
+	</div>
+</div>

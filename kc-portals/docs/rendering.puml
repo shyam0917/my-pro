@@ -1,0 +1,26 @@
+@startuml
+(*)  -->[ call method] "page.out()"
+"page.out()" --> "
+
+Waiting defineData(), loadMainTemplate(), loadContentTemplate()
+
+" as waiting
+
+note right: Waiting Promises
+
+waiting --> "defineDataPromise.resolve();"
+
+note right: Page Data exists
+
+"defineDataPromise.resolve();" --> "
+
+renderMain()
+outMainPromise.resolve();
+
+" as main
+
+main --> (*)
+
+note right: Page rendering done!
+
+@enduml

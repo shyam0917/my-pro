@@ -1,0 +1,155 @@
+<div class="inner-top">
+	<div class="cnt">
+		<div class="inner-top__library">
+			<h2 class="inner-top__title">{{mui.txtLabels.sidebarTitle}}</h2>
+			<p class="inner-top__subtitle">{{mui.txtLabels.sidebarText}}</p>
+		</div>
+		<div class="inner-top__current">
+			<h2 class="inner-top__title">{{mui.pageTitle.contactus}}</h2>
+			<p class="inner-top__subtitle">{{mui.pageSubTitle.contactus}}</p>
+		</div>
+	</div>
+</div>
+
+<div class="inner-page">
+	<div class="cnt">
+		<div class="inner-page__sidebar">
+			<div data-ctrl="Sidebar" id="sidebar">
+				Loading sidebar...
+			</div>
+		</div>
+		<div class="inner-page__content">
+			<div class="panel-b">
+				<div id="formMessage" class=""></div>
+				<div class="text  text-align">
+					{{{mui.pageContent.contactus.text}}}
+				</div>
+				<div class="form-label  text-align">
+					{{mui.pageContent.contactus.toplabel}}
+				</div>
+				<div class="flex-row">
+					<div class="flex-col flex-col-6">
+						<form class="flex-form" method="post" action="" data-handler="onSubmitForm" id="contactUs">
+							<div class="flex-form__row">
+								<label class="flex-form__label" for="requestform-name">{{mui.pageContent.contactus.formlabel.name}}:</label>
+								<input type="text" class="flex-form__input" value="{{name}}"
+									   name="name" id="requestform-name"
+									   placeholder="{{mui.pageContent.contactus.formlabel.name}}"
+									   required="true"
+									   data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+							</div>
+							<div class="flex-form__row">
+								<label class="flex-form__label" for="requestform-email">
+									{{mui.pageContent.contactus.formlabel.mailAdress}}:
+								</label>
+								<input type="email" class="flex-form__input" value="{{email}}"
+										   name="email" id="requestform-email"
+										   placeholder="{{mui.pageContent.contactus.formlabel.mailAdress}}"
+										   required="true"
+										   data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"
+										   data-invalidMessageWrongType="{{mui.form.requiredField.invalidTypeMessage}}"/>
+							</div>
+							<div class="flex-form__row">
+								<label class="flex-form__label" for="requestform-subject">{{mui.pageContent.contactus.formlabel.subject}}:</label>
+								<input type="text" class="flex-form__input" value="{{subject}}" name="subject"
+										   id="requestform-subject"
+										   placeholder="{{mui.pageContent.contactus.formlabel.subject}}"
+										   required="true"
+										   data-invalidMessage="{{mui.form.requiredField.invalidMessage}}" />
+							</div>
+							<div class="flex-form__row">
+								<label class="flex-form__label" for="requestform-message">{{mui.pageContent.contactus.formlabel.text}}:</label>
+								<textarea class="flex-form__input h100" name="message" id="requestform-message"
+										  placeholder="{{mui.pageContent.contactus.formlabel.text}}"
+										  required="true"
+										  data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"
+										  data-handler="onHidePlaceholder"
+										  data-handler-action="focus">{{message}}</textarea>
+							</div>
+							<div class="flex-form__btn text-center ">
+								<input type="submit" name="submit" value="{{mui.submit}}" class="button" />
+							</div>
+						</form>
+					</div>
+					<div class="flex-col flex-col-6">
+						<div class="bold">
+							<big>{{{mui.pageContent.contactus.country01}}}</big>
+						</div>
+						<div class="flex-row">
+							<div class="flex-col-3 bold">
+								{{mui.pageContent.contactus.address}}:
+							</div>
+							<div class="flex-col-9">
+								{{{mui.pageContent.contactus.address01}}}
+							</div>
+						</div>
+
+						<div class="flex-row">
+							<div class="flex-col-3 bold">
+								{{mui.pageContent.contactus.email}}:
+							</div>
+							<div class="flex-col-9">
+								{{{mui.pageContent.contactus.email01}}}
+							</div>
+						</div>
+
+						<div class="flex-row">
+							<div class="flex-col-3 bold">
+								{{mui.pageContent.contactus.phone}}:
+							</div>
+							<div class="flex-col-9 text-align">
+								<div class="ltr">{{{mui.pageContent.contactus.phone01}}}</div>
+							</div>
+						</div>
+
+						<br>
+						<div class="bold">
+							<big>{{{mui.pageContent.contactus.country11}}}</big>
+						</div>
+						<div class="flex-row">
+							<div class="flex-col-3 bold">
+								{{mui.pageContent.contactus.address}}:
+							</div>
+							<div class="flex-col-9">
+								{{{mui.pageContent.contactus.address11}}}
+							</div>
+						</div>
+
+						<br>
+						<div class="flex-row">
+							<div class="flex-col-3 bold">
+								{{mui.pageContent.contactus.email}}:
+							</div>
+							<div class="flex-col-9">
+								{{{mui.pageContent.contactus.email11}}}
+							</div>
+						</div>
+
+						<div class="flex-row">
+							<div class="flex-col-3 bold">
+								{{mui.pageContent.contactus.phone}}:
+							</div>
+							<div class="flex-col-9 text-align">
+								<div class="ltr">{{{mui.pageContent.contactus.phone11}}}</div>
+							</div>
+						</div>
+
+						<div class="flex-row">
+							<div class="flex-col-3 bold">
+								{{mui.pageContent.contactus.fax}}:
+							</div>
+							<div class="flex-col-9 text-align">
+								<div class="ltr">{{{mui.pageContent.contactus.phone12}}}</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+	</div>
+</div>
+

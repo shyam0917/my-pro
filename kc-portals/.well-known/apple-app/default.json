@@ -1,0 +1,90 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "Q45MAYWMQ4.com.knowledgecity.ussiteapp",
+                "paths": ["*", "/*/autoLogin/*"]
+            },
+            {
+                "appID": "Q45MAYWMQ4.com.knowledgecity.knowledgecity-portal",
+                "paths": ["*", "/*/autoLogin/*"]
+            },
+            {
+                "appID": "Q45MAYWMQ4.com.riyadbankacademyapp",
+                "paths": ["*", "/*/autoLogin/*"]
+            },
+            {
+                "appID": "Q45MAYWMQ4.com.knowledgecity.kcportal",
+                "paths": ["*", "/*/autoLogin/*"]
+            },
+            {
+                "appID": "Q45MAYWMQ4.com.knowledgecity.abudawood",
+                "paths": ["*", "/*/autoLogin/*"]
+            },
+            {
+                "appID": "Q45MAYWMQ4.com.knowledgecity.aljacademy",
+                "paths": ["*", "/*/autoLogin/*"]
+            },
+            {
+                "appID": "84WQRZ3CP9.com.alrajhibankacademy.ent",
+                "paths": ["*", "/*/autoLogin/*"]
+            },
+            {
+                "appID": "Q45MAYWMQ4.com.knowledgecity.alturki",
+                "paths": ["*", "/*/autoLogin/*"]
+            },
+            {
+                "appID": "Q45MAYWMQ4.com.malathacademy",
+                "paths": ["*", "/*/autoLogin/*"]
+            },
+            {
+                "appID": "Q45MAYWMQ4.com.knowledgecity.MCIeLearning",
+                "paths": ["*", "/*/autoLogin/*"]
+            },
+            {
+                "appID": "84WQRZ3CP9.com.knowledgecity.mewaacademy",
+                "paths": ["*", "/*/autoLogin/*"]
+            },
+            {
+                "appID": "Q45MAYWMQ4.com.mobilyacademy",
+                "paths": ["*", "/*/autoLogin/*"]
+            },
+            {
+                "appID": "84WQRZ3CP9.com.nadatrainingacademy.ent",
+                "paths": ["*", "/*/autoLogin/*"]
+            },
+            {
+                "appID": "84WQRZ3CP9.com.knowledgecity.rc.ent",
+                "paths": ["*", "/*/autoLogin/*"]
+            },
+            {
+                "appID": "Q45MAYWMQ4.com.knowledgecity.saibacademyportal",
+                "paths": ["*", "/*/autoLogin/*"]
+            },
+            {
+                "appID": "84WQRZ3CP9.com.savolaknowledgebridge.ent",
+                "paths": ["*", "/*/autoLogin/*"]
+            },
+            {
+                "appID": "84WQRZ3CP9.com.sfdaacademy",
+                "paths": ["*", "/*/autoLogin/*"]
+            },
+            {
+                "appID": "84WQRZ3CP9.com.knowledgecity.SWCCAcademy",
+                "paths": ["*", "/*/autoLogin/*"]
+            },
+            {
+                "appID": "84WQRZ3CP9.com.knowledgecity.boeinglearning",
+                "paths": ["*", "/*/autoLogin/*"]
+            },
+            {
+                "appID": "84WQRZ3CP9.com.knowledgecity.aljomaihacademy",
+                "paths": ["*", "/*/autoLogin/*"]
+            },
+            {
+                "appID": "84WQRZ3CP9.com.knowledgecity.modon",
+                "paths": ["*", "/*/autoLogin/*"]
+            }
+        ]
+    }

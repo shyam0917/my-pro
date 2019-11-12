@@ -1,0 +1,37 @@
+<div class="tab-box">
+
+  <div class="tab-box__menu">
+    <a href="{{site.url_with_lang}}{{section}}/type/business" class="tab-box__toggle tab-box__toggle--business">
+      <div class="tab-box__toggle-title">
+        {{sign_up.type.business}}
+      </div>
+    </a>
+    <a href="{{site.url_with_lang}}{{section}}/type/government" class="tab-box__toggle tab-box__toggle--government">
+      <div class="tab-box__toggle-title">
+        {{sign_up.type.government}}
+      </div>
+    </a>
+    <div class="tab-box__toggle tab-box__toggle--academic tab-box__toggle--active">
+      <div class="tab-box__toggle-title">
+        {{sign_up.type.academic}}
+      </div>
+    </div>
+    <a href="{{site.url_with_lang}}{{section}}/type/library" class="tab-box__toggle tab-box__toggle--library">
+      <div class="tab-box__toggle-title">
+        {{sign_up.type.library}}
+      </div>
+    </a>
+  </div> <!-- tab-box__menu -->
+
+  <div class="tab-box__enum">
+    <div class="tab-box__item tab-box__item--active">
+      <h1 class="tab-box__item-title">{{{sign_up.academic.title}}}</h1>
+      <div class="sign-up-form">
+        <div class="tab-box__item-subtitle cols-2 description">{{sign_up.academic.requestDescription}}</div>
+        <div class="header-form-content cols-2" id="request-form">
+        </div>
+      </div>
+    </div> <!-- academic -->
+  </div>
+
+</div> <!-- tab-box -->

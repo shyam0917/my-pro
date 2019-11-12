@@ -1,0 +1,30 @@
+<div class="inner-header inner-header--faq">
+	<div class="cnt">
+		<h1 class="inner-header__title">
+			{{title}}
+		</h1>
+		<p class="inner-header__subtitle">
+			{{subTitle}}
+		</p>
+	</div>
+</div>
+
+<div class="inner-page">
+	<div class="cnt">
+		<div class="inner-page__content">
+			{{#list}}
+			<div class="faq-item question">
+				<div class="faq-item__question faq-question">
+					<a href="" data-reload="1" role="button" tabindex="0">{{{question}}}</a>
+					<div class="faq-item__icon">
+						<div class="fa fa-angle-down"></div>
+					</div>
+				</div>
+				<div class="faq-item__answer faq-answer" aria-live="polite">
+					{{{answer}}}
+				</div>
+			</div>
+			{{/list}}
+		</div>
+	</div>
+</div>

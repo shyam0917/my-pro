@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteBase /templates/template01/2/images/featured/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^.*$ /templates/template01/2/images/featured/default.jpg [L]

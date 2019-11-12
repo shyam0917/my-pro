@@ -1,0 +1,112 @@
+<section class="signup-page signup-page--individual">
+
+    <div class="cnt" id="container">
+        <div class="signup-benefits signup-benefits--individual" data-benefits="list">
+
+            <div class="signup-benefits__header">{{{mui.individual.title}}}:</div>
+            <div class="signup-benefits__content">
+                <div class="signup-benefits__item">
+                    <div class="signup-benefits__icon-wrapper"><i class="icon icon-individual-benefit-1"></i></div>
+                    <div class="signup-benefits__caption">{{mui.individual.benefits.0}}</div>
+                </div>
+                <div class="signup-benefits__item">
+                    <div class="signup-benefits__icon-wrapper"><i class="icon icon-individual-benefit-2"></i></div>
+                    <div class="signup-benefits__caption">{{mui.individual.benefits.1}}</div>
+                </div>
+                <div class="signup-benefits__item">
+                    <div class="signup-benefits__icon-wrapper"><i class="icon icon-individual-benefit-3"></i></div>
+                    <div class="signup-benefits__caption">{{mui.individual.benefits.2}}</div>
+                </div>
+                <div class="signup-benefits__item">
+                    <div class="signup-benefits__icon-wrapper"><i class="icon icon-individual-benefit-4"></i></div>
+                    <div class="signup-benefits__caption">{{mui.individual.benefits.3}}</div>
+                </div>
+                <div class="signup-benefits__item">
+                    <div class="signup-benefits__icon-wrapper"><i class="icon icon-individual-benefit-5"></i></div>
+                    <div class="signup-benefits__caption">{{mui.individual.benefits.4}}</div>
+                </div>
+                <div class="signup-benefits__item">
+                    <div class="signup-benefits__icon-wrapper"><i class="icon icon-individual-benefit-6"></i></div>
+                    <div class="signup-benefits__caption">{{mui.individual.benefits.5}}</div>
+                </div>
+
+            </div>
+
+            <div class=" signup-benefits__hidden" data-benefits="hidden">
+                <div class="signup-benefits__content signup-benefits__content--hidden">
+                    <div class="signup-benefits__item">
+                        <div class="signup-benefits__icon-wrapper"><i class="icon icon-individual-benefit-7"></i></div>
+                        <div class="signup-benefits__caption">{{mui.individual.benefits.6}}</div>
+                    </div>
+                    <div class="signup-benefits__item">
+                        <div class="signup-benefits__icon-wrapper"><i class="icon icon-individual-benefit-8"></i></div>
+                        <div class="signup-benefits__caption">{{mui.individual.benefits.7}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="signup-benefits__footer">
+                <div class="signup-benefits__business">{{{mui.individual.toBusiness}}}</div>
+                <a href="#" class="signup-benefits__switch" data-handler="onSwitchBenefits" data-benefits="switch">{{buttonLabel.showMore}} <i class="fa fa-plus"></i></a>
+                <a href="#" class="signup-benefits__switch hidden" data-handler="onSwitchBenefits" data-benefits="switch" >{{buttonLabel.hide}} <i class="fa fa-minus"></i></a>
+            </div>
+
+        </div>
+
+        {{#isUS}}
+
+            <div class="signup-rates signup-rates--individual">
+
+            <div class="signup-rates__item">
+                <div class="signup-rates__inner">
+                    <div class="signup-rates__header">{{mui.monthToMonth}}</div>
+                    <div class="signup-rates__content">
+                        <div class="signup-rates__trial">{{mui.freeTrial}}</div>
+                        <div class="signup-rates__price-per">{{{mui.perMonth}}}</div>
+                        <div class="signup-rates__price"><span class="signup-rates__cur">$</span>{{{formattedPrices.monthly}}}</div>
+                        <div data-handler="onShowCreateAccountForm" data-plan="monthly" class="btn signup-rates__sign">{{mui.startFree}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="signup-rates__item">
+                <div class="signup-rates__badge">
+                    <div class="left-align">{{mui.best}}</div>
+                    <div class="right-align">{{mui.value}}</div>
+                </div>
+                <div class="signup-rates__inner">
+                    <div class="signup-rates__header">{{mui.annualBilling}}</div>
+                    <div class="signup-rates__content">
+                        <div class="signup-rates__trial">{{mui.freeTrial}}</div>
+                        <div class="signup-rates__profit">{{mui.savePayment}}</div>
+                        <div class="signup-rates__price-per">{{{mui.perMonth}}}</div>
+                        <div class="signup-rates__price signup-rates__price--short"><span class="signup-rates__cur">$</span>{{{formattedPrices.yearly}}}</div>
+                        <div data-handler="onShowCreateAccountForm" data-plan="yearly" class="btn signup-rates__sign">{{mui.startFree}}</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        {{/isUS}}
+
+        {{^isUS}}
+
+        <div id="request" class="signup-request">
+
+            <div class="signup-request__description">
+                {{mui.individual.requestDescription}}
+            </div>
+            <div class="signup-request__title">
+                {{mui.individual.requestTitle}}
+            </div>
+
+            <div id="request-form"></div>
+
+        </div>
+
+        {{/isUS}}
+    </div>
+
+
+</section>

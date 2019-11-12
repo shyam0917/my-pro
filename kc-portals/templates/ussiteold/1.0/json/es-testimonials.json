@@ -1,0 +1,43 @@
+[
+	{
+		"text": "La Plataforma de KnowledgeCity nos permitió ingresar al espacio del Sistema de Gestión de Aprendizaje con facilidad. La plataforma es fácil de usar, adaptable y económica. A cada paso del camino, recibimos un servicio al cliente excepcional y actualizaciones útiles.",
+		"name": "Omar Small",
+		"title": "Subdirector Municipal",
+		"company": "New Rochelle, Nueva York",
+		"image": "omar.png",
+		"class": "activo"
+	},
+	{
+		"text": "KnowledgeCity le ha proporcionado a nuestra empresa una excelente plataforma de aprendizaje. El tiempo es de suma importancia. Los cursos les permiten a nuestros empleados aprender rápidamente un tema y volver a trabajar. ¡Y la Atención al Cliente es extraordinaria!",
+		"name": "Jeff Long",
+		"title": "Especialista en Capacitación",
+		"company": "Hytrol Conveyor Co., Inc.",
+		"image": "jeff.png"
+	},
+	{
+		"text": "KnowledgeCity le ha brindado a la ciudad de Lancaster una excelente Atención al Cliente. El personal ha sido rápido, diligente y me ha ayudado mucho respondiendo a las preguntas que he tenido mientras me estaba familiarizando con el LMS. Además, el personal de la ciudad de Lancaster se impresionó gratamente con el sitio de capacitación y ha mostrado tremendo interés y entusiasmo al usar la biblioteca de videos de capacitación para ampliar sus habilidades y conocimientos profesionales",
+		"name": "Araxie Kahramanian",
+		"title": "Analista de Gestión",
+		"image": "araxie.png"
+	},
+	{
+		"text": "KnowledgeCity ha sido un buen cambio para nuestra organización. Les ha brindado a nuestros empleados un medio de crecimiento continuo en una plataforma en línea de fácil acceso. Estamos muy satisfechos con la calidad de la solución que se nos ha proporcionado",
+		"name": "Patrick Kenny",
+		"title": "Director General",
+		"company": "<a href=\"https://www.northwestcareercollege.edu/facultystaff.html\">www.northwestcareercollege.edu</a>",
+		"image": "patrick.png"
+	},
+	{
+		"text": "Después de ascender en mi empresa a un puesto de ventas externas, me encontré un poco desactualizado con mis conocimientos de informática. Knowledge City fue la clave para ponerme al día con los programas necesarios. Son cursos fáciles de navegar, claros y concisos. Le recomiendo Knowledge City a mi jefe para todas las nuevas contrataciones y ascensos.",
+		"name": "Michael Balay",
+		"title": "Representante de ventas",
+		"image": "michael.jpg"
+	},
+	{
+		"text": "No podría estar más entusiasmada con nuestra reciente compra del sistema de gestión de aprendizaje de KnowledgeCity. Hasta ahora el LMS ha sido un proceso muy fácil de aprender y el apoyo ha sido increíble. Nuestro personal de la directiva ve con interés lo fácil que será la gestión de nuestra capacitación desde la adquisición de esta base de datos y el personal está encantado por tener un recurso tan bueno y con tantas capacitaciones. A todos les gusta mucho lo que han visto y hecho hasta ahora.",
+		"name": "Sheryl Schwab",
+		"title": "Directora Ejecutiva",
+		"company": "Domestic Abuse Shelter (Ubicado en Florida)",		
+		"image": "sheryl.png"
+	}
+]

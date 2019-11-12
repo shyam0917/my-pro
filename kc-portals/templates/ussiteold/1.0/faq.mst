@@ -1,0 +1,96 @@
+<div class="inner-header inner-header--faq">
+	<div class="cnt">
+		<h1 class="inner-header__title">
+			{{title}}
+		</h1>
+	</div>
+	<div class="cnt-wide">
+		<div class="inner-page__content faq">
+			<div class="faq__warpper">
+			{{#questions}}
+				{{#ll}}
+				<div class="faq-wrapper">
+					<div class="faq-title">{{title}}</div>
+					{{#list}}
+					<div class="faq-item question">
+						<div class="faq-item__question faq-question">
+							{{{question}}}
+							<div class="faq-item__icon"></div>
+						</div>
+						<div class="faq-item__answer faq-answer">
+							{{{answer}}}
+						</div>
+					</div>
+					{{/list}}
+				</div>
+				{{/ll}}
+				{{#lms}}
+				<div class="faq-wrapper">
+					<div class="faq-title">{{{title}}}</div>
+					{{#list}}
+					<div class="faq-item question">
+						<div class="faq-item__question faq-question">
+							{{{question}}}
+							<div class="faq-item__icon"></div>
+						</div>
+						<div class="faq-item__answer faq-answer">
+							{{{answer}}}
+						</div>
+					</div>
+					{{/list}}
+				</div>
+				{{/lms}}
+				{{#cc}}
+				<div class="faq-wrapper">
+					<div class="faq-title">{{title}}</div>
+					{{#list}}
+					<div class="faq-item question">
+						<div class="faq-item__question faq-question">
+							{{{question}}}
+							<div class="faq-item__icon"></div>
+						</div>
+						<div class="faq-item__answer faq-answer">
+							{{{answer}}}
+						</div>
+					</div>
+					{{/list}}
+				</div>
+				{{/cc}}
+			{{/questions}}
+			</div>
+		</div>
+	</div>
+	<section class="bottom-links faq">
+	    <div class="cnt-wide">
+	    	<div class="bottom-title-wrapper"><h2> {{bottomLinksTitle}}</h2></div>
+	        <div class="bot-columns about-us">
+	            <div class="">
+	                <a href="{{site.url_with_lang}}learningLibrary"><div class="bottom-link__img">
+	                <img src="{{VIEW}}images/Bottom-link_LL--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+	                height:auto">
+	                </div>
+	                </a>
+	                <h2>{{botLinksLearningTitle}}</h2>
+	                 <p>{{botLinksLearningDesc}} <a href="{{site.url_with_lang}}learningLibrary">{{learnMore}}</a></p>
+	            </div>
+	            <div class="">
+	                <a href="{{site.url_with_lang}}lms"><div class="bottom-link__img">
+	                    <img src="{{VIEW}}images/bottom-link_LMS--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+	                height:auto">
+	                </div>
+	                </a>
+	                <h2>{{botLinksLmsTitle}}</h2>
+	                 <p>{{botLinksLmsDesc}} <a href="{{site.url_with_lang}}lms">{{learnMore}}</a></p>
+	            </div>
+	            <div class="">
+	                <a href="{{site.url_with_lang}}contentCreation"><div class="bottom-link__img">
+	                <img src="{{VIEW}}images/Bottom-link_CC--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+	                height:auto">
+	                </div></a>
+	                <h2>{{botLinksContentTitle}}</h2>
+	                 <p>{{botLinksContentDesc}} <a href="{{site.url_with_lang}}contentCreation"> {{learnMore}}</a></p>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+</div>

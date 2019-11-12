@@ -1,0 +1,786 @@
+
+body {
+  background: #fff !important;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  padding: 0;
+  margin: 0;
+}
+
+.clearfix:after {
+  clear: both;
+  content: '';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.print-actions {
+  max-width: 800px;
+  margin: 30px auto;
+  width: 100%;
+}
+
+.print-actions__col {
+  float: left;
+  width: 50%;
+}
+
+.print-actions__col + .print-actions__col {
+  text-align: right;
+}
+
+@media print {
+  .print-actions {
+    display: none;
+  }
+  .print-core-form__details-input{
+    border: none!important;
+    padding-left: 0!important;
+  }
+}
+
+.print-doc-album,
+.print-doc-landscape {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.print-course-list {
+}
+
+.print-course-list__haeder {
+  padding: 30px 0;
+}
+
+.print-course-list__haeder-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.print-course-list__userinfo {
+
+}
+
+.print-course-list__userinfo ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.print-course-list__userinfo li {
+}
+
+.print-course-list__userinfo label {
+  font-weight: 700;
+  display: inline-block;
+  width: 130px;
+}
+
+.print-course-list__userinfo-name {
+}
+
+.print-course-list__body {
+  border-bottom: 2px solid gray;
+  border-top: 2px solid gray;
+  line-height: 1.2;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.print-course-list__dsc {
+  margin-bottom: 20px;
+}
+
+.print-course-list__ul {
+}
+
+.print-course__signature {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  width: 100%
+}
+
+.print-course__signature-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.print-course__signature-row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.print-course__signature-row:after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 1px;
+  width: 100%;
+}
+
+.print-course__signature-row--event {
+  height: 30px;
+  padding-top: 40px;
+}
+
+.print-course__signature-col {
+  box-sizing: border-box;
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33.3%;
+}
+
+.print-course__field {
+  border-bottom: 1px solid #000;
+  position: relative;
+}
+
+.print-course__field label {
+  font-size: 12px;
+  margin-top: 5px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.print-reg-form {
+  font-size: 10pt;
+  line-height: 1.4;
+}
+
+.print-reg-form__header {
+}
+
+.print-reg-form__logo {
+  border-bottom: 1px solid #a7a8aa;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.print-reg-form__logo img {
+  height: 56px;
+}
+
+.print-reg-form__title {
+  color: #009aa6;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.print-reg-form__position {
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.print-reg-form__person {
+  font-size: 12px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.print-reg-form__form-name {
+  font-size: 14px;
+  text-align: center;
+}
+
+.print-reg-form__form-name-dsc {
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.print-reg-form__form-name-dsc span {
+  color: #009aa6;
+  text-decoration: underline;
+}
+
+.print-reg-form__main {
+  border: 1px solid #000;
+}
+
+.print-reg-form__main--header {
+  margin-bottom: 30px;
+}
+
+.print-reg-form__main-row {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.print-reg-form__main-row + .print-reg-form__main-row {
+  border-top: 1px solid #000;
+}
+
+.print-reg-form__main-row--title {
+  background: #009aa6 !important;
+  color: #fff !important;
+  font-weight: 700;
+}
+
+.print-reg-form__main-row--center {
+  text-align: center;
+}
+
+.print-reg-form__main-row--dsc {
+  background: #717173;
+  color: #fff;
+}
+
+.print-reg-form__main-row--dsc-important {
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.print-reg-form__main-row--header {
+  color: #717173;
+}
+
+.print-reg-form__main-row--header ul {
+  margin: 3px 0;
+}
+
+.print-reg-form__main-checkaear {
+  border: 1px solid #000;
+  display: inline-block;
+  height: 10pt;
+  margin-top: -1px;
+  position: relative;
+  vertical-align: middle;
+  width: 10pt;
+}
+
+.print-reg-form__main-checkaear:after {
+  background: #c0c0c0;
+  content: '';
+  display: block;
+  height: 8pt;
+  left: 1.1pt;
+  position: absolute;
+  top: 1.1pt;
+  width: 8pt;
+}
+
+.print-reg-form__col-group {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.print-reg-form__col-group:after {
+  content: '';
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  width: 100%;
+}
+
+.print-reg-form__col {
+  box-sizing: border-box;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.print-reg-form__col50 {
+  width: 50%;
+}
+
+.print-reg-form__col--label {
+  border-right: 1px solid #000;
+  color: #4d4f53;
+  width: 220px;
+}
+
+.print-reg-form__col--label-w {
+  border-right: 1px solid #000;
+  color: #4d4f53;
+  width: 370px;
+}
+
+.print-reg-form__col--half {
+  width: 50% !important;
+}
+
+.print-reg-form__col--white {
+  color: #fff !important;
+  font-weight: 700;
+}
+
+.print-reg-form__main-row--dark {
+  background: #4d4f53 !important;
+  color: #fff !important;
+}
+
+.print-reg-form__main--content {
+  margin-bottom: 30px;
+}
+
+.print-reg-form__main--content span {
+  background: #c0c0c0 !important;
+  display: inline-block;
+  height: 10pt;
+  vertical-align: middle;
+  width: 33px;
+}
+
+.print-reg-form__main-row--center {
+  text-align: center;
+}
+
+.print-reg-form__main-row--signature {
+  box-sizing: border-box;
+  height: 80px;
+  padding-top: 40px;
+}
+
+.print-course__signature-container {
+}
+
+.print-course__signature-row {
+}
+
+.print-course__signature-col {
+}
+
+.print-course__field {
+}
+
+.print-course__field label {
+}
+
+.print-reg-form__main--footer {
+}
+
+.print-reg-form__note {
+  font-size: 8pt;
+}
+
+.print-reg-form__note-title {
+  color: #009aa6;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.print-reg-form__note-dsc {
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+}
+
+.print-reg-form__note-ul {
+  font-style: italic;
+}
+
+.print-reg-form__note-li {
+}
+
+.print-doc-landscape {
+  width: 1440px;
+  max-width: 1440px;
+}
+
+.print-doc-landscape__header {
+}
+
+.print-doc-landscape__header-row {
+}
+
+.print-doc-landscape__header-row:after {
+  content: '';
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  width: 100%;
+}
+
+.print-doc-landscape__header-company {
+}
+
+.print-doc-landscape__header-company img {
+}
+
+.print-doc-landscape__header-logo {
+  float: right;
+}
+
+.print-doc-landscape__header-logo img {
+  height: 60px;
+}
+
+.print-doc-landscape__header-title {
+  font-size: 20pt;
+  font-weight: 700;
+  position: relative;
+  top: -50px;
+  text-align: center;
+}
+
+.print-doc-landscape__info {
+  margin-bottom: 20px;
+}
+
+.print-doc-landscape__info-name {
+  float: left;
+}
+
+.print-doc-landscape__info-date {
+  float: right;
+}
+
+.print-doc-landscape__info-field {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.print-doc-landscape__info-input {
+  border-bottom: 1px solid #000;
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  vertical-align: top;
+  width: 200px;
+}
+
+.print-doc-landscape__info-input label {
+  font-size: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.print-doc-landscape__info-field--ar {
+  direction: rtl;
+}
+
+.print-doc__table {
+  border: 2px solid #000;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.print-doc__table thead {
+}
+
+.print-doc__table thead tr {
+}
+
+.print-doc__table tr td,
+.print-doc__table tr th {
+  border: 1px solid #000;
+  padding: 0 4px;
+  line-height: 1.6;
+}
+
+.print-doc__table tr td:nth-child(1) {
+  width: 25px;
+  text-align: center;
+}
+
+.print-doc__table thead th {
+  background: #5792aa;
+  color: #fff;
+  text-align: center;
+}
+
+.print-doc__table div {
+}
+
+.print-doc__table .rtl {
+}
+
+.print-doc__table br {
+}
+
+.print-doc__table .date {
+}
+
+.print-doc__table span {
+}
+
+.print-doc__table tbody {
+}
+
+.print-doc__table tbody td {
+}
+
+.print-doc__table-dsc {
+  background: #9bb7ae;
+  border: 1px solid #000;
+  color: #61617c;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding: 4px;
+  text-align: center;
+}
+
+.print-doc__row {
+  box-sizing: border-box;
+  width: auto;
+}
+
+.print-doc__row:after {
+  content: '';
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  width: 100%;
+}
+
+.print-doc__col-group {
+  margin: 0 -20px;
+}
+
+.print-doc__col {
+  box-sizing: border-box;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 33.333%;
+}
+
+.print-doc__important {
+  border: 1px solid #ff0000;
+  font-size: 9pt;
+  padding: 6px;
+  height: 170px;
+}
+
+.print-doc__important-ttl {
+  color: #ff0000;
+}
+
+.print-doc__important ol {
+  margin: 0 12px;
+  padding: 0;
+}
+
+.print-doc__important ol li {
+}
+
+.print-doc__important-ar {
+  direction: rtl;
+}
+
+.print-doc__page-num-group {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.print-doc__page-num {
+  margin-bottom: -2px;
+}
+
+.print-doc__page-title {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+  padding: 0 5px;
+  width: 80px;
+}
+
+.print-doc__page-checbox {
+  border: 2px solid #000;
+  display: inline-block;
+  height: 41px;
+  vertical-align: middle;
+  width: 41px;
+}
+
+.print-doc__page-title--ar {
+  direction: rtl;
+  text-align: left;
+}
+
+.print-doc__table--dark thead th {
+  background: #616163;
+}
+
+.border-less {
+  border: none !important;
+}
+
+.print-doc__tr-height {
+  position: relative;
+}
+
+.print-doc__tr-num {
+  color: #9bb7ae;
+  font-size: 24pt;
+  left: 15px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.print-doc__title-pre tr td:nth-child(1) {
+  text-align: left;
+  white-space: nowrap;
+}
+
+.print-doc__title-pre-fix tr:nth-child(n+2) td {
+  padding-top: 1px !important;
+}
+
+.print-doc__col-note-eng {
+  width: 38%
+}
+
+.print-doc__col-note-ar {
+  width: 32%
+}
+
+.print-doc__col-pages {
+  width: 30%;
+}
+
+.print-doc__table--signature tbody tr td {
+  width: 50%;
+}
+
+.print-doc__table--signature tbody tr:nth-child(2) td {
+  height: 40px;
+}
+
+.print-core-form {
+  font-size: 10pt;
+  line-height: 1.4;
+  padding-bottom: 40px;
+  position: relative;
+  min-height: 100vh;
+}
+
+.print-core-form__details {
+  border: 1px solid #000;
+  margin-bottom: 15px;
+}
+
+.print-core-form__details-row {
+  height: 30px;
+  line-height: 30px;
+}
+
+.print-core-form__details-row + .print-core-form__details-row {
+  border-top: 1px solid #000;
+}
+
+.print-core-form__details-col {
+  box-sizing: border-box;
+  float: left;
+  padding: 0 8px;
+}
+
+.print-core-form__details-col:nth-child(1) {
+  border-right: 1px solid #000;
+  width: 380px;
+}
+
+.print-core-form__details-col:nth-child(2) {
+  font-weight: 700;
+  text-align: left;
+  width: calc(100% - 382px);
+  padding-left: 20px;
+}
+
+.print-core-form__details-input{
+  border: none;
+  border-bottom: 1px solid gray;
+  font-size: 14px;
+  height: 16px;
+  padding: 2px 10px;
+}
+[data-role="requestedTimeCost"]:empty+span{
+  display: none;
+}
+
+.print-core-courses {
+  border: 1px solid #000;
+  margin-bottom: 15px;
+}
+
+.print-core-courses__header {
+  background: #717173;
+  border-bottom: 1px solid #000;
+  color: #fff;
+  height: 26px;
+  line-height: 26px;
+  padding-left: 8px;
+}
+
+.print-core-courses__row {
+}
+
+.print-core-courses__row:after {
+  content: '';
+  clear: both;
+  display: block;
+  width: 100%;
+}
+
+.print-core-courses__col {
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  box-sizing: border-box;
+  color: #009aa6;
+  font-size: 8pt;
+  float: left;
+  display: block;
+  height: 26px;
+  line-height: 26px;
+  margin-bottom: -1px;
+  overflow: hidden;
+  padding: 0 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 33.33%;
+}
+
+.print-core-courses__col:nth-child(n3) {
+  border-right: none;
+}
+
+.print-reg-form__item {
+  display: inline-block;
+}
+
+.print-reg-form__item + .print-reg-form__item:before {
+  content: ',';
+  display: inline-block;
+  margin-right: 1ex;
+}
+
+.print-reg-form_checkarea {
+  background: #fff !important;
+  display: inline-block;
+  border: 1px solid #000;
+  width: 14px !important;
+  height: 14px !important;
+  vertical-align: middle;
+  margin: 5px 0 7px 0;
+}

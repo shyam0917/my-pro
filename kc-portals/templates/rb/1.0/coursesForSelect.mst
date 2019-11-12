@@ -1,0 +1,86 @@
+<div class="inner-top">
+    <div class="cnt">
+        <div class="inner-top__library">
+            <h2 class="inner-header__title">{{mui.txtLabels.sidebarTitle}}</h2>
+            <p class="inner-header__subtitle">{{mui.txtLabels.sidebarText}}</p>
+        </div>
+        <div class="inner-top__current" data-ctrl="LibTitle"  id="libtitle"></div>
+    </div>
+</div>
+
+<div class="inner-page">
+    <div class="cnt">
+        <div class="inner-page__sidebar inner-page__sidebar--library">
+            <div data-ctrl="Sidebar" id="sidebar">
+                Loading sidebar...
+            </div>
+        </div>
+        <div class="inner-page__content">
+            <div class="panel-b panel-b--library-content panel-b--transparent">
+                {{#courses}}
+                <div class="course-card text-align">
+                    <div class="row">
+                        <div class="col-sm-9 float">
+                            <h3 class="course-card__header"><a href="{{url}}">{{title}}</a></h3>
+                            <div class="row">
+                                <div class="col-sm-4 float">
+                                    <a class="course-card__preview" href="{{url}}" data-handler="onOpenPreview" data-course-id="{{course_id}}" data-lesson-id="{{lesson_id}}" data-lesson-type="{{lesson_type}}">
+                                        <img src="{{img}}" class="course-card__img" data-handler="onImgLoadError" data-handler-action="error">
+                                    </a>
+                                </div>
+                                <div class="col-sm-8 float">
+                                    <div class="course-card__description">
+                                        {{{description}}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 float">
+                            <div class="course-card__link-header">
+                                <a href="{{url}}" class="course-card__link"><span>{{mui.goToCourse}}</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                                {{#isRequestAccess}}
+                                <a class="course-card__add-course with-tooltip {{^isAdd}}is_hidden{{/isAdd}}" href="{{myLearningUrl}}"><i class="fa fa-check"></i><span class="tooltip tooltip-top">{{mui.pageContent.course.AddedTooltip}}</span></a>
+                                <span class="course-card__add-course with-tooltip {{#isAdd}}is_hidden{{/isAdd}}" data-handler="onAddCourse" data-course_id="{{course_id}}"><i class="fa fa-plus"></i><span class="tooltip tooltip-top">{{mui.pageContent.course.AddTooltip}}</span></span>
+                                {{/isRequestAccess}}
+                            </div>
+                            <table class="course-card__info">
+                                <tr>
+                                    <td><i class="icon icon-author"></i></td>
+                                    <td class="td-label">{{mui.pageContent.course.author}}: </td>
+                                    <td>{{author}}</td>
+                                </tr>
+                                {{#runtime}}
+                                <tr>
+                                    <td><i class="icon icon-runtime"></i></td>
+                                    <td class="td-label">{{mui.pageContent.course.trt}}: </td>
+                                    <td>{{runtime}}</td>
+                                </tr>
+                                {{/runtime}}
+                                <tr>
+                                    <td><i class="icon icon-lessons"></i></td>
+                                    <td class="td-label">{{mui.pageContent.course.lessons}}: </td>
+                                    <td>{{lessons}}</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-globe fa-lg"></i></td>
+                                    <td class="td-label">{{mui.pageContent.course.languages}}: </td>
+                                    <td>{{langs}}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                {{/courses}}
+
+                {{#pagination.1}}
+                <ul class="pagination">
+                    {{#pagination}}
+                    <li class="{{#active}}active{{/active}}"><a href="{{url}}">{{caption}}</a></li>
+                    {{/pagination}}
+                </ul>
+                {{/pagination.1}}
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="cnt-wide" style="margin-left:-11px">
+  <div class="breadcrumbs">
+      <ul>
+      {{#breadCrumbs}}
+          {{^last}}
+            <li><a href="{{url}}">{{caption}}</a></li>
+        {{/last}}
+        {{#last}}
+             <li><span>{{caption}}</span></li>
+        {{/last}}
+          {{#delimeter}}
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+          {{/delimeter}}
+       {{/breadCrumbs}}
+      </ul>
+  </div>
+</div>

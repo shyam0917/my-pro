@@ -1,0 +1,9 @@
+<div class="form__row switches_com">
+    {{#switcherLable}}<label class="form__label" for="">{{switcherLable}}:</label>{{/switcherLable}}
+    <div class="fieldset">
+    {{#switchers}}
+        <label data-handler="onSwitch" class="{{#is_selected}} is_selected {{/is_selected}}">
+        <input {{checked}} type="radio" name="{{name}}" value="{{value}}">{{label}}</label>
+     {{/switchers}}
+     </div>
+</div>

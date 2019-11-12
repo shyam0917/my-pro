@@ -1,0 +1,40 @@
+<div data-ctrl="RequestADemoContent" id="RequestADemoContent" class="request-a-demo-page"> <!-- RequestADemo -->
+
+  <div class="sign-up-types hidden" id="requestDemoTypes">
+    <h1 class="sign-up-types__title">
+      {{sign_up.title}}
+    </h1>
+    <div class="sign-up-types__subtitle">
+      {{sign_up.subtitle}}
+    </div>
+
+    <div class="sign-up-types__enum">
+
+      <a href="{{site.url_with_lang}}Request-A-Demo/type/business" class="sign-up-types__item sign-up-types__item--business">
+        <div class="sign-up-types__item-title">
+          {{sign_up.type.business}}
+        </div>
+      </a>
+
+      <a href="{{site.url_with_lang}}Request-A-Demo/type/government" class="sign-up-types__item sign-up-types__item--government">
+        <div class="sign-up-types__item-title">
+          {{sign_up.type.government}}
+        </div>
+      </a>
+
+      <a href="{{site.url_with_lang}}Request-A-Demo/type/academic" class="sign-up-types__item sign-up-types__item--academic">
+        <div class="sign-up-types__item-title">
+          {{sign_up.type.academic}}
+        </div>
+      </a>
+
+      <a href="{{site.url_with_lang}}Request-A-Demo/type/library" class="sign-up-types__item sign-up-types__item--library">
+        <div class="sign-up-types__item-title">
+          {{sign_up.type.library}}
+        </div>
+      </a>
+
+    </div>
+  </div> <!-- sign-up-types -->
+
+</div>

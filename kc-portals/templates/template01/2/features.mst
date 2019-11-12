@@ -1,0 +1,115 @@
+<div class="inner-top">
+    <div class="cnt">
+        <div class="inner-top__library">
+            <h2 class="inner-top__title">{{mui.txtLabels.sidebarTitle}}</h2>
+            <p class="inner-top__subtitle">{{mui.txtLabels.sidebarText}}</p>
+        </div>
+        <div class="inner-top__current">
+            <h2 class="inner-top__title">{{title}}</h2>
+            <p class="inner-top__subtitle">{{subTitle}}</p>
+        </div>
+    </div>
+</div>
+
+<div class="inner-page">
+    <div class="cnt">
+        <div class="inner-page__sidebar">
+            <div data-ctrl="Sidebar" id="sidebar">
+                Loading sidebar...
+            </div>
+        </div>
+        <div class="inner-page__content">
+            <div class="panel-b">
+                <div class="flex-row">
+                    <div class="flex-col-12">
+                        <h3 class="features">{{Header1}}</h3>
+                        <div class="features-title-underline"></div>
+                    </div>
+                </div>
+                <div class="flex-row features-block">
+                    <div class="flex-col-4 flex-col-push-8">
+                        <img src="{{VIEW}}images/feature-1--v1.png" class="features__img">
+                    </div>
+                    <div class="flex-col-8 flex-col-pull-4">
+                        <div class="features-text">{{{Text1}}}</div>
+                    </div>
+                </div>
+
+                <div class="flex-row">
+                    <div class="flex-col-12">
+                        <h3 class="features">{{Header2}}</h3>
+                        <div class="features-title-underline"></div>
+                    </div>
+                </div>
+                <div class="flex-row features-block">
+                    <div class="flex-col-4">
+                        <img src="{{VIEW}}images/feature-2--v1.png" class="features__img flipped">
+                    </div>
+                    <div class="flex-col-8">
+                        <div class="features-text">{{{Text2}}}</div>
+                    </div>
+                </div>
+
+                <div class="flex-row">
+                    <div class="flex-col-12">
+                        <h3 class="features">{{Header3}}</h3>
+                        <div class="features-title-underline"></div>
+                    </div>
+                </div>
+                <div class="flex-row features-block">
+                    <div class="flex-col-4 flex-col-push-8">
+                        <img src="{{VIEW}}images/feature-3--v1.png" class="features__img flipped">
+                    </div>
+                    <div class="flex-col-8 flex-col-pull-4">
+                        <div class="features-text">{{{Text3}}}</div>
+                    </div>
+                </div>
+
+                <div class="flex-row">
+                    <div class="flex-col-12">
+                        <h3 class="features">{{Header4}}</h3>
+                        <div class="features-title-underline"></div>
+                    </div>
+                </div>
+                <div class="flex-row features-block">
+                    <div class="flex-col-4">
+                        <img src="{{VIEW}}images/feature-4--v1.png" class="features__img flipped">
+                    </div>
+                    <div class="flex-col-8">
+                        <div class="features-text">{{{Text4}}}</div>
+                    </div>
+                </div>
+
+                <div class="flex-row">
+                    <div class="flex-col-12">
+                        <h3 class="features">{{Header5}}</h3>
+                        <div class="features-title-underline"></div>
+                    </div>
+                </div>
+                <div class="flex-row features-block">
+                    <div class="flex-col-4 flex-col-push-8">
+                        <img src="{{VIEW}}images/feature-5--v1.png" class="features__img">
+                    </div>
+                    <div class="flex-col-8 flex-col-pull-4">
+                        <div class="features-text">{{{Text5}}}</div>
+                    </div>
+                </div>
+
+                <div class="flex-row">
+                    <div class="flex-col-12">
+                        <h3 class="features">{{Header6}}</h3>
+                        <div class="features-title-underline"></div>
+                    </div>
+                </div>
+                <div class="flex-row features-block">
+                    <div class="flex-col-4">
+                        <img src="{{VIEW}}images/feature-6--v1.png" class="features__img">
+                    </div>
+                    <div class="flex-col-8">
+                        <div class="features-text">{{{Text6}}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

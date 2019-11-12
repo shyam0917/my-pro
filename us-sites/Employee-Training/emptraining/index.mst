@@ -1,0 +1,249 @@
+    <div class="header-content">
+      <div class="logo-wrapper">
+        <div class="logo-container">
+          <a href="https://www.knowledgecity.com" target="_blank">
+            <img src="{{template}}images/logo.png" alt="KnowledgeCity">
+          </a>
+        </div>
+      </div>
+      <div class="cnt">
+        <div class="header-form-wrapper">
+          <div class="header-form-title">
+            {{{mui.headerTitle}}}
+          </div>
+          <div class="header-form-container">
+            <div class="header-img-wrapper">
+              {{^isHeaderCourse}}
+              <img src="{{template}}images/header-laptop.png" alt="KnowledgeCity">
+              {{/isHeaderCourse}}
+              {{#isHeaderCourse}}
+              {{{headerCourse}}}
+              {{/isHeaderCourse}}
+            </div>
+            <div class="header-form-content">
+
+              {{#isThankyouPage}}
+              <div class="form-thanks">
+                {{{mui.thankyou}}}
+              </div>
+              {{/isThankyouPage}}
+              {{^isThankyouPage}}
+              <div class="form-description">
+                {{{mui.formDescription}}}
+              </div>
+              <form id="landing-form" class="header-form" method="post">
+                <input type="hidden" id="gclid_field" name="gclid_field" value="">
+                <div class="form-row">
+                  <span class="input-wrapper">
+                    <input type="text" name="name_f" value="" placeholder="First Name*" required>
+                  </span>
+                  <span class="input-wrapper">
+                    <input type="text" name="name_l" value="" placeholder="Last Name*" required>
+                  </span>
+                </div>
+                <div class="form-row">
+                  <span class="input-wrapper">
+                    <input type="text" name="phone" value="" placeholder="Phone Number*" required  maxlength="10">
+                  </span>
+                  <span class="input-wrapper">
+                    <input type="email" name="email" value="" placeholder="Business Email*" required>
+                  </span>
+                </div>
+                <div class="form-row">
+                  <span class="input-wrapper">
+                    <input type="text" name="company" value="" placeholder="Company*" required>
+                  </span>
+                  <span class="input-wrapper">
+                    <select id="number_employees" name="employees" style="width: 100%; max-width:315px;" required>
+                      <option value="">Company Size*</option>
+                      <option value="1-5">1-5</option>
+                      <option value="6-25">6-25</option>
+                      <option value="26-100">26-100</option>
+                      <option value="101-500">101-500</option>
+                      <option value="501-1000">501-1000</option>
+                      <option value="1000+">1000+</option>
+                    </select>
+                  </span>
+                </div>
+                <div class="form-row comments">
+                  <textarea name="comments" class="form-control"  placeholder="Comments" rows="8" cols="80"></textarea>
+                </div>
+                <div class="form-row">
+                  <button type="submit" name="submit">
+                      {{{mui.buttons.formButton}}}
+                  </button>
+                </div>
+
+              </form>
+              {{/isThankyouPage}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="landing-wrapper">
+      <div class="landing-featured-courses">
+        {{{mui.featuredTitle}}}
+        {{#isMultipleCategories}}
+        <div class="cnt">
+          <div class="tabs">
+            {{#tabs}}
+              {{.}}
+            {{/tabs}}
+          </div>
+        </div>
+        {{/isMultipleCategories}}
+        <div class="cnt">
+          {{#activateCarousel}}
+          <div id="featuredCourses" class="featured-slder owl-carousel">
+              {{#courses}}
+                {{{.}}}
+              {{/courses}}
+          </div>
+      		<div class="owl-controls">
+      			<span class="owl-controls__prev"></span>
+      			<span class="owl-controls__next"></span>
+      		</div>
+          {{/activateCarousel}}
+          {{^activateCarousel}}
+          <div class="tab-categories">
+              {{#courses}}
+                {{{retcourse}}}
+              {{/courses}}
+          </div>
+          {{/activateCarousel}}
+        </div>
+    	</div>
+    </div>
+    <div class="landing-content-wrapper">
+      <div class="cnt">
+        <div class="kc-ll flex">
+          <div class="kc-ll content">
+            <h1>{{mui.kcLl.title}}</h1>
+            <h2>{{mui.kcLl.subtitle}}</h2>
+            <div class="kc-ll description">
+              {{mui.kcLl.description}}
+            </div>
+          </div>
+          <div class="kc-ll image"> <img src="{{#customKcLl}}{{landingPath}}assets/images/{{customKcLl}}{{/customKcLl}}{{^customKcLl}}{{template}}images/{{mui.kcLl.image}}{{/customKcLl}}" alt="{{mui.kcLl.title}}"> </div>
+        </div>
+      </div>
+      <div class="cnt">
+        <div class="kc-lms flex">
+        <div class="kc-lms image">
+          {{#customKcLms}}
+          <img src="{{landingPath}}assets/images/{{customKcLms}}" onerror="this.src='{{template}}images/kc-lms.jpg';this.onerror='';" alt="{{mui.kcLms.title}}" class="customKcLms"/>
+          {{/customKcLms}}
+          {{^customKcLms}}
+          <img src="{{template}}images/kc-lms.jpg" alt="{{mui.kcLms.title}}"/>
+          {{/customKcLms}}
+        </div>
+        <div class="kc-lms content">
+          <h1>{{mui.kcLms.title}}</h1>
+          <h2>{{mui.kcLms.subtitle}}</h2>
+          <div class="kc-lms description">{{mui.kcLms.description}}</div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="orange-ribbon">
+      <div class="cnt">
+        <h1>{{mui.ribbonTitle}}</h1>
+        <div class="scroll btn"> <span class="btn-desc">{{{mui.buttons.formButton}}}</span></div>
+      </div>
+    </div>
+    <div class="benefits-wrapper">
+      <div class="cnt">
+        <h1>{{mui.benefitsTitle}}</h1>
+        <div class="benefits-content">
+          {{#benefits}}
+          <div class="item">
+            <div class="icon"> <img src="{{template}}images/{{image}}" alt="{{title}}"> </div>
+            <div class="description">
+              <h1>{{title}}</h1>
+              <span>{{description}}</span>
+            </div>
+          </div>
+            {{/benefits}}
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-wrapper">
+      <div class="cnt">
+        <h1>{{mui.testimonialTitle}}</h1>
+        <div class="slideshow-container">
+          <div id="testimonialWrapper" class="dot-wrapper">
+            {{#testimonials}}
+            {{{testimonial}}}
+            {{/testimonials}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clients-wrapper">
+      <div class="cnt">
+        <div class="clients-slider owl-carousel">
+          {{#clients}}
+          {{{client}}}
+          {{/clients}}
+        </div>
+    		<div class="owl-nav">
+    			<span class="owl-nav__prev" data-handler="onPrevClients"></span>
+    			<span class="owl-nav__next" data-handler="onNextClients"></span>
+    		</div>
+      </div>
+    </div>
+    <div class="footer-content">
+      <div class="cnt">
+        <div class="footer-wrapper">
+          <div class="footer__col">
+            <div class="button-col">
+              <a class="scroll btn footer__btn">{{{mui.buttons.formButton}}}</a>
+            </div>
+            <div class="bbb-col">
+              <a href="https://www.bbb.org/sdoc/business-reviews/scholastic-prep-courses-books-and-materials/knowledgecity-in-carlsbad-ca-171988452/#bbbonlineclick" target="_blank">
+                <img class="bbb" src="https://staticcontent.knowledgecity.com/templates/ussite/1.0/images/BBB_A_rating--v1545743542.png" alt="Blue Seal">
+              </a>
+            </div>
+          </div>
+          <hr class="footer__hr">
+          <p class="copyright"><a href="https://www.knowledgecity.com/en/privacy" target="_blank">Privacy</a>&nbsp;|&nbsp;<a href="https://www.knowledgecity.com/en/terms" target="_blank">Terms</a>&nbsp;|&nbsp;Corporate - Copyright© 2019 KnowledgeCity®. All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+    <div id="leanOverlay"></div>
+    <div id="mContainer"></div>
+
+    <!--Start of Tawk.to Script-->
+    <script>
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/595e9d266edc1c10b0344b0a/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <!-- Yandex.Metrika counter -->
+    <script>
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+       ym(51927422, "init", {
+            id:51927422,
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+       });
+    </script>
+    <noscript><div><img class="bbb" src="https://mc.yandex.ru/watch/51927422" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(100784681);</script>
+    <script async src="//static.getclicky.com/js"></script>
+    <noscript><p><img class="bbb" alt="Clicky" width="1" height="1" src="//in.getclicky.com/100784681ns.gif" /></p></noscript>

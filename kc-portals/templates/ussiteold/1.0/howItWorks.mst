@@ -1,0 +1,28 @@
+<div class="inner-header inner-header--about">
+	<div class="cnt">
+		<h1 class="inner-header__title">
+			 {{mui.header.howItWorks}}
+		</h1>
+		<p class="inner-header__subtitle">
+
+		</p>
+	</div>
+</div>
+<section class="howitworks--block">
+    <div class="cnt">
+
+        {{#video}}
+        <div class="howitworks--el">
+            <h2 class="inner-header__title">{{title}}</h2>
+                <div class="article__col how-video" id="{{id}}">
+                    <div data-id="{{id}}" class="embedvideo__player" data-filename="{{video}}" data-handler="onPlayVideo">
+                        <img src="{{VIEW}}images/{{img}}" class="embedvideo__preview">
+                    </div>
+                </div>
+        </div>
+        {{/video}}
+
+   </div>
+</section>
+
+

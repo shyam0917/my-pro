@@ -1,0 +1,33 @@
+<div class="inner-header inner-header--testimonials">
+    <div class="cnt">
+        <h1 class="inner-header__title">
+            {{title}}
+        </h1>
+        <p class="inner-header__subtitle">
+            {{subTitle}}
+        </p>
+    </div>
+</div>
+
+
+<div class="inner-page testimonials-page">
+    <div class="cnt">
+        <div class="article">
+            {{{intro}}}
+        </div>
+    </div>
+    <div class="cnt">
+        <div class="testimonials-page__list">
+            {{#testimonials}}
+            <div class="testimonial-item">
+                <div class="testimonial-item__text">"{{text}}"</div>
+                <div class="testimonial-item__name">{{name}}&ndash;</div>
+                {{#course}}
+                <div class="testimonial-item__course">({{course}})</div>
+                {{/course}}
+            </div>
+            {{/testimonials}}
+        </div>
+    </div>
+
+</div>

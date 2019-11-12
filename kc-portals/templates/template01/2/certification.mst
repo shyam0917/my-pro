@@ -1,0 +1,76 @@
+<div class="inner-top">
+	<div class="cnt">
+		<div class="inner-top__library">
+			<h2 class="inner-top__title">{{mui.txtLabels.sidebarTitle}}</h2>
+			<p class="inner-top__subtitle">{{mui.txtLabels.sidebarText}}</p>
+		</div>
+		<div class="inner-top__current">
+			<h2 class="inner-top__title">{{mui.pageTitle.certification}}</h2>
+			<p class="inner-top__subtitle">{{subTitle}}</p>
+		</div>
+	</div>
+</div>
+
+<div class="inner-page">
+	<div class="cnt">
+		<div class="inner-page__sidebar">
+			<div data-ctrl="Sidebar" id="sidebar">
+				Loading sidebar...
+			</div>
+		</div>
+		<div class="inner-page__content">
+			<div class="panel-b certification">
+				<h3>{{Header}}</h3>
+				<!-- {{{Text1}}} -->
+				<p>{{TextTitle}}</p>
+				<div class="certification-content">
+					<div class="certification-content__wrapper left">
+						<div class="article__col--row">
+								<h2 class="article__title">{{bulletUserTitle}}</h2>
+								<p>{{bulletUserText}}</p>
+						</div>
+						<div class="article__col--row">
+								<h2 class="article__title">{{bulletDateTitle}}</h2>
+								<p>{{bulletDateText}}</p>
+						</div>
+						<div class="article__col--row">
+								<h2 class="article__title">{{bulletEmailTitle}}</h2>
+								<p>{{bulletEmailText}}</p>
+						</div>
+					</div>
+					<div class="certification-content__wrapper image">
+						<img class="certification-page__certificate" src="{{VIEW}}images/Certificate_Small.jpg" data-handler="onImgLoadError" data-handler-action="error">
+					</div>
+					<div class="certification-content__wrapper right">
+						<div class="article__col--row">
+								<h2 class="article__title">{{bulletCourseTitle}}</h2>
+								<p>{{bulletCourseText}}</p>
+						</div>
+						<div class="article__col--row">
+								<h2 class="article__title">{{bulletAuthorizedTitle}}</h2>
+								<p>{{bulletAuthorizedText}}</p>
+						</div>
+						<div class="article__col--row">
+								<h2 class="article__title">{{bulletCNTitle}}</h2>
+								<p>{{bulletCNText}}</p>
+						</div>
+					</div>
+				</div>
+				<h3>{{endHeader}}</h3>
+				<div class="certification-end-content">
+					<div class="flex-row">
+						{{#steps}}
+						<div class="items-step">
+							<div class="items-number">
+								<span class="line"></span>
+								<span class="circle"><span class="items-number-table"><span class="items-number-data">{{number}}</span></span></span>
+								<span class="line"></span></div>
+							<div class="items-description"><span>{{stepDescription}}</span></div>
+						</div>
+						{{/steps}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,38 @@
+<div class="inner-top">
+	<div class="cnt">
+		<div class="inner-top__library">
+			<h2 class="inner-top__title">{{mui.txtLabels.sidebarTitle}}</h2>
+			<p class="inner-top__subtitle">{{mui.txtLabels.sidebarText}}</p>
+		</div>
+		<div class="inner-top__current">
+			<h2 class="inner-top__title">{{mui.pageTitle.certification}}</h2>
+			<p class="inner-top__subtitle">{{subTitle}}</p>
+		</div>
+	</div>
+</div>
+
+<div class="inner-page">
+	<div class="cnt">
+		<div class="inner-page__sidebar">
+			<div data-ctrl="Sidebar" id="sidebar">
+				Loading sidebar...
+			</div>
+		</div>
+		<div class="inner-page__content">
+			<div class="panel-b">
+				<h3>{{Header1}}</h3>
+				{{{Text1}}}
+				<div class="flex-row">
+					<div class="flex-col-7">
+						<h3>{{Header2}}</h3>
+						{{{List1}}}
+					</div>
+					<div class="flex-col-5  items-end">
+						<img class="certificate-img" src="{{page.certificate}}" data-handler="onImgLoadError" data-handler-action="error">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

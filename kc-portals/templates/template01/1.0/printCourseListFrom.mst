@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{title}}</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{{page.favicon}}" type="image/x-icon">
+
+  <link href="{{VENDORS}}font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="{{VENDORS}}bootstrap/3.3.6/css/bootstrap.min.css" />
+
+
+  <link rel="stylesheet" data-required="true" href="{{VIEW}}css/style--v{{site.LocalStorageStamp}}.css" />
+  <link rel="stylesheet" data-required="true" href="{{VIEW}}css/landing/style--v{{site.LocalStorageStamp}}.css" />
+  {{#site.style}}
+  <link rel="stylesheet" href="{{site.style}}" />
+  {{/site.style}}
+  <link rel="stylesheet" href="{{VIEW}}css/owl.carousel--v{{site.LocalStorageStamp}}.css" />
+
+  <link href="{{VENDORS}}jQuery/modules/fancybox/2.1.5/source/jquery.fancybox.css" rel="stylesheet" />
+  <link rel="stylesheet" href="{{VENDORS}}videojs-player/video-js.css" />
+  <link rel="stylesheet" href="{{VIEW}}css/locale/css.{{site.language}}--v{{site.LocalStorageStamp}}.css" />
+  <link rel="stylesheet" href="{{VIEW}}css/custom-player--v{{site.LocalStorageStamp}}.css" />
+
+  <link rel="stylesheet" href="{{VIEW}}css/print-course-list--v{{site.LocalStorageStamp}}.css">
+
+</head>
+<body>
+
+<div class="print-actions clearfix">
+  {{#listData.isConfirmation}}
+  <div class="print-actions__col" data-role="confirmationAction">
+    <a href="#" class="button with-tooltip"
+       data-handler="onSendForConsideration">
+      {{pageMui.MyLearning.toApprove}}
+    </a>
+  </div>
+  {{/listData.isConfirmation}}
+  <div class="print-actions__col print-actions__col--right">
+    <a href="#" class="button with-tooltip"
+       data-handler="onPrintPage">
+      {{mui.btn.print}}
+    </a>
+  </div>
+</div>
+
+<div class="contentBody" id="content"></div>
+
+<div id="alertWindow" class="modalWindow" style="display: none;">
+  <a rel="closeModal" class="modal_close">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+            </span>
+  </a>
+  <div class="content">
+    <div class="text" rel="text"></div>
+    <div class="text-center"><input type="button" rel="closeOk" value="{{mui.buttonLabel.ok}}" class="button"></div>
+  </div>
+</div>
+
+</body>
+</html>

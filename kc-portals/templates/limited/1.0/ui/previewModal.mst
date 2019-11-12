@@ -1,0 +1,10 @@
+<div id="previewModal" class="previewWindow">
+    <div class="progressOverlay hidden"><div class="progressOverlayBg"></div><div class="progressOverlaySpinner"><i class="fa fa-spinner fa-pulse"></i></div></div>
+    <a class="modal_close"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-times fa-stack-1x fa-inverse"></i></span></a>
+    <div class="content">
+        <div
+                class="course-video__preview"
+                id="courseVideoEmbed"
+        >
+    </div>
+</div>

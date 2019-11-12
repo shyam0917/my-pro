@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{title}}</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{{page.favicon}}" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{VENDORS}}bootstrap/3.3.6/css/bootstrap.min.css"/>
+
+  <!-- Optional theme -->
+
+  <link rel="stylesheet" data-required="true" href="{{VIEW}}css/style--v{{site.LocalStorageStamp}}.css"/>
+  {{#site.style}}
+  <link rel="stylesheet" href="{{site.style}}"/>
+  {{/site.style}}
+  <link rel="stylesheet" href="{{VIEW}}css/owl.carousel--v{{site.LocalStorageStamp}}.css"/>
+
+  <link href="{{VENDORS}}jQuery/modules/fancybox/2.1.5/source/jquery.fancybox.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="{{VENDORS}}videojs-player/video-js.css"/>
+  <link rel="stylesheet" href="{{VIEW}}css/locale/css.{{site.language}}--v{{site.LocalStorageStamp}}.css"/>
+  <link rel="stylesheet" href="{{VIEW}}css/custom-player--v{{site.LocalStorageStamp}}.css"/>
+  <link rel="stylesheet" href="{{VIEW}}css/required-login--v{{site.LocalStorageStamp}}.css">
+  {{#site.style}}
+  <link rel="stylesheet" href="{{site.style}}"/>
+  {{/site.style}}
+</head>
+
+<body class="{{site.language}}{{#kcpack}} kcpack{{/kcpack}}">
+
+<div class="required-login">
+  <div id="requestLoginForm" class="required-login__form">
+    <ul class="required-login__langs" data-ctrl="MainMenu">
+      {{#languages.items}}
+      <li data-lang="{{code}}">
+        <a href="{{href}}" class="required-login__langs-link">{{title}}</a>
+      </li>
+      {{/languages.items}}
+    </ul>
+
+    <div class="required-login__logo" style="margin-top: 90px">
+      <img src="{{site.logo}}" alt="Logo" class="required-login__logo-img"/>
+    </div>
+
+    <div id="loginFormScreen">
+      <div class="forms-wrapper" >
+        <div class="forms-container" >
+          <form id="loginForm" method="" action="" autocomplete="off">
+            <div class="required-login__title">{{mui.pageContent.requestAccess.formlabel.signIn}}</div>
+
+            <div class="required-login__field">
+              <input type="text" name="login" class="required-login__input auth-field" required id="login" tabindex="1"
+                     value="" autocomplete="nope">
+              <label for="login" class="required-login__field-label">{{mui.pageContent.formlabel.username}}</label>
+            </div>
+
+            <div class="required-login__field">
+              <input type="password" name="password" class="required-login__input auth-field" required id="pwd" tabindex="2"
+                     value="" autocomplete="new-password">
+              <label for="pwd" class="required-login__field-label">{{mui.pageContent.formlabel.password}}</label>
+            </div>
+
+            <div class="required-login__error is_hidden" data-role="message"></div>
+
+            <div class="required-login__action">
+              <button type="submit" class="required-login__btn" data-handler="onLogin">{{mui.txtLabels.login}}</button>
+            </div>
+            <div class="required-loggin__forgot">
+              <span class="required-login__forgot-link" data-handler="onForgotPassForm">{{mui.buttonLabel.forgotPass}}</span>
+              <span class="required-login__forgot-link" data-handler="onForgotUserForm">{{mui.buttonLabel.forgotUser}}</span>
+
+            </div>
+          </form>
+          <form id="recoverPasswordForm" class="recoverForm">
+            <div class="required-login__title">{{mui.pageContent.recoverFormTitle}}</div>
+
+            <div class="required-login__field">
+              <input type="text" name="login" class="required-login__input auth-field" required id="recoverpassword-login" tabindex="1"
+                     value="" required autocomplete="nope" disabled>
+              <label for="recoverpassword-login" class="required-login__field-label">{{mui.pageContent.formlabel.username}}</label>
+            </div>
+            <div class="required-login__action">
+              <button type="submit" class="required-login__btn" data-handler="onRecoverPassword" disabled>{{mui.buttonLabel.recoverPass}}</button>
+            </div>
+            <span class="required-login__back-link" data-handler="onReturnToLoginForm">
+              {{mui.pageContent.requestAccess.back}}
+            </span>
+          </form>
+          <form id="recoverUsernameForm" class="recoverForm">
+            <div class="required-login__title">{{mui.pageContent.recoverUserFormTitle}}</div>
+
+            <div class="required-login__field">
+              <input type="text" name="email" class="required-login__input auth-field" required id="recoveruser-email" tabindex="1"
+                     value="" autocomplete="nope" disabled>
+              <label for="recoveruser-email" class="required-login__field-label">{{mui.pageContent.formlabel.email}}</label>
+            </div>
+
+            <div class="required-login__field">
+              <input type="text" name="employee_id" class="required-login__input auth-field" required id="recoveruser-employee" tabindex="2"
+                     value="" autocomplete="nope" disabled>
+              <label for="recoveruser-employee" class="required-login__field-label">{{mui.pageContent.formlabel.employee}}</label>
+            </div>
+
+            <div class="required-login__field">
+              <input type="text" name="national_id" class="required-login__input auth-field" required id="recoveruser-national" tabindex="3"
+                     value="" autocomplete="nope" disabled>
+              <label for="recoveruser-national" class="required-login__field-label">{{mui.pageContent.formlabel.national}}</label>
+            </div>
+            <div class="required-login__action">
+              <button type="submit" class="required-login__btn" data-handler="onRecoverUserForm" disabled>{{mui.buttonLabel.recoverPass}}</button>
+            </div>
+            <span class="required-login__back-link" data-handler="onReturnToLoginForm">
+              {{mui.pageContent.requestAccess.back}}
+            </span>
+          </form>
+        </div>
+      </div>
+
+      {{#isLoginRequiredNew}}
+      <div class="required-login__singup">
+        <div class="required-login__singup-label">
+          {{mui.pageContent.requestAccess.formlabel.needAccount}}
+        </div>
+        <span class="required-login__singup-link" data-handler="onRequestAccess">{{mui.pageTitle.request}}</span>
+      </div>
+      {{/isLoginRequiredNew}}
+    </div>
+
+    <div id="requestDsc" class="is_hidden">
+      <div class="required-login__request-dsc">
+        <div class="required-login__title">
+          {{mui.pageContent.requestAccess.getAccess}}
+        </div>
+        {{mui.pageContent.requestAccess.getAccessDsc}}
+      </div>
+      <span class="required-login__back-link" data-handler="onLoginForm">
+        {{mui.pageContent.requestAccess.back}}
+      </span>
+    </div>
+
+
+  </div>
+
+  <div class="required-login__request-form is_hidden" id="requestForm">
+
+    <div class="required-login__logo-holder" style="margin-top: 90px">
+      <img src="{{site.logo}}" alt="Logo"/>
+    </div>
+
+    <div id="formMessages" class="is_hidden required-login__request-title">
+      {{mui.pageContent.requestAccess.requestSent}}
+    </div>
+
+    <div id="formFields">
+
+      <div class="required-login__steps">
+
+        <div class="required-login__request-title">
+          {{mui.pageTitle.request}}
+        </div>
+
+        <ul class="required-login__steps-enum">
+          <li class="current" data-handler="onSetStep">1</li>
+          <li data-handler="onSetStep">2</li>
+          <!--
+          <li data-handler="onSetStep">3</li>
+          -->
+        </ul>
+
+        <div>
+          <form class="required-login__step current" data-handler="onNextStep" autocomplete="off">
+            <div class="required-login__request-row">
+
+              <div class="required-login__request-col">
+
+                {{#column1}}<div class="required-login__field">{{{html}}}</div>{{/column1}}
+
+                <!--
+                <div class="required-login__field">
+                  <input type="text" name="first_name_ar" class="required-login__input" required
+                         tabindex="11"
+                         value="">
+                  <label class="required-login__field-label">{{mui.pageContent.requestAccess.formlabel.name_ar}}</label>
+                </div>
+
+                <div class="required-login__field">
+                  <input type="text" name="first_name" class="required-login__input" required
+                         tabindex="13"
+                         value="">
+                  <label class="required-login__field-label">{{mui.pageContent.requestAccess.formlabel.name_en}}</label>
+                </div>
+
+                <div class="required-login__field">
+                  <input type="text" name="employee_id" class="required-login__input" required
+                         tabindex="15"
+                         value="">
+                  <label class="required-login__field-label">{{mui.pageContent.requestAccess.formlabel.user_id}}</label>
+                </div>
+
+                <div class="required-login__field">
+                  <div class="required-login__select">
+                    <div class="required-login__select-wrap">
+                      <select name="gender" tabindex="17" required>
+                        <option value=""></option>
+                        <option value="m">{{mui.pageContent.requestAccess.formlabel.male}}</option>
+                        <option value="f">{{mui.pageContent.requestAccess.formlabel.female}}</option>
+                      </select>
+                    </div>
+                    <label
+                        class="required-login__field-label">{{mui.pageContent.requestAccess.formlabel.gender}}</label>
+                  </div>
+                </div>
+
+                <div class="required-login__field">
+                  <input type="text" name="national_id" class="required-login__input" required
+                         tabindex="19"
+                         value="">
+                  <label
+                      class="required-login__field-label">{{mui.pageContent.formlabel.national}}</label>
+                </div>
+                -->
+
+              </div>
+
+              <div class="required-login__request-col">
+
+                {{#column2}}<div class="required-login__field">{{{html}}}</div>{{/column2}}
+
+                <!--
+                <div class="required-login__field">
+                  <input type="text" name="last_name_ar" class="required-login__input" required
+                         tabindex="12"
+                         value="">
+                  <label
+                      class="required-login__field-label">{{mui.pageContent.requestAccess.formlabel.lastName_ar}}</label>
+                </div>
+
+                <div class="required-login__field">
+                  <input type="text" name="last_name" class="required-login__input" required
+                         tabindex="14"
+                         value="">
+                  <label
+                      class="required-login__field-label">{{mui.pageContent.requestAccess.formlabel.lastName_en}}</label>
+                </div>
+
+                <div class="required-login__field">
+                  <input type="date" name="date_of_birth" class="required-login__input" required
+                         tabindex="16"
+                         value="">
+                  <label
+                      class="required-login__field-label">{{mui.pageContent.requestAccess.formlabel.dateOfBirt}}</label>
+                </div>
+
+                <div class="required-login__field">
+                  <input type="text" class="required-login__input" required
+                         name="phone_number"
+                         tabindex="18"
+                         value="">
+                  <label
+                      class="required-login__field-label">{{mui.pageContent.requestAccess.formlabel.phoneNumber}}</label>
+                </div>
+                -->
+
+                <div class="required-login__step-action">
+                  <button type="submit" class="required-login__step-btn" tabindex="19">{{mui.pageContent.requestAccess.formlabel.next}}
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+          </form>
+
+          <form class="required-login__step"
+                data-handler="onSendRequestAccess" autocomplete="off">
+            <div class="required-login__request-row">
+
+              <div class="required-login__request-col">
+
+                {{#column3}}<div class="required-login__field">{{{html}}}</div>{{/column3}}
+
+                <!--
+                <div class="required-login__field">
+                  <input type="text" name="email" class="required-login__input" required
+                         tabindex="31"
+                         value="">
+                  <label
+                      class="required-login__field-label">{{mui.pageContent.requestAccess.formlabel.mailAdress}}</label>
+                </div>
+
+                <div class="required-login__field">
+                  <input type="text" name="position" class="required-login__input" required
+                         tabindex="33"
+                         value="">
+                  <label
+                      class="required-login__field-label">{{mui.pageContent.requestAccess.formlabel.position}}</label>
+                </div>
+
+                <div class="required-login__field">
+                  <input type="text" name="city" class="required-login__input" required
+                         tabindex="35"
+                         value="">
+                  <label class="required-login__field-label">{{mui.pageContent.requestAccess.formlabel.city}}</label>
+                </div>
+
+                <div class="required-login__field">
+                  <input type="text" name="department" class="required-login__input" required
+                         tabindex="37"
+                         value="">
+                  <label
+                      class="required-login__field-label">{{mui.pageContent.requestAccess.formlabel.department}}</label>
+                </div>
+
+                <div class="required-login__field">
+                  <div class="required-login__select">
+                    <div class="required-login__select-wrap">
+                      <select name="lang" tabindex="39" required>
+                        <option value=""></option>
+                        {{mui.pageContent.requestAccess.formlabel.name}}
+                        <option value="en">English</option>
+                        <option value="ar">العربية</option>
+                      </select>
+                    </div>
+                    <label
+                        class="required-login__field-label">{{mui.pageContent.requestAccess.formlabel.nativeLang}}</label>
+                  </div>
+                </div>
+
+                -->
+
+              </div>
+
+              <div class="required-login__request-col">
+
+                {{#column4}}<div class="required-login__field">{{{html}}}</div>{{/column4}}
+
+                <!--
+                <div class="required-login__field">
+                  <input type="text" name="confirm_email" class="required-login__input" required
+                         tabindex="32"
+                         data-type="confim:email"
+                         value="">
+                  <label
+                      class="required-login__field-label">{{mui.pageContent.requestAccess.formlabel.confirmEmail}}</label>
+                </div>
+
+                <div class="required-login__field">
+                  <input type="text" name="company" class="required-login__input" required
+                         tabindex="34"
+                         value="">
+                  <label class="required-login__field-label">{{mui.pageContent.requestAccess.formlabel.company}}</label>
+                </div>
+
+                <div class="required-login__field">
+                  <input type="text" name="center" class="required-login__input" required
+                         tabindex="36"
+                         value="">
+                  <label class="required-login__field-label">{{mui.pageContent.requestAccess.formlabel.center}}</label>
+                </div>
+
+                <div class="required-login__field">
+                  <input type="text" name="nationality" class="required-login__input" required
+                         tabindex="38"
+                         value="">
+                  <label
+                      class="required-login__field-label">{{mui.pageContent.requestAccess.formlabel.nationality}}</label>
+                </div>
+
+                -->
+
+                <button type="submit" class="required-login__btn required-login__btn--light" tabindex="40">
+                  {{mui.submit}}
+                </button>
+
+              </div>
+
+            </div>
+
+          </form>
+          <!--
+                    <div class="required-login__step">
+
+                    </div>
+                    -->
+        </div>
+
+      </div>
+      <!--
+            <div class="required-login__request-row">
+              <div class="required-login__request-col">
+                <button type="submit" class="required-login__btn required-login__btn--light">{{mui.submit}}</button>
+              </div>
+            </div>
+
+            -->
+    </div>
+
+  </div>
+</div>
+<script type="text/javascript">
+</script>
+
+<!--Alerting windows-->
+<div id="dangerWindow" class="modalWindow" style="display: none;">
+  <div class="content">
+    <div class="text" rel="text"></div>
+    <div class="text-center btns-group"><input type="button" rel="confirm" value="{{mui.buttonLabel.ok}}"
+                                               class="button"></div>
+  </div>
+</div>
+
+<div id="alertWindow" class="modalWindow" style="display: none;">
+  <a rel="closeModal" class="modal_close">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+            </span>
+  </a>
+  <div class="content">
+    <div class="text" rel="text"></div>
+    <div class="text-center"><input type="button" rel="closeOk" value="{{mui.buttonLabel.ok}}" class="button"></div>
+  </div>
+</div>
+
+<div id="confirmWindow" class="modalWindow" style="display: none;">
+  <a rel="closeModal" class="modal_close">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+            </span>
+  </a>
+  <div class="content">
+    <div class="text" rel="text"></div>
+    <div class="text-center btns-group"><input type="button" rel="confirm" value="{{mui.buttonLabel.ok}}"
+                                               class="button"><input type="button" rel="closeOk"
+                                                                     value="{{mui.buttonLabel.cancel}}" class="button">
+    </div>
+  </div>
+</div>
+
+<div id="loginError" class="modalWindow loginError alert-danger" style="display: none;">
+  <a rel="closeModal" class="modal_close">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+            </span>
+  </a>
+  <div class="content">
+    <div id="errorMessage">
+      <div class="text" rel="text"></div>
+      <div style="text-align: center; margin-bottom: 20px">
+        <span class="required-login__singup-link" data-handler="onShowForgotForm">{{mui.pageContent.recoverFormTitle}}</span>
+      </div>
+      <div class="text-center">
+        <input type="button" rel="closeOk" value="{{mui.buttonLabel.ok}}" class="required-login__btn forgot-password__btn">
+      </div>
+    </div>
+    <form class="forgot-password form is_hidden" method="post" action="" id="recoverform" data-handler="onSubmitRecoverForm" autocomplete="off">
+      <div class="forgot-password__alert alert alert-danger text-align hidden" id="loginFormMessage"></div>
+
+      <div class="required-login__field">
+        <input name="login" class="required-login__input" value="" required="true" id="recoverform-login">
+        <label for="recoverform-login" class="required-login__field-label">{{mui.pageContent.formlabel.username}}</label>
+      </div>
+
+      <div>
+        <button type="submit" name="submit" class="required-login__btn forgot-password__btn">
+          {{mui.buttonLabel.recoverPass}}
+        </button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+<div id="loading-overlay" class="loading-overlay">
+  <div class="loader">
+    <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+  </div>
+</div>
+
+</body>
+</html>

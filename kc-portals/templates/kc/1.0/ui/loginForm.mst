@@ -1,0 +1,244 @@
+<div id="loginPopUp" class="modal" role="dialog">
+    <a class="modal__close modal_close" aria-hidden="true">×</a>
+    <div class="modal__title" id="loginTitle"><div class="h1">{{mui.pageContent.loginFormTitle}}</div></div>
+    <div class="form">
+        <div class="form__message error hidden" id="loginFormMessage" aria-live="assertive"></div>
+
+        <form class="login-form form"  data-option="UsernamePassword" method="post" action="" id="loginform" data-handler="onSubmitLoginForm">
+            <div class="form__row">
+                <div class="form__box">
+                    <input type="text" class="form__input" value="" name="username" id="loginform-username"
+                           placeholder="{{mui.pageContent.formlabel.username_email}}"
+                           data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="form__box">
+                    <input  class="form__input" type="password" class="form-control input" value="" name="password"
+                            id="loginform-password"
+                            placeholder="{{mui.pageContent.formlabel.password}}"
+                            required="true" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="form__box">
+                    <button type="submit" name="submit" value="{{mui.submit}}" class="btn form__btn login-form__btn">
+                        <i class="icon icon-login"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="form__row forgot-block">
+              <div class="form__box">
+                <div class="center-align">
+                    <a  class="login-form__recover-btn" href="#" data-handler="onForgotPass">{{mui.buttonLabel.forgotPass}}</a>
+                </div>
+              </div>
+                <div class="form__box">
+                  <div class="center-align">
+                      <a  class="login-form__recover-btn" href="#" data-handler="onForgotUser">{{mui.buttonLabel.forgotUser}}</a>
+                  </div>
+                </div>
+            </div>
+            <br/>
+            <div class="loginoptions">
+                <a  class="" data-option="ActiveDirectory" href="#" data-handler="onSwitchType">{{mui.buttonLabel.ssoLoginLabel}}</a>
+            </div>
+
+
+        </form>
+
+        <!--form class="flex-form hidden"  data-option="LibraryIdPin"  method="post" action="" id="libraryloginform" data-handler="onSubmitLoginForm" data-type="library">
+            <div class="flex-form__row">
+                <label class="flex-form__label" for="loginform-username">{{mui.pageContent.formlabel.employee}}:</label>
+                <input type="text" class="flex-form__input" value="" name="username" id="loginform-username"
+                       placeholder="{{mui.pageContent.formlabel.employee}}"
+                       required="true" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+            </div>
+            <div class="flex-form__row">
+                <label class="flex-form__label" for="loginform-pin">{{mui.pageContent.formlabel.national}}:</label>
+                <input  class="flex-form__input" type="password" class="form-control input" value="" name="password"
+                        id="loginform-pin"
+                        placeholder="{{mui.pageContent.formlabel.national}}"
+                        required="true" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+            </div>
+            <div class="flex-form__row">
+                <input type="submit" name="submit" value="{{mui.submit}}" class="button" />
+            </div>
+            <div class = "loginoptions">
+                <a href="#"  class = "hidden" data-option="UsernamePassword" data-handler="onSwitchType">{{mui.pageContent.loginFormSwitchToUsername}}</a>
+            </div>
+            <div>
+                <a class="" href="#" data-handler="onForgotPass">{{mui.buttonLabel.forgotPass}}</a>
+            </div>
+
+        </form-->
+
+        <form class="login-form form flex-form hidden"  data-option="LibraryIdPin" data-type="library" method="post" action="" id="libraryloginform" data-handler="onSubmitLoginForm">
+            <div class="form__row">
+                <div class="form__box">
+                    <div id="loginformLabel-username" hidden>Your library ID</div>
+                    <input type="text" class="form__input" value="" name="username" id="loginform-username"
+                           placeholder="Library ID"
+                           required="true" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}: Your library ID"
+                           aria-labelledby="loginformLabel-username"
+                           />
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="form__box">
+                    <div id="loginformLabel-password" hidden>Your library password</div>
+                    <input  class="form__input" type="password" class="form-control input" value="" name="password"
+                            id="loginform-password"
+                            placeholder="PIN / {{mui.pageContent.formlabel.password}}"
+                            required="true" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}: Your library password"
+                            aria-labelledby="loginformLabel-password"
+                            />
+                </div>
+            </div>
+            <div class="form__row forwardtologin hidden">
+                <br>
+                <div class="form__box">
+                    <input type="submit" name="forwardtologin" value="Log In Through My Library" class="btn form__btn login-form__btn ">
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="form__box">
+                    <button type="submit" name="submit" value="{{mui.submit}}" class="btn form__btn login-form__btn" aria-labelledby="loginSubmitButton">
+                        <i class="icon icon-login"></i>
+                        <div id="loginSubmitButton" hidden>Press to login</div>
+                    </button>
+                </div>
+            </div>
+            <div id="unknown-company" class="hidden" aria-live="assertive">Error: We could not determine your library.  Please use the link privided within your library portal, or contact your library administrator.</div>
+            <!--div class="center-align">
+                <a  class="login-form__recover-btn" href="#" data-handler="onForgotPass">{{mui.buttonLabel.forgotPass}}</a>
+            </div-->
+            <br>
+            <!--div class="loginoptions">
+                <a  class="" data-option="ActiveDirectory" href="#" data-handler="onSwitchType">{{mui.buttonLabel.ssoLoginLabel}}</a>
+            </div-->
+
+
+        </form>
+
+        <form class="flex-form hidden" data-option="ActiveDirectory" method="post" action="" id="activedirloginform" data-handler="onSubmitLoginForm" data-type="activedir">
+            <br>
+            <div class="flex-form__row">
+                <input type="submit" name="submit" value="Use My Company Credentials" class="btn form__btn login-form__btn ">
+            </div>
+            <div id="unknown-company" class="hidden" aria-live="assertive">Error: We could not determine your company.  Please use the link which uniquely identifies your organization, such as [yourcompany].knowledgecity.com</div>
+            <br><br><br>
+            <div class="loginoptions">
+                <a  class="" data-option="UsernamePassword" href="#" data-handler="onSwitchType">Log in with KnowledgeCity username and password</a>
+            </div>
+        </form>
+
+        <form class="login-form form hidden" method="post" action="" id="recoverform" data-handler="onSubmitRecoverForm">
+
+            <div class="form__row">
+                <div class="form__box">
+                    <input type="text"
+                           class="form__input"
+                           value=""
+                           name="login"
+                           id="recoverform-login"
+                           placeholder="{{mui.pageContent.formlabel.username}}"
+                           required="true">
+                           <!--data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>-->
+                </div>
+
+            </div>
+
+            <div>
+                <button type="submit" name="submit" class="btn form__btn login-form__btn">
+                    {{mui.buttonLabel.recoverPass}}
+                </button>
+            </div>
+
+        </form>
+        <form class="login-form form hidden" method="post" action="" id="recoveruserform" data-handler="onSubmitRecoverUserForm">
+
+            <div class="form__row">
+                <div class="form__box">
+                    <input type="text"
+                           class="form__input"
+                           value=""
+                           name="email"
+                           id="recoveruserform-email"
+                           placeholder="{{mui.pageContent.formlabel.email}}">
+                           <!--data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>-->
+                </div>
+
+            </div>
+            <div class="form__row">
+                <div class="form__box">
+                    <input type="text"
+                           class="form__input"
+                           value=""
+                           name="employee_id"
+                           id="recoveruserform-employee-id"
+                           placeholder="{{mui.pageContent.formlabel.employee}}">
+                           <!--data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>-->
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="form__box">
+                    <input type="text"
+                           class="form__input"
+                           value=""
+                           name="national_id"
+                           id="recoveruserform-national-id"
+                           placeholder="{{mui.pageContent.formlabel.national}}">
+                           <!--data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>-->
+                </div>
+            </div>
+            <div>
+                <button type="submit" name="submit" class="btn form__btn login-form__btn">
+                    {{mui.buttonLabel.recoverPass}}
+                </button>
+            </div>
+        </form>
+
+        <form class="form hidden" method="post" action="" data-location="popup" id="firstloginform" data-handler="onSubmitFirstLoginForm">
+          {{#additional}}
+            {{#property_default}}
+              <div class="flex-form__row">
+                    {{{html}}}
+                </div>
+            {{/property_default}}
+            {{#property_national_id}}
+              {{#edit_in_lms}}
+                <div class="flex-form__row">
+                    <input type="password" class="flex-form__input" value="{{value}}" name="national_id"
+                           {{{readonly}}} {{{required}}}
+                           id="firstloginform-national_id" placeholder="{{mui.pageContent.formlabel.national}}"/>
+                </div>
+              {{/edit_in_lms}}
+            {{/property_national_id}}
+            {{#property_password}}
+              <div class="flex-form__row">
+                  <input type="password" class="flex-form__input" value=""
+                         name="password"
+                         id="firstloginform-newpassword"
+                         placeholder="{{mui.pageContent.formlabel.newpassword}}"
+                         required="true" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+              </div>
+              <div class="flex-form__row">
+                  <input type="password" class="flex-form__input" value="" name="password2"
+                         id="firstloginform-newpassword2" placeholder="{{mui.pageContent.formlabel.newpassword2}}"
+                         required="true" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+              </div>
+            {{/property_password}}
+          {{/additional}}
+
+
+            <div>
+                <button type="submit" name="submit" class="btn form__btn">
+                    {{mui.buttonLabel.submit}}
+                </button>
+            </div>
+        </form>
+
+
+    </div>
+</div>

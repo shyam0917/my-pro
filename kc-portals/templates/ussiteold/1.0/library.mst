@@ -1,0 +1,114 @@
+<span data-ctrl="LibTitle" id="libtitle"></span>
+
+<div class="inner-page inner-page--library">
+    <div class="cnt">
+    <span data-ctrl="BreadCrumbs" id="breadcrumbs"></span>
+        <div class="inner-page__row">
+            <div class="inner-page__sidebar">
+                <div data-ctrl="Sidebar" id="sidebar">
+                    Loading sidebar...
+                </div>
+            </div>
+            <div class="inner-page__content">
+                {{#courses}}
+                <a class="library-item" href="{{url}}">
+                    {{#isNew}}
+                    <div class="library-item__new">{{New}}</div>
+                    {{/isNew}}
+
+                    <div class="library-item__left">
+                        <div class="library-item__header">
+                            <span class="library-item__title">
+                                {{title}}
+                            </span>
+                        </div>
+
+                        <div class="library-item__content">
+
+                            <div class="library-item__preview" data-handler="onOpenPreview" data-course-id="{{course_id}}" data-lessonid="{{lesson_id}}" data-lesson-type="{{lesson_type}}">
+                                <img  class="library-item__img" src="{{img}}" data-handler="onImgLoadError" data-handler-action="error" alt="{{title}}">
+                            </div>
+
+                            <div class="library-item__description">
+                                {{{description}}}
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="library-item__right">
+                            <span href="{{url}}" class="library-item__btn btn">
+                                {{goToCourse}}
+                            </span>
+
+                        <div class="library-item__table">
+                            <div class="library-item__row">
+                                <div class="library-item__icon">
+                                    <i class="icon icon-author"></i>
+                                </div>
+                                <div class="library-item__caption">
+                                    {{Author}}:
+                                    <span class="library-item__value">
+                                            {{author}}
+                                        </span>
+                                </div>
+
+                            </div>
+                            {{#runtime}}
+                            <div class="library-item__row">
+                                <div class="library-item__icon">
+                                    <i class="icon icon-runtime"></i>
+                                </div>
+                                <div class="library-item__caption">
+                                    {{Runtime}}:
+                                    <span class="library-item__value">
+                                        {{runtime}}
+                                        </span>
+                                </div>
+
+                            </div>
+                            {{/runtime}}
+                            {{#lessons}}
+                            <div class="library-item__row">
+                                <div class="library-item__icon">
+                                    <i class="icon icon-lessons"></i>
+                                </div>
+                                <div class="library-item__caption">
+                                    {{Lessons}}:
+                                    <span class="library-item__value">
+                                            {{lessons}}
+                                        </span>
+                                </div>
+
+                            </div>
+                            {{/lessons}}
+                            <div class="library-item__row">
+                                <div class="library-item__icon">
+                                    <i class="fa fa-globe fa-lg"></i>
+                                </div>
+                                <div class="library-item__caption">
+                                    {{Languages}}:
+                                    <span class="library-item__value">
+                                            {{langs}}
+                                        </span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                {{/courses}}
+
+                {{#pagination.1}}
+                <div class="pagination">
+                    {{#pagination}}
+                    <a class="pagination__item {{#active}}active{{/active}}"  rel="{{#rel}}{{^active}}{{rel}}{{/active}}{{/rel}}"  href="{{url}}">{{caption}}</a>
+                    {{/pagination}}
+
+                </div>
+                {{/pagination.1}}
+
+            </div>
+        </div>
+    </div>
+</div>

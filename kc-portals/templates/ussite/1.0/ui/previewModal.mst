@@ -1,0 +1,66 @@
+<div id="previewModal" class="modal modal--preview preview--course">
+
+    <a class="modal__close modal_close">×</a>
+    <div class="modal_flex{{#ltr}} ltr{{/ltr}}">
+        <div class="content content_courses">
+            <div class="course-video__preview" id="courseVideoEmbed"></div>
+        </div>
+        <div class="preview-sidebar">
+            <div class="library-item__header">
+                <a href="{{courseData.url}}" class="modal_close">
+                    <span class="library-item__title">
+                            {{courseData.title}}
+                    </span>
+                </a>
+            </div>
+
+            <div class="preview-course-details">
+                <div class="preview-course-information">
+                <div class="library-item__caption">
+                        <div class="library-item__icon">
+                            <i class="icon icon-author"></i>
+                        </div>
+                        <span class="library-item__value">
+                            {{courseData.author}}
+                        </span>
+                    </div>
+                    <div class="library-item__caption">
+                        <div class="library-item__icon">
+                            <i class="icon icon-runtime"></i>
+                        </div>
+                        <span class="library-item__value">
+                            {{courseData.trt}}
+                        </span>
+                    </div>
+                    <div class="library-item__caption">
+                        <div class="library-item__icon">
+                            <i class="icon icon-lessons"></i>
+                        </div>
+                        <span class="library-item__value">
+                            {{courseData.totallessons}}
+                        </span>
+                    </div>
+                    <div class="library-item__caption">
+                        <div class="library-item__icon">
+                            <i class="fa fa-globe fa-lg"></i>
+                        </div>
+                        <span class="library-item__value">
+                            {{courseData.langs}}
+                        </span>
+                    </div>
+                </div>
+                <div class="library-item__description">
+                    {{courseData.description}}
+                    <div class="clearfix">
+
+                    </div>
+                </div>
+                <a href="{{courseData.url}}" class="modal_close">
+                    <span class="library-item__btn btn">
+                        {{#goToCourse}}{{goToCourse}}{{/goToCourse}} {{^goToCourse}} {{mui.goToCourse}}{{/goToCourse}}
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

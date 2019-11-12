@@ -1,0 +1,7 @@
+<div id="videoPopUp" class="videoPopUp">
+	<a class="modal_close" data-handler="onClose"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-times fa-stack-1x fa-inverse"></i></span></a>
+	<div id="videoPreviewBlock" class="videoPreviewBlock"></div>
+	<div class="prevlesson lessonArrow" rel="prev"><a href="#" data-handler="onPrev"><i class="fa fa-arrow-left"></i></a></div>
+	<div class="nextlesson lessonArrow" rel="next"><a href="#" data-handler="onNext"><i class="fa fa-arrow-right"></i></a></div>
+	<div class="courseTitle" rel="courseTitle"></div>
+</div>

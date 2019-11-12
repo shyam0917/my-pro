@@ -1,0 +1,39 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 223.44 211">
+	<defs>
+		<style>
+			.cls-1{fill:rgb( 85, 85, 85);}
+			.cls-2{fill:rgb(255,255,255);}
+		</style>
+	</defs>
+	<title>benefit-2</title>
+	<circle class="cls-1" cx="112.3" cy="106.37" r="93.37"/>
+	<path d="M112.11,161.75c29.21.06,52.35-22.67,52.54-51.57.19-29.45-22.89-53-52-53.13a52.35,52.35,0,1,0-.54,104.7Z"/>
+	<path class="cls-2" d="M112.11,161.75a52.35,52.35,0,1,1,.54-104.7c29.11.09,52.19,23.68,52,53.13C164.46,139.08,141.32,161.81,112.11,161.75Zm40.36-51.88c.15-22.73-17.33-40.52-39.9-40.62a40,40,0,0,0-40.41,39.41c-.29,22.74,17.07,40.66,39.61,40.9C134.68,149.8,152.32,132.59,152.47,109.87Z"/>
+	<path class="cls-1" d="M152.47,109.87c-.15,22.72-17.79,39.93-40.7,39.69-22.54-.24-39.9-18.16-39.61-40.9a40,40,0,0,1,40.41-39.41C135.14,69.35,152.62,87.14,152.47,109.87ZM112.35,146.2c20,0,36.84-16.88,36.76-36.86S132.05,72.6,112,72.84a36.88,36.88,0,0,0-36.27,36.4C75.55,129.26,92.3,146.19,112.35,146.2Z"/>
+	<path class="cls-2" d="M112.35,146.2c-20,0-36.8-16.94-36.58-37A36.88,36.88,0,0,1,112,72.84c20-.24,37,16.47,37.07,36.5S132.34,146.22,112.35,146.2Z"/>
+	<rect class="cls-1" x="111.9" y="81" width="2.1" height="32" rx="1.05" ry="1.05"/>
+	<rect class="cls-1" x="119.72" y="99.18" width="2.45" height="21.99" rx="1.05" ry="1.05" transform="translate(231.12 -10.77) rotate(90)"/>
+	<script xmlns="http://www.w3.org/2000/svg" type="text/javascript">
+
+		var params = {};
+        location.search.replace(/[?&amp;]+([^=&amp;]+)=([^&amp;]*)/gi,function(s,k,v){params[k]=v});
+
+        var color1 = params['cls1'];
+        if( !color1 || color1 == '' ) color1 = 'rgb( 85, 85, 85)';
+        var color2 = params['cls2'];
+        if( !color2 || color2 == '' ) color2 = 'rgb(255,255,255)';
+
+		var cls1 = document.getElementsByClassName("cls-1");
+		var i = 0;
+		while(typeof cls1[i] !== 'undefined') {
+			cls1[i].style.fill = color1;
+			i++;
+		}
+		var cls2 = document.getElementsByClassName("cls-2");
+		var i = 0;
+		while(typeof cls2[i] !== 'undefined') {
+			cls2[i].style.fill = color2;
+			i++;
+		}
+	</script>
+</svg>

@@ -1,0 +1,434 @@
+<section class="promo jack">
+	<div class="cnt">
+		<div class="promo__title">
+			<h1>{{learningTitle}}</h1>
+		</div>
+		<div class="promo__subtitle">
+			<h3>{{learningSubtitle}}</h3>
+		</div>
+		<div class="promo__message">{{promoMessage}}</div>
+	</div>
+</section>
+
+
+<section class="index-clients">
+	<div class="cnt">
+		<div class="index-clients__carousel owl-carousel" id="clientsCarousel">
+			{{#clients}}
+			<div class="index-client">
+				<img class="index-client__img" src="{{logo}}" alt=""/>
+			</div>
+			{{/clients}}
+		</div>
+		<div class="owl-nav">
+			<span class="owl-nav__prev" data-handler="onPrevClients"></span>
+			<span class="owl-nav__next" data-handler="onNextClients"></span>
+		</div>
+	</div>
+</section>
+
+
+<section class="featured-sections">
+	<div class="three-boxes cnt">
+		<div class="trio-service-box">
+			<div style="position:relative;">
+				<a href="{{site.url_with_lang}}learningLibrary"><div class="box-overlay-tint"><img src="{{VIEW}}images/Learning-Library-Box2--v{{site.LocalStorageStamp}}.jpg" style="width:100%;" alt="{{alt.triobox.ll}}">
+				</div>
+				<div class="box-title-overlay"><h5 class="box-title-header">{{boxLearningTitle}}</h5></div></a>
+			</div>
+			<div class="feature-box-features">
+				<div class="feature-box-features-title-wrapper">
+					<h5 class="feature-box-features-header">{{boxLearningHeader}}</h5>
+				</div>
+				<div class="feature-box-features-cols-wrapper">
+					<div class="feature-box-icon-blurb">
+						<div class="feature-box-features-col-half">
+							<div class="featurebox-icon-wrapper"><span class="feature-box-icon icon-business"></span></div>
+							<p class="feature-box-feature-title">{{boxLearningBusiness}}</p>
+						</div>
+						<div class="feature-box-features-col-half">
+							<div class="featurebox-icon-wrapper"><span class="feature-box-icon icon-computer"></span></div>
+							<p class="feature-box-feature-title">{{boxLearningComputer}}</p>
+						</div>
+					</div>
+					<div class="feature-box-icon-blurb">
+						<div class="feature-box-features-col-half">
+							<div class="featurebox-icon-wrapper"><span class="feature-box-icon icon-safety"></span></div>
+							<p class="feature-box-feature-title">{{boxLearningSafety}}</p>
+						</div>
+						<div class="feature-box-features-col-half">
+							<div class="featurebox-icon-wrapper"><span class="feature-box-icon icon-compliance"></span></div>
+							<p class="feature-box-feature-title">{{boxLearningCompliance}}</p>
+						</div>
+					</div>
+					<div class="feature-box-features-col-half last">
+						<div class="feature-box-icon-blurb">
+							<div class="featurebox-icon-wrapper"><span class="feature-box-icon icon-finance"></span></div>
+							<p class="feature-box-feature-title">{{boxLearningFinance}}</p>
+						</div>
+					</div>
+				</div>
+				<h5 class="feature-box-features-header last">{{boxLearningNewCourses}}</h5>
+			</div>
+			<div style="position:relative;margin-bottom:-2px;">
+				<div style="position:relative">
+					<img src="{{VIEW}}images/LearnMore-1--v{{site.LocalStorageStamp}}.png" style="width:100%;" alt="">
+					<div class="box-learn-more"><h5 class="box-learn-more-header"><a href="{{site.url_with_lang}}learningLibrary" class="box-learn-more-link">{{boxLearnMore}} <i class="fa fa-angle-right"></i></a></h5></div>
+				</div>
+			</div>
+		</div>
+		<div class="trio-service-box">
+			<div style="position:relative;">
+				<a href="{{site.url_with_lang}}lms"><div class="box-overlay-tint"><img src="{{VIEW}}images/LMS-Box--v{{site.LocalStorageStamp}}.jpg" style="width:100%;" alt="{{alt.triobox.lms}}">
+				</div>
+				<div class="box-title-overlay"><h5 class="box-title-header">{{boxLmsTitle}}</h5></div></a>
+			</div>
+			<div class="feature-box-features">
+				<h5 class="feature-box-features-header">{{boxLmsHeader}}</h5>
+				<div class="feature-box-features-col-full">
+					<div class="feature-box-icon-blurb">
+						<div class="featurebox-icon-wrapper"><span class="feature-box-icon icon-metrics"></span></div>
+						<p class="feature-box-feature-title">{{boxLmsMetrics}}</p>
+					</div>
+					<div class="feature-box-icon-blurb">
+						<div class="featurebox-icon-wrapper"><span class="feature-box-icon icon-testing"></span></div>
+						<p class="feature-box-feature-title">{{boxLmsTesting}}</p>
+					</div>
+					<div class="feature-box-icon-blurb">
+						<div class="featurebox-icon-wrapper"><span class="feature-box-icon icon-upload"></span></div>
+						<p class="feature-box-feature-title">{{boxLmsUpload}}</p>
+					</div>
+					<div class="feature-box-icon-blurb">
+						<div class="featurebox-icon-wrapper"><span class="feature-box-icon icon-reports"></span></div>
+						<p class="feature-box-feature-title">{{boxLmsReports}}</p></div>
+				</div>
+			</div>
+			<div style="position:relative;margin-bottom:-2px;">
+				<div style="position:relative">
+					<img src="{{VIEW}}images/LearnMore-2--v{{site.LocalStorageStamp}}.png" style="width:100%;" alt="">
+					<div class="box-learn-more"><h5 class="box-learn-more-header"><a href="{{site.url_with_lang}}lms" class="box-learn-more-link">{{boxLearnMore}} <i class="fa fa-angle-right"></i></a></h5></div>
+				</div>
+			</div>
+		</div>
+		<div class="trio-service-box">
+			<div style="position:relative;">
+				<a href="{{site.url_with_lang}}contentCreation"><div class="box-overlay-tint"><img src="{{VIEW}}images/Custom-Content-Box--v{{site.LocalStorageStamp}}.jpg" style="width:100%;" alt="{{alt.triobox.cc}}">
+				</div>
+				<div class="box-title-overlay"><h5 class="box-title-header">{{boxContentTitle}}</h5></div></a>
+			</div>
+			<div class="feature-box-features">
+				<h5 class="feature-box-features-header">{{boxContentHeader}}</h5>
+				<div class="feature-box-features-col-full">
+					<div class="feature-box-icon-blurb">
+						<div class="featurebox-icon-wrapper"><span class="feature-box-icon icon-storyboard"></span></div>
+						<p class="feature-box-feature-title">{{boxContentStoryboard}}</p>
+					</div>
+					<div class="feature-box-icon-blurb">
+						<div class="featurebox-icon-wrapper"><span class="feature-box-icon icon-videoplayer"></span></div>
+						<p class="feature-box-feature-title">{{boxContentVideo}}</p>
+					</div>
+					<div class="feature-box-icon-blurb">
+						<div class="featurebox-icon-wrapper"><span class="feature-box-icon icon-globe"></span></div>
+						<p class="feature-box-feature-title">{{boxContentGlobe}}</p>
+					</div>
+					<div class="feature-box-icon-blurb">
+						<div class="featurebox-icon-wrapper"><span class="feature-box-icon icon-paths"></span></div>
+						<p class="feature-box-feature-title">{{boxContentPaths}}</p>
+					</div>
+				</div>
+			</div>
+			<div style="position:relative;margin-bottom:-2px;">
+				<div style="position:relative">
+					<img src="{{VIEW}}images/LearnMore-3--v{{site.LocalStorageStamp}}.png" style="width:100%;" alt="">
+					<div class="box-learn-more"><h5 class="box-learn-more-header"><a href="{{site.url_with_lang}}contentCreation" class="box-learn-more-link">{{boxLearnMore}} <i class="fa fa-angle-right"></i></a></h5></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section class="why-kc">
+	<div class="cnt">
+		<div class="">
+			<h2>{{whyKcTitle}}</h2>
+		</div>
+		<div class="">
+			<h3>{{whyKcSubtitle}}</h3>
+		</div>
+		<div class="">
+			<p>{{whyKcDescription}}</p>
+		</div>
+	</div>
+	<div class="cnt-wide">
+		<div class="clear-icon-boxes">
+			<div class="clear-icon-box">
+				<div class="cnt-icon-img"><img src="{{VIEW}}images/Icon_Dashboard--v{{site.LocalStorageStamp}}.png" alt="{{alt.icons.complete_solution}}"></div>
+				<h4>{{iconDashboardTitle}}</h4>
+				<p class="icon-text">{{iconDashboardDescription}}</p>
+			</div>
+			<div class="clear-icon-box">
+				<div class="cnt-icon-img"><img src="{{VIEW}}images/Icon_Cloud--v{{site.LocalStorageStamp}}.png" alt="{{alt.icons.advanced_products}}"></div>
+				<h4>{{iconCloudTitle}}</h4>
+				<p class="icon-text">{{iconCloudDescription}}</p>
+			</div>
+			<div class="clear-icon-box">
+				<div class="cnt-icon-img"><img src="{{VIEW}}images/Icon_CS--v{{site.LocalStorageStamp}}.png" alt="{{alt.icons.customer_service}}"></div>
+				<h4>{{iconCostumerTitle}}</h4>
+				<p class="icon-text">{{iconCostumerDescription}}</p>
+			</div>
+			<div class="clear-icon-box">
+				<div class="cnt-icon-img"><img src="{{VIEW}}images/Icon_Language--v{{site.LocalStorageStamp}}.png" alt="{{alt.icons.language_support}}"></div>
+				<h4>{{iconLanguageTitle}}</h4>
+				<p class="icon-text">{{iconLanguageDescription}}</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="learning-library">
+	<div class="cnt-wide">
+		<div class="flex-thirds">
+			<div class="one-three">
+				<a href="{{site.url_with_lang}}library/6781/business">
+				<div class="block">
+					<div class="block-1">
+						<img class="LL__image" src="{{VIEW}}images/Block-Business--v{{site.LocalStorageStamp}}.png" alt="{{alt.blocks.business}}" style="width:100%;">
+						<div class="overlay"></div>
+						<div class="centered">{{boxLearningBusiness}}</div>
+					</div>
+				</div>
+				</a>
+				<a href="{{site.url_with_lang}}library/6263/computer">
+				<div class="block">
+					<div class="block-1">
+						<img class="LL__image" src="{{VIEW}}images/Block-Computer--v{{site.LocalStorageStamp}}.png" alt="{{alt.blocks.computer}}" style="width:100%;">
+						<div class="overlay">
+							</div>
+						<div class="centered">{{boxLearningComputer}}</div>
+					</div>
+				</div>
+				</a>
+				<a href="{{site.url_with_lang}}library/6767/safety">
+					<div class="block">
+						<div class="block-1">
+							<img class="LL__image" src="{{VIEW}}images/Block-Safety--v{{site.LocalStorageStamp}}.png" alt="{{alt.blocks.safety}}" style="width:100%;">
+							<div class="overlay">
+							</div>
+							<div class="centered">{{boxLearningSafety}}</div>
+						</div>
+					</div>
+				</a>
+				<a href="{{site.url_with_lang}}library/6869/compliance">
+					<div class="block">
+						<div class="block-1">
+							<img class="LL__image" src="{{VIEW}}images/Block-Compliance--v{{site.LocalStorageStamp}}.png" alt="{{alt.blocks.compliance}}" style="width:100%;">
+							<div class="overlay">
+							</div>
+							<div class="centered">{{boxLearningCompliance}}</div>
+						</div>
+					</div>
+				</a>
+				<a href="{{site.url_with_lang}}library/6657/finance">
+					<div class="block">
+						<div class="block-1">
+							<img class="LL__image" src="{{VIEW}}images/Block-Financial--v{{site.LocalStorageStamp}}.png" alt="{{alt.blocks.finance}}" style="width:100%;">
+							<div class="overlay">
+							</div>
+							<div class="centered">{{boxLearningFinance}}</div>
+						</div>
+					</div>
+				</a>
+				<a href="{{site.url_with_lang}}learningLibrary">
+					<div class="block">
+						<div class="block-1">
+							<img class="LL__image" src="{{VIEW}}images/Block-more--v{{site.LocalStorageStamp}}.png" alt="{{alt.blocks.more}}" style="width:100%;">
+							<div class="overlay">
+							</div>
+							<div class="centered">{{squaredNewVideos}}</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="two-three">
+			<h2>{{learningLibraryTitle}}</h2>
+			<h3>{{learningLibrarySubtitle}}</h3>
+			<p>{{learningLibraryDescription}}</p>
+			{{#isCountryAllowed}}
+			<a href="{{site.url_with_lang}}signUp/type/business">{{startFree}} <i class="fa fa-angle-right"></i></a>
+			{{/isCountryAllowed}}
+			{{^isCountryAllowed}}
+			<a href="{{site.url_with_lang}}signUp/type/business">{{mui.buttonLabel.freeDemo}} <i class="fa fa-angle-right"></i></a>
+			{{/isCountryAllowed}}
+			<a href="{{site.url_with_lang}}learningLibrary">{{boxLearnMore}} <i class="fa fa-angle-right"></i></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="LMS">
+	<div class="cnt-wide">
+		<div class="flex-thirds">
+			<div class="two-three">
+				<h2>{{LmsTitle}}</h2>
+				<h3>{{LmsSubtitle}}</h3>
+				<p>{{LmsDescription}}</p>
+				<a href="{{site.url_with_lang}}signUp/type/business">{{mui.buttonLabel.freeDemo}} <i class="fa fa-angle-right"></i></a>
+				<a href="{{site.url_with_lang}}lms">{{boxLearnMore}} <i class="fa fa-angle-right"></i></a>
+			</div>
+			<div class="one-three">
+				<img src="{{VIEW}}images/Tech-Devices--v{{site.LocalStorageStamp}}.jpg" alt="{{alt.triobox.lms}}">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="custom-content">
+	<div class="cnt-wide">
+		<div class="flex-thirds">
+			<div class="one-three">
+					<img class="greenscreen" src="{{VIEW}}images/greenscreen--v{{site.LocalStorageStamp}}.png" alt="{{alt.triobox.cc}}">
+					
+			</div>
+			<div class="two-three">
+				<h2>{{contentTitle}}</h2>
+				<h3>{{contentSubtitle}}</h3>
+				<p>{{contentDescription}}</p>
+				<a href="{{site.url_with_lang}}contentCreation/contact-us-cc">{{freeConsultation}}<i class="fa fa-angle-right"></i></a> <a href="{{site.url_with_lang}}contentCreation">{{boxLearnMore}} <i class="fa fa-angle-right"></i></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="testimonials">
+	<div class="cnt-wide">
+		<div class="testimonial-content">
+			<h2>{{TestimonialTitle}}</h2>
+			<h3>{{TestimonialSubtitle}}</h3>
+		</div>
+				<!-- Slideshow container -->
+		<div class="slideshow-container">
+		  <div class="dot-wrapper">
+			  {{#testimonials}}
+			    <div class="full-slide-wrapper">
+			      <div class="dot slideshow-dot fade{{#class}} {{class}}{{/class}}" style="background-image:url({{image}})"></div>
+			      <div class="slide-wrapper fade">
+			        <div class="slide-content-wrapper">
+			          <div class="slide-text">"{{text}}"</div>
+			          <div class="slide-owner-wrapper">
+			            <div class="slide-owner">{{name}}</div>
+			            <div class="slide-owner-info">{{#title}}{{title}}{{/title}}{{#company}} | {{{company}}}{{/company}}</div>
+			          </div>
+			        </div>
+			      </div>
+		  	    </div>
+			  {{/testimonials}}
+		  </div>
+		</div>
+		  <!-- Full-width images with text -->
+		  <!-- <div class="mySlides fade">
+		  	<div class="text">Caption One</div>
+		    <img src="{{VIEW}}images/Feedback_Box_1--v{{site.LocalStorageStamp}}.png" style="width:100%">
+		  </div>
+
+		  <div class="mySlides fade">
+		    <img src="{{VIEW}}images/Feedback_Box_2--v{{site.LocalStorageStamp}}.png" style="width:100%">
+		    <div class="text">Caption Two</div>
+		  </div>
+
+		  <div class="mySlides fade">
+		    <img src="{{VIEW}}images/Feedback_Box_3--v{{site.LocalStorageStamp}}.png" style="width:100%">
+		    <div class="text">Caption Three</div>
+		  </div>
+
+		  <div class="mySlides fade">
+		    <img src="{{VIEW}}images/Feedback_Box_4--v{{site.LocalStorageStamp}}.png" style="width:100%">
+		    <div class="text">Caption Four</div>
+		  </div>
+
+		  <div class="mySlides fade">
+		    <img src="{{VIEW}}images/Feedback_Box_5--v{{site.LocalStorageStamp}}.png" style="width:100%">
+		    <div class="text">Caption Five</div> -->
+
+		<!-- The dots/circles -->
+		<!-- <div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		  <span class="dot" onclick="currentSlide(4)"></span> 
+		  <span class="dot" onclick="currentSlide(5)"></span> 
+		</div> -->
+	</div>
+</section>
+
+
+<!-- <section class="index-contact">
+	<div class="cnt">
+		<h2 class="index-contact__title">{{contactTitle}}</h2>
+		<p class="index-contact__description">{{contactDescription}}</p>
+		<div id="formMessage" class=""></div>
+		<form id="contactUs" class="index-contact__form" data-handler="onSubmitForm" method="post" action="">
+			<div class="index-contact__row">
+				<input
+						type="text"
+						class="index-contact__input"
+						value=""
+						id="name_f"
+						name="name_f"
+						placeholder="{{mui.pageContent.formlabel.name}}"
+						required="true"
+						data-invalidMessage="{{mui.form.requiredField.invalidName}}"
+				/>
+				<input
+						type="text"
+						class="index-contact__input"
+						value=""
+						id="tel"
+						name="tel"
+						placeholder="{{mui.pageContent.formlabel.phone}}"
+						required="true"
+						data-invalidMessage="{{mui.form.requiredField.invalidPhone}}"
+				/>
+			</div>
+			<div class="index-contact__row">
+				<input
+						type="email"
+						class="index-contact__input"
+						value=""
+						id="email"
+						name="email"
+						placeholder="{{mui.pageContent.formlabel.email}}"
+						required="true"
+						data-invalidMessage="{{mui.form.requiredField.invalidEmail}}"
+						data-invalidMessageWrongType="{{mui.form.requiredField.invalidTypeEmail}}"
+				/>
+				<input
+						type="text"
+						class="index-contact__input"
+						value=""
+						id="subject"
+						name="subject"
+						placeholder="{{mui.pageContent.formlabel.subject}}"
+						required="true"
+						data-invalidMessage="{{mui.form.requiredField.invalidSubject}}"
+				/>
+			</div>
+			<div class="index-contact__row">
+				<textarea
+						class="index-contact__textarea"
+						id="comments"
+						name="comments"
+						placeholder="{{mui.pageContent.formlabel.message}}"
+						required="true"
+						data-invalidMessage="{{mui.form.requiredField.invalidHowWeCanHelp}}"
+				></textarea>
+			</div>
+			<button class="index-contact__btn btn" type="submit">{{mui.buttonLabel.submit}}</button>
+		</form>
+
+	</div>
+</section> -->
+
+
+

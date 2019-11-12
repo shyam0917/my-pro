@@ -1,0 +1,53 @@
+<div class="header-item__title bl-desktop">
+    {{library}}
+    <i class="fa fa-angle-down"></i>
+</div>
+<div class="header-item__submenu bl-desktop">
+    <div class="header-item__subitems">
+        {{#sections}}
+        <div class="header-item__row">
+            <a
+                    class="header-item__subitem"
+                    href="{{url}}"
+            >
+                {{name}}
+            </a>
+            <div class="header-item__sideitems" data-section-categories="{{id}}">
+                {{#categories_order_col}}
+                <a
+                        class="header-item__sideitem"
+                        href="{{url}}"
+                >
+                    {{name}}
+                </a>
+                {{/categories_order_col}}
+            </div>
+        </div>
+        {{/sections}}
+    </div>
+</div>
+
+
+<div class="bl-mobile">
+<div class="drop_m_block">
+    <div class="drop_m_title"><span>{{library}}</span>
+        <div class="arrow-item__icon">
+            <div class="fa fa-angle-down"></div>
+        </div>
+    </div>
+    <div class="drop_m_sub">
+        {{#sections}}
+        <a class="header-item__subitem" href="{{url}}">{{name}}</a>
+        {{/sections}}
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+

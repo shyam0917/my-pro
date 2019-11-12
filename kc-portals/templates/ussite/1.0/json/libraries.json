@@ -1,0 +1,42 @@
+{
+    "business"   : {
+        "1905":{"position": 0, "class": "leadership"},
+        "6287":{"position": 1, "class": "management", "en": "Managerial Skills", "es":"Habilidades directivas"},
+        "6741":{"position": 2, "class": "communication"},
+        "6637":{"position": 3, "class": "marketing", "en": "Sales & Marketing", "es":"Ventas y Marketing"},
+        "6885":{"position": 4, "class": "customerservice"},
+        "6883":{"position": 5, "class": "softskills"}
+    },
+    "computer"   : {
+        "6469":{"position": 0, "class": "microsoft"},
+        "4653":{"position": 1, "class": "accounting"},
+        "6061":{"position": 2, "class": "operating"},
+        "6597":{"position": 3, "class": "adobe"},
+        "2891":{"position": 4, "class": "programming"},
+        "3269":{"position": 5, "class": "socialmedia"}
+    },
+    "finance"    : {
+        "2231":{"position": 0, "class": "treasury"},
+        "4079":{"position": 1, "class": "trade"},
+        "6315":{"position": 2, "class": "regulatory"},
+        "4919":{"position": 3, "class": "retail"},
+        "6477":{"position": 4, "class": "fraud"},
+        "6886":{"position": 5, "class": "accounting"}
+    },
+    "safety"     : {
+        "6171":{"position": 0, "class": "workplace"},
+        "2211":{"position": 1, "class": "industrial"},
+        "3499":{"position": 2, "class": "equipment"},
+        "6067":{"position": 3, "class": "socialsafety"},
+        "5213":{"position": 4, "class": "administration"},
+        "5735":{"position": 5, "class": "general"}
+    },     
+    "compliance" : {
+        "6415":{"position": 0, "class": "sexualharassmen"},
+        "6175":{"position": 1, "class": "hazard"},
+        "1485":{"position": 2, "class": "hipaa"},
+        "2253":{"position": 3, "class": "bloodborne"},
+        "6249":{"position": 4, "class": "safety"},
+        "7011":{"position": 5, "class": "federal"}
+    }
+}

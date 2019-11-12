@@ -1,0 +1,292 @@
+<html>
+<head>
+	<title>{{mui.portalTitle}}</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="content-language" content="{{site.language}}">
+	<meta name="description" content="{{page.content}}" />
+	<meta name="keywords" content="{{page.keywords}}" />
+    <link rel="icon" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<meta name="author" content="KnowledgeCity.com" />
+    <!-- Vendor Script: FontAwesome -->
+    <link href="{{VENDORS}}font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Vendor Script: Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="{{VENDORS}}bootstrap/3.3.6/css/bootstrap.min.css" />
+
+    <!-- Optional theme -->
+
+    <link rel="stylesheet" data-required="true" href="{{VIEW}}css/style--v{{site.LocalStorageStamp}}.css" />
+    <link rel="stylesheet" data-required="true" href="{{VIEW}}css/landing/style--v{{site.LocalStorageStamp}}.css" />
+    {{#site.style}}
+    <link rel="stylesheet" href="{{site.style}}" />
+    {{/site.style}}
+    <link rel="stylesheet" href="{{VIEW}}css/owl.carousel--v{{site.LocalStorageStamp}}.css" />
+
+    <link href="{{VENDORS}}jQuery/modules/fancybox/2.1.5/source/jquery.fancybox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{VENDORS}}videojs-player/video-js.css" />
+    <link rel="stylesheet" href="{{VIEW}}css/locale/css.{{site.language}}--v{{site.LocalStorageStamp}}.css" />
+    <link rel="stylesheet" href="{{VIEW}}css/custom-player--v{{site.LocalStorageStamp}}.css" />
+</head>
+<body class="{{site.language}}{{#kcpack}} kcpack{{/kcpack}}">
+
+	<header class="header">
+    <div class="cnt">
+        <div class="header__logo-wrapper">
+            <a data-handler="onRedirectHome" class="logo logo-{{site.language}}">
+                <img src="{{site.logo}}" alt="" title="" />
+            </a>
+            {{#mui.courseLibraryTitleHeader}}
+            <div class="header__title-wrapper">
+                <h2 class="header__portal-title">{{mui.courseLibraryTitleHeader}}</h2>
+            </div>
+            {{/mui.courseLibraryTitleHeader}}
+            <div class="header__bars" data-handler="onMobMenu" id="bars"><i class="fa fa-bars"></i></div>
+        </div>
+        <div class="header__panel">
+            <nav class="usermenu" id="usermenu">
+                <ul data-ctrl="MainMenu">
+
+                    <li class="search">
+
+                        <form class="search__form" data-id="search-form" action="#">
+                            <button class="search__open" data-handler="onSearchForm" data-id="search-open">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                            <button class="search__close" data-id="search-close" type="reset">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </button>
+                            <input class="search__input" data-id="search-input" type="text" placeholder="{{search}}">
+                            <button class="search__find" data-id="search-find" type="submit">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </li>
+
+                    {{#items}}
+                    <li class="txt {{isActive}} float-{{language}}">
+                        <a href="{{url}}" target="{{target}}" data-reload="{{reload}}" class="usermenu--{{class}}">{{name}}</a>
+                    </li>
+                    {{/items}}
+                    {{#languages.dropdown}}
+
+                    <li class="dropdown dropdown-lang">
+                        <a class="dropdown-toggle" data-toggle="dropdown"
+                           href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            {{languages.current}}  <i class="fa fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            {{#languages.items}}
+                                <li data-lang="{{code}}" class="single-lang">
+                                    <a data-reload="1" href="{{href}}">{{title}}</a>
+                                </li>
+                            {{/languages.items}}
+
+                        </ul>
+                    </li>
+
+                    {{/languages.dropdown}}
+
+                    {{^languages.dropdown}}
+                    {{#languages.items}}
+                    <li data-lang="{{code}}">
+
+                        <a data-reload="1" href="{{href}}">{{title}}</a>
+
+                    </li>
+                    {{/languages.items}}
+                    {{/languages.dropdown}}
+
+
+
+                </ul>
+
+            </nav>
+            <nav class="menu">
+                {{#site.appRequestBlock}}
+                <div class="request-app">
+                    <div class="request-app__btns">
+                        {{#site.config.portal.iOSAappID}}
+                        <a class="request-app__btn" href="#" data-handler="onRequestApp" data-platform="ios">
+                            <i class="fa fa-apple" aria-hidden="true"></i> iOS
+                        </a>
+                        {{/site.config.portal.iOSAappID}}
+                        {{#site.config.portal.AndroidAappID}}
+                        <a class="request-app__btn" href="#" data-handler="onRequestApp" data-platform="android">
+                            <i class="fa fa-android" aria-hidden="true"></i> ANDROID
+                        </a>
+                        {{/site.config.portal.AndroidAappID}}
+                    </div>
+                </div>
+                {{/site.appRequestBlock}}
+                {{#site.showHowWorksLink}}
+                <div class="learn-how">
+                  <a class="learn-how__link" data-handler="onShowDemoVideo" href="#learnHow">{{mui.pageContent.index.learnHow}}</a>
+                </div>
+                {{/site.showHowWorksLink}}
+
+                <ul>
+                    {{#user}}
+                    {{/user}}
+                    <li data-ctrl="LibMenu" id="libMenu" class="menu__library">
+                        {{mui.topMenuItems.library}}
+                    </li>
+                    {{#user}}
+                    {{#coursesForSelectUrl}}
+                      <li data-ctrl="CoursesForCloneMenu" id="CoursesForCloneMenu" class="menu__library">
+                        {{mui.login.coursesForClone}}
+                      </li>
+                    <li class="menu__mylearning">
+                      <a href="{{coursesForSelectUrl}}">
+                        {{mui.login.coursesForSelect}}
+                      </a>
+                    </li>
+                    {{/coursesForSelectUrl}}
+                    <li class="menu__mylearning"><a href="{{myLearningUrl}}">{{mui.login.mylearning}}</a></li>
+										<div class="header-item header-item--my-learning">
+				            </div>
+                    <li class="dropdown menu__login">
+                        <a  class="dropdown-toggle" data-toggle="dropdown"
+                           href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-chevron-down"></i></a>
+                        <div class="dropdown-menu user-dropdown">
+                            <ul>
+                                <li class="loginDropdownName"><span>{{name}}</span></li>
+                                <li><a href="{{myAccountUrl}}">{{mui.topMenuItems.myaccount}}</a></li>
+                                {{#user.myAdminToolsUrl}}
+                                    <li><a data-handler="onLoginToLMS" href="{{user.myAdminToolsUrl}}">{{mui.topMenuItems.admintools}}</a></li>
+                                {{/user.myAdminToolsUrl}}
+                                <li><a href="{{logoutUrl}}" id="logoffLink" data-handler="onLogout">{{mui.login.logoutLink}}</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    {{/user}}
+                    {{^user}}
+                    <li>
+                        <a class="menu__login" href="#loginPopUp" id="loginlink" data-handler="onLoginForm">
+                            <span class="u">{{mui.txtLabels.login}}</span>
+                        </a>
+                    </li>
+                    {{/user}}
+
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+    <div id="libMenuContent" class="header__libcontent"></div>
+    <div id="coursesForCloneMenuContent" class="header__libcontent"></div>
+  </header>
+	
+	<div class="scroll-up--ctrl scroll-up"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></div>
+  <div class="contentBody" id="content">{{mui.txtLabels.contentLoading}}</div>
+  <footer class="footer">
+      <div class="cnt">
+          <div class="footer__item">
+              {{#site.appRequestBlock}}
+              <div class="request-app">
+                  <div class="request-app__title">
+                      {{mui.pageContent.requestAppForm.title}}
+                  </div>
+                  <div class="request-app__btns">
+                      {{#site.config.portal.iOSAappID}}
+                      <a class="request-app__btn" href="#" data-handler="onRequestApp" data-platform="ios">
+                          <i class="fa fa-apple" aria-hidden="true"></i> iOS
+                      </a>
+                      {{/site.config.portal.iOSAappID}}
+                      {{#site.config.portal.AndroidAappID}}
+                      <a class="request-app__btn" href="#" data-handler="onRequestApp" data-platform="android">
+                          <i class="fa fa-android" aria-hidden="true"></i> ANDROID
+                      </a>
+                      {{/site.config.portal.AndroidAappID}}
+                  </div>
+              </div>
+              {{/site.appRequestBlock}}
+          </div>
+          <div class="footer__item">
+              {{{mui.footerTXT.1}}}
+          </div>
+          <div class="footer__item">
+              <i class="footer-logo"></i>
+              {{{mui.txtLabels.trademark}}}
+          </div>
+      </div>
+  </footer>
+
+<!--Alerting windows-->
+<div id="dangerWindow" class="modalWindow" style="display: none;">
+    <div class="content">
+        <div class="text" rel="text"></div>
+        <div class="text-center btns-group"><input type="button" rel="confirm" value="{{mui.buttonLabel.ok}}" class="button"></div>
+    </div>
+</div>
+<div id="alertWindow" class="modalWindow" style="display: none;">
+    <a rel="closeModal" class="modal_close">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+            </span>
+    </a>
+    <div class="content">
+        <div class="text" rel="text"></div>
+        <div class="text-center"><input type="button" rel="closeOk" value="{{mui.buttonLabel.ok}}" class="button"></div>
+    </div>
+</div>
+<div id="confirmWindow" class="modalWindow" style="display: none;">
+    <a rel="closeModal" class="modal_close">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+            </span>
+    </a>
+    <div class="content">
+        <div class="text" rel="text" id="modal__text"></div>
+        <div class="text-center btns-group"><input type="button" rel="confirm" value="{{mui.buttonLabel.ok}}" class="button"><input type="button" rel="closeOk" value="{{mui.buttonLabel.cancel}}" class="button"></div>
+    </div>
+</div>
+<div id="videoWindow" class="modalWindow" style="display: none;">
+
+   <a rel="closeModal" class="modal_close">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+      </span>
+   </a>
+   <div class="content">
+      <div class="modal__text previewLMS" id="modal__text"></div>
+   </div>
+</div>
+<div id="loading-overlay" class="loading-overlay">
+    <div class="loader">
+        <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+    </div>
+</div>
+
+<a href="/{{site.language}}/messenger" class="msnger-link">
+	<div class="messenger-comment-container jump">
+		<i class="fa fa-comment fa-lg" aria-hidden="true"></i>
+		<span class="messenger-total-messages hide"></span>
+	</div>
+</a>
+
+{{{#site.getClickyID}}}
+<!-- CLICKY -->
+<noindex><a title="Real Time Web Analytics" href="//clicky.com/{{site.getClickyID}}" rel="nofollow"></a></noindex>
+<!-- /CLICKY -->
+{{{/site.getClickyID}}}
+
+{{{#site.googleAnalytics}}}
+{{{site.googleAnalytics}}}
+{{{/site.googleAnalytics}}}
+
+{{{#site.arbitraryCode}}}
+{{{site.arbitraryCode}}}
+{{{/site.arbitraryCode}}}
+
+</body>
+</html>

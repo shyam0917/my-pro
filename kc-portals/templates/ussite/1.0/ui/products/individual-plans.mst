@@ -1,0 +1,86 @@
+<div class="tab-box">
+  <div class="tab-box__menu">
+
+    <div class="tab-box__toggle tab-box__toggle--individual tab-box__toggle--active">
+      <div class="tab-box__toggle-title">
+        {{sign_up.type.individual}}
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-box__enum">
+
+    <div class="tab-box__item tab-box__item--active" id="container">
+
+      <h1 class="tab-box__item-title">
+        {{{sign_up.individual.title}}}
+      </h1>
+      <div class="tab-box__item-subtitle">
+        {{sign_up.individual.requestDescription}}
+      </div>
+
+      <div class="payment-plans__enum">
+
+        <div class="payment-plans__item">
+
+          <div class="payment-plan">
+            <div class="payment-plan__title">
+              {{sign_up.individual.monthToMonth}}
+            </div>
+            <div class="payment-plan__dsc">
+              {{sign_up.individual.freeTrial}}
+            </div>
+            <div class="payment-plan__price">
+              <div class="payment-plan__currency">$</div>
+              <div class="payment-plan__unit">{{formattedPrices.monthly.unit}}</div>
+              <div class="payment-plan__price-details">
+                <div class="payment-plan__decimal">{{formattedPrices.monthly.decimal}}</div>
+                <div class="payment-plan__range">
+                  <div>{{sign_up.individual.user}}</div>
+                  <div>{{sign_up.individual.month}}</div>
+                </div>
+              </div>
+            </div>
+            <div class="payment-plan__actions">
+              <span class="btn btn--payment-plan-btn" data-handler="onShowCreateAccountForm" data-plan="monthly">{{sign_up.startFree}}</span>
+            </div>
+          </div> <!-- payment-plan -->
+
+        </div>
+
+        <div class="payment-plans__item">
+
+          <div class="payment-plan">
+            <div class="payment-plan__badge">
+                  <span>{{{sign_up.individual.best_title}}}</span>
+            </div>
+            <div class="payment-plan__title">
+              {{sign_up.individual.annualBilling}}
+          </div>
+            <div class="payment-plan__dsc">
+              {{sign_up.individual.freeTrial}}
+            </div>
+            <div class="payment-plan__price">
+              <div class="payment-plan__currency">$</div>
+              <div class="payment-plan__unit">{{formattedPrices.yearly.unit}}</div>
+              <div class="payment-plan__price-details">
+                <div class="payment-plan__decimal">{{formattedPrices.yearly.decimal}}</div>
+                <div class="payment-plan__range">
+                  <div>{{sign_up.individual.user}}</div>
+                  <div>{{sign_up.individual.month}}</div>
+                </div>
+              </div>
+            </div>
+            <div class="payment-plan__actions">
+              <span data-handler="onShowCreateAccountForm" data-plan="yearly" class="btn btn--payment-plan-btn">{{sign_up.startFree}}</span>
+            </div>
+          </div> <!-- payment-plan -->
+
+        </div>
+
+      </div>
+
+    </div> <!-- business -->
+
+  </div>
+</div> <!-- tab-box -->

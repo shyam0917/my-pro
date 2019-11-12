@@ -1,0 +1,208 @@
+.course-item__img--troy {
+  background: url(../../images/style/troy/troy.png) no-repeat center, #D9D9D9;
+}
+
+.course-item__img--business {
+  background: url(../../images/style/troy/course-item-1.jpg) no-repeat center/cover;
+}
+
+.course-item__img--computer {
+  background: url(../../images/style/troy/course-item-2.jpg) no-repeat center/cover;
+}
+
+.course-item__img--safety {
+  background: url(../../images/style/troy/safety.png) no-repeat center/cover;
+}
+
+.course-item__img--banking {
+  background: url(../../images/style/troy/course-item-4.jpg) no-repeat center 0/cover;
+}
+
+.course-item__name:hover {
+  color: #b0002a;
+}
+
+.usermenu > ul > li .submenu__title:hover,
+.usermenu > ul > li > a:hover {
+  background: #b0002a;
+  color: #ffffff;
+}
+
+.usermenu .dropdown-menu > li > a:active, .usermenu .dropdown-menu > li > a:focus, .usermenu .dropdown-menu > li > a:hover {
+  background: #b0002a;
+  color: #333333;
+}
+
+.search-form__open:hover {
+  color: #b0002a;
+}
+
+.search-form__close:hover {
+  color: #b0002a;
+}
+
+.submenu__content li a:hover {
+  background: #b0002a;
+}
+
+.menu > ul > li span > a,
+.menu > ul > li > a {
+  background: #b0002a;
+  color: #ffffff;
+}
+
+.menu > ul > li span > a:active, .menu > ul > li span > a:hover,
+.menu > ul > li > a:active,
+.menu > ul > li > a:hover {
+  color: #333333;
+  background: #ffffff;
+}
+
+.menu > ul > li span > a:focus,
+.menu > ul > li > a:focus {
+  color: #ffffff;
+  background: #b0002a;
+}
+
+.menu > ul > li span > a.active,
+.menu > ul > li > a.active {
+  color: #333333;
+}
+
+.menu > ul > li span > a.active:focus,
+.menu > ul > li > a.active:focus {
+  color: #333333;
+}
+
+.course-card__link:hover {
+  color: #ffffff;
+  border-color: #b0002a;
+  background: #b0002a;
+}
+
+.course-card__link:hover span {
+  color: #ffffff;
+}
+
+.course-card__link:hover i {
+  color: #ffffff;
+}
+
+.lessons-menu__fav .fa-star {
+  color: #b0002a;
+}
+
+.library-menu__category-header a:hover {
+  color: #b0002a;
+}
+
+.library-menu__category-header a:focus {
+  color: #b0002a;
+}
+
+.library-menu__icon:hover .library-menu__minus, .library-menu__icon:hover .library-menu__plus {
+  color: #b0002a;
+}
+
+.course-progress__item.watched {
+  background: #b0002a;
+}
+
+.course-info__tab.active:after, .course-info__tab:hover:after {
+  background: #b0002a;
+}
+
+.course-info__test:hover {
+  border-color: #b0002a !important;
+  background: #b0002a;
+  color: #ffffff !important;
+}
+
+.course-info__test:focus {
+  color: #ffffff !important;
+}
+
+.pagination li.active > a:hover {
+  border-color: #b0002a;
+}
+
+.bookmarks .bookmark.active {
+  background: #b0002a;
+  color: #333333;
+}
+
+.learning-progress__bar {
+  background: #b0002a;
+}
+
+.button:focus, .button:hover {
+  border-color: #b0002a;
+  color: #ffffff;
+  background: #b0002a;
+}
+
+.course-info__tab.active a:after {
+  background: #b0002a;
+}
+
+.pagination li.active > a:hover {
+  border-color: #b0002a;
+}
+
+.bookmarks .bookmark.active {
+  background: #b0002a;
+  color: #ffffff;
+}
+
+.learning-progress__bar {
+  background: #b0002a;
+}
+
+.faq .question.active .faq-question {
+  border-top-color: #b0002a;
+}
+
+.faq-question {
+  border-left-color: #b0002a;
+}
+
+.faq .question.active .faq-icon {
+  color: #b0002a;
+  border-color: #b0002a;
+}
+
+.faq .question.active .faq-question:hover {
+  border-top-color: #b0002a;
+}
+
+div.title-h1 {
+  border-left-color: #b0002a;
+}
+
+.modal_close:hover {
+  color: #b0002a;
+}
+
+.course-info__tab a.active:after, .course-info__tab a:hover:after {
+  background: #b0002a;
+}
+
+.course-info__test:hover {
+  border-color: #b0002a !important;
+}
+
+body.ar .faq-question {
+  border-left: none;
+  border-right-color: #b0002a !important;
+}
+
+.inner-header {
+  background: #ecedeb;
+  border: solid #acadae;
+  border-width: 1px 0;
+  color: #747678;
+}
+
+.modalWindow .content:after {
+  background: #b0002a;
+}

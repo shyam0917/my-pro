@@ -1,0 +1,35 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 222.74 210.33">
+	<defs>
+		<style>
+			.cls-1{fill:rgb(202,16,29);}
+			.cls-2{fill:rgb(255,255,255);}
+		</style>
+	</defs>
+	<title>benefit-4</title>
+	<circle class="cls-1" cx="111.37" cy="106.37" r="93.37"/>
+	<path class="cls-2" d="M132.44,108.13V95.19h-9a27.41,27.41,0,0,0-3.32-8l6.36-6.35-9.15-9.15L111,78a27.41,27.41,0,0,0-8-3.32v-9H90v9A27.46,27.46,0,0,0,82,78l-6.36-6.35L66.5,80.82l6.36,6.35a27.7,27.7,0,0,0-3.33,8h-9v12.94h9a27.76,27.76,0,0,0,3.33,8L66.5,122.5l9.15,9.15L82,125.29a27.48,27.48,0,0,0,8,3.33v9H103v-9a27.43,27.43,0,0,0,8-3.33l6.36,6.36,9.15-9.15-6.36-6.36a27.46,27.46,0,0,0,3.32-8ZM96.49,119.34a17.69,17.69,0,1,1,17.69-17.68A17.69,17.69,0,0,1,96.49,119.34Z"/>
+	<path class="cls-2" d="M157.13,134.89v-5.22h-3.62a11.2,11.2,0,0,0-1.34-3.23l2.56-2.56-3.68-3.69-2.57,2.57a10.71,10.71,0,0,0-3.23-1.34V117.8H140v3.62a10.82,10.82,0,0,0-3.23,1.34l-2.56-2.57-3.69,3.69,2.56,2.56a11.49,11.49,0,0,0-1.34,3.23h-3.62v5.22h3.62a11.37,11.37,0,0,0,1.34,3.23l-2.56,2.56,3.69,3.69,2.56-2.56a11.37,11.37,0,0,0,3.23,1.34v3.62h5.21v-3.62a11.25,11.25,0,0,0,3.23-1.34l2.57,2.56,3.68-3.69-2.56-2.56a11.09,11.09,0,0,0,1.34-3.23Zm-14.48,4.52a7.13,7.13,0,1,1,7.12-7.13A7.13,7.13,0,0,1,142.65,139.41Z"/>
+	<script xmlns="http://www.w3.org/2000/svg" type="text/javascript">
+
+		var params = {};
+        location.search.replace(/[?&amp;]+([^=&amp;]+)=([^&amp;]*)/gi,function(s,k,v){params[k]=v});
+        
+        var color1 = params['cls1'];
+        if( !color1 || color1 == '' ) color1 = 'rgb( 85, 85, 85)';
+        var color2 = params['cls2'];
+        if( !color2 || color2 == '' ) color2 = 'rgb(255,255,255)';
+        
+		var cls1 = document.getElementsByClassName("cls-1");
+		var i = 0;
+		while(typeof cls1[i] !== 'undefined') {
+			cls1[i].style.fill = color1;
+			i++;
+		}
+		var cls2 = document.getElementsByClassName("cls-2");
+		var i = 0;
+		while(typeof cls2[i] !== 'undefined') {
+			cls2[i].style.fill = color2;
+			i++;
+		}
+	</script>
+</svg>

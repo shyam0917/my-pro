@@ -1,0 +1,95 @@
+<section class="">
+	<div class="cnt">
+    <div class="ios-conent-title">{{content.title}}</div>
+		{{^isAndroid}}
+		<div class="ios-content">
+			<div class="ios-content-row">
+			{{#steps}}
+				{{#step}}
+				<div class="ios-step">
+					<div class="ios-step-title">{{{title}}}</div>
+					<div class="ios-step-description{{^bg}} last{{/bg}}">{{{description}}}</div>
+					{{#bg}}
+					<div class="ios-step-img step-{{bg}}"></div>
+					{{/bg}}
+				</div>
+				{{#bg}}
+				<div class="ios-arrow{{#last}} last{{/last}}"></div>
+				{{/bg}}
+				{{/step}}
+			{{/steps}}
+			</div>
+			<div class="ios-download-container">
+				{{^isIOS}}
+				<div class="ios-from-desktop">{{content.desktop}}</div>
+				{{/isIOS}}
+				{{#isIOS}}
+				<div class="ios-from-desktop"><a class="btn ios-btn" target="_blank" href="itms-services://?action=download-manifest&url={{site.config.CDNJson}}opencontent/portals/{{site.config.portal.id}}/apps/ios/manifest--v{{timeStamp}}.plist">{{content.download}}</a></div>
+				{{/isIOS}}
+			</div>
+		</div>
+		{{/isAndroid}}
+		{{#isAndroid}}
+    <div class="android-content">
+      	<div class="android-button-wrapper">
+          <div id="nougat" class="btn android-btn" data-distribution="nougat" data-handler="onChoiceDistribution">{{content.nougat.button}}</div>
+          <div id="oreo" class="btn android-btn" data-distribution="oreo" data-handler="onChoiceDistribution">{{content.oreo.button}}</div>
+        </div>
+        <div class="android-distributions">
+          <div class="android-nougat"><img src="/templates/template01/1.0/images/landing-android/Android_nougat.png"/></div>
+          <div class="android-oreo"><img src="/templates/template01/1.0/images/landing-android/Android_oreo.png"/></div>
+        </div>
+        <div class="android-steps-wrapper nougat hidden">
+          <div class="android-note">{{content.androidNote}}</div>
+    			<div class="ios-content-row">
+          {{#nougat}}
+      			{{#steps}}
+      				{{#step}}
+      				<div class="ios-step">
+      					<div class="ios-step-title">{{{title}}}</div>
+      					<div class="ios-step-description{{^bg}} last{{/bg}}">{{{description}}}</div>
+      					{{#bg}}
+      					<div class="ios-step-img step-{{bg}}"></div>
+      					{{/bg}}
+      				</div>
+      				{{#bg}}
+      				<div class="ios-arrow{{#last}} last{{/last}}"></div>
+      				{{/bg}}
+      				{{/step}}
+            {{/steps}}
+    			{{/nougat}}
+    			</div>
+        </div>
+        <div class="android-steps-wrapper oreo hidden">
+          <div class="android-note">{{content.androidNote}}</div>
+    			<div class="ios-content-row">
+          {{#oreo}}
+      			{{#steps}}
+      				{{#step}}
+      				<div class="ios-step">
+      					<div class="ios-step-title">{{{title}}}</div>
+      					<div class="ios-step-description{{^bg}} last{{/bg}}">{{{description}}}</div>
+      					{{#bg}}
+      					<div class="ios-step-img step-{{bg}}"></div>
+      					{{/bg}}
+      				</div>
+      				{{#bg}}
+      				<div class="ios-arrow{{#last}} last{{/last}}"></div>
+      				{{/bg}}
+      				{{/step}}
+            {{/steps}}
+    			{{/oreo}}
+    			</div>
+        </div>
+  			<div class="ios-download-container">
+  				{{^isAndroidBrowser}}
+  				<div class="ios-from-desktop">{{content.androidDesktop}}</div>
+  				{{/isAndroidBrowser}}
+  				{{#isAndroidBrowser}}
+          <div class="ios-from-desktop hidden"><a class="btn ios-btn" target="_blank" href="{{site.config.APIUrl}}portals/{{site.config.portal.portal_id}}/android/download?build={{site.config.portal.AndroidBuildNumber}}">{{content.download}}</a></div>
+  				{{/isAndroidBrowser}}
+  			</div>
+    </div>
+		{{/isAndroid}}
+	</div>
+</section>

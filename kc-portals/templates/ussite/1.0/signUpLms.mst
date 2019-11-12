@@ -1,0 +1,112 @@
+<section class="lms-creator">
+	<div class="cnt-wide">
+		<div class="lms-info-wrapper">
+			<h1>{{Title}}</h1>
+			{{#isAllowed}}
+			<p>{{{subtitle}}}</p>
+			{{/isAllowed}}
+			{{^isAllowed}}
+			<p>{{subtitleNA}}</p>
+			{{/isAllowed}}
+		</div>
+		<div class="creator-wrapper">
+			<div class="creator-wrapper__image-wrapper">
+				<img src="{{VIEW}}images/LMS_Software--v{{site.LocalStorageStamp}}.png" alt="">
+			</div>
+			<div class="creator-wrapper__form-wrapper">
+				<div class="creator-wrapper__message-container"></div>
+				<form id="lmsCreator" class="creator-wrapper__lms-form" autocomplete="false">
+					<input autocomplete="false" name="hidden" type="text" style="display:none;">
+					<input type="hidden" value="{{site.url}}lms/" name="url">
+					<div class="creator-wrapper__form-row">
+						<div class="input-wrapper">
+							<input type="text" id="first_name" class="lms-form__input" name="first_name" placeholder="{{formFirstName}}" autocomplete="nope" required />
+						</div>
+						<div class="input-wrapper">
+							<input type="text" id="last_name"  class="lms-form__input" name="last_name"  placeholder="{{formLastName}}"  autocomplete="nope" required />
+						</div>
+					</div>
+					{{#isAllowed}}
+					<div class="creator-wrapper__form-row row--portal">
+						<div class="input-wrapper">
+							<input type="text" id="portal_code" class="lms-form__input" name="portal_code" placeholder="{{formPortalName}}" autocomplete="nope" required /><span class="lms-domain">.knowledgecity.com</span>
+						</div>
+					</div>
+					{{/isAllowed}}
+					<div class="creator-wrapper__form-row">
+						<div class="input-wrapper">
+							<input type="text" id="portal_name" class="lms-form__input" name="portal_name" placeholder="{{formCompanyName}}" autocomplete="nope" required />
+						</div>
+						<div class="input-wrapper">
+							<input type="text" id="position" class="lms-form__input" name="position" placeholder="{{formPosition}}" autocomplete="nope" required />
+						</div>
+					</div>
+					<div class="creator-wrapper__form-row">
+						<div class="input-wrapper">
+							<input type="text" id="email"  class="lms-form__input" name="email"  placeholder="{{formEmail}}" autocomplete="nope" required />
+						</div>
+						<div class="input-wrapper">
+							<select id="number_employees" class="lms-form__select" name="employees" required>
+								<option value="false">{{formSelector}}</option>
+								<option value="5">1-5</option>
+								<option value="25">6-25</option>
+								<option value="100">26-100</option>
+								<option value="500">101-500</option>
+								<option value="1000">501-1000</option>
+								<option value="1000">1000+</option>
+							</select>
+						</div>
+					</div>
+					{{#isAllowed}}
+					<div class="creator-wrapper__form-row">
+						<div class="lms-form__input-checkbox">
+							<input id="terms" type="checkbox" class="input--checkbox" name="terms" required /> {{formTerms}} <a class="Terms" href="{{site.url}}lms/terms/{{site.language}}/" target="_blank" >{{formTermsLink}}</a>
+						</div>
+					</div>
+					{{/isAllowed}}
+					<div class="creator-wrapper__form-row last">
+						{{#isAllowed}}
+						<input type="submit" class="lms-form__btn btn" name="submitcreate" value="{{formButton}}" />
+						{{/isAllowed}}
+						{{^isAllowed}}
+						<input type="submit" class="lms-form__btn btn" name="submitcreate" value="{{formButtonNA}}" />
+						{{/isAllowed}}
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="bottom-links" style="padding-top:40px;">
+    <div class="cnt-wide">
+    	<div class="bottom-title-wrapper"><h2> {{bottomLinksTitle}}</h2></div>
+        <div class="bot-columns about-us">
+            <div class="">
+                <a href="{{site.url_with_lang}}learningLibrary"><div class="bottom-link__img">
+                <img src="{{VIEW}}images/Bottom-link_LL--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+                height:auto" alt="">
+                </div>
+                </a>
+                <h2>{{bottomLinksLearningTitle}}</h2>
+                <p>{{bottomLinksLearningDescription}} <a href="{{site.url_with_lang}}learningLibrary">{{learnMore}}</a></p>
+            </div>
+            <div class="">
+                <a href="{{site.url_with_lang}}lms"><div class="bottom-link__img">
+                    <img src="{{VIEW}}images/bottom-link_LMS--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+                height:auto" alt="">
+                </div>
+                </a>
+                <h2>{{bottomLinksLmsTitle}}</h2>
+                <p>{{bottomLinksLmsDescription}} <a href="{{site.url_with_lang}}lms">{{learnMore}}</a></p>
+            </div>
+            <div class="">
+                <a href="{{site.url_with_lang}}contentCreation"><div class="bottom-link__img">
+                <img src="{{VIEW}}images/Bottom-link_CC--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+                height:auto" alt="">
+                </div></a>
+                <h2>{{bottomLinksContentTitle}}</h2>
+                <p>{{bottomLinksContentDescription}} <a href="{{site.url_with_lang}}contentCreation"> {{learnMore}}</a></p>
+            </div>
+        </div>
+    </div>
+</section>

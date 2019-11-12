@@ -1,0 +1,19 @@
+<div class="inner-header inner-header--privacy">
+    <div class="cnt">
+        <h1 class="inner-header__title">
+            {{title}}
+        </h1>
+        <p class="inner-header__subtitle">
+            {{subTitle}}
+        </p>
+    </div>
+</div>
+
+
+<div class="inner-page privacy-content">
+    <div class="cnt">
+        <div class="article">
+            {{{newContent}}}
+        </div>
+    </div>
+</div>

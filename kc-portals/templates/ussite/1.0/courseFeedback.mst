@@ -1,0 +1,56 @@
+<div class="inner-header inner-header--certification">
+	<div class="cnt">
+		<h1 class="inner-header__title">
+			{{mui.pageTitle.courseFeedback}}
+		</h1>
+		<p class="inner-header__subtitle">
+			{{course_name}}
+		</p>
+	</div>
+</div>
+
+
+<div class="inner-page  certification-page">
+	<div class="cnt">
+		<div class="inner-page__content">
+			<div class="article">
+				<div class="hidden alert alert-success responseMessage success">{{successMessage}}</div>
+				<form class="" method="post" action="" data-handler="onSubmitForm" id="courseFeedback">
+					{{#questions}}
+					<div class="flex-form__row courseFeedback-question{{#question_type_flags.label}} courseFeedback-questionLabel{{/question_type_flags.label}}">
+						<div class="questionText">{{text}}</div>
+						<div class="answers">
+						{{#question_type_flags.single_choice}}
+							{{#answers}}
+							<div class="answer">
+								<input type="radio" name="answer[{{question_id}}]"
+								isRequired="{{#required}}true{{/required}}{{^required}}false{{/required}}"
+								value="{{answer_id}}" id="{{answer_id}}"/><label for="{{answer_id}}">{{text}}</label>
+							</div>
+							{{/answers}}
+						{{/question_type_flags.single_choice}}
+						{{#question_type_flags.multiple_choice}}
+							{{#answers}}
+							<div class="answer">
+								<input type="checkbox" name="answer[{{question_id}}]" isRequired="{{#required}}true{{/required}}{{^required}}false{{/required}}" value="{{answer_id}}" id="{{answer_id}}"/><label for="{{answer_id}}">{{text}}</label>
+							</div>
+							{{/answers}}
+						{{/question_type_flags.multiple_choice}}
+						{{#question_type_flags.open_question}}
+							<textarea class="flex-form__input" name="answer[{{question_id}}]" id="{{question_id}}"
+									  placeholder=""
+									  isRequired="{{#required}}true{{/required}}{{^required}}false{{/required}}"
+							></textarea>
+						{{/question_type_flags.open_question}}
+						</div>
+					</div>
+					{{/questions}}
+					
+					<div class="flex-form__btn floating-button">
+						<button type="submit" name="submit" class="btn btn--lg" >{{mui.submit}}</button><br/><br/>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,265 @@
+@import "https://fonts.googleapis.com/css?family=Raleway:200,500,700,900";
+
+body {
+    padding: 1ex 0 10ex;
+    font-size: 20px;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    background-color: #F5F5F5;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-image: url(img/bg.jpg);
+    background-attachment: fixed
+}
+
+h1, h2 {
+    padding: 0;
+    margin: 0
+}
+
+.el-phone {
+    color: #000;
+    font-weight: 500;
+    background: url(img/p.png) left center no-repeat;
+    padding: 10px 0 10px 30px;
+    margin-top: 18px;
+    font-family: "Arial"
+}
+
+.el-phone a:link, .el-phone a:visited {
+    color: #000
+}
+
+.el-phone a:hover {
+    color: #EE8D33;
+    text-decoration: none
+}
+
+.bl-header {
+    margin-bottom: 60px
+}
+
+.bl-header-xs {
+    text-align: center;
+    margin: 30px 0 60px
+}
+
+.bl-header-xs img {
+    margin-bottom: 20px;
+    max-width: 100%
+}
+
+.bl-content-h {
+    color: #000;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 0 0 10px 15px
+}
+
+.bl-content-h span {
+    color: #EE8D33;
+    display: block;
+    font-size: 26px;
+    padding-top: 15px;
+}
+
+.bl-content-main h1 {
+    color: #000;
+    font-weight: 500;
+    font-size: 38px
+}
+
+.bl-content-main h1 span {
+    color: #EE8D33
+}
+
+.bl-content-main p {
+    padding: 30px 30px 50px 0;
+    color: #3B3B3B
+}
+
+.bl-content-main b {
+    font-weight: 700
+}
+
+.bl-list {
+    list-style: none;
+    font-size: 16px;
+    margin: 20px 0 0 0;
+    padding: 0
+}
+
+.bl-list li {
+    background: url(img/li.png) left top 10px no-repeat;
+    padding: 5px 0 5px 30px;
+    margin: 2px 0
+}
+
+.bl-req {
+    -webkit-box-shadow: 0 5px 77px -15px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 5px 77px -15px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 5px 77px -15px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 30px 20px 10px;
+    text-align: center;
+    background-color: #FDFDFD;
+    margin: 10px 0 0 30px
+}
+
+.bl-req b {
+    color: #000;
+    font-size: 21px;
+    padding-bottom: 20px;
+    display: block
+}
+
+.bl-req b span {
+    color: #EE8D33;
+    font-weight: 900
+}
+
+.bl-req input {
+    outline: none
+}
+
+.bl-req input, .bl-req button {
+    border-radius: 25px;
+    border: 1px solid #AAA;
+    display: block;
+    width: 100%;
+    margin: 10px 0 5px;
+    padding: 8px 15px;
+    font-weight: 200;
+    font-size: 16px
+}
+
+.bl-req input:focus {
+    border: 1px solid #EE8D33;
+    outline: none
+}
+
+.bl-req button {
+    margin-top: 30px;
+    background-color: #EE8D33;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px
+}
+
+.bl-req button:active {
+    background-color: #EE8D33
+}
+
+.alert-success {
+    color: #000;
+    background-color: #F5F5F5;
+    border-color: #EE8D33;
+    font-weight: 500;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1
+}
+
+.alert-success b {
+    font-weight: 500;
+    font-size: 22px;
+    padding: 5px
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        background-image: url(img/bg-xs.jpg);
+        background-attachment: scroll
+    }
+
+    .bl-content-main p {
+        padding: 20px 00px 20px 0
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .bl-req {
+        margin: 30px 30px 0
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px
+}
+
+::-webkit-scrollbar-thumb {
+    border-width: 1px 1px 1px 2px;
+    border-color: #EE8D33;
+    background-color: #EE8D33
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border-width: 1px 1px 1px 2px;
+    border-color: #EE8D33;
+    background-color: #EE8D33
+}
+
+::-webkit-scrollbar-track:hover {
+    border-left: solid 1px #eee;
+    background-color: #eee
+}
+
+::-webkit-scrollbar-track {
+    border-width: 0
+}
+
+::selection {
+    background: #EE8D33;
+    color: #fff
+}
+
+::-moz-selection {
+    background: #EE8D33;
+    color: #fff
+}
+
+::-webkit-input-placeholder {
+    color: #999
+}
+
+::-moz-placeholder {
+    color: #999
+}
+
+:-moz-placeholder {
+    color: #999
+}
+
+:-ms-input-placeholder {
+    color: #999
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+#succesMessage {
+    padding: 10px 0
+}
+
+#errorMessage {
+    padding: 0;
+    color: #EE8D33
+}
+
+input {
+    font-family: "Arial";
+    color: #A5A5A5
+}
+
+.bl-req input.error {
+    color: #FF4B4B;
+    border: 1px solid #FF4B4B
+}
+
+i {
+    font-family: "Arial";
+    font-style: normal
+}

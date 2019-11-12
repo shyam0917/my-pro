@@ -1,0 +1,44 @@
+<div class="tab-box">
+  <div class="tab-box__menu">
+    <a href="{{site.url_with_lang}}{{section}}/type/individual" class="tab-box__toggle tab-box__toggle--individual">
+      <div class="tab-box__toggle-title">
+        {{sign_up.type.individual}}
+      </div>
+    </a>
+    <a href="{{site.url_with_lang}}{{section}}/type/government" class="tab-box__toggle tab-box__toggle--government">
+      <div class="tab-box__toggle-title">
+        {{sign_up.type.government}}
+      </div>
+    </a>
+    <div class="tab-box__toggle tab-box__toggle--academic tab-box__toggle--active">
+      <div class="tab-box__toggle-title">
+        {{sign_up.type.academic}}
+      </div>
+    </div>
+    <a href="{{site.url_with_lang}}{{section}}/type/library" class="tab-box__toggle tab-box__toggle--library">
+      <div class="tab-box__toggle-title">
+        {{sign_up.type.library}}
+      </div>
+    </a>
+  </div>
+  <div class="tab-box__enum">
+
+    <div class="tab-box__item tab-box__item--active">
+
+      <h1 class="tab-box__item-title">
+        {{{sign_up.academic.title}}}
+      </h1>
+      <div class="tab-box__item-subtitle">
+        {{sign_up.academic.requestDescription}}
+      </div>
+
+      <div class="sign-up-form">
+        <div class="sign-up-form__title">{{sign_up.academic.requestTitle}}</div>
+        <div class="sign-up-form__input-row" id="request-form">
+        </div>
+      </div>
+
+    </div> <!-- academic -->
+
+  </div>
+</div> <!-- tab-box -->

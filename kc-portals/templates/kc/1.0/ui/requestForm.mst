@@ -1,0 +1,111 @@
+
+<form class="request-form" data-handler="onSubmitForm" method="post" action="" id="requestForm">
+
+    <input type="hidden" name="formTitle" value="{{formMui.requestTitle}}">
+
+    {{#isUS}}
+        {{#businessForm}}
+            <input type="hidden" name="theme" value="Business account free trial">
+        {{/businessForm}}
+        {{^businessForm}}
+            <input type="hidden" name="theme" value="SignUp international">
+        {{/businessForm}}
+    {{/isUS}}
+
+    {{^isUS}}
+    <input type="hidden" name="theme" value="SignUp international">
+    {{/isUS}}
+
+    <div class="request-form__row">
+
+        <input type="text"
+               class="request-form__input request-form__input--full"
+               value=""
+               name="company"
+               id="request-form-copmpany"
+               placeholder="{{pageContent.formlabel.company}}"
+               required="true"
+               data-invalidMessage="{{form.requiredField.invalidCompany}}"
+        />
+
+    </div>
+
+    <div class="request-form__row">
+
+        <input type="text"
+               class="request-form__input"
+               value=""
+               name="name_f"
+               id="request-form-name-f"
+               placeholder="{{pageContent.formlabel.firstName}}"
+               required="true"
+               data-invalidMessage="{{form.requiredField.invalidFirstName}}"
+        />
+
+        <input type="text"
+               class="request-form__input"
+               value=""
+               name="name_l"
+               id="request-form-name-l"
+               placeholder="{{pageContent.formlabel.lastName}}"
+               required="true"
+               data-invalidMessage="{{form.requiredField.invalidLastName}}"
+        />
+
+    </div>
+
+    <div class="request-form__row">
+
+        <input type="text"
+               class="request-form__input"
+               value=""
+               name="position"
+               id="request-form-position"
+               placeholder="{{pageContent.formlabel.jobTitle}}"
+               required="true"
+               data-invalidMessage="{{form.requiredField.invalidPosition}}"
+        />
+
+        <input type="text"
+               class="request-form__input"
+               value=""
+               name="phone"
+               id="request-form-phone"
+               placeholder="{{pageContent.formlabel.phone}}"
+               required="true"
+               data-invalidMessage="{{form.requiredField.invalidPhone}}"
+        />
+
+    </div>
+
+    <div class="request-form__row">
+
+        <input type="text"
+               class="request-form__input request-form__input--full"
+               value=""
+               name="email"
+               id="request-form-email"
+               placeholder="{{pageContent.formlabel.email}}"
+               required="true"
+               data-invalidMessage="{{form.requiredField.invalidEmail}}"
+               data-invalidMessageWrongType="{{mui.form.requiredField.invalidTypeEmail}}"
+        />
+
+    </div>
+
+    <div class="request-form__row">
+
+                    <textarea
+                            class="request-form__textarea request-form__textarea--full"
+                            name="message"
+                            id="request-form-message"
+                            placeholder="{{pageContent.formlabel.trainingNeeds}}"
+                            required="true"
+                            data-invalidMessage="{{form.requiredField.invalidTrainingNeeds}}"
+                    ></textarea>
+
+    </div>
+
+    <button class="btn request-form__btn">{{buttonLabel.sendRequest}}</button>
+
+</form>

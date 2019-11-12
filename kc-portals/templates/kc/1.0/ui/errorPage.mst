@@ -1,0 +1,23 @@
+<div class="cnt-error">
+    <div class="cnt">
+        <div class="header__nav header__nav--desktop">
+                <a data-handler="onRedirectHome" class="header__logo-wrapper">
+                    <img class="header__logo" src="{{logo}}" alt="" title="">
+                </a>
+        </div>
+		<h1 class="error__title">
+			{{#title}}
+			    {{title}}
+			{{/title}}
+		</h1>
+		<div class="error__text">
+		    {{#text}}
+        	    <div class="error__text__detail">
+        	        {{text}}
+        	        <a class="company-title" data-handler="onSendError">{{link}}</a>
+        	    </div>
+        	    <div class="error__panic_astronaut"></div>
+            {{/text}}
+		</div>
+    </div>
+</div>

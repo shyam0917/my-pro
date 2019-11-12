@@ -1,0 +1,1178 @@
+[
+  {
+    "ID": "d46fc0ea-3a0a-11e6-a201-e03f491c051c",
+    "name": "Abkhazian",
+    "native": "Аҧсуа",
+    "codeISO6391": "ab",
+    "rtl": false
+  },
+  {
+    "ID": "d46fd48f-3a0a-11e6-a201-e03f491c051c",
+    "name": "Afar",
+    "native": "Afaraf",
+    "codeISO6391": "aa",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe263-3a0a-11e6-a201-e03f491c051c",
+    "name": "Afrikaans",
+    "native": "Afrikaans",
+    "codeISO6391": "af",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe283-3a0a-11e6-a201-e03f491c051c",
+    "name": "Akan",
+    "native": "Akan",
+    "codeISO6391": "ak",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe292-3a0a-11e6-a201-e03f491c051c",
+    "name": "Albanian",
+    "native": "Shqip",
+    "codeISO6391": "sq",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe2a4-3a0a-11e6-a201-e03f491c051c",
+    "name": "Amharic",
+    "native": "አማርኛ",
+    "codeISO6391": "am",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe2b8-3a0a-11e6-a201-e03f491c051c",
+    "name": "Arabic",
+    "native": "العربية",
+    "codeISO6391": "ar",
+    "rtl": true
+  },
+  {
+    "ID": "d46fe2ca-3a0a-11e6-a201-e03f491c051c",
+    "name": "Aragonese",
+    "native": "Aragonés",
+    "codeISO6391": "an",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe2f6-3a0a-11e6-a201-e03f491c051c",
+    "name": "Armenian",
+    "native": "Հայերեն",
+    "codeISO6391": "hy",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe2de-3a0a-11e6-a201-e03f491c051c",
+    "name": "Assamese",
+    "native": "অসমীয়া",
+    "codeISO6391": "as",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe30a-3a0a-11e6-a201-e03f491c051c",
+    "name": "Avaric",
+    "native": "авар мацӀ",
+    "codeISO6391": "av",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe31e-3a0a-11e6-a201-e03f491c051c",
+    "name": "Avestan",
+    "native": "avesta",
+    "codeISO6391": "ae",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe336-3a0a-11e6-a201-e03f491c051c",
+    "name": "Aymara",
+    "native": "aymar aru",
+    "codeISO6391": "ay",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe34d-3a0a-11e6-a201-e03f491c051c",
+    "name": "Azerbaijani",
+    "native": "azərbaycan dili",
+    "codeISO6391": "az",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe382-3a0a-11e6-a201-e03f491c051c",
+    "name": "Bambara",
+    "native": "bamanankan",
+    "codeISO6391": "bm",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe36b-3a0a-11e6-a201-e03f491c051c",
+    "name": "Bashkir",
+    "native": "башҡорт теле",
+    "codeISO6391": "ba",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe39c-3a0a-11e6-a201-e03f491c051c",
+    "name": "Basque",
+    "native": "euskara",
+    "codeISO6391": "eu",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe3ba-3a0a-11e6-a201-e03f491c051c",
+    "name": "Belarusian",
+    "native": "Беларуская",
+    "codeISO6391": "be",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe3da-3a0a-11e6-a201-e03f491c051c",
+    "name": "Bengali",
+    "native": "বাংলা",
+    "codeISO6391": "bn",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe3f7-3a0a-11e6-a201-e03f491c051c",
+    "name": "Bihari",
+    "native": "भोजपुरी",
+    "codeISO6391": "bh",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe417-3a0a-11e6-a201-e03f491c051c",
+    "name": "Bislama",
+    "native": "Bislama",
+    "codeISO6391": "bi",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe437-3a0a-11e6-a201-e03f491c051c",
+    "name": "Bosnian",
+    "native": "bosanski jezik",
+    "codeISO6391": "bs",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe458-3a0a-11e6-a201-e03f491c051c",
+    "name": "Breton",
+    "native": "brezhoneg",
+    "codeISO6391": "br",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe47b-3a0a-11e6-a201-e03f491c051c",
+    "name": "Bulgarian",
+    "native": "български език",
+    "codeISO6391": "bg",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe4a1-3a0a-11e6-a201-e03f491c051c",
+    "name": "Burmese",
+    "native": "ဗမာစာ",
+    "codeISO6391": "my",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe4c7-3a0a-11e6-a201-e03f491c051c",
+    "name": "Catalan; Valencian",
+    "native": "Català",
+    "codeISO6391": "ca",
+    "rtl": false
+  },
+  {
+    "ID": "d46feaca-3a0a-11e6-a201-e03f491c051c",
+    "name": "Central Khmer",
+    "native": "ភាសាខ្មែរ",
+    "codeISO6391": "km",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe4ed-3a0a-11e6-a201-e03f491c051c",
+    "name": "Chamorro",
+    "native": "Chamoru",
+    "codeISO6391": "ch",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe513-3a0a-11e6-a201-e03f491c051c",
+    "name": "Chechen",
+    "native": "нохчийн мотт",
+    "codeISO6391": "ce",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe54d-3a0a-11e6-a201-e03f491c051c",
+    "name": "Chichewa",
+    "native": "chinyanja",
+    "codeISO6391": "ny",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe562-3a0a-11e6-a201-e03f491c051c",
+    "name": "Chinese",
+    "native": "中文",
+    "codeISO6391": "zh",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe570-3a0a-11e6-a201-e03f491c051c",
+    "name": "Chuvash",
+    "native": "чӑваш чӗлхи",
+    "codeISO6391": "cv",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe582-3a0a-11e6-a201-e03f491c051c",
+    "name": "Cornish",
+    "native": "Kernewek",
+    "codeISO6391": "kw",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe593-3a0a-11e6-a201-e03f491c051c",
+    "name": "Corsican",
+    "native": "corsu",
+    "codeISO6391": "co",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe5a8-3a0a-11e6-a201-e03f491c051c",
+    "name": "Cree",
+    "native": "ᓀᐦᐃᔭᐍᐏᐣ",
+    "codeISO6391": "cr",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe5bc-3a0a-11e6-a201-e03f491c051c",
+    "name": "Croatian",
+    "native": "hrvatski",
+    "codeISO6391": "hr",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe5d1-3a0a-11e6-a201-e03f491c051c",
+    "name": "Czech",
+    "native": "česky",
+    "codeISO6391": "cs",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe5e8-3a0a-11e6-a201-e03f491c051c",
+    "name": "Danish",
+    "native": "dansk",
+    "codeISO6391": "da",
+    "rtl": false
+  },
+  {
+    "ID": "d46fee9b-3a0a-11e6-a201-e03f491c051c",
+    "name": "Dutch",
+    "native": "Nederlands",
+    "codeISO6391": "nl",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe617-3a0a-11e6-a201-e03f491c051c",
+    "name": "Dzongkha",
+    "native": "རྫོང་ཁ",
+    "codeISO6391": "dz",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe631-3a0a-11e6-a201-e03f491c051c",
+    "name": "English",
+    "native": "English",
+    "codeISO6391": "en",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe669-3a0a-11e6-a201-e03f491c051c",
+    "name": "Esperanto",
+    "native": "Esperanto",
+    "codeISO6391": "eo",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe686-3a0a-11e6-a201-e03f491c051c",
+    "name": "Estonian",
+    "native": "eesti",
+    "codeISO6391": "et",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe6a4-3a0a-11e6-a201-e03f491c051c",
+    "name": "Ewe",
+    "native": "Eʋegbe",
+    "codeISO6391": "ee",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe6c7-3a0a-11e6-a201-e03f491c051c",
+    "name": "Faroese",
+    "native": "føroyskt",
+    "codeISO6391": "fo",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe6e7-3a0a-11e6-a201-e03f491c051c",
+    "name": "Fijian",
+    "native": "vosa Vakaviti",
+    "codeISO6391": "fj",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe70a-3a0a-11e6-a201-e03f491c051c",
+    "name": "Finnish",
+    "native": "suomi",
+    "codeISO6391": "fi",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe72a-3a0a-11e6-a201-e03f491c051c",
+    "name": "French",
+    "native": "français",
+    "codeISO6391": "fr",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe74d-3a0a-11e6-a201-e03f491c051c",
+    "name": "Fula",
+    "native": "Pular",
+    "codeISO6391": "ff",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff18e-3a0a-11e6-a201-e03f491c051c",
+    "name": "Gaelic",
+    "native": "Gàidhlig",
+    "codeISO6391": "gd",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe770-3a0a-11e6-a201-e03f491c051c",
+    "name": "Galician",
+    "native": "Galego",
+    "codeISO6391": "gl",
+    "rtl": false
+  },
+  {
+    "ID": "d46fea60-3a0a-11e6-a201-e03f491c051c",
+    "name": "Georgian",
+    "native": "ქართული",
+    "codeISO6391": "ka",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe793-3a0a-11e6-a201-e03f491c051c",
+    "name": "German",
+    "native": "Deutsch",
+    "codeISO6391": "de",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe7bc-3a0a-11e6-a201-e03f491c051c",
+    "name": "Greek",
+    "native": "Ελληνικά",
+    "codeISO6391": "el",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe7e2-3a0a-11e6-a201-e03f491c051c",
+    "name": "Guaraní",
+    "native": "Avañe'ẽ",
+    "codeISO6391": "gn",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe80b-3a0a-11e6-a201-e03f491c051c",
+    "name": "Gujarati",
+    "native": "ગુજરાતી",
+    "codeISO6391": "gu",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe834-3a0a-11e6-a201-e03f491c051c",
+    "name": "Haitian",
+    "native": "Kreyòl ayisyen",
+    "codeISO6391": "ht",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe8cf-3a0a-11e6-a201-e03f491c051c",
+    "name": "Hausa",
+    "native": "Hausa",
+    "codeISO6391": "ha",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe8e7-3a0a-11e6-a201-e03f491c051c",
+    "name": "Hebrew",
+    "native": "עברית",
+    "codeISO6391": "he",
+    "rtl": true
+  },
+  {
+    "ID": "d46fe8f8-3a0a-11e6-a201-e03f491c051c",
+    "name": "Herero",
+    "native": "Otjiherero",
+    "codeISO6391": "hz",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe90a-3a0a-11e6-a201-e03f491c051c",
+    "name": "Hindi",
+    "native": "हिंदी\"",
+    "codeISO6391": "hi",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe91e-3a0a-11e6-a201-e03f491c051c",
+    "name": "Hiri Motu",
+    "native": "Hiri Motu",
+    "codeISO6391": "ho",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe933-3a0a-11e6-a201-e03f491c051c",
+    "name": "Hungarian",
+    "native": "Magyar",
+    "codeISO6391": "hu",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe9c8-3a0a-11e6-a201-e03f491c051c",
+    "name": "Icelandic",
+    "native": "Íslenska",
+    "codeISO6391": "is",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe9ab-3a0a-11e6-a201-e03f491c051c",
+    "name": "Ido",
+    "native": "Ido",
+    "codeISO6391": "io",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe976-3a0a-11e6-a201-e03f491c051c",
+    "name": "Igbo",
+    "native": "Igbo",
+    "codeISO6391": "ig",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe947-3a0a-11e6-a201-e03f491c051c",
+    "name": "Indonesian",
+    "native": "Bahasa Indonesia",
+    "codeISO6391": "id",
+    "rtl": false
+  },
+  {
+    "ID": "d46fea00-3a0a-11e6-a201-e03f491c051c",
+    "name": "Inuktitut",
+    "native": "ᐃᓄᒃᑎᑐᑦ",
+    "codeISO6391": "iu",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe991-3a0a-11e6-a201-e03f491c051c",
+    "name": "Inupiaq",
+    "native": "Iñupiaq",
+    "codeISO6391": "ik",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe95f-3a0a-11e6-a201-e03f491c051c",
+    "name": "Irish",
+    "native": "Gaeilge",
+    "codeISO6391": "ga",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe9e2-3a0a-11e6-a201-e03f491c051c",
+    "name": "Italian",
+    "native": "Italiano",
+    "codeISO6391": "it",
+    "rtl": false
+  },
+  {
+    "ID": "d46fea20-3a0a-11e6-a201-e03f491c051c",
+    "name": "Japanese",
+    "native": "日本語",
+    "codeISO6391": "ja",
+    "rtl": false
+  },
+  {
+    "ID": "d46fea40-3a0a-11e6-a201-e03f491c051c",
+    "name": "Javanese",
+    "native": "basa Jawa",
+    "codeISO6391": "jv",
+    "rtl": false
+  },
+  {
+    "ID": "d46feaf0-3a0a-11e6-a201-e03f491c051c",
+    "name": "Kannada",
+    "native": "ಕನ್ನಡ",
+    "codeISO6391": "kn",
+    "rtl": false
+  },
+  {
+    "ID": "d46feb3c-3a0a-11e6-a201-e03f491c051c",
+    "name": "Kanuri",
+    "native": "Kanuri",
+    "codeISO6391": "kr",
+    "rtl": false
+  },
+  {
+    "ID": "d46feb62-3a0a-11e6-a201-e03f491c051c",
+    "name": "Kashmiri",
+    "native": "कश्मीरी",
+    "codeISO6391": "ks",
+    "rtl": false
+  },
+  {
+    "ID": "d46feaa4-3a0a-11e6-a201-e03f491c051c",
+    "name": "Kazakh",
+    "native": "Қазақ тілі",
+    "codeISO6391": "kk",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff083-3a0a-11e6-a201-e03f491c051c",
+    "name": "Kinyarwanda",
+    "native": "Ikinyarwanda",
+    "codeISO6391": "rw",
+    "rtl": false
+  },
+  {
+    "ID": "d46febdd-3a0a-11e6-a201-e03f491c051c",
+    "name": "Kirghiz",
+    "native": "кыргыз тили",
+    "codeISO6391": "ky",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff031-3a0a-11e6-a201-e03f491c051c",
+    "name": "Kirundi",
+    "native": "Rundi",
+    "codeISO6391": "rn",
+    "rtl": false
+  },
+  {
+    "ID": "d46febb4-3a0a-11e6-a201-e03f491c051c",
+    "name": "Komi",
+    "native": "коми кыв",
+    "codeISO6391": "kv",
+    "rtl": false
+  },
+  {
+    "ID": "d46fea83-3a0a-11e6-a201-e03f491c051c",
+    "name": "Kongo",
+    "native": "KiKongo",
+    "codeISO6391": "kg",
+    "rtl": false
+  },
+  {
+    "ID": "d46feb16-3a0a-11e6-a201-e03f491c051c",
+    "name": "Korean",
+    "native": "韓國語",
+    "codeISO6391": "ko",
+    "rtl": false
+  },
+  {
+    "ID": "d46feb8b-3a0a-11e6-a201-e03f491c051c",
+    "name": "Kurdish",
+    "native": "Kurdî",
+    "codeISO6391": "ku",
+    "rtl": false
+  },
+  {
+    "ID": "d46fec66-3a0a-11e6-a201-e03f491c051c",
+    "name": "Lao",
+    "native": "ພາສາລາວ",
+    "codeISO6391": "lo",
+    "rtl": false
+  },
+  {
+    "ID": "d46fec17-3a0a-11e6-a201-e03f491c051c",
+    "name": "Latin",
+    "native": "latine",
+    "codeISO6391": "la",
+    "rtl": false
+  },
+  {
+    "ID": "d46fecac-3a0a-11e6-a201-e03f491c051c",
+    "name": "Latvian",
+    "native": "latviešu valoda",
+    "codeISO6391": "lv",
+    "rtl": false
+  },
+  {
+    "ID": "d46fec52-3a0a-11e6-a201-e03f491c051c",
+    "name": "Lingala",
+    "native": "Lingála",
+    "codeISO6391": "ln",
+    "rtl": false
+  },
+  {
+    "ID": "d46fec7b-3a0a-11e6-a201-e03f491c051c",
+    "name": "Lithuanian",
+    "native": "lietuvių kalba",
+    "codeISO6391": "lt",
+    "rtl": false
+  },
+  {
+    "ID": "d46fec92-3a0a-11e6-a201-e03f491c051c",
+    "name": "Luba-Katanga",
+    "native": "",
+    "codeISO6391": "lu",
+    "rtl": false
+  },
+  {
+    "ID": "d46fec3d-3a0a-11e6-a201-e03f491c051c",
+    "name": "Luganda",
+    "native": "Luganda",
+    "codeISO6391": "lg",
+    "rtl": false
+  },
+  {
+    "ID": "d46fec29-3a0a-11e6-a201-e03f491c051c",
+    "name": "Luxembourgish",
+    "native": "Lëtzebuergesch",
+    "codeISO6391": "lb",
+    "rtl": false
+  },
+  {
+    "ID": "d46fed3c-3a0a-11e6-a201-e03f491c051c",
+    "name": "Macedonian",
+    "native": "македонски јазик",
+    "codeISO6391": "mk",
+    "rtl": false
+  },
+  {
+    "ID": "d46fecca-3a0a-11e6-a201-e03f491c051c",
+    "name": "Malagasy",
+    "native": "Malagasy fiteny",
+    "codeISO6391": "mg",
+    "rtl": false
+  },
+  {
+    "ID": "d46fedba-3a0a-11e6-a201-e03f491c051c",
+    "name": "Malay",
+    "native": "bahasa Melayu",
+    "codeISO6391": "ms",
+    "rtl": false
+  },
+  {
+    "ID": "d46fed5c-3a0a-11e6-a201-e03f491c051c",
+    "name": "Malayalam",
+    "native": "മലയാളം",
+    "codeISO6391": "ml",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe600-3a0a-11e6-a201-e03f491c051c",
+    "name": "Maldivian",
+    "native": "ދިވެހި",
+    "codeISO6391": "dv",
+    "rtl": false
+  },
+  {
+    "ID": "d46fede0-3a0a-11e6-a201-e03f491c051c",
+    "name": "Maltese",
+    "native": "Malti",
+    "codeISO6391": "mt",
+    "rtl": false
+  },
+  {
+    "ID": "d46fed01-3a0a-11e6-a201-e03f491c051c",
+    "name": "Manx",
+    "native": "Gailck",
+    "codeISO6391": "gv",
+    "rtl": false
+  },
+  {
+    "ID": "d46fed1e-3a0a-11e6-a201-e03f491c051c",
+    "name": "Māori",
+    "native": "te reo Māori",
+    "codeISO6391": "mi",
+    "rtl": false
+  },
+  {
+    "ID": "d46fed99-3a0a-11e6-a201-e03f491c051c",
+    "name": "Marathi",
+    "native": "मराठी",
+    "codeISO6391": "mr",
+    "rtl": false
+  },
+  {
+    "ID": "d46fece4-3a0a-11e6-a201-e03f491c051c",
+    "name": "Marshallese",
+    "native": "Kajin M̧ajeļ",
+    "codeISO6391": "mh",
+    "rtl": false
+  },
+  {
+    "ID": "d46fed79-3a0a-11e6-a201-e03f491c051c",
+    "name": "Mongolian",
+    "native": "Монгол",
+    "codeISO6391": "mn",
+    "rtl": false
+  },
+  {
+    "ID": "d46fee03-3a0a-11e6-a201-e03f491c051c",
+    "name": "Nauru",
+    "native": "Ekakairũ Naoero",
+    "codeISO6391": "na",
+    "rtl": false
+  },
+  {
+    "ID": "d46fef19-3a0a-11e6-a201-e03f491c051c",
+    "name": "Navajo",
+    "native": "Diné bizaad",
+    "codeISO6391": "nv",
+    "rtl": false
+  },
+  {
+    "ID": "d46fee72-3a0a-11e6-a201-e03f491c051c",
+    "name": "Ndonga",
+    "native": "Owambo",
+    "codeISO6391": "ng",
+    "rtl": false
+  },
+  {
+    "ID": "d46fee4c-3a0a-11e6-a201-e03f491c051c",
+    "name": "Nepali",
+    "native": "नेपाली",
+    "codeISO6391": "ne",
+    "rtl": false
+  },
+  {
+    "ID": "d46fee29-3a0a-11e6-a201-e03f491c051c",
+    "name": "North Ndebele",
+    "native": "isiNdebele",
+    "codeISO6391": "nd",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff0fe-3a0a-11e6-a201-e03f491c051c",
+    "name": "Northern Sami",
+    "native": "Davvisámegiella",
+    "codeISO6391": "se",
+    "rtl": false
+  },
+  {
+    "ID": "d46feec4-3a0a-11e6-a201-e03f491c051c",
+    "name": "Norwegian",
+    "native": "Norsk",
+    "codeISO6391": "no",
+    "rtl": false
+  },
+  {
+    "ID": "d46fef82-3a0a-11e6-a201-e03f491c051c",
+    "name": "Oriya",
+    "native": "ଓଡ଼ିଆ",
+    "codeISO6391": "or",
+    "rtl": false
+  },
+  {
+    "ID": "d46fef47-3a0a-11e6-a201-e03f491c051c",
+    "name": "Oromo",
+    "native": "Afaan Oromoo",
+    "codeISO6391": "om",
+    "rtl": false
+  },
+  {
+    "ID": "d46fef93-3a0a-11e6-a201-e03f491c051c",
+    "name": "Ossetian",
+    "native": "Ирон æвзаг",
+    "codeISO6391": "os",
+    "rtl": false
+  },
+  {
+    "ID": "d46fefbc-3a0a-11e6-a201-e03f491c051c",
+    "name": "Pāli",
+    "native": "पाऴि",
+    "codeISO6391": "pi",
+    "rtl": false
+  },
+  {
+    "ID": "d46fefd1-3a0a-11e6-a201-e03f491c051c",
+    "name": "Persian",
+    "native": "فارسی",
+    "codeISO6391": "fa",
+    "rtl": true
+  },
+  {
+    "ID": "d46fefe8-3a0a-11e6-a201-e03f491c051c",
+    "name": "Polish",
+    "native": "polski",
+    "codeISO6391": "pl",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff000-3a0a-11e6-a201-e03f491c051c",
+    "name": "Portuguese",
+    "native": "Português",
+    "codeISO6391": "pt",
+    "rtl": false
+  },
+  {
+    "ID": "d46fefa8-3a0a-11e6-a201-e03f491c051c",
+    "name": "Punjabi",
+    "native": "\"ਪੰਜਾਬੀ",
+    "codeISO6391": "pa",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff01a-3a0a-11e6-a201-e03f491c051c",
+    "name": "Quechua",
+    "native": "Kichwa",
+    "codeISO6391": "qu",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff04c-3a0a-11e6-a201-e03f491c051c",
+    "name": "Romanian",
+    "native": "română",
+    "codeISO6391": "ro",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff066-3a0a-11e6-a201-e03f491c051c",
+    "name": "Russian",
+    "native": "Русский язык",
+    "codeISO6391": "ru",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff121-3a0a-11e6-a201-e03f491c051c",
+    "name": "Samoan",
+    "native": "gagana fa'a Samoa",
+    "codeISO6391": "sm",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff144-3a0a-11e6-a201-e03f491c051c",
+    "name": "Sango",
+    "native": "yângâ tî sängö",
+    "codeISO6391": "sg",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff0a1-3a0a-11e6-a201-e03f491c051c",
+    "name": "Sanskrit",
+    "native": "संस्कृतम्",
+    "codeISO6391": "sa",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff0be-3a0a-11e6-a201-e03f491c051c",
+    "name": "Sardinian",
+    "native": "sardu",
+    "codeISO6391": "sc",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff168-3a0a-11e6-a201-e03f491c051c",
+    "name": "Serbian",
+    "native": "српски језик",
+    "codeISO6391": "sr",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff1b1-3a0a-11e6-a201-e03f491c051c",
+    "name": "Shona",
+    "native": "chiShona",
+    "codeISO6391": "sn",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff0db-3a0a-11e6-a201-e03f491c051c",
+    "name": "Sindhi",
+    "native": " सिन्धी ",
+    "codeISO6391": "sd",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff1da-3a0a-11e6-a201-e03f491c051c",
+    "name": "Sinhala",
+    "native": "සිංහල",
+    "codeISO6391": "si",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff203-3a0a-11e6-a201-e03f491c051c",
+    "name": "Slovak",
+    "native": "slovenčina",
+    "codeISO6391": "sk",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff22c-3a0a-11e6-a201-e03f491c051c",
+    "name": "Slovene",
+    "native": "slovenščina",
+    "codeISO6391": "sl",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff258-3a0a-11e6-a201-e03f491c051c",
+    "name": "Somali",
+    "native": "Soomaaliga",
+    "codeISO6391": "so",
+    "rtl": false
+  },
+  {
+    "ID": "d46feef0-3a0a-11e6-a201-e03f491c051c",
+    "name": "South Ndebele",
+    "native": "isiNdebele",
+    "codeISO6391": "nr",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff283-3a0a-11e6-a201-e03f491c051c",
+    "name": "Southern Sotho",
+    "native": "Sesotho",
+    "codeISO6391": "st",
+    "rtl": false
+  },
+  {
+    "ID": "d46fe64c-3a0a-11e6-a201-e03f491c051c",
+    "name": "Spanish",
+    "native": "Español",
+    "codeISO6391": "es",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff2af-3a0a-11e6-a201-e03f491c051c",
+    "name": "Sundanese",
+    "native": "Basa Sunda",
+    "codeISO6391": "su",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff2ea-3a0a-11e6-a201-e03f491c051c",
+    "name": "Swahili",
+    "native": "Kiswahili",
+    "codeISO6391": "sw",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff2fe-3a0a-11e6-a201-e03f491c051c",
+    "name": "Swati",
+    "native": "SiSwati",
+    "codeISO6391": "ss",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff310-3a0a-11e6-a201-e03f491c051c",
+    "name": "Swedish",
+    "native": "svenska",
+    "codeISO6391": "sv",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff3e0-3a0a-11e6-a201-e03f491c051c",
+    "name": "Tagalog",
+    "native": "Wikang Tagalog",
+    "codeISO6391": "tl",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff4c7-3a0a-11e6-a201-e03f491c051c",
+    "name": "Tahitian",
+    "native": "Reo Mā`ohi",
+    "codeISO6391": "ty",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff353-3a0a-11e6-a201-e03f491c051c",
+    "name": "Tajik",
+    "native": "toğikī",
+    "codeISO6391": "tg",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff327-3a0a-11e6-a201-e03f491c051c",
+    "name": "Tamil",
+    "native": "தமிழ்",
+    "codeISO6391": "ta",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff480-3a0a-11e6-a201-e03f491c051c",
+    "name": "Tatar",
+    "native": "tatarça",
+    "codeISO6391": "tt",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff33c-3a0a-11e6-a201-e03f491c051c",
+    "name": "Telugu",
+    "native": "తెలుగు",
+    "codeISO6391": "te",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff373-3a0a-11e6-a201-e03f491c051c",
+    "name": "Thai",
+    "native": "ไทย",
+    "codeISO6391": "th",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff3a8-3a0a-11e6-a201-e03f491c051c",
+    "name": "Tibetan",
+    "native": "བོད་ཡིག",
+    "codeISO6391": "bo",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff38e-3a0a-11e6-a201-e03f491c051c",
+    "name": "Tigrinya",
+    "native": "ትግርኛ",
+    "codeISO6391": "ti",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff420-3a0a-11e6-a201-e03f491c051c",
+    "name": "Tonga",
+    "native": "faka Tonga",
+    "codeISO6391": "to",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff460-3a0a-11e6-a201-e03f491c051c",
+    "name": "Tsonga",
+    "native": "Xitsonga",
+    "codeISO6391": "ts",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff400-3a0a-11e6-a201-e03f491c051c",
+    "name": "Tswana",
+    "native": "Setswana",
+    "codeISO6391": "tn",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff440-3a0a-11e6-a201-e03f491c051c",
+    "name": "Turkish",
+    "native": "Türkçe",
+    "codeISO6391": "tr",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff3c2-3a0a-11e6-a201-e03f491c051c",
+    "name": "Turkmen",
+    "native": "Türkmen",
+    "codeISO6391": "tk",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff4a4-3a0a-11e6-a201-e03f491c051c",
+    "name": "Twi",
+    "native": "Twi",
+    "codeISO6391": "tw",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff4ed-3a0a-11e6-a201-e03f491c051c",
+    "name": "Uighur",
+    "native": "Uyƣurqə",
+    "codeISO6391": "ug",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff513-3a0a-11e6-a201-e03f491c051c",
+    "name": "Ukrainian",
+    "native": "Українська",
+    "codeISO6391": "uk",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff53c-3a0a-11e6-a201-e03f491c051c",
+    "name": "Urdu",
+    "native": "اردو",
+    "codeISO6391": "ur",
+    "rtl": true
+  },
+  {
+    "ID": "d46ff562-3a0a-11e6-a201-e03f491c051c",
+    "name": "Uzbek",
+    "native": "O'zbek",
+    "codeISO6391": "uz",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff588-3a0a-11e6-a201-e03f491c051c",
+    "name": "Venda",
+    "native": "Tshivenḓa",
+    "codeISO6391": "ve",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff5b4-3a0a-11e6-a201-e03f491c051c",
+    "name": "Vietnamese",
+    "native": "Tiếng Việt",
+    "codeISO6391": "vi",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff5e0-3a0a-11e6-a201-e03f491c051c",
+    "name": "Volapük",
+    "native": "Volapük",
+    "codeISO6391": "vo",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff60b-3a0a-11e6-a201-e03f491c051c",
+    "name": "Walloon",
+    "native": "Walon",
+    "codeISO6391": "wa",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff63a-3a0a-11e6-a201-e03f491c051c",
+    "name": "Welsh",
+    "native": "Cymraeg",
+    "codeISO6391": "cy",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff6cf-3a0a-11e6-a201-e03f491c051c",
+    "name": "Wolof",
+    "native": "Wollof",
+    "codeISO6391": "wo",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff6e7-3a0a-11e6-a201-e03f491c051c",
+    "name": "Xhosa",
+    "native": "isiXhosa",
+    "codeISO6391": "xh",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff6fe-3a0a-11e6-a201-e03f491c051c",
+    "name": "Yoruba",
+    "native": "Yorùbá",
+    "codeISO6391": "yo",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff716-3a0a-11e6-a201-e03f491c051c",
+    "name": "Zhuang",
+    "native": "Saw cuengh",
+    "codeISO6391": "za",
+    "rtl": false
+  },
+  {
+    "ID": "d46ff72d-3a0a-11e6-a201-e03f491c051c",
+    "name": "Zulu",
+    "native": "isiZulu",
+    "codeISO6391": "zu",
+    "rtl": false
+  }
+]

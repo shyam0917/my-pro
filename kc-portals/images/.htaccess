@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /images/
+
+RewriteRule ^loader-logo\.png$ index.php [L]

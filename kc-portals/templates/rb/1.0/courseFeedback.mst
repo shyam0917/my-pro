@@ -1,0 +1,56 @@
+<div class="inner-top">
+	<div class="cnt">
+		<div class="inner-top__current">
+			<h2 class="inner-top__title">{{mui.pageTitle.courseFeedback}}</h2>
+			<p class="inner-top__subtitle">{{course_name}}</p>
+		</div>
+	</div>
+</div>
+<div class="inner-page">
+	<div class="cnt">
+		<div class="inner-page__content">
+			<div class="panel-b">
+				<div class="flex-row">
+					<div class="flex-col-12">
+						<div class="hidden alert alert-success responseMessage success">{{successMessage}}</div>
+						<form class="" method="post" action="" data-handler="onSubmitForm" id="courseFeedback">
+							{{#questions}}
+							<div class="flex-form__row courseFeedback-question{{#question_type_flags.label}} courseFeedback-questionLabel{{/question_type_flags.label}}">
+								<div class="questionText">{{text}}</div>
+								<div class="answers">
+								{{#question_type_flags.single_choice}}
+									{{#answers}}
+									<div class="answer">
+										<input type="radio" name="answer[{{question_id}}]"
+										isRequired="{{#required}}true{{/required}}{{^required}}false{{/required}}"
+										value="{{answer_id}}" id="{{answer_id}}"/><label for="{{answer_id}}">{{text}}</label>
+									</div>
+									{{/answers}}
+								{{/question_type_flags.single_choice}}
+								{{#question_type_flags.multiple_choice}}
+									{{#answers}}
+									<div class="answer">
+										<input type="checkbox" name="answer[{{question_id}}]" isRequired="{{#required}}true{{/required}}{{^required}}false{{/required}}" value="{{answer_id}}" id="{{answer_id}}"/><label for="{{answer_id}}">{{text}}</label>
+									</div>
+									{{/answers}}
+								{{/question_type_flags.multiple_choice}}
+								{{#question_type_flags.open_question}}
+									<textarea class="flex-form__input" name="answer[{{question_id}}]" id="{{question_id}}"
+											  placeholder=""
+											  isRequired="{{#required}}true{{/required}}{{^required}}false{{/required}}"
+									></textarea>
+								{{/question_type_flags.open_question}}
+								</div>
+							</div>
+							{{/questions}}
+							
+							<div class="flex-form__btn floating-button">
+								<input type="submit" name="submit" value="{{mui.submit}}" class="button" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

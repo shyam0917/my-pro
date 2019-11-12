@@ -1,0 +1,122 @@
+<div class="inner-header inner-header--about">
+	<div class="cnt">
+		<div class="header-hero-container">
+			<h1 class="inner-header__title">
+				{{HeroTitle}}
+			</h1>
+			<p class="inner-header__subtitle">
+				{{HeroSubTitle}}
+			</p>
+		</div>
+		<div class="header-container">
+			<div class="header-info">
+				<h2>{{HeroContentTitle}}</h2>
+				<p>{{HeroContentPharagraph1}}</p>
+				<p>{{HeroContentPharagraph2}}</p>
+			</div>
+			<div class="header-video">
+				<a data-handler="onShowVideo"><img src="{{VIEW}}images/video-education--v{{site.LocalStorageStamp}}.png" alt="" data-handler="onOpenPreview"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mission-ribbon-wrapper">
+	<div class="cnt-wide">
+		<h2>{{missionTitle}}</h2>
+		<div class="mission-conent-wrapper">
+			<p>{{missionDescription}}</p>
+		</div>
+	</div>
+</div>
+<div class="inner-page about-howdid">
+	<div class="cnt-wide">
+		<div class="howdid-wrapper">
+			<div class="howdid-image">
+				<div class="howdid-tree"></div>
+			</div>
+			<div class="howdid-content">
+				<h2>{{howDidTitle}}</h2>
+				<div class="howdid-info">
+					<p>{{howDidPharagraph1}}</p>
+					<p>{{howDidPharagraph2}}</p>
+					<p>{{howDidPharagraph3}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="moment-ribbon-wrapper">
+	<div class="cnt-wide">
+		<h2>{{momentTitle}}</h2>
+		<p>{{momentDescription}}</p>
+	</div>
+</div>
+<div class="inner-page about-headed">
+	<div class="cnt-wide">
+		<div class="headed-wrapper">
+			<div class="headed-info">
+				<h2>{{headedTitle}}</h2>
+				<p>{{headedDescription}}</p>
+			</div>
+			<div class="headed-image">
+				<img src="{{VIEW}}images/About_Us_Cloud--v{{site.LocalStorageStamp}}.png" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+
+<section class="bottom-links" style="padding-top:40px;">
+    <div class="cnt-wide">
+        <div class="bot-columns about-us">
+            <div class="">
+                <a href="{{site.url_with_lang}}learningLibrary"><div class="bottom-link__img">
+                <img src="{{VIEW}}images/Bottom-link_LL--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+                height:auto" alt="">
+                </div>
+                </a>
+                <h2>{{bottomLinksLearningTitle}}</h2>
+                <p>{{bottomLinksLearningDescription}} <a href="{{site.url_with_lang}}learningLibrary">{{learnMore}}</a></p>
+            </div>
+            <div class="">
+                <a href="{{site.url_with_lang}}lms"><div class="bottom-link__img">
+                    <img src="{{VIEW}}images/bottom-link_LMS--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+                height:auto" alt="">
+                </div>
+                </a>
+                <h2>{{bottomLinksLmsTitle}}</h2>
+                <p>{{bottomLinksLmsDescription}} <a href="{{site.url_with_lang}}lms">{{learnMore}}</a></p>
+            </div>
+            <div class="">
+                <a href="{{site.url_with_lang}}contentCreation"><div class="bottom-link__img">
+                <img src="{{VIEW}}images/Bottom-link_CC--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+                height:auto" alt="">
+                </div></a>
+                <h2>{{bottomLinksContentTitle}}</h2>
+                <p>{{bottomLinksContentDescription}} <a href="{{site.url_with_lang}}contentCreation"> {{learnMore}}</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="index-clients">
+    <div class="cnt">
+        <!-- <h2 class="index-title">{{ourClients}}</h2> -->
+        <div class="index-clients__carousel owl-carousel" id="clientsCarousel">
+            {{#clients}}
+            <div class="index-client">
+                <img class="index-client__img" src="{{logo}}" alt=""/>
+            </div>
+            {{/clients}}
+        </div>
+        <div class="owl-nav">
+            <span class="owl-nav__prev" data-handler="onPrevClients"></span>
+            <span class="owl-nav__next" data-handler="onNextClients"></span>
+        </div>
+    </div>
+</section>
+
+<div id="videoWindow" class="modal" style="display: none;">
+    <a  rel="closeModal" class="modal__close modal_close">×</a>
+    <div class="content">
+        <div class="modal__text previewLMS" id="modal__text"></div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<span data-ctrl="LibTitle" id="libtitle"></span>
+
+<div class="inner-page inner-page--library">
+    <div class="cnt">
+    <span data-ctrl="BreadCrumbs" id="breadcrumbs"></span>
+        <div class="inner-page__row">
+            <div class="inner-page__sidebar">
+                <div data-ctrl="Sidebar" id="sidebar">
+                    Loading sidebar...
+                </div>
+            </div>
+            <div class="inner-page__content">
+              <div data-ctrl="Items" id="items">
+                Loading items...
+              </div>
+
+            </div>
+        </div>
+    </div>
+</div>

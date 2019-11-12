@@ -1,0 +1,168 @@
+.course-item__name:hover {
+  color: #7b6f67;
+}
+
+.course-item__img--business {
+  background: url(../../images/style/ba/course-item-1.jpg) no-repeat center/cover;
+}
+
+.course-item__img--computer {
+  background: url(../../images/style/ba/course-item-2.jpg) no-repeat center/cover;
+}
+
+.course-item__img--safety {
+  background: url(../../images/style/ba/course-item-3.jpg) no-repeat center/cover;
+}
+
+.course-item__img--banking {
+  background: url(../../images/style/ba/course-item-4.jpg) no-repeat center 0/cover;
+}
+
+.usermenu > ul > li .submenu__title:hover,
+.usermenu > ul > li > a:hover {
+  background: #7b6f67;
+  color: #ffffff;
+}
+
+.usermenu .dropdown-menu > li > a:active, .usermenu .dropdown-menu > li > a:focus, .usermenu .dropdown-menu > li > a:hover {
+  background: #7b6f67 !important;
+  color: #ffffff;
+}
+
+.search-form__open:hover {
+  color: #7b6f67;
+}
+
+.search-form__close:hover {
+  color: #7b6f67;
+}
+
+.submenu__content li a:hover {
+  background: #7b6f67;
+}
+
+.course-card__link:hover {
+  color: #ffffff;
+  border-color: #7b6f67;
+  background: #7b6f67;
+}
+
+.course-card__link:hover span {
+  color: #ffffff;
+}
+
+.course-card__link:hover i {
+  color: #ffffff;
+}
+
+.lessons-menu__fav .fa-star {
+  color: #7b6f67;
+}
+
+.library-menu__category-header a:hover {
+  color: #7b6f67;
+}
+
+.library-menu__category-header a:focus {
+  color: #7b6f67;
+}
+
+.library-menu__icon:hover .library-menu__minus, .library-menu__icon:hover .library-menu__plus {
+  color: #7b6f67;
+}
+
+.course-progress__item.watched {
+  background: #7b6f67;
+}
+
+.course-info__tab.active:after, .course-info__tab:hover:after {
+  background: #7b6f67;
+}
+
+.course-info__test:hover {
+  border-color: #7b6f67 !important;
+  background: #7b6f67;
+  color: #ffffff !important;
+}
+
+.course-info__test:focus {
+  color: #ffffff !important;
+}
+
+.pagination li.active > a:hover {
+  border-color: #7b6f67;
+}
+
+.bookmarks .bookmark.active {
+  background: #7b6f67;
+  color: #333333;
+}
+
+.learning-progress__bar {
+  background: #7b6f67;
+}
+
+.button:focus, .button:hover {
+  border-color: #7b6f67;
+  color: #ffffff;
+  background: #7b6f67;
+}
+
+.menu > ul > li span > a,
+.menu > ul > li > a {
+  color: #ffffff;
+  background: #f8b333;
+}
+
+.menu > ul > li span > a:focus,
+.menu > ul > li > a:focus {
+  color: #ffffff;
+  background: #f8b333;
+}
+
+.menu > ul > li span > a:hover,
+.menu > ul > li > a:hover {
+  color: #ffffff;
+  background: #d1202f;
+}
+
+.top-library__title.active {
+  background: #d1202f;
+}
+
+.top-library__title.active:focus, .top-library__title.active:hover {
+  background: #d1202f;
+}
+
+.top-library__dropdown {
+  border-bottom-color: transparent;
+}
+
+.modalWindow .content:after {
+  background: #7b6f67;
+}
+
+.main-library__logo-wrapper {
+  flex-basis: 307px;
+  text-align: right;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+body.ar .main-library__logo-wrapper {
+  text-align: left;
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.course-item {
+  border-radius: 0 20px;
+}
+
+.main-library__logo-wrapper img {
+  height: 72px;
+}
+
+.main-library__header {
+  justify-content: space-between;
+}

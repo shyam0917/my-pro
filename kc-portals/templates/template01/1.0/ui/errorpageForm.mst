@@ -1,0 +1,49 @@
+<div id="sendFeedback" class="popupWindow sendFeedback">
+
+	<a class="modal_close"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-times fa-stack-1x fa-inverse"></i></span></a>
+
+	<div class="title-h1" id="loginTitle"><div class="h1">{{mui.pageContent.sendCourseFeedback}}</div></div>
+	<div class="content">
+		<div class="alert alert-success text-align hidden" id="formMessage"></div>
+		<form class="flex-form" method="post" action="" id="sendFeedbackForm" data-handler="onSubmitForm" data-close="true">
+
+            <div class="flex-form__row">
+				<label for="feedbackform-email" class="flex-form__label">{{mui.pageContent.formlabel.email}}:</label>
+
+				<input type="email" class="flex-form__input" value="{{email}}"
+					   name="email" id="feedbackform-email"
+					   placeholder="{{mui.pageContent.formlabel.email}}"
+					   required="required" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"
+					   data-invalidMessageWrongType="{{mui.form.requiredField.invalidTypeMessage}}"/>
+
+			</div>
+
+			<div class="flex-form__row">
+				<label for="feedbackform-f_name" class="flex-form__label">{{mui.pageContent.formlabel.firstName}}:</label>
+
+				<input type="text" class="flex-form__input" value="{{f_name}}" name="f_name"
+					   id="feedbackform-f_name"
+					   placeholder="{{mui.pageContent.formlabel.firstName}}"
+					   required="required" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+
+			</div>
+
+			<div class="flex-form__row">
+				<label for="feedbackform-message" class="flex-form__label">{{mui.pageContent.formlabel.message}}:</label>
+
+						<textarea class="flex-form__input  h100" value="" name="messageText"
+								  id="feedbackform-message"
+
+								  required="required"
+								  data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"
+								  data-handler="onHidePlaceholder"
+								  data-handler-action="focus"></textarea>
+
+			</div>
+
+			<div class="flex-form__btn">
+				<button type="submit" name="submit" class="button">{{mui.submit}}</button>
+			</div>
+		</form>
+	</div>
+</div>

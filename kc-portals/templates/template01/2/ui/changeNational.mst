@@ -1,0 +1,12 @@
+     <form class="login-form form" method="post" action="" >
+            <div class="form__message error hidden" id="ErrorFormMessage"></div>
+
+            <div class="flex-form__row">
+                <label class="flex-form__label" for="loginform-username"></label>
+                <input type="text" class="flex-form__input" value="" name="national" id="national" placeholder="{{newnationalID}}" required="true" data-invalidmessage="Please Fill out this field.">
+            </div>
+            <div class="flex-form__row">
+                <label class="flex-form__label" for="loginform-username"></label>
+                <input type="text" class="flex-form__input" value="" name="national_confirm" id="national2" placeholder="{{newnationalID2}}" required="true" data-invalidmessage="Please Fill out this field.">
+            </div>
+        </form>

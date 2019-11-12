@@ -1,0 +1,344 @@
+<div class="inner-top">
+	<div class="cnt">
+			<div class="inner-top__library">
+				<h2 class="inner-top__title">{{mui.pageContent.courseList.lessons}}</h2>
+				<p class="inner-top__subtitle">&nbsp;</p>
+			</div>
+			<div class="inner-top__current">
+				<h2 class="inner-top__title">{{course.title}}</h2>
+				<p class="inner-top__subtitle">{{course.tagline}}</p>
+			</div>
+	</div>
+</div>
+<div class="inner-page">
+ {{#course.isScorm}}
+        <div class="row">
+            <div class="col-md-12">
+                <div class="course-scorm" id="courseScormWrapper">
+                    <div class="course-video__overlay"></div>
+                    <img style="display: block;margin:auto;" src="{{course.preview.path}}{{course.preview.src}}"
+                        sizes="(min-width: 1000px) 75vw, 100vw"
+                        srcset="
+                        {{#course.preview.sources}}
+                             {{course.preview.path}}{{src}} {{w}},
+                         {{/course.preview.sources}}
+                         "
+                         data-handler-action="error" alt="{{course.title}}">
+                    <div class="course-video__play"	data-handler="onPlayScormCourse"></div>
+
+                </div>
+            </div>
+        </div>
+	{{/course.isScorm}}
+
+	<div class="cnt">
+		{{#course.isScorm}}
+		<style>.cnt .inner-page__sidebar{display:none}</style>
+		{{/course.isScorm}}
+		<div class="inner-page__sidebar" >
+		    {{^course.isScorm}}
+			<div class="lessons-menu text-align">
+				{{#course.chapters}}
+				<h4 class="lessons-menu__chapter">{{title}}</h4>
+				<div class="lessons-menu__lessons">
+					{{#lessons}}
+					<div class="lessons-menu__lesson {{#noAccess}}lock{{/noAccess}}{{^noAccess}}unlock{{/noAccess}} {{#isAccess}}courseLesson{{/isAccess}}{{#noAccess}}noaccess{{/noAccess}}" data-handler="onLessonShow"
+						 data-lessonID="{{id}}"
+						 data-inModal="false">
+						<div class="lessons-menu__icon">
+							<div id="watching-{{id}}" class="hidden">
+								<i class="fa fa-play" aria-hidden="true"></i>
+							</div>
+							<div id="notwatching-{{id}}" class="{{#isSequence}}sequence{{/isSequence}}">
+								{{^isAccess}}
+								<i class="fa fa-lock" aria-hidden="true"></i>
+								{{/isAccess}}
+
+								<i id="watched-{{id}}" class="fa fa-check {{^isWatched}} hidden {{/isWatched}}" aria-hidden="true"></i>
+
+								{{^isWatched}}
+
+								{{#isAccess}}
+								<i id="access-{{id}}" class="fa fa-play-circle-o" aria-hidden="true"></i>
+								{{/isAccess}}
+
+								{{/isWatched}}
+							</div>
+
+						</div>
+						<div class="lessons-menu__name">
+							<span>{{title}}</span>
+						</div>
+						<div class="lessons-menu__duration">{{time}}</div>
+					</div>
+					{{/lessons}}
+				</div>
+				{{/course.chapters}}
+			</div>
+			<div data-ctrl="Sidebar" id="sidebar">Loading sidebar...</div>
+			<div data-mobile="related"></div>
+		{{/course.isScorm}}
+		</div>
+		<div class="inner-page__content">
+		    {{^course.isScorm}}
+			<div class="course-video" id="courseVideoWrapper">
+				<div class="video-player-settings hidden">
+		          <div class="video-player-settings-overlay"></div>
+		          <div class="video-player-settings-content">
+		            <div class="change-language-block">
+		              <div class="menuItem">
+		                <button class="parentMenuItem">{{mui.pageContent.course.changeLanguage}}</button>
+		                <div class="subMenuItem" id="switchContentLanguageList"></div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+				<div
+						class="course-video__preview"
+						id="courseVideoEmbed"
+				>
+					<div class="course-video__overlay"></div>
+                    <img src="{{course.preview.path}}{{course.preview.src}}"
+                        sizes="(min-width: 1000px) 75vw, 100vw"
+                        srcset="
+                        {{#course.preview.sources}}
+                             {{course.preview.path}}{{src}} {{w}},
+                         {{/course.preview.sources}}
+                         "
+                         data-handler-action="error" alt="{{course.title}}">
+					<div class="course-video__play"
+						 data-handler="onLessonShow"
+						 data-lessonID="{{course.targetLesson}}" ></div>
+
+				</div>
+				<div class="course-video__arrow course-video__arrow--prev" rel="prev"><a  href="#" data-handler="onPrev"><i class="fa fa-chevron-left"></i></a></div>
+				<div class="course-video__arrow course-video__arrow--next" rel="next"><a  href="#" data-handler="onNext"><i class="fa fa-chevron-right"></i></a></div>
+			</div>
+			{{/course.isScorm}}
+			<div class="course-info">
+				<div class="course-info__header">
+					<ul class="course-info__tabs nav">
+						<li class="course-info__tab active">
+							<a  data-toggle="tab" href="#description-content">
+								{{{mui.pageContent.course.description}}}
+							</a>
+						</li>
+						<li class="course-info__tab hidden" id="transcriptTab"><a  data-toggle="tab" href="#transcript-content">{{mui.transcript}}</a></li>
+					</ul>
+					<div class="course-info__controls">
+						{{#user.isTest}}
+						<a  href="#" class="button" data-handler="onMarkLessonsAsWatched">Pass all lessons</a>
+						{{/user.isTest}}
+
+						{{^iskcpack}}
+						<div class="dot-menu">
+							<span class="button dot-menu__btn"><i class="fa fa-ellipsis-h"></i></span>
+							<ul class="dot-menu__list">
+								<li class="button dot-menu__list-item dot-menu__list-item--action"
+										data-handler="onSendAbuse"> {{course_abuse_modal.send_abuse}}
+								</li>
+								{{#user.userId}}
+								{{^course.is_events}}
+								<li class="button dot-menu__list-item dot-menu__list-item--action" data-desktop="feedback" data-handler="onFeedback">
+									{{mui.pageContent.course.courseFeedback}}
+								</li>
+								{{/course.is_events}}
+								{{/user.userId}}
+							</ul>
+						</div>
+						{{/iskcpack}}
+					</div>
+				</div>
+				<div class="course-info__content">
+					<div class="course-info__tabs-content">
+						<div id="description-content" class="course-info__tab-content active">
+							<div class="course-info__description-props">
+								<div class="course-info__description text-align">{{{course.description}}}</div>
+								<div class="course-info__props text-align">
+									<div><strong>{{mui.pageContent.course.author}}:</strong><span> {{course.author}}
+									{{^course.author}}
+									<span class="text-muted">{{mui.pageContent.event.not_set}}</span>
+									{{/course.author}}
+									</span></div>
+                  {{^course.is_events}}
+                    <div><strong>{{mui.pageContent.course.trt}}:</strong><span> {{course.totalRuntime}}</span></div>
+                  {{/course.is_events}}
+                  {{^course.is_events}}
+                  <div><strong>{{mui.pageContent.course.lessons}}:</strong><span> {{course.lessonCount}}</span></div>
+                  {{/course.is_events}}
+
+
+										{{#course.isManuals}}
+										<div>
+											<strong>{{mui.pageContent.course.manual}}:</strong>
+
+											<ul class="course-manuals">
+												{{#course.manuals}}
+												<li class="course-manuals__item">
+													<span><a href="{{url}}" target="_blank">{{title}}</a></span>
+												</li>
+												{{/course.manuals}}
+											</ul>
+										</div>
+										{{/course.isManuals}}
+
+									{{#eBooks}}
+									<div><strong>{{name}}:</strong><span> <a data-handler="onGetEbook" data-ceid="{{ceid}}"  href="#">{{mui.pageContent.course.getEbook}}</a></span></div>
+									{{/eBooks}}
+								</div>
+							</div>
+						</div>
+						<div id="transcript-content" class="course-info__tab-content">
+							<div class="course-info__transcript" id="transcriptContainer">
+								<div id="transcript-tab-title"></div>
+								<div id="transcript-tab-content"></div>
+							</div>
+						</div>
+					</div>
+					<div class="course-info__bottom-controls">
+						{{^course.is_not_quiz}}
+							<a  href="#" class="button course-info__test" data-handler="onLoadQuiz">{{mui.pageContent.course.certTest}}</a>
+							<div data-mobile="feedback"></div>
+						{{/course.is_not_quiz}}
+						{{#eBooks}}
+							<a class="button course-info__test" data-handler="onGetEbook" data-ceid="{{ceid}}"  href="#">{{mui.pageContent.course.getEbook}}</a></span>
+						{{/eBooks}}
+					</div>
+				</div>
+			</div>
+
+      {{! template for new classes }}
+      {{#course.events}}
+      <div class="panel-b panel-b--library-content panel-b--transparent event">
+        <div class="course-card text-align">
+          <div class="row header">
+            <div class="col-sm-8 float">
+              <div class="date">{{mui.pageContent.event.date}}: {{date_start_date}} {{date_start_time}}</div>
+            </div>
+            <div class="col-sm-2 float">
+              <div class="row">{{left}}</div>
+            </div>
+            <div class="col-sm-2 float">
+              <div class="row">
+                <div class="pull-right">
+                  {{#course.is_auth}}
+                    {{#is_available}}
+                    <a class="btn btn-sm btn-info" href="{{url}}" data-handler="onSendToApprove" data-id="{{event_id}}" data-status="{{status}}">
+                      <span>{{mui.pageContent.event.register}}</span>
+                    </a>
+                    {{/is_available}}
+                    {{#is_review}}
+                    <a class="btn btn-sm btn-danger" href="{{url}}" data-handler="onSendToApprove" data-id="{{event_id}}" data-status="{{status}}">
+                      <span>{{mui.pageContent.event.unregister}}</span>
+                    </a>
+                    {{/is_review}}
+                    {{#is_approved}}
+                      <span><i>{{mui.pageContent.event.approved}}</i></span>
+                    {{/is_approved}}
+                    {{#is_rejected}}
+                      <span><i>{{mui.pageContent.event.rejected}}</i></span>
+                    {{/is_rejected}}
+                  {{/course.is_auth}}
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-5 float pull-right">
+              {{#is_review}}
+                <span>{{mui.pageContent.event.review}}</span>
+              {{/is_review}}
+            </div>
+          </div>
+          <div class="row body">
+            <div class="col-sm-7 float">
+              <div class="row">
+                <div class="col-sm-8 float">
+                  <span class="xlabel">{{mui.pageContent.event.city}}:</span> {{city}}
+                </div>
+                <div class="col-sm-8 float">
+                  <span class="xlabel">{{mui.pageContent.event.address}}:</span>
+									{{#address}}
+									{{address}}
+									{{/address}}
+									{{^address}}
+									<span class="text-muted">{{mui.pageContent.event.not_set}}</span>
+									{{/address}}
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-8 float">
+                  <span class="xlabel">{{mui.pageContent.event.mentor}}:</span>
+									{{#mentor}}
+									{{mentor}}
+									{{/mentor}}
+									{{^mentor}}
+									<span class="text-muted">{{mui.pageContent.event.not_set}}</span>
+									{{/mentor}}
+                </div>
+              </div>
+              {{#additional}}
+              <div class="row">
+                <div class="col-sm-8 float">
+                  <span class="xlabel">{{name}}:</span> {{value}}
+                </div>
+              </div>
+              {{/additional}}
+              <div class="row">
+                <div class="col-sm-16 float">
+                  <div class="dpn">
+                    {{{dpn}}}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-5 float">
+              <div class="row">
+                <div class="col-sm-6 float">
+                  <span class="xlabel2">{{mui.pageContent.event.reg_date_start}}:</span><br> {{reg_date_start}}
+                </div>
+                <div class="col-sm-6 float">
+                  <span class="xlabel2">{{mui.pageContent.event.reg_date_end}}:</span><br> {{reg_date_end}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{/course.events}}
+
+			<div data-desktop="related">
+				<div data-ctrl="RelatedCourses" data-replace="" id="Related">
+						{{#list.length}}
+						<div class="related-courses" style="direction: ltr">
+							<div class="panel-b">
+								<h2 class="text-align">{{watchNext}}</h2>
+								<div class="owl-carousel" id="relatedCarousel">
+									{{#list}}
+									<div class="item  text-align">
+										<div class="course-tile"><a href="{{url}}" class="course-tile__preview">
+											<div class="course-tile__play"></div>
+											<picture class="course-video__preview-img">
+                                                {{#preview.sources}}
+                                                <source media="(max-width: {{maxWidth}}px)"
+                                                        srcset="{{preview.path}}{{src}}, {{preview.path}}{{src2x}} 2x">
+                                                {{/preview.sources}}
+                                                <img src="{{preview.path}}{{preview.src}}"
+                                                     srcset="{{preview.path}}{{preview.src}}, {{preview.path}}{{preview.src2x}} 2x" alt="">
+                                            </picture>
+											</a>
+											<div class="course-tile__caption">{{title}}</div>
+										</div>
+									</div>
+									{{/list}}
+								</div>
+								<div class="owl-controls">
+									<span class="owl-controls__prev"><i class="fa fa-chevron-left" aria-hidden="true" data-handler="onPrevSlide"></i></span>
+									<span class="owl-controls__next"><i class="fa fa-chevron-right" aria-hidden="true" data-handler="onNextSlide"></i></span>
+								</div>
+							</div>
+						</div>
+						{{/list.length}}
+					</div>
+			</div>
+		</div>
+	</div>
+</div>

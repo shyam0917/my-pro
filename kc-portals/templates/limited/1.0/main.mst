@@ -1,0 +1,92 @@
+<html>
+<head>
+	<title>{{mui.portalTitle}}</title>
+    <meta http-equiv="content-language" content="{{site.language}}">
+	<meta name="description" content="{{page.content}}" />
+	<meta name="keywords" content="{{page.keywords}}" />
+    <link rel="icon" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<meta name="author" content="KnowledgeCity.com" />
+    <!-- Vendor Script: FontAwesome -->
+    <link href="{{VENDORS}}font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Vendor Script: Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="{{VENDORS}}bootstrap/3.3.6/css/bootstrap.min.css" />
+
+    <!-- Optional theme -->
+
+    <link rel="stylesheet" data-required="true" href="{{VIEW}}css/style--v{{site.LocalStorageStamp}}.css" />
+    {{#site.style}}
+    <link rel="stylesheet" href="{{VIEW}}css/style/{{site.style}}.css" />
+    {{/site.style}}
+    <link rel="stylesheet" href="{{VIEW}}css/owl.carousel--v{{site.LocalStorageStamp}}.css" />
+
+    <link href="{{VENDORS}}jQuery/modules/fancybox/2.1.5/source/jquery.fancybox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{VENDORS}}videojs-player/video-js.css" />
+    <link rel="stylesheet" href="{{VIEW}}css/locale/css.{{site.language}}--v{{site.LocalStorageStamp}}.css" />
+    <link rel="stylesheet" href="{{VIEW}}css/custom-player--v{{site.LocalStorageStamp}}.css" />
+</head>
+<body class="{{site.language}}{{#kcpack}} kcpack{{/kcpack}}">
+
+<div class="scroll-up--ctrl scroll-up"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></div>
+
+    <div class="contentBody" id="content">{{mui.txtLabels.contentLoading}}</div>
+
+<!--Alerting windows-->
+<div id="dangerWindow" class="modalWindow" style="display: none;">
+        <div class="content">
+            <div class="text" rel="text"></div>
+            <div class="text-center btns-group"><input type="button" rel="confirm" value="{{mui.buttonLabel.ok}}" class="button"></div>
+    </div>
+</div>
+<div id="alertWindow" class="modalWindow" style="display: none;">
+    <a rel="closeModal" class="modal_close">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+            </span>
+    </a>
+    <div class="content">
+        <div class="text" rel="text"></div>
+        <div class="text-center"><input type="button" rel="closeOk" value="{{mui.buttonLabel.ok}}" class="button"></div>
+    </div>
+</div>
+<div id="confirmWindow" class="modalWindow" style="display: none;">
+    <a rel="closeModal" class="modal_close">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+            </span>
+    </a>
+    <div class="content">
+        <div class="text" rel="text"></div>
+        <div class="text-center btns-group"><input type="button" rel="confirm" value="{{mui.buttonLabel.ok}}" class="button"><input type="button" rel="closeOk" value="{{mui.buttonLabel.cancel}}" class="button"></div>
+    </div>
+</div>
+<div id="loading-overlay" class="loading-overlay">
+    <div class="loader">
+        <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+    </div>
+</div>
+
+{{{#site.getClickyID}}}
+<!-- CLICKY -->
+<noindex><a title="Real Time Web Analytics" href="//clicky.com/{{site.getClickyID}}" rel="nofollow"></a></noindex>
+<!-- /CLICKY -->
+{{{/site.getClickyID}}}
+
+{{{#site.googleAnalytics}}}
+{{{site.googleAnalytics}}}
+{{{/site.googleAnalytics}}}
+
+{{{#site.arbitraryCode}}}
+{{{site.arbitraryCode}}}
+{{{/site.arbitraryCode}}}
+
+</body>
+</html>

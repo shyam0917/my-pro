@@ -1,0 +1,40 @@
+<div class="inner-top">
+	<div class="cnt">
+		<div class="inner-top__library">
+			<h2 class="inner-top__title">{{mui.txtLabels.sidebarTitle}}</h2>
+			<p class="inner-top__subtitle">{{mui.txtLabels.sidebarText}}</p>
+		</div>
+		<div class="inner-top__current">
+			<h2 class="inner-top__title">{{mui.pageTitle.faq}}</h2>
+			<p class="inner-top__subtitle">{{mui.pageSubTitle.faq}}</p>
+		</div>
+	</div>
+</div>
+
+<div class="inner-page">
+	<div class="cnt">
+		<div class="inner-page__sidebar">
+			<div data-ctrl="Sidebar" id="sidebar">
+				Loading sidebar...
+			</div>
+		</div>
+		<div class="inner-page__content">
+			<div class="panel-b">
+				<div class="faq-wrapper">
+					<div class="faq-title">{{mui.pageTitle.faq}}</div>
+					{{#faq}}
+					<div class="faq-item question">
+						<div class="faq-item__question faq-question">
+							{{{q}}}
+							<div class="faq-item__icon"></div>
+						</div>
+						<div class="faq-item__answer faq-answer">
+							<p>{{{a}}}</p>
+						</div>
+					</div>
+					{{/faq}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

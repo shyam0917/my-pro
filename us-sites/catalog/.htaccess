@@ -1,0 +1,15 @@
+<If "%{HTTP_HOST} != 'www.knowledgecity.com'">
+    Order Allow,Deny
+	Deny From All
+</If>
+
+<ifModule mod_headers.c>
+  # 86400 - day, 604800 - week, 18144000 - month, 31449600 - year
+
+  <FilesMatch "\.*$">
+    Header set Cache-Control "max-age=31449600"
+  </FilesMatch>
+
+  Header set Access-Control-Allow-Origin "*"
+
+</IfModule>

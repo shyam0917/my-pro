@@ -1,0 +1,85 @@
+<div class="inner-top">
+	<div class="cnt">
+		<div class="inner-top__library">
+			<h2 class="inner-top__title">{{mui.txtLabels.sidebarTitle}}</h2>
+			<p class="inner-top__subtitle">{{mui.txtLabels.sidebarText}}</p>
+		</div>
+		<div class="inner-top__current">
+			<h2 class="inner-top__title">{{title}}</h2>
+			<p class="inner-top__subtitle">{{subTitle}}</p>
+		</div>
+	</div>
+</div>
+
+<div class="inner-page">
+	<div class="cnt">
+		<div class="inner-page__sidebar">
+			<div data-ctrl="Sidebar" id="sidebar">
+				Loading sidebar...
+			</div>
+		</div>
+		<div class="inner-page__content">
+			<div class="panel-b panel-b--benefits">
+				{{{Text1}}}
+				<div class="benefits-table">
+					<div class="benefits-table__item">
+						<img src="{{VIEW}}images/benefit-icon-1.png" class="benefits-table__icon">
+						{{{Benefit1}}}
+					</div>
+					<div class="benefits-table__item">
+						<img src="{{VIEW}}images/benefit-icon-2.png" class="benefits-table__icon">
+						{{{Benefit2}}}
+					</div>
+					<div class="benefits-table__item">
+						<img src="{{VIEW}}images/benefit-icon-3.png" class="benefits-table__icon">
+						{{{Benefit3}}}
+					</div>
+					<div class="benefits-table__item">
+						<img src="{{VIEW}}images/benefit-icon-4.png" class="benefits-table__icon">
+						{{{Benefit4}}}
+					</div>
+					<div class="benefits-table__item">
+						<img src="{{VIEW}}images/benefit-icon-5.png" class="benefits-table__icon">
+						{{{Benefit5}}}
+					</div>
+					<div class="benefits-table__item">
+						<img src="{{VIEW}}images/benefit-icon-6.png" class="benefits-table__icon">
+						{{{Benefit6}}}
+					</div>
+					<div class="benefits-table__item">
+						<img src="{{VIEW}}images/benefit-icon-7.png" class="benefits-table__icon">
+						{{{Benefit7}}}
+					</div>
+					<div class="benefits-table__item">
+						<img src="{{VIEW}}images/benefit-icon-8.png" class="benefits-table__icon">
+						{{{Benefit8}}}
+					</div>
+					<div class="benefits-table__item">
+						<img src="{{VIEW}}images/benefit-icon-9.png" class="benefits-table__icon">
+						{{{Benefit9}}}
+					</div>
+					<div class="benefits-table__item">
+						<img src="{{VIEW}}images/benefit-icon-10.png" class="benefits-table__icon">
+						{{{Benefit10}}}
+					</div>
+					<div class="benefits-table__item">
+						<img src="{{VIEW}}images/benefit-icon-11.png" class="benefits-table__icon">
+						{{{Benefit11}}}
+					</div>
+					<div class="benefits-table__item">
+						<img src="{{VIEW}}images/benefit-icon-12.png" class="benefits-table__icon">
+						{{{Benefit12}}}
+					</div>
+					<div class="benefits-table__item">
+						<img src="{{VIEW}}images/benefit-icon-13.png" class="benefits-table__icon">
+						{{{Benefit13}}}
+					</div>
+
+				</div>
+
+			</div>
+	
+		</div>
+	</div>
+</div>
+

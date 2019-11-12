@@ -1,0 +1,505 @@
+<html>
+<head>
+    <meta http-equiv="content-language" content="{{site.language}}">
+    <title>{{mui.portalTitle}}</title>
+	<meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="{{page.content}}" />
+	<meta name="keywords" content="{{page.keywords}}" />
+	<link rel="icon" href="{{page.favicon}}" type="image/x-icon" />
+	<link rel="shortcut icon" href="{{page.favicon}}" type="image/x-icon" />
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<meta name="author" content="KnowledgeCity.com" />
+    <!-- Vendor Script: FontAwesome -->
+    <link href="{{VENDORS}}font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="{{VIEW}}css/owl.carousel--v{{site.LocalStorageStamp}}.css" />
+    <link href="{{VENDORS}}jQuery/modules/fancybox/2.1.5/source/jquery.fancybox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{VENDORS}}videojs-player/video-js.css" />
+    <link rel="stylesheet" href="{{VIEW}}css/custom-player--v{{site.LocalStorageStamp}}.css" />
+    <link rel="stylesheet" data-required="true" href="{{VIEW}}css/style--v{{site.LocalStorageStamp}}.css" />
+    <link rel="stylesheet" data-required="true" href="{{VIEW}}css/landing/style--v{{site.LocalStorageStamp}}.css" />
+    {{#site.style}}
+        <link rel="stylesheet" href="{{site.style}}" />
+    {{/site.style}}
+</head>
+<body class="{{site.language}}{{#kcpack}} kcpack{{/kcpack}}" aria-live="polite">
+
+<header class="header" id="header" data-signup="false">
+    <div class="header__nav header__nav--desktop">
+        <a data-handler="onRedirectHome" class="header__logo-wrapper">
+            <img class="header__logo" src="{{site.logo}}" alt="{{site.config.portalTitle}}" title="" />
+        </a>
+
+        <div data-ctrl="LibMenu" id="libMenu" class="header-item header-item--library"></div>
+
+        <div class="search">
+            <form class="search__form" data-id="search-form" action="#" data-size="fixed">
+                <button class="search__open" data-handler="onSearchForm" data-id="search-open" tabindex="-1">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+                <button class="search__close" data-id="search-close" type="reset" tabindex="-1">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                <input class="search__input" data-id="search-input" type="text" placeholder="{{mui.header.search}}">
+                <button class="search__find" data-id="search-find" type="submit" aria-labelledby="search-button-label">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+                <div hidden id="search-button-label">{{mui.header.search}}</div>
+            </form>
+        </div>
+
+        <div class="header-item header-item--menu">
+            <span class="header-item__title">{{mui.header.menu}}
+                <div class="fa fa-angle-down"></div>
+            </span>
+            <div class="header-item__submenu">
+                <div class="header-item__subitems" data-ctrl="MainMenu">
+                    {{#items}}
+                        <a class="header-item__subitem" href="{{url}}">{{name}}</a>
+                    {{/items}}
+                </div>
+            </div>
+        </div>
+
+        {{#user}}
+
+            <div class="header-item header-item--my-learning">
+                <a href="{{myLearningUrl}}">{{mui.login.mylearning}}</a>
+            </div>
+            <div class="header-item header-item--user">
+                <span class="header-item__title"><a href="{{myAccountUrl}}">{{name}}</a><div class="fa fa-angle-down"></div></span>
+                <div class="header-item__submenu">
+                    <div class="header-item__subitems">
+                        <a class="header-item__subitem" href="{{myAccountUrl}}">{{mui.topMenuItems.myaccount}}</a>
+                        {{#user.myAdminToolsUrl}}
+                            <a data-handler="onLoginToLMS" class="header-item__subitem" href="{{user.myAdminToolsUrl}}">{{mui.topMenuItems.admintools}}</a>
+                        {{/user.myAdminToolsUrl}}
+                        <a class="header-item__subitem" href="#" id="logoffLink" data-handler="onLogout">{{mui.login.logoutLink}}</a>
+
+                    </div>
+                </div>
+            </div>
+
+        {{/user}}
+
+        {{^user}}
+
+            <div class="header-item header-item--sign-in">
+                <button id="loginlink" data-handler="onLoginForm">{{mui.header.signIn}}</button>
+            </div>
+
+        {{/user}}
+
+        <div class="header-item header-item--lang" data-ctrl="MainMenu">
+            {{#languages.dropdown}}
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown"
+                   href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    {{languages.current}}  <i class="fa fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    {{#languages.items}}
+                    <li data-lang="{{code}}"><a data-reload="1" href="{{href}}">{{title}}</a></li>
+                    {{/languages.items}}
+                </ul>
+            </li>
+            {{/languages.dropdown}}
+            {{^languages.dropdown}}
+            {{#languages.items}}
+            <span data-lang="{{code}}">
+                <a data-reload="1" href="{{href}}">{{title}}</a>
+            </span>
+            {{/languages.items}}
+            {{/languages.dropdown}}
+        </div>
+
+        <div class="header-item header-item--burger" id="bars" data-handler="onMobMenu"></div>
+    </div>
+
+    <div id="usermenu" class="leftMobMenu">
+        <div class="leftMobMenu-sub">
+            <div class="leftMobMenu-head">
+
+
+                <div class="search">
+                    <form class="search__form" data-id="search-form" action="#" data-size="fixed">
+                        <button class="search__open" data-handler="onSearchForm" data-id="search-open">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                        <button class="search__close" data-id="search-close" type="reset">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                        <input class="search__input" data-id="search-input" type="text" placeholder="{{mui.header.search}}">
+                        <button class="search__find" data-id="search-find" type="submit">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div id="leftMobMenuClose"></div>
+            </div>
+
+
+            {{#user}}
+            <div class="leftMobMenu-username">{{name}}</div>
+            <a class="leftMobMenu-l" href="{{myLearningUrl}}">{{mui.login.mylearning}}</a>
+            <a class="leftMobMenu-l" href="{{myAccountUrl}}">{{mui.topMenuItems.myaccount}}</a>
+            {{/user}}
+
+
+            <div data-ctrl="LibMobMenu" id="libMobMenu2"></div>
+            <div class="drop_m_block">
+                <div class="drop_m_title"><span>{{mui.header.menu}}</span>
+                    <div class="arrow-item__icon">
+                        <div class="fa fa-angle-down"></div>
+                    </div>
+                </div>
+                <div class="drop_m_sub" data-ctrl="MainMenu">
+                    {{#items}}
+                    <a class="header-item__subitem" href="{{url}}">{{name}}</a>
+                    {{/items}}
+                </div>
+            </div>
+
+            {{^user}}
+            <div class="drop_m_block">
+                <div class="drop_m_title"><span>{{mui.header.signUp}}</span>
+                    <div class="arrow-item__icon">
+                        <div class="fa fa-angle-down"></div>
+                    </div>
+                </div>
+                <div class="drop_m_sub">
+                                <a class="header-item__subitem" href="#" data-handler="onSignUp" data-type="individual">{{mui.header.product.individual}}</a>
+                                <a class="header-item__subitem" href="#" data-handler="onSignUp">{{mui.header.product.business}}</a>
+                                <a class="header-item__subitem" href="#" data-handler="onSignUp" data-type="academic">{{mui.header.product.academic}}</a>
+                                <a class="header-item__subitem" href="#" data-handler="onSignUp" data-type="government">{{mui.header.product.government}}</a>
+                                <a class="header-item__subitem" href="#" data-handler="onSignUp" data-type="library">{{mui.header.product.library}}</a>
+                </div>
+            </div>
+            {{/user}}
+
+            <div class="leftMobMenu-bottom">
+                {{^user}}
+                <a href="#loginPopUp" id="loginlink-mob" data-handler="onLoginForm">{{mui.header.signIn}}</a>
+                {{/user}}
+                {{#user}}
+                <a href="#" id="logoffLink-mob" data-handler="onLogout">{{mui.login.logoutLink}}</a>
+                {{/user}}
+
+
+
+                    <div data-ctrl="MainMenu">
+                        {{^languages.dropdown}}
+                        {{#languages.items}}
+                        <span data-lang="{{code}}"><a data-reload="1" href="{{href}}">{{title}}</a></span>
+                        {{/languages.items}}
+                        {{/languages.dropdown}}
+                    </div>
+
+
+
+
+                <!--<div data-ctrl="MainMenu">-->
+                    <!--{{^languages.dropdown}}-->
+                    <!--{{#languages.items}}-->
+                    <!--<span data-lang="{{code}}"><a href="{{href}}">{{title}}</a></span>-->
+                    <!--{{/languages.items}}-->
+                    <!--{{/languages.dropdown}}-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+
+    <div class="header__nav header__nav--mobile">
+
+        <div data-ctrl="LibMobMenu" id="libMobMenu" class="header-item header-item--library"></div>
+
+        <div class="header-item header-item--menu">
+            <span class="header-item__title">{{mui.header.menu}}
+                <div class="fa fa-angle-down"></div>
+            </span>
+            <div class="header-item__submenu">
+
+                <div class="header-item__subitems">
+
+                    {{^user}}
+
+                    <div class="header-item__subitem header-item__subitem--sign-in">
+                        <a href="#loginPopUp" id="loginlink" data-handler="onLoginForm">{{mui.header.signIn}}</a>
+                    </div>
+
+                    {{/user}}
+
+                    <div data-ctrl="MainMenu">
+                        {{#languages.dropdown}}
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown"
+                               href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                {{languages.current}}  <i class="fa fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                {{#languages.items}}
+                                <li data-lang="{{code}}"><a href="{{href}}">{{title}}</a></li>
+                                {{/languages.items}}
+                            </ul>
+                        </li>
+                        {{/languages.dropdown}}
+                        {{^languages.dropdown}}
+                        {{#languages.items}}
+                        <div class="header-item__subitem">
+                        <span data-lang="{{code}}">
+                        <a href="{{href}}">{{title}}</a>
+                        </span>
+                        </div>
+                        {{/languages.items}}
+                        {{/languages.dropdown}}
+
+                        {{#items}}
+                        <a class="header-item__subitem" href="{{url}}">{{name}}</a>
+                        {{/items}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{#user}}
+        <div class="header-item header-item--my-learning-xs">
+            <a href="{{myLearningUrl}}">{{mui.login.mylearning}}</a>
+        </div>
+        {{/user}}
+
+        {{^user}}
+
+        <div class="header-item header-item--sign-up">
+            <span class="header-item__title">{{mui.header.signUp}}<div class="fa fa-angle-down"></div></span>
+            <div class="header-item__submenu">
+                <div class="header-item__subitems">
+                    <a class="header-item__subitem" href="#" data-handler="onSignUp" data-type="individual">{{mui.header.product.individual}}</a>
+                    <a class="header-item__subitem" href="#" data-handler="onSignUp">{{mui.header.product.business}}</a>
+                    <a class="header-item__subitem" href="#" data-handler="onSignUp" data-type="academic">{{mui.header.product.academic}}</a>
+                    <a class="header-item__subitem" href="#" data-handler="onSignUp" data-type="government">{{mui.header.product.government}}</a>
+                    <a class="header-item__subitem" href="#" data-handler="onSignUp" data-type="library">{{mui.header.product.library}}</a>
+                </div>
+            </div>
+        </div>
+
+        {{/user}}
+
+    </div>
+</header>
+
+<header class="header hidden" data-signup="true">
+    <div class="header__nav">
+        <a class="header__logo-wrapper" data-handler="onRedirectHome">
+            <img class="header__logo" src="{{site.logo}}" alt="{{site.config.portalTitle}}" title="" />
+        </a>
+    </div>
+</header>
+
+<div class="scroll-up--ctrl scroll-up"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></div>
+
+    <div class="contentBody" id="content">{{mui.txtLabels.contentLoading}}</div>
+<footer class="footer" id="footer" data-signup="false">
+    <div class="cnt bl-desktop">
+        <div class="footer-title">
+            <span class="footer-title__line"></span>
+            <span class="footer-title__caption">{{mui.footer.links}}</span>
+            <span class="footer-title__line"></span>
+        </div>
+        <ul class="footer-menu" data-ctrl="MainMenu">
+            {{#items}}
+            <li class="footer-menu__item">
+                <a class="footer-menu__link" href="{{url}}">{{name}}</a>
+            </li>
+            {{/items}}
+        </ul>
+        <hr class="footer__hr">
+        <p class="copyright">{{{mui.txtLabels.trademark}}}</p>
+    </div>
+
+    <div class="cnt bl-mobile">
+        <div class="drop_m_block">
+            <div class="footer-title__caption drop_m_title">{{mui.footer.links}}
+                <div class="arrow-item__icon">
+                    <div class="fa fa-angle-down"></div>
+                </div>
+            </div>
+            <div class="drop_m_sub">
+                <ul class="footer-menu" data-ctrl="MainMenu">
+                    {{#items}}
+                    <li class="footer-menu__item">
+                        <a class="footer-menu__link" href="{{url}}">{{name}}</a>
+                    </li>
+                    {{/items}}
+                </ul>
+            </div>
+        </div>
+        <div class="drop_m_block">
+            <div class="footer-title__caption drop_m_title">{{mui.footer.followUs}}
+                <div class="arrow-item__icon">
+                    <div class="fa fa-angle-down"></div>
+                </div>
+            </div>
+            <div class="drop_m_sub">
+
+                <div class="follow-us__links" itemscope itemtype="http://schema.org/Organization">
+                    <link itemprop="url" href="https://www.knowledgecity.com">
+                    <a class="follow-us__link" href="https://www.facebook.com/pages/KnowledgeCitycom/164313483578961?ref=br_tf" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a class="follow-us__link" itemprop="sameAs" href="https://plus.google.com/106653017116356481304" target="_blank">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                    <a class="follow-us__link" itemprop="sameAs" href="https://twitter.com/Knowledge_City" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="follow-us__link" itemprop="sameAs" href="https://www.linkedin.com/company/knowledgecity" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a class="follow-us__link" itemprop="sameAs" href="https://www.knowledgecity.com/blog" target="_blank">
+                        <i class="icon-knowledgecity"></i>
+                    </a>
+                    <a class="follow-us__link" itemprop="sameAs" href="https://www.youtube.com/user/knowledgeocity/" target="_blank">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </div>
+
+
+
+                <div class="footer-xs__blue-seal">
+                    <a class="blue-seal-xs footer__blue-seal" href="https://www.bbb.org/sdoc/business-reviews/scholastic-prep-courses-books-and-materials/knowledgecity-in-carlsbad-ca-171988452/#bbbonlineclick" target="_blank"><span>BBB Rating: A+<br>Click to Review</span></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="drop_m_block">
+            <div class="footer-title__caption drop_m_title">{{mui.footer.contactUs}}
+                <div class="arrow-item__icon">
+                    <div class="fa fa-angle-down"></div>
+                </div>
+            </div>
+            <div class="drop_m_sub">
+                <br>
+                <div class="footer-contacts__table">
+                    <div class="footer-contacts__row">
+                            <span class="footer-contacts__icon-wrapper">
+                                <i class="icon icon-map"></i>
+                            </span>
+                        <div class="footer-contacts__caption">
+                            <a class="footer-contacts__link" href="https://www.google.com/maps/place/2218+Faraday+Ave+%23130,+Carlsbad,+CA+92008/@33.1342015,-117.2794748,7713m/data=!3m1!1e3!4m5!3m4!1s0x80dc736ff836c843:0xcaedf9c5bc471dd8!8m2!3d33.1346673!4d-117.2797394?hl=en-EN" target="_blank">{{{mui.contacts.address}}}</a>
+                        </div>
+                    </div>
+                    <div class="footer-contacts__row">
+                            <span class="footer-contacts__icon-wrapper">
+                                <i class="icon icon-tel"></i>
+                            </span>
+                        <div class="footer-contacts__caption">
+                            <a class="footer-contacts__link" href="tel:8884942075">{{mui.contacts.phone}}</a>
+                        </div>
+                    </div>
+                    <div class="footer-contacts__row">
+                            <span class="footer-contacts__icon-wrapper">
+                                <i class="icon icon-mail"></i>
+                            </span>
+                        <div class="footer-contacts__caption">
+                            <a class="footer-contacts__link" href="mailto:Contact-Us@knowledgecity.com">{{mui.contacts.mail}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__col">
+            {{^user}}
+            <a class="btn footer__btn" data-handler="onSignUp">{{mui.buttonLabel.tryItFree}}</a>
+            {{/user}}
+        </div>
+        <hr class="footer__hr">
+        <p class="copyright"><a href="{{site.links.privacy}}" target="_blank">{{mui.footer.privacy}}</a>&nbsp;|&nbsp;<a href="{{site.links.terms}}" target="_blank">{{mui.footer.terms}}</a>&nbsp;|&nbsp;{{mui.footer.copyright}}</p>
+    </div>
+</footer>
+
+<footer class="footer hidden" data-signup="true">
+    <div class="cnt">
+        <p class="copyright"><a href="{{site.links.privacy}}" target="_blank">{{mui.footer.privacy}}</a>&nbsp;|&nbsp;<a href="{{site.links.terms}}" target="_blank">{{mui.footer.terms}}</a>&nbsp;|&nbsp;{{mui.footer.copyright}}</p>
+    </div>
+</footer>
+
+<!--Alerting windows-->
+<div id="dangerWindow" class="modal" style="display: none;">
+    <div class="content">
+        <div class="modal__text" rel="text"></div>
+        <div class="text-center"><input type="button" rel="confirm" value="{{mui.buttonLabel.ok}}" class="btn btn--lg"></div>
+    </div>
+</div>
+<div id="alertWindow" class="modal" style="display: none;">
+    <a  rel="closeModal" class="modal__close modal_close">×</a>
+    <div class="content">
+        <div class="modal__text" rel="text"></div>
+        <div class="text-center"><input type="button" rel="closeOk" value="{{mui.buttonLabel.ok}}" class="btn btn--lg"></div>
+    </div>
+</div>
+<div id="confirmWindow" class="modal" style="display: none;">
+    <a  rel="closeModal" class="modal__close modal_close">×</a>
+    <div class="content">
+        <div class="modal__text" rel="text" id="modal__text"></div>
+        <div class="text-center btns-group">
+            <input type="button" rel="confirm" value="{{mui.buttonLabel.ok}}" class="btn btn--lg">
+            <input type="button" rel="closeOk" value="{{mui.buttonLabel.cancel}}" class="btn btn--lg">
+        </div>
+    </div>
+</div>
+<div id="invitationWindow" class="modal alert-danger" style="display: none;">
+    <a  rel="closeModal" class="modal__close modal_close">×</a>
+    <div class="content">
+        <div class="modal__text" rel="text" id="loginRequired-modal__text"></div>
+        <div class="text-center btns-group">
+            <!-- <input type="button" rel="join" value="{{mui.buttonLabel.join}}" class="btn btn--lg"> -->
+            <input type="button" rel="login" value="{{mui.buttonLabel.login}}" class="btn btn--lg" aria-labelledby="loginRequired-modal__text">
+            <input type="button" rel="closeOk" value="{{mui.buttonLabel.later}}" class="btn btn--lg">
+        </div>
+    </div>
+</div>
+<div id="getAccessWindow" class="modal alert-danger" style="display: none;">
+    <a  rel="closeModal" class="modal__close modal_close">×</a>
+    <div class="content">
+        <div class="modal__text" rel="text"></div>
+        <div class="text-center btns-group">
+            <input type="button" rel="getAccess" value="Get Access" class="btn btn--lg">
+        </div>
+    </div>
+</div>
+<div id="loading-overlay" class="loading-overlay">
+    <div class="loader">
+        <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+    </div>
+</div>
+
+<a href="/{{site.language}}/messenger" class="msnger-link">
+	<div class="messenger-comment-container jump">
+		<i class="fa fa-comment fa-lg" aria-hidden="true"></i>
+		<span class="messenger-total-messages hide"></span>
+	</div>
+</a>
+{{{#site.getClickyID}}}
+<!-- CLICKY -->
+<noindex><a title="Real Time Web Analytics" href="//clicky.com/{{site.getClickyID}}" rel="nofollow"></a></noindex>
+<!-- /CLICKY -->
+{{{/site.getClickyID}}}
+
+{{{#site.googleAnalytics}}}
+{{{site.googleAnalytics}}}
+{{{/site.googleAnalytics}}}
+
+{{{#site.arbitraryCode}}}
+{{{site.arbitraryCode}}}
+{{{/site.arbitraryCode}}}
+
+</body>
+</html>

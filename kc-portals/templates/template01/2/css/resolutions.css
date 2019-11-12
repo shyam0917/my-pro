@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* lg */
+@media (min-width: 1200px) {
+ div.contentarea{width: 820px;}      
+}
+
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+ div.contentarea{width: 620px;}   
+}
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+    div.menu ul li{margin:0px 34px 0px 0px;}
+}
+
+/* xs */
+@media (max-width: 767px) {
+    footer div.col-middle{border: 1px solid #fff;border-left: 0px;border-right: 0px;padding: 15px 0px;margin: -5px 0px;}
+    div.menu ul li{margin:0px 20px 0px 0px;}
+
+    .bx-wrapper .bx-next{right: 10px !important;}
+    .bx-wrapper .bx-prev{left: 10px !important;}
+}
+
+@media (max-width: 991px) {
+    div.sidebarMenu div.content {
+        height: auto;
+    }
+    
+    div.contentarea {
+        float: none;
+    }
+    
+    div.sidebar {
+        float: none;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    div.certification-content div.bullets {
+        width: auto;
+    }
+}
+@media (max-width: 360px) {
+    div.certification-content div.text img {
+        float: none;
+        margin-left: 0;
+        width: 100%;        
+    }
+}
+@media (max-width: 500px) {
+    div.aboutus-content div.bottom-text img {
+        float: none;
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;        
+    }
+    div.myCourses div.daysLeftIco {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+    div.myCourses div.daysLeftIco div.text {
+        font-size: 14px;
+    }
+    div.myCourses div.totals {
+        margin-left: 0;
+    }
+    div.myCourses div.totals div.item {
+        font-size: 14px;
+    }
+    div.myCourses div.totals div.item div.lablel {
+        width: 125px;
+    }
+    div.contentarea {
+        min-height: auto;
+        padding-bottom: 30px;
+    }
+}
+@media (max-width: 320px) {
+    div.courseInfoBlock div.button {
+        margin-left: 0;
+        padding-left: 35px;
+        width: 120px;
+    }
+    div.courseInfoBlock div.button.feedback {
+        margin-left: 10px;
+        padding-left: 45px;
+        width: 110px;
+    }
+}
+@media (min-width: 360px) and (max-width: 400px) {
+    div.courseInfoBlock div.buttons {
+        float: left;
+    }
+    div.courseInfoBlock div.button {
+        margin-left: 0;
+        margin-right: 10px;
+        width: 130px;
+    }
+}
+@media (max-width: 599px) {
+  .menu-btn {
+    display: block;
+  }
+  div.menu ul {
+    height: 0;
+  }
+  div.menu.open .menu-btn { 
+    background-position: 0 bottom;
+    height: 31px;
+  }
+  div.menu.open ul {
+    height: auto;
+  }
+  div.menu ul li.active div.i-caret,
+  div.menu ul li:hover div.i-caret {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  #quiz_error.modalWindow div.content {
+    top: 50%;
+    margin-top: -69px;
+  }
+}

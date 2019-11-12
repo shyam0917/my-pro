@@ -1,0 +1,148 @@
+{
+  "courses": [
+    {
+      "id": "8eebf400-af7a-4a2f-9118-5e2babf648cf",
+      "course_id": "SAF1078",
+      "order": 0,
+      "title": "Title IX Compliance: Federally Funded Education Programs and Activities",
+      "firstLesson_guid": "d59fc72b-6a0b-4325-8178-bab563c30e42",
+      "introType": "video",
+      "course_type": "lessons",
+      "trt": 1916,
+      "course_title": "Title IX Compliance: Federally Funded Education Programs and Activities",
+      "is_promoted": 0
+    },
+    {
+      "id": "6a83bd61-fe41-4cfb-88fc-b9ef2ea16390",
+      "course_id": "SAF1091",
+      "order": 1,
+      "title": "Sexual Harassment Prevention: Employees",
+      "firstLesson_guid": "9816cb78-e277-48aa-946e-ce6784b8b00b",
+      "introType": "video",
+      "course_type": "lessons",
+      "trt": 2178,
+      "course_title": "Sexual Harassment Prevention: Employees",
+      "is_promoted": 0
+    },
+    {
+      "id": "2d619620-9258-4257-bd01-aac695b5b8cf",
+      "course_id": "SAF1092",
+      "order": 2,
+      "title": "Sexual Harassment Prevention: Managers and Supervisors",
+      "firstLesson_guid": "5823c349-6438-4f44-ba83-cc20c825ba43",
+      "introType": "video",
+      "course_type": "lessons",
+      "trt": 1946,
+      "course_title": "Sexual Harassment Prevention: Managers and Supervisors",
+      "is_promoted": 0
+    },
+    {
+      "id": "6f90a15f-8ef4-4fda-abad-1542923d8fac",
+      "course_id": "SAF1069",
+      "order": 3,
+      "title": "HIPAA Rules and Compliance",
+      "firstLesson_guid": "4e58c9c1-5ea7-427b-889b-139770d57c50",
+      "introType": "video",
+      "course_type": "lessons",
+      "trt": 1199,
+      "course_title": "HIPAA Rules and Compliance",
+      "is_promoted": 0
+    },
+    {
+      "id": "10c90d23-b0ce-44c7-b873-09b613297ad2",
+      "course_id": "SAF1064",
+      "order": 4,
+      "title": "Managing Bullying and Disruptive Behaviors",
+      "firstLesson_guid": "9d20c9c4-0c5c-4cc9-a539-afd519f14d55",
+      "introType": "video",
+      "course_type": "lessons",
+      "trt": 1360,
+      "course_title": "Managing Bullying and Disruptive Behaviors",
+      "is_promoted": 0
+    },
+    {
+      "id": "b33f4369-860c-4819-b280-bbea70a5e466",
+      "course_id": "COM1006",
+      "order": 5,
+      "title": "Sexual Assault Prevention",
+      "firstLesson_guid": "716f7931-bd35-4b2f-9c78-518100803258",
+      "introType": "video",
+      "course_type": "lessons",
+      "trt": 1350,
+      "course_title": "Sexual Assault Prevention",
+      "is_promoted": 0
+    },
+    {
+      "id": "84f0ee9d-0675-4117-a669-fce834f8d655",
+      "course_id": "SAF1065",
+      "order": 6,
+      "title": "Active Shooter: Surviving an Attack",
+      "firstLesson_guid": "335677e4-2a23-44c1-923d-8f05b60a7d2e",
+      "introType": "video",
+      "course_type": "lessons",
+      "trt": 893,
+      "course_title": "Active Shooter: Surviving an Attack",
+      "is_promoted": 0
+    },
+    {
+      "id": "6c3d27fb-3357-4932-aef7-66356fc26bf5",
+      "course_id": "COM1000",
+      "order": 7,
+      "title": "ADA Compliance: Providing Reasonable Accommodation for Employees",
+      "firstLesson_guid": "e1519b3f-420a-49e9-8664-66acb91d0ec5",
+      "introType": "video",
+      "course_type": "lessons",
+      "trt": 994,
+      "course_title": "ADA Compliance: Providing Reasonable Accommodation for Employees",
+      "is_promoted": 0
+    },
+    {
+      "id": "728ccdc0-4fec-402f-ae39-17e743c4e0db",
+      "course_id": "COM1001",
+      "order": 8,
+      "title": "ADA Compliance: Providing Reasonable Accommodation for the Public",
+      "firstLesson_guid": "fb81c6dd-0a8d-400d-b6c6-3cdca73f6b8c",
+      "introType": "video",
+      "course_type": "lessons",
+      "trt": 951,
+      "course_title": "ADA Compliance: Providing Reasonable Accommodation for the Public",
+      "is_promoted": 0
+    },
+    {
+      "id": "a69c3790-9309-46e0-be87-141531da3528",
+      "course_id": "SAF1076",
+      "order": 9,
+      "title": "Reporting Child Abuse: Mandated Reporters",
+      "firstLesson_guid": "71608ab5-6fa8-452d-92f9-1cf4314d39bf",
+      "introType": "video",
+      "course_type": "lessons",
+      "trt": 3346,
+      "course_title": "Reporting Child Abuse: Mandated Reporters",
+      "is_promoted": 0
+    },
+    {
+      "id": "402a5ccd-8bc3-4dba-b08b-4e83d47d4e5c",
+      "course_id": "COM1005",
+      "order": 10,
+      "title": "Alcohol Risk Reduction",
+      "firstLesson_guid": "4f6f2340-4371-4a11-8607-7919a321dacb",
+      "introType": "video",
+      "course_type": "lessons",
+      "trt": 1548,
+      "course_title": "Alcohol Risk Reduction",
+      "is_promoted": 0
+    },
+    {
+      "id": "c8672bdb-b69c-4d7c-b2a8-daa18ff5ed84",
+      "course_id": "SAF1095",
+      "order": 11,
+      "title": "Learn to protect yourself from a stalker",
+      "firstLesson_guid": "362d4093-6310-4c5e-b457-948e6378fd61",
+      "introType": "video",
+      "course_type": "lessons",
+      "trt": 919,
+      "course_title": "Learn to protect yourself from a stalker",
+      "is_promoted": 0
+    }
+  ]
+}

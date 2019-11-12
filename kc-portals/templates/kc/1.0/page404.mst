@@ -1,0 +1,29 @@
+<div class="inner-top">
+    <div class="cnt">
+        <div class="inner-top__library">
+            <h2 class="inner-top__title">&nbsp;</h2>
+            <p class="inner-top__subtitle">&nbsp;</p>
+        </div>
+        <div class="inner-top__current">
+            <h2 class="inner-top__title">&nbsp;</h2>
+            <p class="inner-top__subtitle">&nbsp;</p>
+        </div>
+    </div>
+</div>
+
+<div class="inner-page">
+    <div class="cnt">
+        
+        <div class="page404">
+            <div class="page404-img">
+                <img src="{{VIEW}}images/404--v{{site.LocalStorageStamp}}.svg">
+            </div>
+                <div class="page404-info">
+                {{{mui.Page404.info}}}
+                <a class="btn" href="/">{{mui.page404.btn}} {{mui.Page404.btn}}</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+

@@ -1,0 +1,39 @@
+<div class="content abuse-modal">
+  <div class="abuse-modal__title">
+    {{course_abuse_modal.title}}
+  </div>
+
+  <ul class="is_hidden abuse-modal__categories" id="abuse-categories">
+    {{#isBack}}
+    <li class="abuse-modal__categories-item">
+      <span class="abuse-modal__categories-link abuse-modal__categories-link--back" data-handler="onBack">Back</span>
+    </li>
+    {{/isBack}}
+    {{#categories}}
+    <li class="abuse-modal__categories-item">
+      <span class="abuse-modal__categories-link" data-handler="onSelectAbuseCategory" data-id="{{id}}">{{title}}</span>
+    </li>
+    {{/categories}}
+  </ul>
+
+  <div class="is_hidden nabuse-form" id="abuse-form">
+    <div class="abuse-form__title">{{title}}</div>
+    <div class="abuse-form__dsc">
+      {{{dsc}}}
+    </div>
+    <div class="abuse-form__area">
+      <textarea type="text" class="flex-form__input flex-form__input--textarea flex-form__input--abuse-form"
+                name="description" placeholder="{{mui.formlabel.message}}"></textarea>
+    </div>
+  </div>
+
+  <div class="is_hidden" id="abuse-success">
+    {{course_abuse_modal.success_message}}
+  </div>
+
+  <div class="abuse-form__action text-center btns-group">
+    <span data-handler="onClose" class="button">{{mui.buttonLabel.close}}</span>
+    <span data-handler="onSend" class="button is_hidden">{{mui.buttonLabel.send}}</span>
+  </div>
+
+</div>

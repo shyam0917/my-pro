@@ -1,0 +1,30 @@
+.header {
+    background: rgba(50,90,137,0.7);
+}
+.header-item__subitems {
+    background: rgba(0,33,66,0.8);
+}
+.header-item__sideitems {
+    background: rgba(0,33,66,0.8);
+}
+
+.promo {
+    overflow: hidden;
+    background: url(../../images/promo/yu/index-promo-bg-blue.jpg) no-repeat 0 0;
+    background-size: cover;
+}
+.promo::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: rgba(0,33,66,0.4);
+    z-index: 1;
+}
+.footer {
+    background: #15476F;
+}

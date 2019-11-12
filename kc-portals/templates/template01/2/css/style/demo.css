@@ -1,0 +1,84 @@
+.course-item__name{
+	font-size: 14.5px;
+}
+
+.main-clients{
+	display: none;
+}
+
+
+.main-library__list .course-item .course-item__list li.communication-skills::before,
+.main-library__list .course-item .course-item__list li.habilidades-de-comunicacion::before {
+  background-image: url('../../images/assets/featured-categories/business/icon1--v123456.png');
+}
+.main-library__list .course-item .course-item__list li.leadership::before,
+.main-library__list .course-item .course-item__list li.liderazgo::before {
+  background-image: url('../../images/assets/featured-categories/business/icon2--v123456.png');
+}
+.main-library__list .course-item .course-item__list li.customer-service::before,
+.main-library__list .course-item .course-item__list li.administracion::before {
+  background-image: url('../../images/assets/featured-categories/business/icon3--v123456.png');
+}
+
+.main-library__list .course-item .course-item__list li.federal-laws-and-regulations::before,
+.main-library__list .course-item .course-item__list li.leyes-y-regulaciones-federales::before {
+  background-image: url('../../images/assets/featured-categories/compliance/icon1--v123456.png');
+}
+
+.main-library__list .course-item .course-item__list li.prevencion-de-acoso-sexual::before {
+  background-image: url('../../images/assets/featured-categories/compliance/icon1_es--v123456.png');
+}
+.main-library__list .course-item .course-item__list li.sexual-harassment-prevention::before {
+  background-image: url('../../images/assets/featured-categories/compliance/icon2--v123456.png');
+}
+
+.main-library__list .course-item .course-item__list li.comunicacion-de-peligros::before {
+  background-image: url('../../images/assets/featured-categories/compliance/icon2_es--v123456.png');
+}
+
+.main-library__list .course-item .course-item__list li.bloodborne-pathogens::before,
+.main-library__list .course-item .course-item__list li.patogenos-en-la-sangre::before {
+  background-image: url('../../images/assets/featured-categories/compliance/icon3--v123456.png');
+}
+
+.main-library__list .course-item .course-item__list li.seguridad-de-trabajo::before {
+  background-image: url('../../images/assets/featured-categories/compliance/icon3_es--v123456.png');
+}
+.main-library__list .course-item .course-item__list li.operating-systems::before,
+.main-library__list .course-item .course-item__list li.sistemas-operativos::before {
+  background-image: url('../../images/assets/featured-categories/computer/icon1--v123456.png');
+}
+.main-library__list .course-item .course-item__list li.microsoft-office-2016::before,
+.main-library__list .course-item .course-item__list li.microsoft-office-2013::before,
+.main-library__list .course-item .course-item__list li.microsoft-office-2010::before {
+  background-image: url('../../images/assets/featured-categories/computer/icon2--v123456.png');
+}
+.main-library__list .course-item .course-item__list li.adobe-creative-cloud::before {
+  background-image: url('../../images/assets/featured-categories/computer/icon3--v123456.png');
+}
+
+.main-library__list .course-item .course-item__list li.workplace-physical-safety::before,
+.main-library__list .course-item .course-item__list li.seguridad-fisica-en-el-trabajo::before {
+  background-image: url('../../images/assets/featured-categories/safety/icon1--v123456.png');
+}
+.main-library__list .course-item .course-item__list li.safety-administration::before,
+.main-library__list .course-item .course-item__list li.seguridad-social::before {
+  background-image: url('../../images/assets/featured-categories/safety/icon2--v123456.png');
+}
+.main-library__list .course-item .course-item__list li.general-safety::before,
+.main-library__list .course-item .course-item__list li.seguridad-fisica-en-la-industria::before {
+  background-image: url('../../images/assets/featured-categories/safety/icon3--v123456.png');
+}
+
+.main-library__list .course-item .course-item__list li.treasury-management::before,
+.main-library__list .course-item .course-item__list li.administracion-de-tesoreria::before {
+  background-image: url('../../images/assets/featured-categories/finance/icon1--v123456.png');
+}
+.main-library__list .course-item .course-item__list li.regulatory-compliance::before,
+.main-library__list .course-item .course-item__list li.regulacion-y-cumplimiento::before {
+  background-image: url('../../images/assets/featured-categories/finance/icon2--v123456.png');
+}
+.main-library__list .course-item .course-item__list li.fraud-prevention::before,
+.main-library__list .course-item .course-item__list li.prevencion-de-fraude::before {
+  background-image: url('../../images/assets/featured-categories/finance/icon3--v123456.png');
+}

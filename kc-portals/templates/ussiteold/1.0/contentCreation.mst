@@ -1,0 +1,265 @@
+<section class="inner-header--cc">
+<div class="cnt">
+    <div class="inner-header-title">
+      <h1>{{heroTitle}}</h1>
+      <p class="inner-header-cc__subtitle">{{heroSubtitle}}</p>
+      <a data-handler="onScrollNode" data-to="#contact-us-cc" class="btn sign-up contactus">{{heroButton}}</a>
+    </div>
+  </div>
+</section>
+
+<section class="cc-intro">
+  <div class="cnt-wide">
+    <div class="clear-icon-boxes cc-icon-boxes">
+      <div class="clear-icon-box">
+        <img src="{{VIEW}}images/Icon_video-library--v{{site.LocalStorageStamp}}.png" alt="">
+        <h4>{{iconsDesignTitle}}</h4>
+        <p class="icon-text">{{iconsDesignDescription}}</p>
+      </div>
+      <div class="clear-icon-box">
+        <img src="{{VIEW}}images/Icon_camera--v{{site.LocalStorageStamp}}.png" alt="">
+        <h4>{{iconsVideoTitle}}</h4>
+        <p class="icon-text">{{iconsVideoDescription}}</p>
+      </div>
+      <div class="clear-icon-box">
+        <img src="{{VIEW}}images/Icon_Recording--v{{site.LocalStorageStamp}}.png" alt="">
+        <h4>{{iconsVoiceTitle}}</h4>
+        <p class="icon-text">{{iconsVoiceDescription}}</p>
+      </div>
+      <div class="clear-icon-box">
+        <img src="{{VIEW}}images/Icon_animation--v{{site.LocalStorageStamp}}.png" alt="">
+        <h4>{{iconsAnimationsTitle}}</h4>
+        <p class="icon-text">{{iconsAnimationsDescription}}</p>
+      </div>
+      <div class="clear-icon-box">
+        <img src="{{VIEW}}images/Icon_Sotryboard--v{{site.LocalStorageStamp}}.png" alt="">
+        <h4>{{iconsStoryboardingTitle}}</h4>
+        <p class="icon-text">{{iconsStoryboardingDescription}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cc-cta">
+  <div class="cnt-wide">
+    <div class="cta cc-cta">
+      <div>{{ribbonTitle1}} <a data-handler="onScrollNode" data-to="#contact-us-cc" class="orange-underline">{{ribbonTitle2}}</a> {{ribbonTitle3}}</div>
+    </div>
+  </div>
+</section>
+
+
+<section class="cc-section-1">
+  <div class="cnt-wide">
+    <div class="twocolumns_cc">
+      <div class="twocolumns__cc__space"></div>
+      <div class="twocolumns__cc__text"><h2>{{preproductionTitle}}</h2>
+        <hr align="left" class="orangebar">
+        <p>{{preproductionDescription}}</p>
+        <div>
+          <div class="cc-bullets">
+            <ul>
+              <li><span style="color:#e78234">• </span>{{preproductionList1}}</li>
+              <li><span style="color:#e78234">• </span>{{preproductionList2}}</li>
+              <li><span style="color:#e78234">• </span>{{preproductionList3}}</li>
+            </ul>
+          </div>
+          <div class="cc-bullets">
+            <ul>
+              <li><span style="color:#e78234">• </span>{{preproductionList4}}</li>
+              <li><span style="color:#e78234">• </span>{{preproductionList5}}</li>
+              <li><span style="color:#e78234">• </span>{{preproductionList6}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="cc-section-2">
+  <div class="cnt-wide">
+    <div class="twocolumns_cc">
+      <div  class="twocolumns__cc__text"><h2>{{recordingTitle}}</h2>
+        <hr align="left" class="orangebar">
+        <p>{{recordingDescription}} </p>
+        <div>
+          <div class="cc-bullets">
+            <ul>
+              <li><span style="color:#e78234">• </span>{{recordingList1}}</li>
+              <li><span style="color:#e78234">• </span>{{recordingList2}}</li>
+              <li><span style="color:#e78234">• </span>{{recordingList3}}</li>
+            </ul>
+          </div>
+          <div class="cc-bullets">
+            <ul>
+              <li><span style="color:#e78234">• </span>{{recordingList4}}</li>
+              <li><span style="color:#e78234">• </span>{{recordingList5}}</li>
+              <li><span style="color:#e78234">• </span>{{recordingList6}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cc-section-3">
+  <div class="cnt-wide">
+    <div class="twocolumns_cc">
+      <div class="twocolumns__cc__space"></div>
+      <div class="twocolumns__cc__text"><h2>{{courseDesignTitle}}</h2>
+        <hr align="left" class="orangebar">
+        <p>{{courseDesignSubtitle}}</p>
+        <div>
+          <div class="cc-bullets">
+            <ul>
+              <li><span style="color:#e78234">• </span>{{courseDesignList1}}</li>
+              <li><span style="color:#e78234">• </span>{{courseDesignList2}}</li>
+              <li><span style="color:#e78234">• </span>{{courseDesignList3}}</li>
+            </ul>
+          </div>
+          <div class="cc-bullets">
+            <ul>
+              <li><span style="color:#e78234">• </span>{{courseDesignList4}}</li>
+              <li><span style="color:#e78234">• </span>{{courseDesignList5}}</li>
+              <li><span style="color:#e78234">• </span>{{courseDesignList6}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section id="contact-us-cc" class="cc-cta">
+  <div class="cnt">
+    <div class="cta cc-cta">
+      <h2>{{contactFormTitle}}</h2>
+      <hr align="center" class="orangebar">
+      <p style="padding-top:0px;padding-bottom:0px;">{{contactFormDescription}}</p>
+      <form id="cc-contact" class="cc-contact_form" data-handler="onSubmitForm" method="post" action="">
+      <div class="cc-contact__column">
+        <input
+            type="text"
+            class="cc-contact__input"
+            value=""
+            id="name_f"
+            name="name_f"
+            placeholder="{{mui.pageContent.formlabel.name}}"
+            required="true"
+            data-invalidMessage="{{mui.form.requiredField.invalidName}}"
+        />
+        <input
+            type="email"
+            class="cc-contact__input"
+            value=""
+            id="email"
+            name="email"
+            placeholder="{{mui.pageContent.formlabel.email}}"
+            required="true"
+            data-invalidMessage="{{mui.form.requiredField.invalidEmail}}"
+            data-invalidMessageWrongType="{{mui.form.requiredField.invalidTypeEmail}}"
+        />
+        <textarea
+            class="cc-contact__textarea"
+            id="comments"
+            name="comments"
+            placeholder="{{mui.pageContent.formlabel.message}}"
+            required="true"
+            data-invalidMessage="{{mui.form.requiredField.invalidHowWeCanHelp}}"
+        ></textarea>
+      </div>
+      <div class="cc-contact__column">
+        <select name="subject" 
+            class="cc-contact__subject"
+            value=""
+            id="subject"
+            name="subject"
+            placeholder="{{mui.pageContent.formlabel.subject}}"
+            required="true"
+            data-invalidMessage="{{mui.form.requiredField.invalidSubject}}">
+          <option value="Content Creation">{{contactFormSubject}} {{contactFormSubjectContent}}</option>
+          <option value="Learning Library">{{contactFormSubject}} {{contactFormSubjectLearning}}</option>
+          <option value="LMS">{{contactFormSubject}} {{contactFormSubjectLms}}</option>
+          <option value="General">{{contactFormSubject}} {{contactFormSubjectGeneral}}</option>
+        </select>
+        <div class="select-boxes-wrapper">
+          <p class="select-boxes-title">{{contactFormCheckboxTitle}}</p>
+          <div class="select-boxes first">
+            <label><input type="checkbox" name="cc" value="Script Writing" > {{contactFormCheckboxList1}}</label>
+            <label><input type="checkbox" name="cc" value="Copy Editing" > {{contactFormCheckboxList2}}</label>
+            <label><input type="checkbox" name="cc" value="3D Animation"> {{contactFormCheckboxList3}}</label>
+            <label><input type="checkbox" name="cc" value="Language Localization"> {{contactFormCheckboxList4}}</label>
+            <label><input type="checkbox" name="cc" value="Course Design"> {{contactFormCheckboxList5}}</label>
+           </div>
+           <div class="select-boxes second" >
+            <label><input type="checkbox" name="cc" value="Proof Reading"> {{contactFormCheckboxList6}}</label>
+            <label><input type="checkbox" name="cc" value="Motion Graphics"> {{contactFormCheckboxList7}}</label>
+            <label><input type="checkbox" name="cc" value="Greenscreen Shooting"> {{contactFormCheckboxList8}}</label>
+            <label><input type="checkbox" name="cc" value="Gamification"> {{contactFormCheckboxList9}}</label>
+            <label><input type="checkbox" name="cc" value="Course Deployment"> {{contactFormCheckboxList10}}</label>
+          </div>
+          <div class="select-boxes third">
+            <label><input type="checkbox" name="cc" value="Storyboarding"> {{contactFormCheckboxList11}}</label>
+            <label><input type="checkbox" name="cc" value="Voiceover Recording"> {{contactFormCheckboxList12}}</label>
+            <label><input type="checkbox" name="cc" value="Character Creation"> {{contactFormCheckboxList13}}</label>
+            <label><input type="checkbox" name="cc" value="Test Creation"> {{contactFormCheckboxList14}}</label>
+            <label><input type="checkbox" name="cc" value="Course Hosting"> {{contactFormCheckboxList15}}</label>
+          </div>
+        </div>
+      </div>
+      <div class="cc-contact__row"><button class="cc-contact__btn btn" type="submit">{{mui.buttonLabel.submit}}</button>
+      </div>
+      
+    </form>
+    </div>
+  </div>
+</section>
+
+
+<section class="bottom-links" style="padding-top:40px;">
+  <div class="cnt-wide">
+    <div class="bot-columns">
+      <div class="">
+        <a href="{{site.url_with_lang}}learningLibrary"><div class="bottom-link__img">
+          <img src="{{VIEW}}images/Bottom-link_LL--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+          height:auto" alt="">
+        </div></a>
+          <h2>{{bottomLinksLearningTitle}}</h2>
+          <p>{{bottomLinksLearningDescription}} <a href="{{site.url_with_lang}}learningLibrary"> {{learnMore}}</a></p>
+      </div>
+      <div class="">
+        <a href="{{site.url_with_lang}}lms"><div class="bottom-link__img">
+          <img src="{{VIEW}}images/bottom-link_LMS--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+        height:auto" alt="">
+        </div>
+        </a>
+        <h2>{{bottomLinksLmsTitle}}</h2>
+        <p>{{bottomLinksLmsDescription}} <a href="{{site.url_with_lang}}lms">{{learnMore}}</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="index-clients">
+  <div class="cnt">
+    <!-- <h2 class="index-title">{{ourClients}}</h2> -->
+    <div class="index-clients__carousel owl-carousel" id="clientsCarousel">
+      {{#clients}}
+      <div class="index-client">
+        <img class="index-client__img" src="{{logo}}" alt=""/>
+      </div>
+      {{/clients}}
+    </div>
+    <div class="owl-nav">
+      <span class="owl-nav__prev" data-handler="onPrevClients"></span>
+      <span class="owl-nav__next" data-handler="onNextClients"></span>
+    </div>
+  </div>
+</section>
+

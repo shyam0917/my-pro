@@ -1,0 +1,29 @@
+<div class="inner-header text-align">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 float">
+				<h2 class="inner-header__title">{{mui.txtLabels.sidebarTitle}}</h2>
+				<p class="inner-header__subtitle">{{mui.txtLabels.sidebarText}}</p>
+			</div>
+			<div class="col-md-9 float">
+				<h2 class="inner-header__title">Course History</h2>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="inner-content text-align">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 float" data-ctrl="Sidebar" id="sidebar">
+				Loading sidebar...
+			</div>
+			<div class="col-md-9 float">
+				<div class="panel-b">
+					Course history will be here...
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

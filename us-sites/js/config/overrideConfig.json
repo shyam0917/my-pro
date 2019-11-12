@@ -1,0 +1,7 @@
+{
+  "version":                    "1.0",
+  "basePath":                   "/",
+  "APIUrl":                     "\/\/api.kc-viveka.d.knowledgecity.com\/v2\/",
+  "LMSUrl":                     "XXX.kc-viveka.d.knowledgecity.com",
+  "LocalStorageStamp":          "20"
+}

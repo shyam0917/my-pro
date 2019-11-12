@@ -1,0 +1,24 @@
+<div class="library-menu">
+	{{#sections}}
+	<div class="library-menu__category {{#active}} active {{/active}}" data-lvl="1">
+		<div class="library-menu__category-header">
+			<a href="{{url}}" class="library-menu__category-name">{{name}}</a>
+			<div class="library-menu__icon" data-handler="onToggleCategory">
+				<div class="library-menu__minus">&ndash;</div>
+				<div class="library-menu__plus">+</div>
+			</div>
+		</div>
+		<div class="library-menu__rubrics">
+			{{#categories_0}}
+			<div class="library-menu__rubric {{#active}} active {{/active}}"><a href="{{url}}">{{name}}</a></div>
+			<div class="library-menu__subrubrics">
+				{{#categories_1}}
+				<div class="library-menu__subrubric {{#active}} active {{/active}}"><a href="{{url}}">{{name}}</a></div>
+				{{/categories_1}}
+			</div>
+			{{/categories_0}}
+		</div>
+
+	</div>
+	{{/sections}}
+</div>

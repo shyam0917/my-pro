@@ -1,0 +1,37 @@
+<div class="inner-top">
+	<div class="cnt">
+		<div class="inner-top__library">
+			<h2 class="inner-top__title">{{mui.txtLabels.sidebarTitle}}</h2>
+			<p class="inner-top__subtitle">{{mui.txtLabels.sidebarText}}</p>
+		</div>
+		<div class="inner-top__current">
+			<h2 class="inner-top__title">{{title}}</h2>
+			<p class="inner-top__subtitle">{{subTitle}}</p>
+		</div>
+	</div>
+</div>
+
+<div class="inner-page">
+	<div class="cnt">
+		<div class="inner-page__sidebar">
+			<div data-ctrl="Sidebar" id="sidebar">
+				Loading sidebar...
+			</div>
+		</div>
+		<div class="inner-page__content">
+			<div class="panel-b panel-b--outsideTrainings">
+        {{#outsideTrainingsList}}
+        {{title}}
+				<div class="outsideTrainings-table">
+          {{#items}}
+					<div class="outsideTrainings-table__item">
+            <span class="subTitle">{{#label}}{{{label}}}: {{/label}}</span>
+            <a href="{{{url}}}" target="_blank">{{{url}}}</a>
+					</div>
+          {{/items}}
+				</div><br>
+        {{/outsideTrainingsList}}
+			</div>
+		</div>
+	</div>
+</div>

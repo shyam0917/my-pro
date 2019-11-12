@@ -1,0 +1,24 @@
+<div class="inner-top">
+    <div class="cnt">
+        <div class="inner-top__library">
+            <h2 class="inner-header__title">{{mui.txtLabels.sidebarTitle}}</h2>
+            <p class="inner-header__subtitle">{{mui.txtLabels.sidebarText}}</p>
+        </div>
+        <div class="inner-top__current" data-ctrl="LibTitle"  id="libtitle"></div>
+    </div>
+</div>
+
+<div class="inner-page">
+    <div class="cnt">
+        <div class="inner-page__sidebar inner-page__sidebar--library">
+          <div data-ctrl="Sidebar" id="sidebar">
+              Loading sidebar...
+          </div>
+        </div>
+        <div class="inner-page__content" >
+          <div data-ctrl="Items" id="items">
+            Loading items...
+          </div>
+        </div>
+    </div>
+</div>

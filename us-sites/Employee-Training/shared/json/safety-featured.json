@@ -1,0 +1,148 @@
+{
+  "courses": [
+    {
+      "id": "2d619620-9258-4257-bd01-aac695b5b8cf",
+      "course_id": "SAF1092",
+      "order": 0,
+      "title": "Sexual Harassment Prevention: Managers and Supervisors",
+      "firstLesson_guid": "5823c349-6438-4f44-ba83-cc20c825ba43",
+      "introType": "video",
+      "course_type": "lessons",
+      "trt": 1946,
+      "course_title": "Sexual Harassment Prevention: Managers and Supervisors",
+      "is_promoted": 0
+    },
+    {
+      "id": "6340a7a9-38d4-42a3-94de-5e9993ede91c",
+      "course_id": "SAF1075",
+      "order": 1,
+      "title": "Prevent Discrimination and Embrace Diversity",
+      "firstLesson_guid": "a121500a-0af8-40ac-a8e3-90cd5ce95126",
+      "introType": "video",
+      "course_type": "lessons",
+      "trt": 2807,
+      "course_title": "Prevent Discrimination and Embrace Diversity",
+      "is_promoted": 0
+    },
+    {
+      "id": "6f90a15f-8ef4-4fda-abad-1542923d8fac",
+      "course_id": "SAF1069",
+      "order": 2,
+      "title": "HIPAA Rules and Compliance",
+      "firstLesson_guid": "4e58c9c1-5ea7-427b-889b-139770d57c50",
+      "introType": "video",
+      "course_type": "lessons",
+      "trt": 1199,
+      "course_title": "HIPAA Rules and Compliance",
+      "is_promoted": 0
+    },
+    {
+      "id": "6c3d27fb-3357-4932-aef7-66356fc26bf5",
+      "course_id": "COM1000",
+      "order": 3,
+      "title": "ADA Compliance: Providing Reasonable Accommodation for Employees",
+      "firstLesson_guid": "e1519b3f-420a-49e9-8664-66acb91d0ec5",
+      "introType": "video",
+      "course_type": "lessons",
+      "trt": 994,
+      "course_title": "ADA Compliance: Providing Reasonable Accommodation for Employees",
+      "is_promoted": 0
+    },
+    {
+      "id": "381a2505-98ba-4754-a3a7-033982c752f8",
+      "course_id": "SAF1066",
+      "order": 4,
+      "title": "Bloodborne Pathogens at Work",
+      "firstLesson_guid": "e5a14e41-acab-4c3e-9b47-227674d42740",
+      "introType": "video",
+      "course_type": "lessons",
+      "trt": 1186,
+      "course_title": "Bloodborne Pathogens at Work",
+      "is_promoted": 0
+    },
+    {
+      "id": "b3b46786-5617-462a-af77-58e13c0decc9",
+      "course_id": "SAF1086",
+      "order": 5,
+      "title": "Introduction to OSHA",
+      "firstLesson_guid": "95b237a8-3d83-4cb9-844c-0f82f0c4f19e",
+      "introType": "video",
+      "course_type": "lessons",
+      "trt": 1276,
+      "course_title": "Introduction to OSHA",
+      "is_promoted": 0
+    },
+    {
+      "id": "71514f9c-0e05-4ab6-9500-8084056481b8",
+      "course_id": "SAF1088",
+      "order": 6,
+      "title": "Lockout/Tagout",
+      "firstLesson_guid": "689e0984-10a0-41ff-97c1-1eb6212d8820",
+      "introType": "video",
+      "course_type": "lessons",
+      "trt": 1282,
+      "course_title": "Lockout/Tagout",
+      "is_promoted": 0
+    },
+    {
+      "id": "b9232dc6-ee2b-49d8-b5f7-705527a7e10f",
+      "course_id": "SAF1011",
+      "order": 7,
+      "title": "Safety Housekeeping",
+      "firstLesson_guid": "48cfd133-7521-4ab1-9055-049ed64faafd",
+      "introType": "video",
+      "course_type": "lessons",
+      "trt": 853,
+      "course_title": "Safety Housekeeping",
+      "is_promoted": 0
+    },
+    {
+      "id": "10c90d23-b0ce-44c7-b873-09b613297ad2",
+      "course_id": "SAF1064",
+      "order": 8,
+      "title": "Managing Bullying and Disruptive Behaviors",
+      "firstLesson_guid": "9d20c9c4-0c5c-4cc9-a539-afd519f14d55",
+      "introType": "video",
+      "course_type": "lessons",
+      "trt": 1360,
+      "course_title": "Managing Bullying and Disruptive Behaviors",
+      "is_promoted": 0
+    },
+    {
+      "id": "d46fe4e0-c4e3-413b-afd6-a6d57c9f2e80",
+      "course_id": "SAF1074",
+      "order": 9,
+      "title": "Evacuation Procedures",
+      "firstLesson_guid": "f6a32cdf-bab7-4ee1-a703-8eb715a5802f",
+      "introType": "video",
+      "course_type": "lessons",
+      "trt": 1095,
+      "course_title": "Evacuation Procedures",
+      "is_promoted": 0
+    },
+    {
+      "id": "4b4aed68-8ab3-4b02-93e7-65fbd5bb3236",
+      "course_id": "SAF1070",
+      "order": 10,
+      "title": "Dealing with Drug and Alcohol Abuse for Employees",
+      "firstLesson_guid": "dbf06684-107b-4b74-a0a6-ccdfd1b346c8",
+      "introType": "video",
+      "course_type": "lessons",
+      "trt": 1106,
+      "course_title": "Dealing with Drug and Alcohol Abuse for Employees",
+      "is_promoted": 0
+    },
+    {
+      "id": "111d8115-7b60-4d89-b23b-fdc51d117b2d",
+      "course_id": "SAF1071",
+      "order": 11,
+      "title": "Dealing with Drug and Alcohol Abuse for Managers and Supervisors",
+      "firstLesson_guid": "2397b73f-90dd-4126-bf33-f5f90f200c4b",
+      "introType": "video",
+      "course_type": "lessons",
+      "trt": 1166,
+      "course_title": "Dealing with Drug and Alcohol Abuse for Managers and Supervisors",
+      "is_promoted": 0
+    }
+  ]
+}

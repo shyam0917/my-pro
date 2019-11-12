@@ -1,0 +1,83 @@
+<div class="inner-top">
+    <div class="cnt">
+        <div class="inner-top__library">
+            <h2 class="inner-top__title">{{mui.txtLabels.sidebarTitle}}</h2>
+            <p class="inner-top__subtitle">{{mui.txtLabels.sidebarText}}</p>
+        </div>
+        <div class="inner-top__current">
+            <h2 class="inner-top__title">{{title}}</h2>
+            <p class="inner-top__subtitle">{{subTitle}}</p>
+        </div>
+    </div>
+</div>
+
+<div class="inner-page">
+    <div class="cnt">
+        <div class="inner-page__sidebar">
+            <div data-ctrl="Sidebar" id="sidebar">
+                Loading sidebar...
+            </div>
+        </div>
+        <div class="inner-page__content">
+            <div class="panel-b">
+                <div class="flex-row">
+                    <div class="flex-col-4 flex-col-push-8">
+                        <img src="{{VIEW}}images/feature-1.png" class="features__img">
+                    </div>
+                    <div class="flex-col-8 flex-col-pull-4">
+                        <h3>{{Header1}}</h3><div>{{{Text1}}}</div>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <div class="flex-col-4">
+                        <img src="{{VIEW}}images/feature-2.png" class="features__img">
+                    </div>
+                    <div class="flex-col-8">
+                        <h3>{{Header2}}</h3><div>{{{Text2}}}</div>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <div class="flex-col-4 flex-col-push-8">
+                        <img src="{{VIEW}}images/feature-3.png" class="features__img">
+                    </div>
+                    <div class="flex-col-8 flex-col-pull-4">
+                        <h3>{{Header3}}</h3><div>{{{Text3}}}</div>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <div class="flex-col-4">
+                        <img src="{{VIEW}}images/feature-4.png" class="features__img">
+                    </div>
+                    <div class="flex-col-8">
+                        <h3>{{Header4}}</h3><div>{{{Text4}}}</div>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <div class="flex-col-4 flex-col-push-8">
+                        <img src="{{VIEW}}images/feature-5.png" class="features__img">
+                    </div>
+                    <div class="flex-col-8 flex-col-pull-4">
+                        <h3>{{Header5}}</h3><div>{{{Text5}}}</div>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <div class="flex-col-4">
+                        <img src="{{VIEW}}images/feature-6.png" class="features__img">
+                    </div>
+                    <div class="flex-col-8">
+                        <h3>{{Header6}}</h3><div>{{{Text6}}}</div>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <div class="flex-col-4 flex-col-push-8">
+                        <img src="{{VIEW}}images/feature-7.png" class="features__img">
+                    </div>
+                    <div class="flex-col-8 flex-col-pull-4">
+                        <h3>{{Header7}}</h3><div>{{{Text7}}}</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,457 @@
+
+AddCharset utf-8 .js
+
+<ifModule mod_headers.c>
+  Header set Access-Control-Allow-Origin "*"
+  Header set Connection keep-alive
+</ifModule>
+
+<IfModule mod_speling.c>
+    CheckCaseOnly on
+    CheckSpelling on
+</IfModule>
+
+RewriteRule ^robots\.txt$ /robots.txt.php [L]
+RewriteRule ^sitemap\.xml$ /sitemap.xml.php [L]
+RewriteRule ^.well-known/apple-app-site-association$ /.well-known/apple-app-site-association.php [L]
+RewriteRule ^.well-known/assetlinks\.json$ /.well-known/assetlinks.json.php [L]
+RewriteRule ^libraries(.*)$ /Employee-Training/libraries$1 [L,NC]
+RewriteRule ^libraries(.*)/libraries-thankyou.html$ /Employee-Training/libraries$1/libraries-thankyou.html [L,NC]
+RewriteRule ^CA$ /Employee-Training/CA$1 [L,NC]
+RewriteRule ^CA/ca-thankyou.html$ /Employee-Training/CA$1/ca-thankyou.html [L,NC]
+RewriteRule ^NY(.*)$ /Employee-Training/NY$1 [L,NC]
+RewriteRule ^NY(.*)/ny-thankyou.html$ /Employee-Training/NY$1/ny-thankyou.html [L,NC]
+
+# for non optimize engine
+DirectoryIndex index.htm
+
+# for optimize start
+#DirectoryIndex index.min.htm
+
+ErrorDocument 404 <script>location.href='/en/page404';</script>
+
+
+RewriteEngine On
+RewriteBase /
+
+#################################################################
+###### Redirects from old domain names to new domain names ######
+#################################################################
+
+# KC Blog
+RewriteCond %{HTTP_HOST} ^blog\.knowledgecity\.com$
+RewriteRule ^(.*)$ https://www.knowledgecity.com/blog/$1 [R=301,L]
+
+# Alturki (alturkilms.com)
+RewriteCond %{HTTP_HOST} ^alturki\.knowledgecity\.com$
+RewriteRule ^(.*)$ http://alturkilms.com/$1 [R=301,L]
+#RewriteCond %{HTTP_HOST} ^alturkilms\.com$
+#RewriteRule ^(.*)$ https://alturki.knowledgecity.com/$1 [R=301,L]
+
+# AlBilyad Bank
+RewriteCond %{HTTP_HOST} ^ba\.knowledgecity\.com$ [NC]
+RewriteRule ^(.*)$ https://albiladacademy.com/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^albiladacademy\.com
+RewriteRule ^(.*)$ https://albiladacademy.com/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(.*)\.albiladacademy\.com$ [NC]
+RewriteRule ^(.*)$ https://albiladacademy.com/$1 [R=301,L]
+
+# MEWA Academy
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^mewaacademy\.com
+RewriteRule ^(.*)$ https://mewaacademy.com/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(.*)\.mewaacademy\.com$ [NC]
+RewriteRule ^(.*)$ https://mewaacademy.com/$1 [R=301,L]
+
+# SFDA Academy
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^sfdaacademy\.com
+RewriteRule ^(.*)$ https://sfdaacademy.com/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(.*)\.sfdaacademy\.com$ [NC]
+RewriteRule ^(.*)$ https://sfdaacademy.com/$1 [R=301,L]
+
+# Saib
+RewriteCond %{HTTP_HOST} ^saib\.knowledgecity\.com$ [NC]
+RewriteRule ^(.*)$ http://saibacademy.com/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^saibacademy\.com
+RewriteRule ^(.*)$ https://saibacademy.com/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(.*)\.saibacademy\.com$ [NC]
+RewriteRule ^(.*)$ https://saibacademy.com/$1 [R=301,L]
+
+# RB
+RewriteCond %{HTTP_HOST} ^newrb\.knowledgecity\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^riyadacademy\.com$ [NC]
+RewriteRule ^(.*)$ https://riyadbankacademy.com/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^riyadbankacademy\.com$
+RewriteCond %{REQUEST_URI} ^/favicon.ico [NC]
+RewriteRule ^(.*)$ https://cdn0.knowledgecity.com/opencontent/portals/1fff1ed5-5441-4a5b-ab40-d5e520d7cc10/assets/images/favicon-16x16.png [R=303,L]
+
+# swccacademy
+RewriteCond %{HTTP_HOST} ^swcc\.knowledgecity\.com$ [NC]
+RewriteRule ^(.*)$ https://swccacademy.com/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^swccacademy\.com
+RewriteRule ^(.*)$ https://swccacademy.com/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(.*)\.swccacademy\.com$ [NC]
+RewriteRule ^(.*)$ https://swccacademy.com/$1 [R=301,L]
+
+
+# Al Rajhi Bank
+RewriteCond %{HTTP_HOST} ^alb\.knowledgecity\.com$ [NC]
+RewriteRule ^(.*)$ https://arb.knowledgecity.com/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^alrajhibankacademy\.com$
+RewriteCond %{REQUEST_URI} ^/favicon.ico [NC]
+RewriteRule ^(.*)$ https://cdn0.knowledgecity.com/opencontent/portals/7cc53e29-eccb-4aad-9298-65b779f35c7d/assets/images/favicon.ico [R=303,L]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^riyadbankacademy\.com
+RewriteRule ^(.*)$ https://riyadbankacademy.com/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(.*)\.riyadbankacademy\.com$ [NC]
+RewriteRule ^(.*)$ https://riyadbankacademy.com/$1 [R=301,L]
+
+# ALINMA BANK (alinmaacademy.com)
+RewriteCond %{HTTP_HOST} ^ab\.knowledgecity\.com$
+RewriteRule ^(.*)$ https://alinmaacademy.com/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^alinmaacademy\.com
+RewriteRule ^(.*)$ https://alinmaacademy.com/$1 [R=301,L]
+
+# ALJ
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^aljacademy\.com
+RewriteRule ^(.*)$ https://aljacademy.com/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^aljlearning\.com$ [NC]
+RewriteRule ^(.*)$ https://aljacademy.com/$1 [R=301,L]
+
+# SAGO
+RewriteCond %{HTTP_HOST} ^sago\.knowledgecity\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^sagotraining\.knowledgecity\.com$ [NC]
+RewriteRule ^(.*)$ https://st.knowledgecity.com/$1 [R=301,L]
+
+# Alturki
+RewriteCond %{HTTP_HOST} ^ah\.knowledgecity\.com$ [NC]
+RewriteRule ^(.*)$ http://alturkilms.com/$1 [R=301,L]
+
+#################################################################
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} /images/loader/logo-.*\.png$ [NC]
+RewriteRule ^.*$ images/loader/logo.png [L]
+
+## handle versioning using '+_rvt_+' "rivet" approach (release version tag)##
+# strip rvt from filename
+RewriteCond %{HTTP_HOST} .
+RewriteRule ^(.*)--v[0-9]+\.(html|srt|vtt|json|css|js|mst|jpg|jpeg|png|svg)$ $1.$2 [NC,L]
+
+# the below condition will redirect the request to PHP file which was made with a purpose of including noindex tag into index.htm code for all portals except for www. That is required becuase Bing does not render page before indexing the page and therefore does not see noindex tag which is getting rendered with JS after the page is loaded so Bing keeps indexing portals.
+RewriteCond %{HTTP_HOST} !^www\.(.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !\.(js)$
+RewriteRule ^.*$ /index.php [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !\.(js)$
+RewriteRule ^.*$ /index.htm [L,QSA]
+
+RewriteCond %{HTTP_HOST} ^knowledgecity\.com$ [NC]
+RewriteRule ^(.*)$ https://www.knowledgecity.com/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^w\.(.*)$ [OR]
+RewriteCond %{HTTP_HOST} ^ww\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+#RewriteCond %{HTTP_HOST} ^www\.(.*)$
+#RewriteCond %{HTTP_HOST} !^www\.kcexp\.pro$
+#RewriteCond %{HTTP_HOST} !^www\.kcdev\.pro$
+#RewriteCond %{HTTP_HOST} !^www\.kcstage\.pro$
+#RewriteCond %{HTTP_HOST} !^www\.knowledgecity\.loc$
+#RewriteCond %{HTTP_HOST} !^www\.(.*)\.kc-viveka.d.knowledgecity.com$ [NC]
+#RewriteCond %{HTTP_HOST} !^www\.knowledgecity\.com$ [NC]
+#RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+#RewriteCond %{HTTP:X-Forwarded-Proto} !https
+#RewriteCond %{HTTPS} off
+#RewriteCond %{HTTP_HOST} ^(.*)\.knowledgecity\.com$ [NC]
+#RewriteRule ^(.*)$ https://%1.knowledgecity.com/$1 [R=301,L]
+
+#SSO redirects
+RewriteCond %{HTTP_HOST} ^tamarac\.knowledgecity\.com$ [NC]
+RewriteRule ^(.*)$ https://www.knowledgecity.com?ssoid=6abae18b-a458-4e87-8377-7a2759d70e50 [R=302,L]
+
+# MENA
+Redirect 301 /mena/home.php https://mena.knowledgecity.com
+Redirect 301 /mena/ar/home.php https://mena.knowledgecity.com/#l-ar/
+Redirect 301 /mena/faq.php https://mena.knowledgecity.com/#l-en/faq
+Redirect 301 /mena/ar/faq.php https://mena.knowledgecity.com/#l-ar/faq
+Redirect 301 /mena/certification.php https://mena.knowledgecity.com/#l-en/certification
+Redirect 301 /mena/ar/certification.php https://mena.knowledgecity.com/#l-ar/certification
+Redirect 301 /mena/aboutus.php https://mena.knowledgecity.com
+Redirect 301 /mena/ar/aboutus.php https://mena.knowledgecity.com/#l-ar/
+Redirect 301 /mena/request.php https://mena.knowledgecity.com
+Redirect 301 /mena/ar/request.php https://mena.knowledgecity.com/#l-ar/
+Redirect 301 /mena/testimonials.php https://mena.knowledgecity.com
+Redirect 301 /mena/ar/Testimonials.php https://mena.knowledgecity.com/#l-ar/
+Redirect 301 /mena/clients.php https://mena.knowledgecity.com/#l-en/ourClients
+Redirect 301 /mena/ar/clients.php https://mena.knowledgecity.com/#l-ar/ourClients
+Redirect 301 /mena/contactus.php https://mena.knowledgecity.com/#l-en/contactUs
+Redirect 301 /mena/ar/contactus.php https://mena.knowledgecity.com/#l-ar/contactUs
+Redirect 301 /mena/myLearning.php https://mena.knowledgecity.com
+Redirect 301 /mena/ar/myLearning.php https://mena.knowledgecity.com/#l-ar/
+Redirect 301 /mena https://mena.knowledgecity.com
+Redirect 301 /mena/ar/ https://mena.knowledgecity.com/#l-ar/
+
+RewriteCond %{HTTP_HOST} ^kcmena.knowledgecity.com$ [NC]
+RewriteRule ^(.*)$ https://mena.knowledgecity.com/ [R=301,L]
+
+# TR
+Redirect 301 /tr/home.php https://tr.knowledgecity.com
+Redirect 301 /tr/ar/home.php https://tr.knowledgecity.com/#l-ar/
+Redirect 301 /tr/faq.php https://tr.knowledgecity.com/#l-en/faq
+Redirect 301 /tr/ar/faq.php https://tr.knowledgecity.com/#l-ar/faq
+Redirect 301 /tr/certification.php https://tr.knowledgecity.com/#l-en/certification
+Redirect 301 /tr/ar/certification.php https://tr.knowledgecity.com/#l-ar/certification
+Redirect 301 /tr/aboutus.php https://tr.knowledgecity.com
+Redirect 301 /tr/ar/aboutus.php https://tr.knowledgecity.com/#l-ar/
+Redirect 301 /tr/request.php https://tr.knowledgecity.com
+Redirect 301 /tr/ar/request.php https://tr.knowledgecity.com/#l-ar/
+Redirect 301 /tr/testimonials.php https://tr.knowledgecity.com
+Redirect 301 /tr/ar/Testimonials.php https://tr.knowledgecity.com/#l-ar/
+Redirect 301 /tr/clients.php https://tr.knowledgecity.com/#l-en/ourClients
+Redirect 301 /tr/ar/clients.php https://tr.knowledgecity.com/#l-ar/ourClients
+Redirect 301 /tr/contactus.php https://tr.knowledgecity.com/#l-en/contactUs
+Redirect 301 /tr/ar/contactus.php https://tr.knowledgecity.com/#l-ar/contactUs
+Redirect 301 /tr/myLearning.php https://tr.knowledgecity.com
+Redirect 301 /tr/ar/myLearning.php https://tr.knowledgecity.com/#l-ar/
+Redirect 301 /tr https://tr.knowledgecity.com
+Redirect 301 /tr/ar/ https://tr.knowledgecity.com/#l-ar/
+
+# SAIB
+Redirect 301 /saib/home.php https://saib.knowledgecity.com
+Redirect 301 /saib/ar/home.php https://saib.knowledgecity.com/#l-ar/
+Redirect 301 /saib/faq.php https://saib.knowledgecity.com/#l-en/faq
+Redirect 301 /saib/ar/faq.php https://saib.knowledgecity.com/#l-ar/faq
+Redirect 301 /saib/certification.php https://saib.knowledgecity.com/#l-en/certification
+Redirect 301 /saib/ar/certification.php https://saib.knowledgecity.com/#l-ar/certification
+Redirect 301 /saib/aboutus.php https://saib.knowledgecity.com
+Redirect 301 /saib/ar/aboutus.php https://saib.knowledgecity.com/#l-ar/
+Redirect 301 /saib/request.php https://saib.knowledgecity.com
+Redirect 301 /saib/ar/request.php https://saib.knowledgecity.com/#l-ar/
+Redirect 301 /saib/testimonials.php https://saib.knowledgecity.com
+Redirect 301 /saib/ar/Testimonials.php https://saib.knowledgecity.com/#l-ar/
+Redirect 301 /saib/clients.php https://saib.knowledgecity.com/#l-en/ourClients
+Redirect 301 /saib/ar/clients.php https://saib.knowledgecity.com/#l-ar/ourClients
+Redirect 301 /saib/contactus.php https://saib.knowledgecity.com/#l-en/contactUs
+Redirect 301 /saib/ar/contactus.php https://saib.knowledgecity.com/#l-ar/contactUs
+Redirect 301 /saib/myLearning.php https://saib.knowledgecity.com
+Redirect 301 /saib/ar/myLearning.php https://saib.knowledgecity.com/#l-ar/
+Redirect 301 /saib https://saib.knowledgecity.com
+Redirect 301 /saib/ar/ https://saib.knowledgecity.com/#l-ar/
+
+RewriteCond %{HTTP_HOST} ^newsaib.knowledgecity.com$ [NC]
+RewriteRule ^(.*)$ https://saib.knowledgecity.com/ [R=301,L]
+
+# SWCC
+Redirect 301 /swcc/en https://swcc.knowledgecity.com/#l-en/
+Redirect 301 /swcc/en/index https://swcc.knowledgecity.com/#l-en/
+Redirect 301 /swcc/en/faq https://swcc.knowledgecity.com/#l-en/faq
+Redirect 301 /swcc/en/courses/ https://swcc.knowledgecity.com/#l-en/library/
+Redirect 301 /swcc/en/certification https://swcc.knowledgecity.com/#l-en/certification
+Redirect 301 /swcc/en/aboutus https://swcc.knowledgecity.com/#l-en/features
+Redirect 301 /swcc/en/contactus https://swcc.knowledgecity.com/#l-en/contactUs
+Redirect 301 /swcc/en/request https://swcc.knowledgecity.com/#l-en/contactUs
+Redirect 301 /swcc/ar https://swcc.knowledgecity.com/#l-ar
+Redirect 301 /swcc/ar/index https://swcc.knowledgecity.com/#l-ar
+Redirect 301 /swcc/faq https://swcc.knowledgecity.com/#l-ar/faq
+Redirect 301 /swcc/certification https://swcc.knowledgecity.com/#l-ar/certification
+Redirect 301 /swcc/aboutus https://swcc.knowledgecity.com/#l-ar/features
+Redirect 301 /swcc/contactus https://swcc.knowledgecity.com/#l-ar/contactUs
+Redirect 301 /swcc/request https://swcc.knowledgecity.com/#l-ar/contactUs
+Redirect 301 /swcc/ar/courses https://swcc.knowledgecity.com/#l-ar/library/
+Redirect 301 /swcc https://swcc.knowledgecity.com
+
+# www.KnowledgeCity
+Redirect 301 /teamtraining /Employee-Training/Corporate
+Redirect 301 /index.html https://www.knowledgecity.com
+Redirect 301 /activation.html https://www.knowledgecity.com
+Redirect 301 /benefits.html https://www.knowledgecity.com/en/benefits
+Redirect 301 /features.html https://www.knowledgecity.com/en/features
+Redirect 301 /aboutus.html https://www.knowledgecity.com/en/aboutPortal
+Redirect 301 /certification.html https://www.knowledgecity.com/en/certification
+Redirect 301 /faq.html https://www.knowledgecity.com/en/faq
+Redirect 301 /partners.html https://www.knowledgecity.com/en/partners
+Redirect 301 /testimonials.html https://www.knowledgecity.com/en/testimonials
+Redirect 301 /contactus.html https://www.knowledgecity.com/en/contactUs
+Redirect 301 /products.html https://www.knowledgecity.com/en/signUp/type/business
+Redirect 301 /navigation.html https://www.knowledgecity.com/en/library/1001/business/
+Redirect 301 /course.html https://www.knowledgecity.com/
+Redirect 301 /library-signup.html https://library.knowledgecity.com/library-signup.html
+Redirect 301 /library-login.html https://library.knowledgecity.com/library-login.html
+
+# www.KnowledgeCity Landing Pages
+RedirectMatch 301 (?i)/employee-training/^(.*)$  /Employee-Training/$1
+
+RedirectMatch 301 /en/Compliance/Training /Employee-Training/Compliance-Courses
+RedirectMatch 301 /en/Corporate/Leadership /Employee-Training/Leadership
+RedirectMatch 301 /en/CorporateTraining /Employee-Training/Corporate-Programs
+RedirectMatch 301 /en/Corporate/Communication-Skills /Employee-Training/Communication-Skills
+RedirectMatch 301 /en/Corporate/Emotional-Intelligence /Employee-Training/Emotional-Intelligence
+RedirectMatch 301 /en/California/HarassmentTraining /Employee-Training/California/Sexual-Harassment
+RedirectMatch 301 /en/ComplianceTraining /Employee-Training/Compliance
+RedirectMatch 301 /en/Employee-Training/Bullying /Employee-Training/Bullying
+RedirectMatch 301 /en/Employee-Training/Reporting-Child-Abuse /Employee-Training/Reporting-Child-Abuse
+RedirectMatch 301 /en/Employee-Training/Bloodborne-Pathogens /Employee-Training/Bloodborne-Pathogens
+RedirectMatch 301 /en/Employee-Training/Title-IX-Compliance /Employee-Training/Title-IX-Compliance
+RedirectMatch 301 /en/Employee-Training/FERPA-Compliance /Employee-Training/FERPA-Compliance
+RedirectMatch 301 /en/Employee-Training/HIPAA /Employee-Training/HIPAA
+RedirectMatch 301 /en/Employee-Training/ADA /Employee-Training/ADA
+RedirectMatch 301 /en/Employee-Training/Dealing-With-Drug-and-Alcohol-Abuse /Employee-Training/Dealing-With-Drug-and-Alcohol-Abuse
+RedirectMatch 301 /en/SafetyTraining/ /Employee-Training/Safety
+RedirectMatch 301 /en/Employee-Training/Sexual-Harassment-Prevention /Employee-Training/Sexual-Harassment-Prevention
+RedirectMatch 301 /en/Employee-Training/Sexual-Harassment-Investigation /Employee-Training/Sexual-Harassment-Investigation
+RedirectMatch 301 /en/Employee-Training/Diversity /Employee-Training/Diversity
+RedirectMatch 301 /en/Employee-Training/Clery-Act-Compliance /Employee-Training/Clery-Act-Compliance
+RedirectMatch 301 /en/Employee-Training/Title-VI-Compliance /Employee-Training/Title-VI-Compliance
+RedirectMatch 301 /en/Employee-Training/Sexual-Harassment-Prevention /Employee-Training/Sexual-Harassment-Prevention
+RedirectMatch 301 /en/New-York/Harassment-Training /Employee-Training/New-York/Sexual-Harassment
+RedirectMatch 301 /en/Employee-Training/Stalking /Employee-Training/Stalking
+RedirectMatch 301 /en/Corporate/Training /Employee-Training/Corporate
+RedirectMatch 301 /en/OnlineTraining /Employee-Training/OnlineTraining
+RedirectMatch 301 /en/EmployeeTraining /Employee-Training/Programs
+RedirectMatch 301 /en/Compliance-Training /Employee-Training/Compliance-Training
+RedirectMatch 301 /Employee-Training/Corporate-Training /Employee-Training/Corporate-Solutions
+
+RewriteCond %{HTTP_HOST} ^www\.knowledgecity\.com$
+RewriteCond %{REQUEST_URI} ^/login.html [NC]
+RewriteRule ^(.*)$ https://srcity.knowledgecity.com/ [R=303,L]
+
+Redirect 301 /alj http://alj.knowledgecity.com/alj
+Redirect 301 /ngha http://ngha.knowledgecity.com/ngha
+Redirect 301 /cargo http://cargo.knowledgecity.com/cargo
+Redirect 301 /saptco http://saptco.knowledgecity.com/saptco
+Redirect 301 /zamil http://zamil.knowledgecity.com/zamil
+Redirect 301 /pmu http://pmu.knowledgecity.com/pmu
+Redirect 301 /sabic http://sabic.knowledgecity.com/sabic
+Redirect 301 /care http://care.knowledgecity.com/care
+Redirect 301 /sg http://sg.knowledgecity.com/sg
+Redirect 301 /herfy http://herfy.knowledgecity.com/herfy
+Redirect 301 /ibnsina http://ibnsina.knowledgecity.com/ibnsina
+Redirect 301 /almajal http://almajal.knowledgecity.com/almajal
+Redirect 301 /muhaidib http://muhaidib.knowledgecity.com/muhaidib
+Redirect 301 /aec http://aec.knowledgecity.com/aec
+Redirect 301 /izdehar http://izdehar.knowledgecity.com/izdehar
+Redirect 301 /rb https://riyadbankacademy.com
+
+# OLD PORTALS REDIRECTS #
+RewriteCond %{HTTP_HOST} ^(www\.)?(knowledgecity.com|kcstage.pro|kcdev.pro|kcexp.pro)
+RewriteRule ^(aec|ahsa|alahsa|alj|almajal|alsubeaei|baj|care|cargo|ggsa|herfy|ibnsina|izdehar|iquad|jcci|kx|makkahcci|meethaq|mena|moe|muhaidib|ngha|petromin|pmu|qmoi|rawabi|rb|riyadah|sabic|saib|saico|sale|saptco|scc|sg|srm|sukoon|swcc|tasheel|tr|ucic|xenel|zamil|zg)\b(/*)(.*)$ http://$1.%2/$1$2$3 [NC]
+
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/javascript
+AddOutputFilterByType DEFLATE application/json
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE image/x-icon
+AddOutputFilterByType DEFLATE image/svg+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/x-font
+AddOutputFilterByType DEFLATE application/x-font-truetype
+AddOutputFilterByType DEFLATE application/x-font-ttf
+AddOutputFilterByType DEFLATE application/x-font-otf
+AddOutputFilterByType DEFLATE application/x-font-opentype
+AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+AddOutputFilterByType DEFLATE font/ttf
+AddOutputFilterByType DEFLATE font/otf
+AddOutputFilterByType DEFLATE font/opentype
+# For Olders Browsers Which Can't Handle Compression
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</IfModule>
+
+
+<ifModule mod_gzip.c>
+ mod_gzip_on Yes
+ mod_gzip_dechunk Yes
+ mod_gzip_item_include file .(html?|txt|css|js|php|pl)$
+ mod_gzip_item_include handler ^cgi-script$
+ mod_gzip_item_include mime ^text/.*
+ mod_gzip_item_include mime ^application/x-javascript.*
+ mod_gzip_item_include mime ^application/json
+ mod_gzip_item_exclude mime ^image/.*
+ mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</ifModule>
+
+<ifModule mod_headers.c>
+  # 86400 - day, 604800 - week, 18144000 - month, 31449600 - year
+
+  <FilesMatch "\.(html|js|css)$">
+    Header set Cache-Control "max-age=31449600"
+  </FilesMatch>
+
+  <Files *.txt>
+    Header add Cache-Control "max-age=31449600"
+  </Files>
+
+  <FilesMatch "\.(flv|swf|ico|gif|jpg|jpeg|png)$">
+    Header set Cache-Control "max-age=31449600"
+  </FilesMatch>
+
+  <FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+    Header set Cache-Control "max-age=31449600"
+  </FilesMatch>
+
+  #Header unset ETag
+</IfModule>
+
+<IfModule mod_expires.c>
+    # Enable expires
+    ExpiresActive On
+
+    # Default a cache expiration
+    ExpiresDefault "access plus 10 month"
+
+    # Images
+    ExpiresByType image/gif                 "access plus 1 year"
+    ExpiresByType image/png                 "access plus 1 year"
+    ExpiresByType image/jpg                 "access plus 1 year"
+    ExpiresByType image/jpeg                "access plus 1 year"
+
+    # CSS, JavaScript
+    ExpiresByType text/css                  "access plus 1 year"
+    ExpiresByType application/javascript    "access plus 1 year"
+    ExpiresByType text/javascript           "access plus 1 year"
+</IfModule>
+
+Options -Indexes

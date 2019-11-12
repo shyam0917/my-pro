@@ -1,0 +1,65 @@
+<div class="top-library">
+     <span  id="libMenuBtn">
+        <a
+                
+                class='top-library__title'
+                href='#'
+                data-handler='onEnterLibrary'
+
+        >
+            {{mui.topMenuItems.library}}
+            <i class="fa fa-chevron-down"></i></a>
+         </a>
+    </span>
+    <div class="top-library__dropdown" id="libDropdown" style="display: none">
+        <div class="cnt">
+            {{#sections}}
+            <div class="top-library__section">
+                <a
+                        class="top-library__section-link"
+                        href="{{url}}"
+                        data-section="{{id}}"
+                        data-handler="onLeaveLibrary"
+                >
+                    {{name}}
+                </a>
+                <div class="top-library__categories" data-section-categories="{{id}}">
+                    {{#categories_0}}
+                    <div class="top-library__category-item">
+                        <i class="fa fa-angle-right"></i>
+                        <a
+                                class="top-library__category-link"
+                                href="{{url}}"
+                                data-handler="onLeaveLibrary"
+                        >
+                            {{name}}
+                        </a>
+                    </div>
+                    <div class="top-library__subcategories">
+                        {{#categories_1}}
+                        <div class="top-library__subcategory-item">
+                            &ndash;&nbsp;
+                            <a
+                                    class="top-library__category-link"
+                                    href="{{url}}"
+                                    data-handler="onLeaveLibrary"
+                            >
+                                {{name}}
+                            </a>
+                        </div>
+                        {{/categories_1}}
+                    </div>
+                    {{/categories_0}}
+                </div>
+            </div>
+            {{/sections}}
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

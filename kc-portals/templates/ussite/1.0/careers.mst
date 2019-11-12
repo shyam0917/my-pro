@@ -1,0 +1,151 @@
+<div class="inner-header inner-header--careers">
+  <div class="cnt">
+    <h1 class="inner-header__title inner-header__title--dark inner-header__title--careers">
+      {{title}}
+    </h1>
+    <div class="inner-header__subtitle inner-header__subtitle--dark inner-header__subtitle--careers">
+      {{subtitle}}
+    </div>
+    <div class="inner-header__actions">
+      <span class="btn btn--large btn--conmpact-mobile" data-handler="onScrollToVacancy">{{current_open_pos}}</span>
+    </div>
+
+    <div class="inner-infobox">
+      <div class="inner-infobox-title">
+        {{create_solution}}
+      </div>
+      <div class="inner-infobox-dsc">
+        {{create_solution_dsc}}
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="inner-text-promo inner-text-promo--first">
+  <div class="inner-text-promo__row">
+    <div class="inner-text-promo__col inner-text-promo__col--reverse">
+      <div class="inner-text-promo__title">
+        {{jobPromo_title}}
+      </div>
+    </div>
+    <div class="inner-text-promo__col inner-text-promo__col--reverse">
+      <div class="inner-text-promo__dsc">
+        {{{jobPromo_dsc}}}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="careers-promo-image careers-promo-image--people"></div>
+
+<div class="inner-text-promo">
+  <div class="inner-text-promo__row">
+    <div class="inner-text-promo__col inner-text-promo__col">
+      <div class="inner-text-promo__title">
+        {{inner_text.promo.title}}
+      </div>
+    </div>
+    <div class="inner-text-promo__col inner-text-promo__col">
+      <div class="inner-text-promo__dsc">
+        {{{inner_text.promo.dsc}}}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="careers-promo-image careers-promo-image--office"></div>
+
+<div class="inner-infobox inner-infobox--small inner-infobox--covering">
+  <div class="inner-infobox-title">
+    {{infobox_are_you.title}}
+  </div>
+  <div class="inner-infobox-dsc">
+    {{{infobox_are_you.dsc}}}
+  </div>
+</div>
+
+{{^target_vacancy}}
+<section class="careers-enum" id="careers-enum">
+
+  <div class="careers-enum__row">
+    {{#vacancies}}
+    <div class="careers-enum__col">
+      <div class="careers-enum__item">
+        <div class="careers-enum__item-title">{{title}}</div>
+        <div class="careers-enum__item-details">
+          <span>{{{employment_type}}}</span>
+          <span>{{{location}}}</span>
+        </div>
+        <div class="careers-enum__item-action">
+          <a class="btn btn-large" href="{{{careersLink}}}">{{frm.viewPosting}}</a>
+        </div>
+      </div>
+    </div>
+    {{/vacancies}}
+  </div>
+
+</section>
+{{/target_vacancy}}
+
+{{#target_vacancy}}
+<div class="cnt" id="careers-one">
+  <section class="careers-one">
+    <div class="careers-one__header">
+      <a href="{{{back_btn}}}" class="careers-one__header-link careers-one__header-link--back">{{mui.buttonLabel.Back}}</a>
+      <span href="{{{back_btn}}}" class="careers-one__header-link careers-one__header-link--submit"  data-handler='onCareersModal'>{{buttonLabel.submitResume}}</span>
+      <div class="careers-one__header-title">
+        {{title}}
+      </div>
+    </div>
+    <div class="careers-one__details">
+      {{{info.full}}}
+    </div>
+    <div class="careers-one__action">
+      <a class="btn btn--lg btn--wide btn-job-resume" data-handler='onCareersModal'>{{buttonLabel.submitResume}}</a>
+    </div>
+    <div id="succesMessage"></div>
+  </section>
+</div>
+
+<div id="CareersModal" class="modal" style="display: none;">
+  <a rel="closeModal" class="modal__close modal_close">×</a>
+  <div class="content">
+    <div class="modal__text" rel="text"></div>
+    <form id="formSubmitResume">
+      <input hidden="" name="job-page" id="job-page" value="{{{title}}}">
+      <div class="form__row form__row--baseline">
+        <label for="job-msg" class="form__label">{{frm.FullName}}</label>
+        <input type="text" class="form__input" value="" name="job-name" id="job-name"
+        placeholder="{{frm.FullName}}" required="true" data-invalidmessage="{{mui.form.requiredField.invalidFirstName}}">
+      </div>
+      <div class="form__row form__row--baseline">
+        <label for="job-msg" class="form__label">{{frm.Phone}}</label>
+        <input type="text" class="form__input" value="" name="job-phone" id="job-phone"
+        placeholder="{{frm.Phone}}" required="true" data-invalidmessage="{{mui.form.requiredField.invalidPhone}}">
+      </div>
+      <div class="form__row form__row--baseline">
+        <label for="job-msg" class="form__label">{{frm.Email}}</label>
+        <input type="text" class="form__input" value="" name="job-email" id="job-email"
+        placeholder="{{frm.Email}}" required="true" data-invalidmessage="{{mui.form.requiredField.invalidEmail}}">
+      </div>
+          <div class="form__row">
+        <label for="job-file" class="form__label">{{frm.Resume}}</label>
+        <input type="file" name="job-file" id="job-file" class="form__input" value=""
+               placeholder="frm.Resume" required="required">
+      </div>
+      <div class="form__row form__row--baseline">
+        <label for="job-msg" class="form__label">{{frm.message}}</label>
+        <textarea name="job-msg" id="job-msg" class="form__textarea form__textarea--150" value=""
+                  placeholder="{{frm.message}}"
+                  data-handler="onHidePlaceholder"
+                  data-handler-action="focus"
+        ></textarea>
+      </div>
+      <input type="button" rel="confirm" value="{{vlMessages.submit}}" class="btn btn--lg account_btn">
+      <div id="errorMessage"></div>
+    </form>
+  </div>
+</div>
+
+{{/target_vacancy}}

@@ -1,0 +1,89 @@
+<span data-ctrl="LibTitle" id="libtitle"></span>
+
+<div class="inner-page inner-page--landing">
+    <div class="cnt">
+        <div class="inner-page__row">
+
+
+            <div id="courseVideoWrapper" class="inner-page__content">
+
+                {{#course}}
+                     <div id="landingPlayer" class="landing-player">
+                            <div class="embedvideo__preview__wrap embedvideo__player" data-handler="onPlayFirstVideo">
+                                <img src="{{preview}}" class="embedvideo__preview">
+                            </div>
+                     </div>
+
+                     <div id="transcript-tab-title" class="hidden" ></div>
+                     <div id="transcript-tab-content" class="hidden"></div>
+
+                     <div class="library-item__description landing__description">
+                        <strong>{{mui.pageContent.course.description}}:</strong>  {{description}}
+                     </div>
+
+                       <div class="library-item__header landing_title-button-wrapper">
+
+                            <div class="landing__title-section">
+                                <h1 class="course-page__title">{{title}}</h1>
+
+                                <div class="landing-item__meta-data">
+                                    <i class="icon icon-author"></i> <span>{{mui.pageContent.course.author}}: </span>  {{author}}
+                                    <i class="icon icon-runtime"></i> <span>{{mui.pageContent.course.trt}}: </span>{{runtime}}
+                                    <i class="icon icon-lessons"></i> <span>{{mui.pageContent.course.lessons}}: </span>{{lCount}}<br>
+                                    <i class="fa fa-globe fa-lg"></i> <span>{{mui.pageContent.course.languages}}: </span>{{langs}}
+                                </div>
+
+                            </div>
+
+                            <div class="landing__button-section">
+                                <a href="{{courseURL}}" class="library-item__btn btn">
+                                    {{mui.goToCourse}}
+                                </a>
+                            </div>
+                       </div>
+
+                {{/course}}
+
+
+            </div>
+
+
+             <div class="inner-page__sidebar right__sidebar">
+                <div class="sidebar__lessons">
+
+                {{#video}}
+                 <div class="landing__player__wrapper" id="{{id}}" >
+                     <div class="landing__lesson-title" data-id="{{id}}" data-handler="onPlayVideo">
+                        {{title}}
+                        <div class="landing__short-description">{{description}}</div>
+                     </div>
+
+                     <div data-id="{{id}}" class="player_preview_vertical" data-handler="onPlayVideo">
+                          {{#previewLocal}}
+                             <img src="{{VIEW}}images/landing/{{previewLocal}}" class="embedvideo__preview">
+                          {{/previewLocal}}
+                          {{^previewLocal}}
+                             <img src="{{preview}}" class="embedvideo__preview">
+                          {{/previewLocal}}
+
+                          {{#runtime}}
+                            <span class="runtime">{{runtime}}</span>
+                          {{/runtime}}
+                     </div>
+                 </div>
+                 {{/video}}
+                 </div>
+             </div>
+        </div>
+    </div>
+</div>
+
+
+<a id="popup-left-tmp" data-handler="onPlayVideo" class="landing-popup popup-left hidden">
+        <span class="title"></span>
+</a>
+<a id="popup-right-tmp" class="landing-popup  popup-right hidden">
+    <span class="title"></span>
+    <span class="runtime"></span>
+    <span class="countdown"></span>
+ </a>

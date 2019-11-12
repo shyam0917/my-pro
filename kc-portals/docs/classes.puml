@@ -1,0 +1,122 @@
+@startuml
+
+class config
+
+package Controllers {
+
+class Page {
+    dispatcher();
+    definePath();
+    onChangeLocation();
+    onLoadModule();
+    init();
+    out();
+}
+
+class Courses {
+
+    defineContent();
+    onLessonShow();
+    onLoadQuiz();
+    onSendFeedback();
+    getMessageByCode();
+}
+
+class Library {
+
+    defineContent();
+    onCategoryShow();
+}
+
+
+Page <|-- Courses
+Page o-- config
+
+Page <|-- MyAccount
+Page <|-- MyLearning
+}
+
+package ServiceIntegratorPackage #EEEEEE {
+
+    class RemoteCall {
+        string resource;
+        object parameters;
+        string method;
+        object options;
+        function dataHandler;
+        function errorHandler;
+
+        defineErrorHandler();
+        asCached();
+        asLocalCached();
+        asPhpXDebug();
+    }
+
+    RemoteCall <|-- CallGet
+    RemoteCall <|-- CallPost
+    RemoteCall <|-- CallPut
+    RemoteCall <|-- CallPortal
+
+    class RemoteService {
+
+        Promise query(RemoteCall query);
+    }
+
+    RemoteService <|-- CDN
+    RemoteService <|-- ServiceIntegrator
+
+    class LocalStorage {
+
+        getLocalStorageItem();
+        setLocalStorageItem();
+        clear();
+    }
+
+    ServiceIntegrator *-- CDN
+    ServiceIntegrator *-- LocalStorage
+}
+
+Page *-- ServiceIntegratorPackage
+
+package UserPackage #BFEFFF {
+
+    class User {
+
+        auth();
+        logout();
+        isAuth();
+        getUserId();
+        getSessionId();
+    }
+
+    class UserCourses {
+
+        getAllCourses();
+        getCourseStats();
+        saveLessonStats();
+        getCertificate();
+        getQuizStats();
+    }
+
+    UserCourses *-- User
+}
+
+Page *-- UserPackage
+
+package UI_Components #CFFFBF {
+
+    class ModalWindow
+    class LoginForm
+    class Quiz
+
+
+
+    LoginForm *-- ModalWindow
+    Quiz *-- ModalWindow
+}
+
+class Template
+
+Template -- Page
+
+@enduml

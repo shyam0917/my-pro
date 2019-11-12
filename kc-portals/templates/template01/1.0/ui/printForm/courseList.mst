@@ -1,0 +1,63 @@
+<div class="print-doc-album">
+  <div class="print-course-list">
+
+    <div class="print-course-list__haeder">
+
+      <div class="print-course-list__haeder-logo">
+        <img src="{{site.logo}}" alt="" title=""/>
+      </div>
+
+      <div class="print-course-list__userinfo">
+        <div class="print-course-list__userinfo-name">
+          <ul>
+            <li>
+              <label>Username :</label> {{user.name}}
+            </li>
+            <li>
+              <label>Employee ID :</label> {{userInfo.employee_id}}
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="print-course-list__body">
+
+      <div class="print-course-list__dsc">
+        Course list sent to comfirmation:
+      </div>
+
+      <ul class="print-course-list__ul">
+        {{#courses}}
+        <li class="print-course-list__ul">
+          {{title}}
+        </li>
+        {{/courses}}
+      </ul>
+
+    </div>
+
+    <div class="print-course__signature">
+      <div class="print-course__signature-container">
+        <div class="print-course__signature-row">
+          <div class="print-course__signature-col">
+            <div class="print-course__field">
+              <label>Associate’s Signature</label>
+            </div>
+          </div>
+          <div class="print-course__signature-col">
+            <div class="print-course__field">
+              <label>Department Head Signature</label>
+            </div>
+          </div>
+          <div class="print-course__signature-col">
+            <div class="print-course__field">
+              <label>Direct Supervisor Signature</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

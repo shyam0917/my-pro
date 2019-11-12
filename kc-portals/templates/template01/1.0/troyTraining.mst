@@ -1,0 +1,43 @@
+<div class="inner-top">
+	<div class="cnt">
+		<div class="inner-top__library">
+			<h2 class="inner-top__title">{{mui.txtLabels.sidebarTitle}}</h2>
+			<p class="inner-top__subtitle">{{mui.txtLabels.sidebarText}}</p>
+		</div>
+		<div class="inner-top__current">
+			<h2 class="inner-top__title">{{mui.pageTitle.troyTraining}}</h2>
+			<p class="inner-top__subtitle"></p>
+		</div>
+	</div>
+</div>
+<div class="inner-page">
+	<div class="cnt">
+		<div class="inner-page__sidebar">
+			<div data-ctrl="Sidebar" id="sidebar">
+				Loading sidebar...
+			</div>
+		</div>
+		<div class="inner-page__content">
+			<div class="panel-b">
+				<div class="text  text-align">
+					<p>
+						<div>
+							<strong>Instructional Link:</strong>
+						</div>
+						<div>
+							<a href="https://www.qualtrics.com/support/survey-platform/getting-started/survey-platform-overview/" target="_blank">https://www.qualtrics.com/support/survey-platform/getting-started/survey-platform-overview/</a>
+						</div>
+					</p>
+ 					<p>
+						<div>
+							<strong>Webinar Link:</strong>
+						</div>
+						<div>
+							<a href="https://www.qualtrics.com/support/trainings-and-webinars/on-demand-webinars/" target="_blank">https://www.qualtrics.com/support/trainings-and-webinars/on-demand-webinars/</a>
+						</div>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

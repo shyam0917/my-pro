@@ -1,0 +1,168 @@
+<div class="inner-top">
+	<div class="cnt">
+		<div class="inner-top__library">
+			<h2 class="inner-top__title">{{mui.pageContent.courseList.lessons}}</h2>
+			<p class="inner-top__subtitle">&nbsp;</p>
+		</div>
+		<div class="inner-top__current">
+			<h2 class="inner-top__title">{{course.title}}</h2>
+			<p class="inner-top__subtitle">{{course.tagline}}</p>
+		</div>
+	</div>
+</div>
+<div class="inner-page">
+	<div class="cnt">
+		{{#course.isScorm}}
+		<style>.cnt .inner-page__sidebar{display:none}</style>
+		{{/course.isScorm}}
+		<div class="inner-page__sidebar" >
+			<div class="lessons-menu text-align">
+				{{#course.chapters}}
+				<h4 class="lessons-menu__chapter">{{title}}</h4>
+				<div class="lessons-menu__lessons">
+					{{#lessons}}
+					<div class="lessons-menu__lesson {{#noAccess}}lock{{/noAccess}}{{^noAccess}}unlock{{/noAccess}} {{#isAccess}}courseLesson{{/isAccess}}{{#noAccess}}noaccess{{/noAccess}}" data-handler="onLessonShow"
+						 data-lessonID="{{id}}"
+						 data-inModal="false">
+						<div class="lessons-menu__icon">
+							<div id="watching-{{id}}" class="hidden">
+								<i class="fa fa-play" aria-hidden="true"></i>
+							</div>
+							<div id="notwatching-{{id}}">
+								{{^isAccess}}
+								<i class="fa fa-lock" aria-hidden="true"></i>
+								{{/isAccess}}
+
+								<i id="watched-{{id}}" class="fa fa-check {{^isWatched}} hidden {{/isWatched}}" aria-hidden="true"></i>
+
+								{{^isWatched}}
+
+								{{#isAccess}}
+								<i id="access-{{id}}" class="fa fa-play-circle-o" aria-hidden="true"></i>
+								{{/isAccess}}
+
+								{{/isWatched}}
+							</div>
+
+						</div>
+						<div class="lessons-menu__name">
+							<span>{{title}}</span>
+						</div>
+						<div class="lessons-menu__duration">{{time}}</div>
+					</div>
+					{{/lessons}}
+				</div>
+				{{/course.chapters}}
+			</div>
+			<div data-ctrl="Sidebar" id="sidebar">Loading sidebar...</div>
+			<div data-mobile="related"></div>
+		</div>
+		<div class="inner-page__content">
+			<div class="course-video" id="courseVideoWrapper">
+				<div
+						class="course-video__preview"
+						id="courseVideoEmbed"
+				>
+					<div class="course-video__overlay"></div>
+					<img src="{{course.poster}}" class="course-video__preview-img" data-handler="onImgLoadError" data-handler-action="error"">
+					<div class="course-video__play"
+						 data-handler="onLessonShow"
+						 data-lessonID="{{course.targetLesson}}" ></div>
+
+				</div>
+				<div class="course-video__arrow course-video__arrow--prev" rel="prev"><a href="" data-handler="onPrev"><i class="fa fa-chevron-left"></i></a></div>
+				<div class="course-video__arrow course-video__arrow--next" rel="next"><a href="" data-handler="onNext"><i class="fa fa-chevron-right"></i></a></div>
+			</div>
+			<div class="course-info">
+				<div class="course-info__header">
+					<ul class="course-info__tabs nav">
+						<li class="course-info__tab active">
+							<a data-toggle="tab" href="#description-content">
+								{{{mui.pageContent.course.description}}}
+							</a>
+						</li>
+						<li class="course-info__tab hidden" id="transcriptTab"><a data-toggle="tab" href="#transcript-content">{{mui.transcript}}</a></li>
+					</ul>
+
+					<div class="course-info__controls">
+						<div data-desktop="feedback"  >
+							<a href="#" class="button" data-handler="onSendFeedback" data-replace="">{{mui.pageContent.course.courseFeedback}}</a>
+						</div>
+						{{#user.isTest}}
+						<a href="#" class="button" data-handler="onMarkLessonsAsWatched">Pass all lessons</a>
+						{{/user.isTest}}
+					</div>
+				</div>
+				<div class="course-info__content">
+					<div class="course-info__tabs-content">
+						<div id="description-content" class="course-info__tab-content active">
+							<div class="course-info__description-props">
+								<div class="course-info__description text-align">{{{course.description}}}</div>
+								<div class="course-info__props text-align">
+									<div><strong>{{mui.pageContent.course.author}}:</strong><span> {{course.author}}
+
+                    {{^course.author}}
+                    <span class="text-muted">{{mui.pageContent.event.not_set}}</span>
+                    {{/course.author}}
+									</span></div>
+									<div><strong>{{mui.pageContent.course.trt}}:</strong><span> {{course.totalRuntime}}</span></div>
+									<div><strong>{{mui.pageContent.course.lessons}}:</strong><span> {{course.lessonCount}}</span></div>
+
+										{{#course.isManuals}}
+										<div>
+											<strong>{{mui.pageContent.course.manual}}:</strong>
+
+											<ul class="course-manuals">
+												{{#course.manuals}}
+												<li class="course-manuals__item">
+													<span><a href="{{url}}" target="_blank">{{title}}</a></span>
+												</li>
+												{{/course.manuals}}
+											</ul>
+										</div>
+										{{/course.isManuals}}
+
+								</div>
+							</div>
+						</div>
+						<div id="transcript-content" class="course-info__tab-content">
+							<div class="course-info__transcript" id="transcriptContainer">
+								<div id="transcript-tab-title"></div>
+								<div id="transcript-tab-content"></div>
+							</div>
+						</div>
+					</div>
+					<div class="course-info__bottom-controls">
+						<a href="#" class="button course-info__test" data-handler="onLoadQuiz">{{mui.pageContent.course.certTest}}</a>
+						<div data-mobile="feedback"></div>
+					</div>
+				</div>
+			</div>
+			<div data-desktop="related">
+				<div data-ctrl="RelatedCourses" data-replace="" id="Related">
+					{{#list.length}}
+					<div class="related-courses" style="direction: ltr">
+						<div class="panel-b">
+							<h2 class="text-align">{{watchNext}}</h2>
+							<div class="owl-carousel" id="relatedCarousel">
+								{{#list}}
+								<div class="item  text-align">
+									<div class="course-tile"><a href="{{url}}" class="course-tile__preview">
+										<div class="course-tile__play"></div><img src="{{img}}" class="course-tile__img"></a>
+										<div class="course-tile__caption">{{title}}</div>
+									</div>
+								</div>
+								{{/list}}
+							</div>
+							<div class="owl-controls">
+								<span class="owl-controls__prev"><i class="fa fa-chevron-left" aria-hidden="true" data-handler="onPrevSlide"></i></span>
+								<span class="owl-controls__next"><i class="fa fa-chevron-right" aria-hidden="true" data-handler="onNextSlide"></i></span>
+							</div>
+						</div>
+					</div>
+					{{/list.length}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,88 @@
+<div class="inner-top">
+	<div class="cnt">
+		<div class="inner-top__library">
+			<h2 class="inner-top__title">{{mui.txtLabels.sidebarTitle}}</h2>
+			<p class="inner-top__subtitle">{{mui.txtLabels.sidebarText}}</p>
+		</div>
+		<div class="inner-top__current">
+			<h2 class="inner-top__title">{{title}}</h2>
+			<p class="inner-top__subtitle">{{subTitle}}</p>
+		</div>
+	</div>
+</div>
+
+<div class="inner-page">
+	<div class="cnt">
+		<div class="inner-page__sidebar">
+			<div data-ctrl="Sidebar" id="sidebar">
+				Loading sidebar...
+			</div>
+		</div>
+		<div class="inner-page__content">
+			<div class="panel-b panel-b--benefits">
+				{{{Text1}}}
+				<div class="benefits-table">
+					<div class="benefits-table__item">
+						<img src="{{VIEW}}images/benefit-icon-1--v1.png" class="benefits-table__icon">
+						<div class="benefit-item-text">{{{Benefit1}}}</div>
+					</div>
+					<div class="benefits-table__item">
+						<img src="{{VIEW}}images/benefit-icon-2--v1.png" class="benefits-table__icon">
+						<div class="benefit-item-text">{{{Benefit2}}}</div>
+					</div>
+					<div class="benefits-table__item">
+						<img src="{{VIEW}}images/benefit-icon-3--v1.png" class="benefits-table__icon">
+						<div class="benefit-item-text">{{{Benefit3}}}</div>
+					</div>
+					<div class="benefits-table__item">
+						<img src="{{VIEW}}images/benefit-icon-4--v1.png" class="benefits-table__icon">
+						<div class="benefit-item-text">{{{Benefit4}}}</div>
+					</div>
+					<div class="benefits-table__item">
+						<img src="{{VIEW}}images/benefit-icon-5--v1.png" class="benefits-table__icon">
+						<div class="benefit-item-text">{{{Benefit5}}}</div>
+					</div>
+					<div class="benefits-table__item">
+						<img src="{{VIEW}}images/benefit-icon-6--v1.png" class="benefits-table__icon">
+						<div class="benefit-item-text">{{{Benefit6}}}</div>
+					</div>
+					<div class="benefits-table__item">
+						<img src="{{VIEW}}images/benefit-icon-7--v1.png" class="benefits-table__icon">
+						<div class="benefit-item-text">{{{Benefit7}}}</div>
+					</div>
+					<div class="benefits-table__item">
+						<img src="{{VIEW}}images/benefit-icon-9--v1.png" class="benefits-table__icon">
+						<div class="benefit-item-text">{{{Benefit9}}}</div>
+					</div>
+					<div class="benefits-table__item">
+						<img src="{{VIEW}}images/benefit-icon-10--v1.png" class="benefits-table__icon">
+						<div class="benefit-item-text">{{{Benefit10}}}</div>
+					</div>
+					<div class="benefits-table__item">
+						<img src="{{VIEW}}images/benefit-icon-11--v1.png" class="benefits-table__icon">
+						<div class="benefit-item-text">{{{Benefit11}}}</div>
+					</div>
+					<div class="benefits-table__item">
+						<img src="{{VIEW}}images/benefit-icon-12--v1.png" class="benefits-table__icon">
+						<div class="benefit-item-text">{{{Benefit12}}}</div>
+					</div>
+					<div class="benefits-table__item">
+						<img src="{{VIEW}}images/benefit-icon-13--v1.png" class="benefits-table__icon">
+						<div class="benefit-item-text">{{{Benefit13}}}</div>
+					</div>
+					<div class="benefits-table__item">
+						<div class="benefit-item-text"></div>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="benefits-footnote">
+				<a href="https://www.knowledgecity.com/blog/the-number-one-solution-to-cutting-training-expenses/" target="_blank">
+					{{Footnote}}
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+

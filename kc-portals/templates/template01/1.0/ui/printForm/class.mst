@@ -1,0 +1,324 @@
+<div class="print-doc-landscape">
+  <div class="print-doc-landscape__header">
+    <div class="print-doc-landscape__header-row">
+      <div class="print-doc-landscape__header-company">
+        <img src="" alt="">
+      </div>
+      <div class="print-doc-landscape__header-logo">
+        <img src="{{site.logo}}" alt="">
+      </div>
+    </div>
+    <div class="print-doc-landscape__header-title">
+      ACCL - Mechanical Training - Course Registration Form
+    </div>
+    <div class="print-doc-landscape__info clearfix">
+      <div class="print-doc-landscape__info-name">
+        <div class="print-doc-landscape__info-field">Center / Div Name :</div>
+        <div class="print-doc-landscape__info-input"></div>
+        <div class="print-doc-landscape__info-field print-doc-landscape__info-field--ar">اسم المركز/ الادارة :</div>
+      </div>
+      <div class="print-doc-landscape__info-date">
+        <div class="print-doc-landscape__info-field">Form Filling Date :</div>
+        <div class="print-doc-landscape__info-input">
+          <label>DD / MMM / YYYY</label>
+        </div>
+        <div class="print-doc-landscape__info-field print-doc-landscape__info-field--ar">تاريخ تعبئة النموذج :</div>
+      </div>
+    </div>
+  </div>
+
+  <table class="print-doc__table">
+    <thead>
+    <tr>
+      <th>
+        <div>No</div>
+        <div class="rtl">م</div>
+      </th>
+      <th>
+        <div>
+          Associate No. <Br>
+          (Pay Code Number)
+        </div>
+        <div class="rtl">الرقم الوظيفي</div>
+      </th>
+      <th>
+        <div>
+          Associate Name
+        </div>
+        <div class="rtl">اسم الزميل</div>
+      </th>
+      <th>
+        <div>
+          Iqama / National ID. (for Wholesaler Only)
+        </div>
+        <div class="rtl">
+          رقم الإقامة / الهوية الوطنية (لبياعين الجملة فقط)ز
+        </div>
+      </th>
+      <th>
+        <div>Mobile No.</div>
+        <div class="rtl">رقم الجوال</div>
+      </th>
+      <th>
+        <div>Course Title</div>
+        <div class="rtl">اسم الدورة التدريبية</div>
+      </th>
+      <th>
+        <div>Course Start Date</div>
+        <div class="rtl">تاريخ بداية الدورة</div>
+        <div class="date">
+          DD MMM YY
+        </div>
+      </th>
+      <th>
+        <div>Course End Date</div>
+        <div class="rtl">تاريخ نهاية الدورة</div>
+        <div class="date">
+          DD MMM YY
+        </div>
+      </th>
+      <th>
+        <div>
+          Signature<br>
+          <span>(For Technicians Only)</span>
+        </div>
+        <div class="rtl">
+          توقيع الزميل<br>
+          <span>(للقسم التقني / الفني فقط)</span>
+        </div>
+      </th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <!-- {{#courses}}  comments tags is necessary to save the scrapers outside the table stream -->
+    <tr>
+      <td>1</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>
+        {{title}}
+      </td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <!-- {{/courses}} -->
+
+    </tbody>
+  </table>
+
+  <div class="print-doc__table-dsc">
+    Iqama / National ID. Must be filled above & a copy of it required for Wholesaler Only. |
+    <span class="rtl"> رقم الإقامة / الهوية الوطنية. يجب تعبئتها أعلاه وإرفاق صورة منها لبياعين الجملة فقط.ز</span>
+  </div>
+
+  <div class="print-doc__table-dsc">
+    SR. 50/- Per Tech. will be charged as on-line pre training test fees |<span class="rtl"> سيتم إحتساب تكلفة 50 ريال لكل فني وذلك لتكلفة إختبار تحديد المستوى</span>
+  </div>
+
+  <div class="print-doc__row">
+    <div class="print-doc__col-group">
+
+      <div class="print-doc__col">
+        <table class="print-doc__table">
+          <thead>
+          <tr>
+            <th colspan="2" class="print-doc__tr-height">
+              <span class="print-doc__tr-num">1</span>
+              Direct Supervisor information<br>
+              <span class="rtl">معلومات الاتصال للمشرف المباشر</span>
+            </th>
+          </tr>
+          </thead>
+          <tbody class="print-doc__title-pre">
+          <tr>
+            <td>Name:</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Emp. No:</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>E-Mail:</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Mobile No:</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Signature:</td>
+            <td>&nbsp;</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="print-doc__col">
+        <table class="print-doc__table">
+          <thead>
+          <tr>
+            <th colspan="2" class="print-doc__tr-height">
+              <span class="print-doc__tr-num">2</span>
+              Second Person In charge in the center<br>
+              <span class="rtl">المسؤول الثاني للتدريب بالمركز</span>
+            </th>
+          </tr>
+          </thead>
+          <tbody class="print-doc__title-pre">
+          <tr>
+            <td>Name:</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Emp. No:</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>E-Mail:</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Mobile No:</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Signature:</td>
+            <td>&nbsp;</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="print-doc__col">
+        <table class="print-doc__table">
+          <thead>
+          <tr>
+            <th colspan="2" class="print-doc__tr-height">
+              <span class="print-doc__tr-num">3</span>
+              Kindly debit SR. 50/- against Pre-Test Fees<br>
+              per technician to BU number mentioned below:
+            </th>
+          </tr>
+          </thead>
+          <tbody class="print-doc__title-pre print-doc__title-pre-fix">
+          <tr>
+            <td>BU NO :</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Accounts Manager<br> Name :</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Accounts Manager<br> Signature :</td>
+            <td>&nbsp;</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="print-doc__row">
+    <div class="print-doc__col-group">
+
+      <div class="print-doc__col print-doc__col-note-eng">
+        <div class="print-doc__important">
+          <div class="print-doc__important-ttl">Important Note : Please Read before Filling The Form</div>
+          <ol>
+            <li>All communication from ACCL will be sent to Direct Supervisor (Center / Service / Parts) and Second
+              Person In charge.
+            </li>
+            <li>Confirmation of seats depends on first come first serve basis.</li>
+            <li>Forms without FULL information and mobile number will be rejected - (if you don’t have a mobile number
+              please sign in mobile cell)
+            </li>
+            <li>This Form is not applicable for courses required budget and finance approval.</li>
+            <li>Associates without permanent associate Number (Pay Code) are not eligible for training registration6-
+              Please send clear copy (PDF format) of complete registration form 31 days prior to course start date to
+              E-mail : MechanicalTraining@ALJ.COM
+            </li>
+            <li>SR. 50/- Per Tech. will be charged starting 3rd. Aug 2014 as on-line pre training test fees.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="print-doc__col print-doc__col-note-ar">
+        <div class="print-doc__important print-doc__important-ar">
+          <div class="print-doc__important-ttl"> ملاحظات هامة : الرجاء قراءة الملاحظات ادناه قبل تعبئة النموذج</div>
+          <ol>
+            <li>جميع المراسلات ستتم عن طريق مركز التدريب والمشرف المباشر او المسؤول الثاني للتدريب بالمركز</li>
+            <li>تأكيد التسجيل في الدورة التدريبية يعتمد على افضلية التسجيل المبكر اولاً</li>
+            <li>لا تعتمد النماذج غير مكتملة البيانات والمعلومات وارقام الجوالات - (في حالة عدم وجود جوال للمتدرب يرجى
+              التوقيع في خانة الجوال ايضاً)
+            </li>
+            <li>لا يعتمد هذا النموذج بالنسبة للدورات التي تتطلب رسوم وموافقة الادارة المالية.</li>
+            <li>الزملاء الذين ليس لديهم ارقام وظيفية لن يتم تسجيلهم في الدورة التدريبية.</li>
+            <li>يرجى ارسال نسخة واضحة بعد اكمال المعلومات المطلوبةبصيغة (بي دي اف) قبل بدء الدورة التدريبية بـ (31)
+              يوما على الاقل الى البريد الالكتروني MechanicalTraining@ALJ.COM
+            </li>
+            <li>سيتم إحتساب تكلفة 50 ريال لكل فني وذلك لتكلفة إختبار تحديد المستوى ، إبتداءً من تاريخ 03/أغسطس/2014.
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="print-doc__col  print-doc__col-pages">
+
+        <div class="print-doc__page-num-group">
+          <div class="print-doc__page-num">
+            <div class="print-doc__page-title">
+              Page
+              No. :
+            </div>
+            <div class="print-doc__page-checbox"></div>
+            <div class="print-doc__page-title print-doc__page-title--ar">
+              صفحة
+              رقم :
+            </div>
+          </div>
+          <div class="print-doc__page-num">
+            <div class="print-doc__page-title">
+              of
+              Total Pages:
+            </div>
+            <div class="print-doc__page-checbox"></div>
+            <div class="print-doc__page-title print-doc__page-title--ar">
+              من اجمالي
+              عدد الصفحات :
+            </div>
+          </div>
+        </div>
+
+        <table class="print-doc__table print-doc__table--dark print-doc__table--signature">
+          <thead>
+          <tr>
+            <th colspan="2">For ACCL Use <span class="rtl">لاستخدام مركز التدريب</span></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Information Entered in Oracle by</td>
+            <td class="rtl">تم ادخال المعلومات في اوركل بواسطة</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              &nbsp;
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

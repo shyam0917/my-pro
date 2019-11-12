@@ -1,0 +1,152 @@
+<div class="inner-header text-align">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 float">
+				<h2 class="inner-header__title">{{mui.txtLabels.sidebarTitle}}</h2>
+				<p class="inner-header__subtitle">{{mui.txtLabels.sidebarText}}</p>
+			</div>
+			<div class="col-md-9 float">
+				<h2 class="inner-header__title">{{mui.pageTitle.request}}</h2>
+				<p class="inner-header__subtitle">{{mui.pageSubTitle.request}}</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="inner-content text-align">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 float" data-ctrl="Sidebar" id="sidebar">
+				Loading sidebar...
+			</div>
+			<div class="col-md-9 float">
+				<div class="panel-b">
+					<div id="formMessage" class="alert alert-danger text-align hidden"></div>
+					<div class="form-label text-align">
+						{{mui.pageContent.requestAccess.toplabel}}
+					</div>
+          <div id="formMessages" class="is_hidden required-login__request-title">
+            {{mui.pageContent.requestAccess.requestSent}}
+          </div>
+					<form class="form" method="post" action="" data-handler="onSubmitForm" id="requestAccess">
+						<div class="form-group row">
+							<div class="col-md-6 col-md-offset-3">
+                <!--
+								<div class="row form-line">
+									<div class="col-md-4 label"><label for="requestform-firstName">{{mui.pageContent.requestAccess.formlabel.name}}:</label></div>
+									<div class="col-md-8 input">
+										<input type="text" class="form-control input" value="{{firstName}}"
+											   name="first_name"
+											   id="requestform-firstName"
+											   placeholder="{{mui.pageContent.requestAccess.formlabel.name}}"
+											   required="required" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+									</div>
+								</div>
+								<div class="row form-line">
+									<div class="col-md-4 label"><label for="requestform-lastName">{{mui.pageContent.requestAccess.formlabel.lastName}}:</label></div>
+									<div class="col-md-8 input">
+										<input type="text" class="form-control input" value="{{lastName}}" name="last_name"
+											   id="requestform-lastName"
+											   placeholder="{{mui.pageContent.requestAccess.formlabel.lastName}}"
+											   required="required"
+											   data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+									</div>
+								</div>
+								<div class="row form-line">
+									<div class="col-md-4 label"><label for="requestform-company">{{mui.pageContent.requestAccess.formlabel.company}}:</label></div>
+									<div class="col-md-8 input">
+										<input type="text" class="form-control input" value="{{company}}"
+											   name="company" id="requestform-company"
+											   placeholder="{{mui.pageContent.requestAccess.formlabel.company}}"
+											   required="required"
+											   data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+									</div>
+								</div>
+								<div class="row form-line">
+									<div class="col-md-4 label"><label for="requestform-position">{{mui.pageContent.requestAccess.formlabel.position}}:</label></div>
+									<div class="col-md-8 input">
+										<input type="text" class="form-control input" value="{{position}}" name="position" id="requestform-position"
+											   placeholder="{{mui.pageContent.requestAccess.formlabel.position}}"
+											   required="required" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+									</div>
+								</div>
+								<div class="row form-line">
+									<div class="col-md-4 label"><label for="requestform-department">{{mui.pageContent.requestAccess.formlabel.department}}:</label></div>
+									<div class="col-md-8 input">
+										<input type="text" class="form-control input" value="{{department}}"
+											   name="department" id="requestform-department"
+											   placeholder="{{mui.pageContent.requestAccess.formlabel.department}}"  required="required"
+											   data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+									</div>
+								</div>
+								<div class="row form-line">
+									<div class="col-md-4 label"><label for="requestform-employeeNumber">{{mui.pageContent.requestAccess.formlabel.mployeeNumber}}:</label></div>
+									<div class="col-md-8 input">
+										<input type="text" class="form-control input" value="{{employeeNumber}}"
+											   name="employee_id"
+											   id="requestform-employeeNumber"
+											   placeholder="{{mui.pageContent.requestAccess.formlabel.mployeeNumber}}" required="required"
+											   data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+									</div>
+								</div>
+								<div class="row form-line">
+									<div class="col-md-4 label"><label for="requestform-emailAdress">{{mui.pageContent.requestAccess.formlabel.mailAdress}}:</label></div>
+									<div class="col-md-8 input">
+										<input type="email" class="form-control input" value="{{email}}" name="email" id="requestform-email"
+											   placeholder="{{mui.pageContent.requestAccess.formlabel.mailAdress}}"
+											   required="required"
+											   data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"
+											   data-invalidMessageWrongType="{{mui.form.requiredField.invalidTypeMessage}}"/>
+									</div>
+								</div>
+								<div class="row form-line">
+									<div class="col-md-4 label"><label for="requestform-phoneNumber">{{mui.pageContent.requestAccess.formlabel.phoneNumber}}:</label></div>
+									<div class="col-md-8 input">
+										<input type="text" class="form-control input" value="{{phoneNumber}}"
+											   name="phone_number"
+											   id="requestform-phoneNumber"
+											   placeholder="{{mui.pageContent.requestAccess.formlabel.phoneNumber}}"
+											   required="required" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+									</div>
+								</div>
+								-->
+
+                {{#additional}}
+                  <div class="row form-line">
+                    <div class="col-md-4 label"><label for="requestform-{{name}}">{{label}}:</label></div>
+                    <div class="col-md-8 input">
+                      {{{html}}}
+                    </div>
+                  </div>
+                {{/additional}}
+
+								<div class="terms-and-condition form-line text-align">
+									<div class="title"><strong>{{mui.pageContent.requestAccess.termsTitle}}</strong></div>
+									<div class="text">
+										{{mui.pageContent.requestAccess.termsText}}
+									</div>
+								</div>
+								<div class="row form-line">
+
+											<div class="col-md-6 input text-align">
+												<label>
+													<input type="checkbox" name="agreeToTerms" value="y"
+														   class="" id="requestform-agreeToTerms"
+														   required="required"
+														   data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>&nbsp;{{mui.pageContent.requestAccess.formlabel.terms}}
+												</label>
+											</div>
+											<div class="col-md-6 input">
+												<button type="submit" name="submit"  class="button form-button">{{mui.submit}}</button>
+											</div>
+
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

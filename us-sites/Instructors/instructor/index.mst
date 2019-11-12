@@ -1,0 +1,110 @@
+<div class="header-content">
+    <div class="logo-wrapper">
+        <div class="logo-container">
+            <a href="https://www.knowledgecity.com" target="_blank">
+                <img src="{{template}}images/logo.png" alt="KnowledgeCity">
+            </a>
+        </div>
+    </div>
+    <div class="cnt">
+        <div class="header-form-wrapper">
+            <div class="header-form-title">
+            <h1>KnowledgeCity Courses Authored by {{instructorName}}</h1>
+            </div>
+            <div class="header-form-container">
+                <div class="header-img-wrapper">
+                    <div class="preview-item">
+                        <div class="instructor-img">
+                            <img src="{{template}}images/profile/author.png" alt="{{instructorName}}">
+                       <div class="instructor-bio">{{{instructorAbout}}}</div>
+                        </div> 
+                    </div>
+
+                </div>
+                       
+                    <div class="header-form-content">
+                        {{#isThankyouPage}}
+                        <div class="form-thanks">
+                           <span>{{{mui.thankyouText.title}}} <br/> {{{mui.thankyouText.subtitle}}}</span>
+                        </div>
+                     
+                        {{/isThankyouPage}} {{^isThankyouPage}}
+                        <form id="landing-form" class="header-form" method="post" novalidate="novalidate">
+                            <input type="hidden" id="gclid_field" name="gclid_field" value="">
+                                <div class="form-row">
+                                    <span class="input-wrapper">
+                                        <input type="text" name="name_f" value="" placeholder="First Name*" required="">
+                                    </span>
+                                    <span class="input-wrapper">
+                                        <input type="text" name="name_l" value="" placeholder="Last Name*" required="">
+                                    </span>
+                                </div>
+                                <div class="form-row">
+                                    <span class="input-wrapper">
+                                        <input type="text" name="phone" value="" placeholder="Phone Number" required="">
+                                    </span>
+                                    <span class="input-wrapper">
+                                        <input type="email" name="email" value="" placeholder=" Email*" required="">
+                                    </span>
+                                </div>
+                                <div class="form-row">
+                                    <button type="submit" id="takeCourse" name="submit">
+                                        {{{mui.buttons.formInsButton}}}
+                                    </button>
+                                </div>
+                        </form>
+                             {{/isThankyouPage}}
+                    </div>        
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="landing-wrapper">
+        <br />
+        <div class="landing-featured-courses">
+            <div class="cnt">
+                <div class="tab-categories">
+                    {{#courses}} {{{.}}} {{/courses}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-content">
+        <div class="cnt">
+            <div class="footer-wrapper">
+                <div class="footer__col">
+                    <div class="button-col">
+                        <a class="scroll btn footer__btn">{{{mui.buttons.formInsButton}}}</b></a>
+                    </div>
+                    <div class="bbb-col">
+                        <a href="https://www.bbb.org/sdoc/business-reviews/scholastic-prep-courses-books-and-materials/knowledgecity-in-carlsbad-ca-171988452/#bbbonlineclick" target="_blank">
+                            <img class="bbb" src="https://staticcontent.knowledgecity.com/templates/ussite/1.0/images/BBB_A_rating--v1545743542.png" alt="Blue Seal" />
+                        </a>
+                    </div>
+                </div>
+                <hr class="footer__hr">
+                <p class="copyright"><a href="https://www.knowledgecity.com/en/privacy" target="_blank">Privacy</a>&nbsp;|&nbsp;<a href="https://www.knowledgecity.com/en/terms" target="_blank">Terms</a>&nbsp;|&nbsp;Corporate - Copyright© 2019 KnowledgeCity®. All Rights Reserved</p>
+        </div>
+    </div>
+</div>
+<div id="leanOverlay"></div>
+<div id="mContainer"></div>
+
+   
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#show-btn").click(function(){
+        $("#show-btn").hide();
+          
+            $(".hide").stop().slideDown();
+        });
+         $("#hide-btn").click(function(){
+            $(".hide").stop().slideUp();
+            $("#show-btn").show();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    });
+</script>     

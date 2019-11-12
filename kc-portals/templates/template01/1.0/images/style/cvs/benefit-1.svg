@@ -1,0 +1,34 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224.5 212">
+	<defs>
+		<style>
+			.cls-1{fill:rgb(202,16,29);}
+			.cls-2{fill:rgb(255,255,255);}
+		</style>
+	</defs>
+	<title>benefit-1</title>
+	<circle class="cls-2" cx="110" cy="109.5" r="74"/>
+	<path class="cls-1" d="M68.19,98.2c-4.21,5.6-4.18,11.6.06,17.14s9.94,8,16.32,4.57c6.55-3.49,12.52-8.06,20.32-13.2-7.87-5.18-13.84-9.8-20.43-13.24C78.1,90.15,72.34,92.67,68.19,98.2Z"/>
+	<path class="cls-1" d="M135,95.35c-5,3.1-9.56,6.87-15.71,11.35,6.14,4.46,10.88,8.39,16.08,11.56,7.8,4.76,14.63,3.68,19.59-2.45,4.64-5.72,4.53-12.87-.26-18.51C149.61,91.33,142.88,90.46,135,95.35Z"/>
+	<path class="cls-1" d="M111.77,13.73a93,93,0,1,0,93,93A93,93,0,0,0,111.77,13.73Zm53.41,110.1c-8.28,10.28-21.51,13.33-33.34,7-6.88-3.72-13.15-8.56-20.08-13.15-6.77,4.48-13.24,9.48-20.36,13.3-11.68,6.27-25.23,3-33.26-7.33a27.27,27.27,0,0,1,0-33.65c8-10.33,21.51-13.69,33.19-7.46,7.13,3.8,13.63,8.78,20.52,13.31,6.43-4.27,12.89-9.24,20-13.08,11.79-6.4,25.17-3.36,33.35,6.8A27.23,27.23,0,0,1,165.18,123.83Z"/>
+	<script xmlns="http://www.w3.org/2000/svg" type="text/javascript">
+		
+		var params = {};
+        location.search.replace(/[?&amp;]+([^=&amp;]+)=([^&amp;]*)/gi,function(s,k,v){params[k]=v});
+        var color1 = params['cls1'];
+        if( !color1 || color1 == '' ) color1 = 'rgb( 85, 85, 85)';
+        var color2 = params['cls2'];
+        if( !color2 || color2 == '' ) color2 = 'rgb(255,255,255)';
+		var cls1 = document.getElementsByClassName("cls-1");
+		var i = 0;
+		while(typeof cls1[i] !== 'undefined') {
+			cls1[i].style.fill = color1;
+			i++;
+		}
+		var cls2 = document.getElementsByClassName("cls-2");
+		var i = 0;
+		while(typeof cls2[i] !== 'undefined') {
+			cls2[i].style.fill = color2;
+			i++;
+		}
+	</script>
+</svg>

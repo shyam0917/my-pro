@@ -1,0 +1,74 @@
+<div id="loginPopUp" class="popupWindow loginPopUp">
+    <div class="progressOverlay hidden"><div class="progressOverlayBg"></div><div class="progressOverlaySpinner"><i class="fa fa-spinner fa-pulse"></i></div></div>
+    <a class="modal_close"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-times fa-stack-1x fa-inverse"></i></span></a>
+    <div class="title-h1" id="loginTitle"><div class="h1">{{mui.pageContent.loginFormTitle}}</div></div>
+    <div class="title-h1 hidden" id="firstLoginTitle"><div class="h1">{{mui.pageContent.firstLoginFormTitle}}</div></div>
+    <div class="content">
+        <div class="alert alert-danger text-align hidden" id="loginFormMessage"></div>
+        <form class="flex-form" method="post" action=""  data-option="UsernamePassword" id="loginform" data-handler="onSubmitLoginForm">
+            <div class="flex-form__row">
+                <label class="flex-form__label" for="loginform-username">{{mui.pageContent.formlabel.username}}:</label>
+                <input type="text" class="flex-form__input" value="" name="username" id="loginform-username"
+                       placeholder="{{mui.pageContent.formlabel.username}}"
+                       required="true" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+            </div>
+            <div class="flex-form__row">
+                <label class="flex-form__label" for="loginform-password">{{mui.pageContent.formlabel.password}}:</label>
+                <input  class="flex-form__input" type="password" class="form-control input" value="" name="password"
+                        id="loginform-password"
+                        placeholder="{{mui.pageContent.formlabel.password}}"
+                        required="true" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+            </div>
+            <div>
+                <input type="submit" name="submit" value="{{mui.submit}}" class="button" />
+            </div>
+        </form>
+        <form class="flex-form hidden" method="post" action="" data-location="popup" id="firstloginform" data-handler="onSubmitFirstLoginForm">
+            <div class="flex-form__row">
+                <label class="flex-form__label" for="firstloginform-username">{{mui.pageContent.formlabel.username}}:</label>
+                <input type="text" class="flex-form__input" value="" name="username"
+                       id="firstloginform-username"
+                       placeholder="{{mui.pageContent.formlabel.username}}"
+                       required="true" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+            </div>
+            <div class="flex-form__row">
+                <label class="flex-form__label" for="firstloginform-newpassword">{{mui.pageContent.formlabel.newpassword}}:</label>
+                <input type="password" class="flex-form__input" value=""
+                       name="password"
+                       id="firstloginform-newpassword"
+                       placeholder="{{mui.pageContent.formlabel.newpassword}}"
+                       required="true" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+            </div>
+            <div class="flex-form__row">
+                <label class="flex-form__label" for="firstloginform-newpassword2">{{mui.pageContent.formlabel.newpassword2}}:</label>
+                <input type="password" class="flex-form__input" value="" name="password2"
+                       id="firstloginform-newpassword2" placeholder="{{mui.pageContent.formlabel.newpassword2}}"
+                       required="true" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+            </div>
+            <div class="flex-form__row">
+                <label class="flex-form__label" for="firstloginform-firstName">{{mui.pageContent.formlabel.firstName}}:</label>
+                <input type="text" class="flex-form__input" value="" name="first_name"
+                       id="firstloginform-firstName" placeholder="{{mui.pageContent.formlabel.firstName}}"
+                       required="true" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+            </div>
+            <div class="flex-form__row">
+                <label class="flex-form__label" for="firstloginform-lastName">{{mui.pageContent.formlabel.lastName}}:</label>
+                <input type="text" class="flex-form__input" value="" name="last_name"
+                       id="firstloginform-lastName"
+                       placeholder="{{mui.pageContent.formlabel.lastName}}"
+                       required="true" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+            </div>
+            <div class="flex-form__row">
+                <label class="flex-form__label" for="firstloginform-email">{{mui.pageContent.formlabel.email}}:</label>
+                <input type="text" class="flex-form__input" value="" name="email"
+                       id="firstloginform-email"
+                       placeholder="{{mui.pageContent.formlabel.email}}"
+                       required="true"
+                       data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+            </div>
+            <div>
+                <input type="submit" name="submit" value="{{mui.submit}}" class="button" />
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,360 @@
+[{
+        "name": "mewa",
+        "w": "90",
+        "company": {
+            "en": "Ministry of Environment Water and Agriculture",
+            "es": "Ministry of Environment Water and Agriculture",
+            "ar": "وزارة البيئة والمياه والزراعة"
+        },
+        "description": ""
+    }, {
+        "name": "mci",
+        "w": "170",
+        "company": {
+            "en": "Ministry of Commerce And Investment",
+            "es": "Ministry of Commerce And Investment",
+            "ar": "وزارة التجارة والاستثمار"
+        },
+        "description": ""
+    }, {
+        "name": "ngha",
+        "w": "90",
+        "company": {
+            "en": "National Guard Health Affairs",
+            "es": "National Guard Health Affairs",
+            "ar": "الشؤون الصحية للحرس الوطني"
+        },
+        "description": "National Guard Health Affairs is a medical complex in the Kingdom of Saudi Arabia. It consists of medical cities that are scattered in many regions of Saudi Arabia."
+    }, {
+        "name": "aramco",
+        "w": "90",
+        "company": {
+            "en": "Saudi Arabian Oil Co",
+            "es": "Saudi Arabian Oil Co",
+            "ar": "أرامكو السعودية"
+        },
+        "description": "Founded 80 years ago, Saudi Aramco, its subsidiaries and affiliates are located in Saudi Arabia, China, Japan, India, the Netherlands, the Republic of Korea, Singapore, the United Arab Emirates, Egypt, the United Kingdom and the United States. Saudi Aramco has revenues of over 311 billion dollars and employs over 55,000 people."
+    }, {
+        "name": "savola",
+        "w": "100",
+        "company": {
+            "en": "Savola",
+            "es": "Savola",
+            "ar": "صافولا"
+        },
+        "description": ""
+    }, {
+        "name": "alj",
+        "w": "90",
+        "company": {
+            "en": "Abdul Latif Jameel",
+            "es": "Abdul Latif Jameel",
+            "ar": "مجموعة عبد اللطيف جميل"
+        },
+        "description": "The late Saudi visionary and entrepreneur, Sheikh Abdul Latif Jameel (1909-1993), founded the business Abdul Latif Jameel (ALJ) in 1945. Just ten years later, ALJ became the sole distributor of Toyota vehicles in Saudi Arabia. Today ALJ has diversified, expanding its services to include real estate, consumer finance, and general trading activities."
+
+    }, {
+        "name": "cargo",
+        "w": "90",
+        "company": {
+            "en": "Saudi Airlines Cargo",
+            "es": "Saudi Airlines Cargo",
+            "ar": "الخطوط السعودية للشحن"
+        },
+        "description": "Saudi Airlines Cargo has grown immensely since its humble beginnings many decades ago, today being recognized as a leading air cargo carrier in the Middle East. With an extensive global network spanning four continents we operate a dedicated freighter fleet and offer ample capacity on our passenger flights across Asia, Africa, Europe and the USA, reaching over 225 international destinations and 26 domestic destinations on our global network."
+    }, {
+        "name": "sfda",
+        "w": "90",
+        "company": {
+            "en": "Saudi Food & Drug Authority",
+            "es": "Saudi Food & Drug Authority",
+            "ar": "الهيئة العامة للغذاء والدواء"
+        },
+        "description": "The late Saudi visionary and entrepreneur, Sheikh Abdul Latif Jameel (1909-1993), founded the business Abdul Latif Jameel (ALJ) in 1945. Just ten years later, ALJ became the sole distributor of Toyota vehicles in Saudi Arabia. Today ALJ has diversified, expanding its services to include real estate, consumer finance, and general trading activities."
+
+    }, {
+        "name": "alinmaacademy",
+        "w": "160",
+        "company": {
+            "en": "Alinma Bank",
+            "es": "Alinma Bank",
+            "ar": "مصرف الإنماء"
+        },
+        "description": ""
+    }, {
+        "name": "rb",
+        "w": "160",
+        "company": {
+            "en": "Riyad Bank",
+            "es": "Riyad Bank",
+            "ar": "بنك الرياض"
+        },
+        "description": ""
+
+    }, {
+        "name": "arb",
+        "w": "120",
+        "company": {
+            "en": "Al Rajhi Bank",
+            "es": "Al Rajhi Bank",
+            "ar": "مصرف الراجحي"
+        },
+        "description": ""
+    }, {
+        "name": "albilad",
+        "company": {
+            "en": "Bank Albilad",
+            "es": "Bank Albilad",
+            "ar": "بنك البلاد"
+        }
+    }, {
+        "name": "salinewater",
+        "company": {
+            "en": "Saline Water Conversion Corporation",
+            "es": "Saline Water Conversion Corporation",
+            "ar": "المؤسسة العامة لتحلية المياه المالحة"
+        }
+    }, {
+        "name": "saib",
+        "w": "90",
+        "company": {
+            "en": "The Saudi Investment Bank Co",
+            "es": "The Saudi Investment Bank Co",
+            "ar": "البنك السعودي للإستثمار"
+        },
+        "description": "The Saudi Investment Bank (SAIB) is a Saudi Arabian joint stock company established in 1976 began operations in March 1977. The shareholders of SAIB, a publicly listed company, include J. P. Morgan Chase, Mizuho Corporate Bank - formerly, The Industrial Bank of Japan, Saudi public and private institutions as well as Saudi Individuals."
+    }, {
+        "name": "sabb",
+        "w": "120",
+        "company": {
+            "en": "SABB",
+            "es": "SABB",
+            "ar": "ساب"
+        },
+        "description": ""
+    }, {
+        "name": "mobily",
+        "w": "187",
+        "company": {
+            "en": "Mobily",
+            "ar": "موبايلي"
+        },
+        "description": "Bank AlJazira provides its clients with personal banking, investment banking, private banking and asset management services in Saudi Arabia."
+    }, {
+        "name": "tr",
+        "w": "120",
+        "company": {
+            "en": "TECNICAS REUNIDAS",
+            "es": "TECNICAS REUNIDAS",
+            "ar": "TECNICAS REUNIDAS"
+        },
+        "description": ""
+    }, {
+        "name": "srm",
+        "w": "129",
+        "company": {
+            "en": "Alturki Group",
+            "es": "Alturki Group",
+            "ar": "مجموعة التركي"
+        },
+        "description": "Khalid Ali Alturki & Sons (Alturki) is a leading investment and development holding company that has been operating in Saudi Arabia since 1975. Its subsidiaries and joint venture companies are focused specifically on the building materials, infrastructure, information and communication technology, industrial, oil field services and renewable energy, and real-estate sectors in Saudi Arabia and neighboring Arab countries."
+    }, {
+        "name": "zg",
+        "w": "120",
+        "company": {
+            "en": "Zamil Group",
+            "es": "Zamil Group",
+            "ar": "مجموعة الزامل"
+        },
+        "description": "Zamil Group Holding Company was founded by the late Sheikh Abdullah Al-Hamad Al Zamil (1897-1961), an aspiring Saudi Arabian entrepreneur, who established a modest trading entity selling food items and textiles in the Kingdom of Bahrain in the 1930s. Later, he expanded his business successfully into real estate investments in Saudi Arabia."
+    }, {
+        "name": "nada",
+        "w": "140",
+        "company": {
+            "en": "NADA",
+            "es": "NADA",
+            "ar": "ندى"
+        },
+        "description": "The company was co-founded in 1401H\/1981G, by Ahmed Bin Hamad Al-Said. For over 33 years, the name Herfy has become synonymous with world-class Saudi quality, entrepreneurship and innovation. It is one of today's leading Saudi companies, with a successful reputation built on its market-leading restaurants, bakery & sweets, and meat processing businesses."
+    }, {
+      "name": "saptco",
+      "w": "167",
+      "company": {
+          "en": "Saudi Public Transport Co",
+            "es": "Saudi Public Transport Co",
+          "ar": "الشركة السعودية للنقل الجماعي - سابتكو"
+      },
+      "description": "SAPTCO operates around the clock with terminals in the Kingdom's major cities and through an extensive network of local and international agents. SAPTCO operates a fleet around (3000) buses of various capacities and sizes according to the latest production of the global up to date carrying out 579 daily scheduled trips, connecting 600 cities, towns and villages Kingdom wide. Daily international trips are scheduled to Kuwait, Bahrain, Qatar, U.A.E., Yemen, Egypt, Jordan, Syria, Sudan and Lebanon."
+    }, {
+        "name": "aec",
+        "w": "100",
+        "company": {
+            "en": "Advanced Electronics Co",
+            "es": "Advanced Electronics Co",
+            "ar": "شركة الإلكترونيات المتقدمة"
+        },
+        "description": "Established in 1988 under the directives of the Government of Saudi Arabia, the Advanced Electronics Company is an offset program company and now a recognized leader in the field of modern electronics manufacturing, system integration and repair and maintenance services."
+    }, {
+        "name": "st",
+        "w": "170",
+        "company": {
+            "en": "Saudi Grains Organization",
+            "es": "Saudi Grains Organization",
+            "ar": "المؤسسة العامة للحبوب"
+        },
+        "description": ""
+    }, {
+        "name": "rc",
+        "w": "170",
+        "company": {
+            "en": "Riyadh Chamber",
+            "es": "Riyadh Chamber",
+            "ar": "غرفة الرياض"
+        },
+        "description": ""
+    }, {
+        "name": "sinopec",
+        "w": "170",
+        "company": {
+            "en": "SINOPEC",
+            "es": "SINOPEC",
+            "ar": "SINOPEC"
+        },
+        "description": ""
+    }, {
+        "name": "pmu",
+        "w": "170",
+        "company": {
+            "en": "Prince Mohammad Bin Fahd University",
+            "es": "Prince Mohammad Bin Fahd University",
+            "ar": "جامعة الأمير محمد بن فهد"
+        },
+        "description": ""
+    }, {
+        "name": "ibnsina",
+        "w": "120",
+        "company": {
+            "en": "Ibn Sina – SABIC",
+            "es": "Ibn Sina – SABIC",
+            "ar": "ابن سينا - سابك "
+        },
+        "description": "Ranked among the world’s largest petrochemicals manufacturers, SABIC is a public company based in Riyadh, Saudi Arabia. 70% of the Company’s shares are owned by the Saudi Arabian government, with the remaining 30% held by private investors in Saudi Arabia and other countries of the Gulf Cooperation Council."
+    }, {
+        "name": "petromin",
+        "w": "128",
+        "company": {
+            "en": "Petromin Corporation",
+            "es": "Petromin Corporation",
+            "ar": "شركة بترومين"
+        },
+        "description": "Established in 1962, a joint venture between Saudi Aramco and Mobil investments, Petromin Corporation specializes in lubricant oils including manufactural, industrial, and automotive oils and lubricants."
+    }, {
+        "name": "abudawood",
+        "w": "170",
+        "company": {
+            "en": "Abudawood",
+            "es": "Abudawood",
+            "ar": "أبو داود"
+        },
+        "description": ""
+    }, {
+        "name": "sg",
+        "w": "90",
+        "company": {
+            "en": "Sunbulah Group",
+            "es": "Sunbulah Group",
+            "ar": "مجموعة السنبلة"
+        },
+        "description": "Since founded in 1980, Sunbulah Group has set its vision to satisfy the consumer’s needs and has been developed to one of the largest food manufacturing companies in Saudi Arabia and the Middle East."
+    }, {
+        "name": "ai",
+        "w": "170",
+        "company": {
+            "en": "Alrajhi Investment",
+            "es": "Alrajhi Investment",
+            "ar": "الراجحي الاستثمارية"
+        },
+        "description": ""
+    }, {
+        "name": "ryadah",
+        "w": "159",
+        "company": {
+            "en": "National Entrepreneurship Institute",
+            "es": "National Entrepreneurship Institute",
+            "ar": "معهد ريادة الأعمال الوطني"
+        },
+        "description": "Riyad Bank is one of the largest financial institutions in Saudi Arabia and the Middle East, with a strong corporate and retail banking franchise."
+    }, {
+        "name": "herfy",
+        "w": "140",
+        "company": {
+            "en": "Herfy Food Services Corporation",
+            "es": "Herfy Food Services Corporation",
+            "ar": "شركة هرفي للخدمات الغذائية"
+        },
+        "description": "The company was co-founded in 1401H\/1981G, by Ahmed Bin Hamad Al-Said. For over 33 years, the name Herfy has become synonymous with world-class Saudi quality, entrepreneurship and innovation. It is one of today's leading Saudi companies, with a successful reputation built on its market-leading restaurants, bakery & sweets, and meat processing businesses."
+    }, {
+        "name": "muhaidib",
+        "w": "90",
+        "company": {
+            "en": "Al-Muhaidib",
+            "es": "Al-Muhaidib",
+            "ar": "مجموعة المهيدب"
+        },
+        "description": "The Al Muhaidib Group is an international private group of companies based in Saudi Arabia that was founded in 1946 by Sheikh Abdul Kadir bin Abdul Muhsin Al-Muhaidib."
+    }, {
+        "name": "sale",
+        "w": "133",
+        "company": {
+            "en": "SALE Advanced Co",
+            "es": "SALE Advanced Co",
+            "ar": "شركة سيل المتقدمة المحدودة"
+        },
+        "description": "From inception, the company was dedicated to maintaining sustainable competitive advantage for STC by leveraging its positioning and capabilities to drive growth. Within one year of operation, we have firmly established ourselves as a leading force, serving over 15 million satisfied subscribers and generating a healthy turnover."
+    }, {
+        "name": "almajal",
+        "w": "90",
+        "company": {
+            "en": "almajal G4S",
+            "es": "almajal G4S",
+            "ar": "شركة المجال G4S"
+        },
+        "description": "almajal was founded in 1981. Today G4S operate in over (120) countries with over (585,000) employees. The company trades on the London & Copenhagen Stock Exchanges. G4S is directly involved in the provision of primary security systems for many heads of state throughout Europe and elsewhere."
+    }, {
+        "name": "xenel",
+        "w": "95",
+        "company": {
+            "en": "Xenel Group",
+            "es": "Xenel Group",
+            "ar": "زينل للصناعات المحدودة"
+        },
+        "description": "Xenel was founded in 1973. Over its 40 year history Xenel, through its internal skills, joint venture partnerships and associations with global companies throughout the world, has built expertise in energy, petrochemicals, construction, infrastructure development, healthcare, industrial services, IT, logistics, real estate and global investing."
+    }, {
+        "name": "malath",
+        "w": "95",
+        "company": {
+            "en": "Malath Insurance",
+            "es": "Malath Insurance",
+            "ar": "ملاذ للتأمين"
+        },
+        "description": ""
+    }, {
+        "name": "saico",
+        "w": "140",
+        "company": {
+            "en": "Saudi Arabian Cooperative Insurance Co",
+            "es": "Saudi Arabian Cooperative Insurance Co",
+            "ar": "الشركة العربية السعودية للتأمين التعاوني - سايكو"
+        },
+        "description": "SAICO, a Saudi joint stock company, was established in 2006 and it's Head Office location is Riyadh. In the year 2010 the company obtained SAMA's approval to market insurance products. The company aims at practicing all relevant activities to insurance. SAICO has a capital of SR 100 million divided into 10 million shares with a face value of SR10 per share."
+    }, {
+        "name": "care",
+        "w": "141",
+        "company": {
+            "en": "National Medical Care Co",
+            "es": "National Medical Care Co",
+            "ar": "الشركة الوطنية للرعاية الطبية - رعاية"
+        },
+        "description": "The National Medical CARE company was founded in August 2003 as a closed joint stock of the public sector represented by the General Organization for Social Insurance and a group of private shareholders, and the National Medical CARE company has two of the main private sector hospitals in the Riyadh region \"Riyadh Care\", which was founded in 1990 and the hospital, \"national\", which was founded in 1966."
+    }
+]

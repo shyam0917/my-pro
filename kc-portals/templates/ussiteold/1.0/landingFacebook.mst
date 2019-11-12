@@ -1,0 +1,153 @@
+<section class="signup-page signup-page--individual hidden">
+    <div class="cnt" id="container">
+    </div>
+</section>
+
+<div class="facebooklanding-wrapper">
+<div class="inner-page inner-page--facebooklanding {{className}}">
+    <div class="cnt">
+        <div class="header-text-wrapper">
+            <h1 class="header-text-title">Put Your Career in High Gear</br>with KnowledgeCity!</h1>
+            <h2 class="header-text-color animated">
+
+                    {{#randomPhrase}}{{randomPhrase}}{{/randomPhrase}}
+                    {{^randomPhrase}}Build a new skill{{/randomPhrase}}
+
+             </h2>
+            <div class="header-text-description">
+                Over 12,000 Training  Videos <br> Business - Computer - Safety - Finance
+                <div class="smaller">No Commitment; Cancel Anytime</div>
+            </div>
+        </div>
+
+        <div id="header-form" class="header-form-wrapper">
+            <div class="header-form-title">Create An Account</div>
+            <div class="header-form-input"><input type="email" name="email" placeholder="Email" autocomplete="new-password"></div>
+            <div class="header-form-input"><input type="password" name="password" placeholder="Password" autocomplete="new-password"></div>
+            <div class="header-form-button"><a data-handler="onSubmitFacebookLanding">Get 3 Months for $0.99</a></div>
+            <div class="header-form-smaller hidden">No Commitment; Cancel Anytime</div>
+        </div>
+    </div>
+</div>
+
+<div class="cnt">
+    <div class="featured-icon-wrapper">
+        <div class="featured-icon-item">
+            <div class="featured-icon-circle clock"></div>
+            <div class="featured-icon-text">24/7 Access</div>
+        </div>
+        <div class="featured-icon-item featured-icon-item-grey">
+            <div class="featured-icon-circle book"></div>
+            <div class="featured-icon-text">Unlimited Access</div>
+        </div>
+        <div class="featured-icon-item">
+            <div class="featured-icon-circle heat"></div>
+            <div class="featured-icon-text">Top Quality</div>
+        </div>
+        <div class="featured-icon-item">
+            <div class="featured-icon-circle stamp"></div>
+            <div class="featured-icon-text">Certificates of Proficiency</div>
+        </div>
+    </div>
+</div>
+
+<div class="cnt">
+    <div class="lpfb-content-courses-wrapper">
+
+        {{#categories}}
+                {{#category}}
+                    <h3 class="lpfb-content-courses-title">Top Courses in <span class="capitalize-text">{{categoryTitle}}</span></h3>
+                    <div class="flat-items">
+                    {{#visible}}
+                        <div class="flat-item">
+                               <div class="flat-item__inner">
+                                <div class="flat-item__img">
+                                   <picture>
+                                      {{#imgSources}}
+                                        <source
+                                            media="(min-width: {{minWidth}}px)" srcset="{{imgPath}}{{sourse}}.jpg, {{imgPath}}{{sourse2x}}.jpg 2x">
+                                      {{/imgSources}}
+                                      <img src="{{imgPath}}{{imgFile}}" srcset="{{imgPath}}{{imgFile2x}} 2x" alt="">
+                                   </picture>
+
+                                    <div class="course-video__play" data-handler="onPlayPreview" data-course-id="{{id}}" data-lessonid="{{introGUID}}" data-lesson-type="video" data-invitation="true"></div>
+                                </div>
+                                <div class="flat-item__title">
+                                    <div class="flat-item--left">
+                                        <a class="flat-item__link" href="{{url}}">
+                                            {{title}}
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flat-item__info">
+
+                                    <div class="flat-item__info--left">
+                                        Author: {{author}}
+                                    </div>
+                                    <div class="flat-item__info--right"></div>
+
+                                    <div class="flat-item__info--left">
+                                        Runtime: {{trt}}
+                                    </div>
+                                    <div class="flat-item__info--left tagline">
+                                         {{tagline}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {{/visible}}
+                    </div>
+
+                    <div class="hidden-wrapper">
+                    {{#hidden}}
+                        <div class="flat-items hidden-courses hidden" data-number="{{number}}">
+                            {{#hiddenCourses}}
+                                <div class="flat-item">
+                                       <div class="flat-item__inner">
+                                        <div class="flat-item__img">
+                                               <picture>
+                                                  {{#imgSources}}
+                                                    <source
+                                                        media="(min-width: {{minWidth}}px)" srcset="{{imgPath}}{{sourse}}.jpg, {{imgPath}}{{sourse2x}}.jpg 2x">
+                                                  {{/imgSources}}
+                                                  <img src="{{imgPath}}{{imgFile}}" srcset="{{imgPath}}{{imgFile2x}} 2x" alt="">
+                                               </picture>
+                                            <div class="course-video__play" data-handler="onPlayPreview" data-course-id="{{id}}" data-lessonid="{{introGUID}}" data-lesson-type="video" data-invitation="true"></div>
+                                        </div>
+                                        <div class="flat-item__title">
+                                            <div class="flat-item--left">
+                                                <a class="flat-item__link" href="{{url}}">
+                                                    {{title}}
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="flat-item__info">
+                                            <div class="flat-item__info--left">
+                                                Author: {{author}}
+                                            </div>
+                                            <div class="flat-item__info--right"></div>
+
+                                            <div class="flat-item__info--left">
+                                                Runtime: {{trt}}
+                                            </div>
+                                            <div class="flat-item__info--left tagline">
+                                                 {{tagline}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                             {{/hiddenCourses}}
+                        </div>
+                    {{/hidden}}
+
+                     <div class="pagination">
+                        <a class="btn tr-btn" data-handler="onShowMore">Show more</a>
+                    </div>
+                    </div>
+
+                {{/category}}
+                </br>
+        {{/categories}}
+    </div>
+</div>
+</div>

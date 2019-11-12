@@ -1,0 +1,249 @@
+.main-library {
+  background: url(../../images/style/cvs/header.jpg) no-repeat center fixed/cover;
+}
+
+.main-contact {
+  background: url(../../images/style/cvs/footer.jpg) no-repeat top;
+}
+
+.course-item__img--business {
+  background: url(../../images/style/cvs/course-item-1.jpg) no-repeat center/cover;
+}
+
+.course-item__img--computer {
+  background: url(../../images/style/cvs/course-item-2.jpg) no-repeat center/cover;
+}
+
+.course-item__img--safety {
+  background: url(../../images/style/cvs/safety.png) no-repeat center/cover;
+}
+
+.course-item__img--banking {
+  background: url(../../images/style/cvs/course-item-4.jpg) no-repeat center 0/cover;
+}
+
+.course-item__name:hover {
+  color: #ca101d;
+}
+
+.usermenu > ul > li .submenu__title:hover,
+.usermenu > ul > li > a:hover {
+  background: #ca101d;
+  color: #ffffff;
+}
+
+.usermenu .dropdown-menu > li > a:active, .usermenu .dropdown-menu > li > a:focus, .usermenu .dropdown-menu > li > a:hover {
+  background: #ca101d;
+  color: #333333;
+}
+
+.search-form__open:hover {
+  color: #ca101d;
+}
+
+.search-form__close:hover {
+  color: #ca101d;
+}
+
+.submenu__content li a:hover {
+  background: #ca101d;
+}
+
+.menu > ul > li span > a,
+.menu > ul > li > a {
+  background: #ca101d;
+  color: #ffffff;
+}
+
+.menu > ul > li span > a:active, .menu > ul > li span > a:hover,
+.menu > ul > li > a:active,
+.menu > ul > li > a:hover {
+  color: #333333;
+  background: #ffffff;
+}
+
+.menu > ul > li span > a:focus,
+.menu > ul > li > a:focus {
+  color: #ffffff;
+  background: #ca101d;
+}
+
+.menu > ul > li span > a.active,
+.menu > ul > li > a.active {
+  color: #333333;
+}
+
+.menu > ul > li span > a.active:focus,
+.menu > ul > li > a.active:focus {
+  color: #333333;
+}
+
+.course-card__link:hover {
+  color: #ffffff;
+  border-color: #ca101d;
+  background: #ca101d;
+}
+
+.course-card__link:hover span {
+  color: #ffffff;
+}
+
+.course-card__link:hover i {
+  color: #ffffff;
+}
+
+.lessons-menu__fav .fa-star {
+  color: #ca101d;
+}
+
+.library-menu__category-header a:hover {
+  color: #ca101d;
+}
+
+.library-menu__category-header a:focus {
+  color: #ca101d;
+}
+
+.library-menu__icon:hover .library-menu__minus, .library-menu__icon:hover .library-menu__plus {
+  color: #ca101d;
+}
+
+.course-progress__item.watched {
+  background: #ca101d;
+}
+
+.course-info__tab.active:after, .course-info__tab:hover:after {
+  background: #ca101d;
+}
+
+.course-info__test:hover {
+  border-color: #ca101d !important;
+  background: #ca101d;
+  color: #ffffff !important;
+}
+
+.course-info__test:focus {
+  color: #ffffff !important;
+}
+
+.pagination li.active > a:hover {
+  border-color: #ca101d;
+}
+
+.bookmarks .bookmark.active {
+  background: #ca101d;
+  color: #333333;
+}
+
+.learning-progress__bar {
+  background: #ca101d;
+}
+
+.button:focus, .button:hover {
+  border-color: #ca101d;
+  color: #ffffff;
+  background: #ca101d;
+}
+
+.course-info__tab.active a:after {
+  background: #ca101d;
+}
+
+.pagination li.active > a:hover {
+  border-color: #ca101d;
+}
+
+.bookmarks .bookmark.active {
+  background: #ca101d;
+  color: #ffffff;
+}
+
+.learning-progress__bar {
+  background: #ca101d;
+}
+
+.faq .question.active .faq-question {
+  border-top-color: #ca101d;
+}
+
+.faq-question {
+  border-left-color: #ca101d;
+}
+
+.faq .question.active .faq-icon {
+  color: #ca101d;
+  border-color: #ca101d;
+}
+
+.faq .question.active .faq-question:hover {
+  border-top-color: #ca101d;
+}
+
+div.title-h1 {
+  border-left-color: #ca101d;
+}
+
+.modal_close:hover {
+  color: #ca101d;
+}
+
+.course-info__tab a.active:after, .course-info__tab a:hover:after {
+  background: #ca101d;
+}
+
+.course-info__test:hover {
+  border-color: #ca101d !important;
+}
+
+body.ar .faq-question {
+  border-left: none;
+  border-right-color: #ca101d !important;
+}
+
+.inner-header {
+  background: #ecedeb;
+  border: solid #acadae;
+  border-width: 1px 0;
+  color: #747678;
+}
+
+.modalWindow .content:after {
+  background: #ca101d;
+}
+
+#content > div.main-benefits > div > div > div:nth-child(1) > div
+{
+    background-image: url(../../images/style/cvs/benefit-1.svg);
+    width: 70px;
+    height: 70px;
+}
+#content > div.main-benefits > div > div > div:nth-child(2) > div
+{
+    background-image: url(../../images/style/cvs/benefit-2.svg);
+    width: 70px;
+    height: 70px;
+}
+#content > div.main-benefits > div > div > div:nth-child(3) > div
+{
+    background-image: url(../../images/style/cvs/benefit-3.svg);
+    width: 70px;
+    height: 70px;
+}
+#content > div.main-benefits > div > div > div:nth-child(4) > div
+{
+    background-image: url(../../images/style/cvs/benefit-4.svg);
+    width: 70px;
+    height: 70px;
+}
+#content > div.main-benefits > div > div > div:nth-child(5) > div
+{
+    background-image: url(../../images/style/cvs/benefit-5.svg);
+    width: 70px;
+    height: 70px;
+}
+#content > div.main-benefits > div > div > div:nth-child(6) > div
+{
+    background-image: url(../../images/style/cvs/benefit-6.svg);
+    width: 70px;
+    height: 70px;
+}

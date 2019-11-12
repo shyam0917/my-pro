@@ -1,0 +1,67 @@
+<div id="previewModal" class="previewWindow preview--course">
+    <div class="progressOverlay hidden">
+        <div class="progressOverlayBg"></div>
+        <div class="progressOverlaySpinner">
+            <i class="fa fa-spinner fa-pulse"></i>
+        </div>
+    </div>
+    <a class="modal_close"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-times fa-stack-1x fa-inverse"></i></span></a>
+    <div class="modal_flex{{#ltr}} ltr{{/ltr}}">
+        <div class="content content_courses">
+            <div class="course-video__preview" id="courseVideoEmbed" ></div>
+        </div>
+        <div class="preview-sidebar">
+            <h3 class="course-card__header">
+                <a href="{{courseData.url}}" class="modal_close initial">
+                    <span class="library-item__title">
+                            {{courseData.title}}
+                    </span>
+                </a>
+            </h3>
+
+            <div class="preview-course-details">
+                <div class="preview-course-information">
+                <div class="library-item__caption">
+                        <div class="library-item__icon">
+                            <i class="icon icon-author"></i>
+                        </div>
+                        <span class="library-item__value">
+                            {{courseData.author}}
+                        </span>
+                    </div>
+                    <div class="library-item__caption">
+                        <div class="library-item__icon">
+                            <i class="icon icon-runtime"></i>
+                        </div>
+                        <span class="library-item__value">
+                            {{courseData.trt}}
+                        </span>
+                    </div>
+                    <div class="library-item__caption totalLessons">
+                        <div class="library-item__icon">
+                            <i class="icon icon-lessons"></i>
+                        </div>
+                        <span class="library-item__value">
+                            {{courseData.totallessons}}
+                        </span>
+                    </div>
+                    <div class="library-item__caption">
+                        <div class="library-item__icon">
+                            <i class="fa fa-globe fa-lg"></i>
+                        </div>
+                        <span class="library-item__value">
+                            {{courseData.langs}}
+                        </span>
+                    </div>
+                </div>
+                <div class="library-item__description">
+                    {{courseData.description}}
+
+                </div>
+                <div class="course-card__link-header">
+                    <a href="{{courseData.url}}" class="course-card__link modal_close"><span> {{#goToCourse}}{{goToCourse}}{{/goToCourse}} {{^goToCourse}} {{mui.goToCourse}}{{/goToCourse}} </span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+<div class="inner-header inner-header--about">
+	<div class="cnt">
+		<h1 class="inner-header__title">
+			{{title}}
+		</h1>
+		<p class="inner-header__subtitle">
+			{{subTitle}}
+		</p>
+	</div>
+</div>
+
+<div class="inner-page">
+	<div class="cnt">
+		<div class="inner-page__content article">
+			<div class="article__row">
+				<div class="article__col">
+					<h3 class="article__title">{{Header1}}</h3>
+					{{{Text1}}}
+				</div>
+				<div class="article__col">
+					<div
+							class="embedvideo"
+							data-ctrl="EmbedVideo"
+							id="embed-video"
+							data-vtt="About_Us_Education/About_Us_Education"
+							data-filename="About_Us_Education"
+					>
+						<div class="embedvideo__player" data-handler="onPlayVideo">
+							<img src="{{VIEW}}images/video-education.png" class="embedvideo__preview" >
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="article__row">
+				<div class="article__col">
+					<h3 class="article__title">{{Header2}}</h3>
+					{{{Text2}}}
+					<h3 class="article__title">{{Header3}}</h3>
+					{{{Text3}}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

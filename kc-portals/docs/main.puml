@@ -1,0 +1,12 @@
+@startuml
+
+(*)  --> "index.html: page.dispatcher();"
+"index.html: page.dispatcher();" --> "$(window).on('hashchange')"
+"$(window).on('hashchange')" --> "onChangeLocation()"
+"onChangeLocation()" --> "onLoadModule()"
+"onLoadModule()" --> "Getting controller and template.js trait"
+"Getting controller and template.js trait" --> "create page controller"
+"create page controller" --> "page.init(); page.out()"
+"page.init(); page.out()" --> (*)
+
+@enduml

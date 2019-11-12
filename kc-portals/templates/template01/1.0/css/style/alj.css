@@ -1,0 +1,239 @@
+.for-alj{
+  display: inline-block;
+}
+
+.course-item__name:hover {
+  color: #51859a;
+}
+
+.course-item__img--prida {
+  background-image: url(../../images/style/alj/section-prida.png);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: contain;
+  background-color: #E3E3E1;
+}
+
+.usermenu > ul > li .submenu__title:hover,
+.usermenu > ul > li > a:hover {
+  background: #51859a;
+  color: #ffffff;
+}
+
+.usermenu .dropdown-menu > li > a:hover {
+  background: #51859a;
+  color: #333333;
+}
+
+.search-form__open:hover {
+  color: #51859a;
+}
+
+.search-form__close:hover {
+  color: #51859a;
+}
+
+.submenu__content li a:hover {
+  background: #51859a;
+}
+
+.menu > ul > li span > a,
+.menu > ul > li > a {
+  background: #51859a;
+  color: #ffffff;
+}
+
+.menu > ul > li span > a:focus, .menu > ul > li span > a:active, .menu > ul > li span > a:hover,
+.menu > ul > li > a:focus,
+.menu > ul > li > a:active,
+.menu > ul > li > a:hover {
+  color: #333333;
+  background: #ffffff;
+}
+
+.course-card__add-course:hover,
+.course-card__link:hover {
+  color: #ffffff;
+  border-color: #51859a;
+  background: #51859a;
+}
+
+.course-card__link:hover span {
+  color: #ffffff;
+}
+
+.course-card__link:hover i {
+  color: #ffffff;
+}
+
+.lessons-menu__fav .fa-star {
+  color: #51859a;
+}
+
+.library-menu__category-header a:hover {
+  color: #51859a;
+}
+
+.library-menu__category-header a:focus {
+  color: #51859a;
+}
+
+.library-menu__icon:hover .library-menu__minus, .library-menu__icon:hover .library-menu__plus {
+  color: #51859a;
+}
+
+.course-progress__item.watched {
+  background: #51859a;
+}
+
+.course-info__tab.active:after, .course-info__tab:hover:after {
+  background: #51859a;
+}
+
+.course-info__test:hover {
+  border-color: #51859a !important;
+  background: #51859a;
+  color: #ffffff !important;
+}
+
+.course-info__test:focus {
+  color: #ffffff !important;
+}
+
+.pagination li.active > a:hover {
+  border-color: #51859a;
+}
+
+.bookmarks .bookmark.active {
+  background: #51859a;
+  color: #333333;
+}
+
+.learning-progress__bar {
+  background: #51859a;
+}
+
+.button:focus, .button:hover {
+  border-color: #51859a;
+  color: #ffffff;
+  background: #51859a;
+}
+
+.course-info__tab.active a:after {
+  background: #51859a;
+}
+
+.pagination li.active > a:hover {
+  border-color: #51859a;
+}
+
+.bookmarks .bookmark.active {
+  background: #51859a;
+  color: #ffffff;
+}
+
+.learning-progress__bar {
+  background: #51859a;
+}
+
+.faq .question.active .faq-question {
+  border-top-color: #51859a;
+}
+
+.faq-question {
+  border-left-color: #51859a;
+}
+
+.faq .question.active .faq-icon {
+  color: #51859a;
+  border-color: #51859a;
+}
+
+.faq .question.active .faq-question:hover {
+  border-top-color: #51859a;
+}
+
+div.title-h1 {
+  border-left-color: #51859a;
+}
+
+.modal_close:hover {
+  color: #51859a;
+}
+
+.course-info__tab a.active:after, .course-info__tab a:hover:after {
+  background: #51859a;
+}
+
+.course-info__test:hover {
+  border-color: #51859a !important;
+}
+
+body.ar .faq-question {
+  border-left: none;
+  border-right-color: #51859a !important;
+}
+
+.inner-header {
+  background: #ecedeb;
+  border: solid #acadae;
+  border-width: 1px 0;
+  color: #747678;
+}
+
+.modalWindow .content:after {
+  background: #51859a;
+}
+
+/** == START REQUIRED LOGIN PAGE STYLES */
+.required-login{
+  background-image : url('/images/login-bg.jpg');
+}
+.required-login__title,
+.required-login__back-link,
+.required-login__langs-link,
+.required-login__singup-link,
+.required-login__request-title,
+.required-login__step-btn:hover,
+.required-login__step-btn.active, 
+.required-login__steps-enum li {
+  color: #29a3b2;
+}
+.required-login__input:focus + .required-login__field-label, 
+.required-login__input:active + .required-login__field-label, 
+.required-login__input.is_valid + .required-login__field-label, 
+.required-login__select-wrap.is_valid + .required-login__field-label {
+  color: #6f6f6f;
+
+}
+
+body.ar .required-login__field-label {
+  left: 0;
+  right: 15px;
+}
+
+.required-login__back-link:before, .required-login__back-link:after {
+  border-right-color: #29a3b2;
+}
+.required-login__step-btn:hover:before, .required-login__step-btn:hover:after {
+  border-left-color: #29a3b2;
+}
+.required-login__input:focus, 
+.required-login__input:active, 
+.required-login__input.is_valid,
+.required-login__input {
+  border-bottom: 1px solid #7f7f7f;
+  color: #7f7f7f;
+}
+.required-login__btn {
+  background: #29a3b2;
+  color: #FFFFFF;
+}
+.required-login__btn:after {
+    border-left-color: #29a3b2;
+}
+.required-login__btn:before {
+    border-left-color: #FFFFFF;
+}
+
+/** == FINISH REQUIRED LOGIN PAGE STYLES */

@@ -1,0 +1,17 @@
+# for non optimize engine
+DirectoryIndex index.htm
+
+# for optimize start
+#DirectoryIndex index.min.htm
+
+RewriteEngine On
+
+## handle versioning using '+_rvt_+' "rivet" approach (release version tag)##
+# strip rvt from filename
+RewriteCond %{HTTP_HOST} .
+RewriteRule ^(.*)--v[0-9]+\.(html|srt|vtt|json|css|js|mst)$ $1.$2 [NC,L]
+
+# Main Rule
+RewriteCond %{REQUEST_FILENAME}     !-f
+RewriteCond %{REQUEST_URI}          !/Instructors/template/index.html
+RewriteRule ^.*                     /Instructors/template/index.html   [L]

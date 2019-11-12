@@ -1,0 +1,148 @@
+<section class="promo jack">
+	<div class="cnt">
+		<p class="promo__title">
+			{{mainTitle}}
+		</p>
+		<p class="promo__subtitle">
+			{{solutions}}<span class="logo-xs"></span>{{thousandsVideos}}
+		</p>
+	</div>
+</section>
+
+{{#featuredCategories}}
+<section class="featured-sections">
+	<div class="cnt">
+		{{#default}}
+		{{#library}}
+		<div class="featured-section drop_m_block">
+			<div class="featured-section__title drop_m_title">{{title}}
+				<div class="arrow-item__icon">
+					<div class="fa fa-angle-down"></div>
+				</div>
+			</div>
+			<a class="featured-section__link" href="{{url}}"></a>
+			<div class="featured-section__img" style="background-image:url('{{img}}'), url('{{defaultImg}}')"></div>
+			<div class="featured-section__categories drop_m_sub">
+				{{#categories}}
+				<div class="featured-section__category">
+					<div class="featured-section__icon-wrapper">
+						<span class="featured-section__icon"><img src="{{icon}}"></span>
+					</div>
+					<a href="{{url}}" class="featured-section__category-link">
+						{{title}}
+					</a>
+				</div>
+				{{/categories}}
+				<a class="featured-section__more" href="{{url}}">
+					<i class="fa fa-plus"></i>
+					{{mui.buttonLabel.more}}
+				</a>
+			</div>
+		</div>
+		{{/library}}
+		{{/default}}
+	</div>
+</section>
+{{/featuredCategories}}
+
+
+
+{{#featuredCoursesShow}}
+<section class="featured-courses" style="direction: ltr">
+	<div class="cnt">
+		<h2 class="index-title">{{learnSkills}}</h2>
+		<p class="index-subtitle">{{{takeLook}}}</p>
+		<div class="owl-carousel featured-courses__carousel" id="previewsCarousel" >
+			{{#featuredCourses}}
+			<div class="featured-course">
+				<a  class="featured-course__link" href="{{url}}" data-id="{{id}}" data-course-id="{{course_id}}" data-lessonid="{{lesson_id}}" data-lesson-type="{{lesson_type}}" data-handler="onOpenPreview">
+                    <picture class="course-video__preview-img">
+                        {{#preview.sources}}
+                        <source media="(max-width: {{maxWidth}}px)"
+                            srcset="{{preview.path}}{{src}}, {{preview.path}}{{src2x}} 2x">
+                        {{/preview.sources}}
+                        <img src="{{preview.path}}{{preview.src}}"
+                             srcset="{{preview.path}}{{preview.src}}, {{preview.path}}{{preview.src2x}} 2x" alt="">
+                    </picture>
+				</a>
+				<div class="featured-course__footer">
+					<a  class="featured-course__title" href="{{url}}">{{title}}</a>
+					<span class="featured-course__runtime">{{runtime}}</span>
+				</div>
+			</div>
+			{{/featuredCourses}}
+		</div>
+		<div class="owl-controls">
+			<span class="owl-controls__prev" data-handler="onPrevPreview"></span>
+			<span class="owl-controls__next" data-handler="onNextPreview"></span>
+		</div>
+	</div>
+</section>
+{{/featuredCoursesShow}}
+
+<section class="index-contact">
+	<div class="cnt">
+		<h2 class="index-contact__title">{{contactTitle}}</h2>
+		<p class="index-contact__description">{{contactDescription}}</p>
+		<div id="formMessage" class=""></div>
+		<form id="contactUs" class="index-contact__form" data-handler="onSubmitForm" method="post" action="">
+			<div class="index-contact__row">
+				<input
+						type="text"
+						class="index-contact__input"
+						value=""
+						id="name_f"
+						name="name_f"
+						placeholder="{{mui.pageContent.formlabel.name}}"
+						required="true"
+						data-invalidMessage="{{mui.form.requiredField.invalidName}}"
+				/>
+				<input
+						type="text"
+						class="index-contact__input"
+						value=""
+						id="tel"
+						name="tel"
+						placeholder="{{mui.pageContent.formlabel.phone}}"
+						required="true"
+						data-invalidMessage="{{mui.form.requiredField.invalidPhone}}"
+				/>
+			</div>
+			<div class="index-contact__row">
+				<input
+						type="email"
+						class="index-contact__input"
+						value=""
+						id="email"
+						name="email"
+						placeholder="{{mui.pageContent.formlabel.email}}"
+						required="true"
+						data-invalidMessage="{{mui.form.requiredField.invalidEmail}}"
+						data-invalidMessageWrongType="{{mui.form.requiredField.invalidTypeEmail}}"
+				/>
+				<input
+						type="text"
+						class="index-contact__input"
+						value=""
+						id="subject"
+						name="subject"
+						placeholder="{{mui.pageContent.formlabel.subject}}"
+						required="true"
+						data-invalidMessage="{{mui.form.requiredField.invalidSubject}}"
+				/>
+			</div>
+			<div class="index-contact__row">
+				<textarea
+						class="index-contact__textarea"
+						id="comments"
+						name="comments"
+						placeholder="{{mui.pageContent.formlabel.message}}"
+						required="true"
+						data-invalidMessage="{{mui.form.requiredField.invalidHowWeCanHelp}}"
+				></textarea>
+			</div>
+			<button class="index-contact__btn btn" type="submit">{{mui.buttonLabel.submit}}</button>
+		</form>
+
+	</div>
+</section>

@@ -1,0 +1,176 @@
+<div class="inner-header inner-header--contactus">
+	<div class="cnt">
+		<h1 class="inner-header__title">
+			{{heroTitle}}
+		</h1>
+		<p class="inner-header__subtitle">
+			{{heroSubTitle}}
+		</p>
+	</div>
+	<div class="contactus-page__form-section">
+		<div class="cnt-wide">
+			<div class="contactus-page__title">
+				<p>
+					{{contactDescription1}} <a href="{{site.url_with_lang}}faq">{{contactDescription2}}</a> {{contactDescription3}}
+				</p>
+			</div>
+			<div class="contactus-page__row">
+				<div class="contactus-info">
+					<div class="contactus-info__rows">
+						<div class="contactus-info__row">
+							<div class="contactus-info__icon">
+								<i class="icon icon-tel-dark"></i>
+							</div>
+							<div class="contactus-info__caption">
+								<a href="tel:8884942075">{{mui.contacts.phone}}</a>
+							</div>
+						</div>
+						<div class="contactus-info__row">
+							<div class="contactus-info__icon">
+								<i class="icon icon-mail-dark"></i>
+							</div>
+							<div class="contactus-info__caption">
+								<a href="mailto:Contact-Us@knowledgecity.com">{{{mui.contacts.mail}}}</a>
+							</div>
+						</div>
+						<div class="contactus-info__row">
+							<div class="contactus-info__icon">
+								<i class="icon icon-map-dark"></i>
+							</div>
+							<div class="contactus-info__caption">
+								{{{mui.contacts.address}}}
+							</div>
+						</div>
+						<div class="contactus-info__row last">
+			                <div class="follow-us__links" itemscope itemtype="http://schema.org/Organization">
+			                    <link itemprop="url" href="https://www.knowledgecity.com">
+	                			<a href="https://www.facebook.com/pages/KnowledgeCitycom/164313483578961?ref=br_tf" target="_blank">
+									<i class="icon icon-facebook-color"></i>
+								</a>
+                    			<a itemprop="sameAs" href="https://twitter.com/Knowledge_City" target="_blank">
+									<i class="icon icon-twitter-color"></i>
+								</a>
+		                   		<a itemprop="sameAs" href="https://www.linkedin.com/company/knowledgecity" target="_blank">
+									<i class="icon icon-linkedIn-color"></i>
+			                    </a>
+			                    <a itemprop="sameAs" href="https://www.knowledgecity.com/blog" target="_blank">
+									<i class="icon icon-knowledge-color"></i>
+								</a>
+		                    	<a itemprop="sameAs" href="https://www.youtube.com/user/knowledgeocity/" target="_blank">
+									<i class="icon icon-youtube-color"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<form class="contactus-form" method="post" action="" data-handler="onSubmitForm" id="contactUs">
+					<div id="formMessage" class=""></div>
+					<div class="contactus-form__row">
+						<input type="text"
+							   class="contactus-form__input"
+							   value="{{name}}"
+							   name="name_f"
+							   id="requestform-name-f"
+							   placeholder="{{mui.pageContent.formlabel.firstName}}"
+							   required="true"
+							   data-invalidMessage="{{mui.form.requiredField.invalidFirstName}}"/>
+						<input type="text"
+							   class="contactus-form__input"
+							   value="{{name}}"
+							   name="name_l"
+							   id="requestform-name-l"
+							   placeholder="{{mui.pageContent.formlabel.lastName}}"
+							   required="true"
+							   data-invalidMessage="{{mui.form.requiredField.invalidLastName}}"/>
+					</div>
+					<div class="contactus-form__row">
+						<input
+								type="text"
+								class="contactus-form__input"
+								value=""
+								name="phone"
+								id="requestform-phone"
+							   	placeholder="{{mui.pageContent.formlabel.phone}}"
+							   	required="true"
+							   	data-invalidMessage="{{mui.form.requiredField.invalidPhone}}"/>
+						<input type="text"
+							   class="contactus-form__input"
+							   value=""
+							   name="site"
+							   id="requestform-website"
+							   placeholder="{{mui.pageContent.formlabel.site}}"
+							   required="true"
+							   data-invalidMessage="{{mui.form.requiredField.invalidSite}}"/>
+					</div>
+					<div class="contactus-form__row">
+						<input type="email"
+							   class="contactus-form__input"
+							   value="{{email}}"
+							   name="email"
+							   id="requestform-email"
+							   placeholder="{{mui.pageContent.formlabel.email}}"
+							   required="true"
+							   data-invalidMessage="{{mui.form.requiredField.invalidEmail}}"
+							   data-invalidMessageWrongType="{{mui.form.requiredField.invalidTypeEmail}}"/>
+						<input type="text"
+							   class="contactus-form__input"
+							   value=""
+							   name="company"
+							   id="requestform-company"
+							   placeholder="{{mui.pageContent.formlabel.company}}"
+							   required="true"
+							   data-invalidMessage="{{mui.form.requiredField.invalidCompany}}"/>
+
+					</div>
+					<div class="contactus-form__row">
+						<textarea
+								class="contactus-form__textarea"
+								value=""
+								name="message"
+								id="requestform-message"
+								placeholder="{{mui.pageContent.formlabel.message}}"
+								required="true"
+								data-invalidMessage="{{mui.form.requiredField.invalidHowWeCanHelp}}"
+								data-handler="onHidePlaceholder"
+                                data-handler-action="focus"
+						></textarea>
+
+					</div>
+					<button type="submit" name="submit" class="btn btn--lg" >{{mui.buttonLabel.sendRequest}}</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<section class="bottom-links" style="padding-top:40px;">
+    <div class="cnt-wide">
+        <div class="bot-columns about-us">
+            <div class="">
+                <a href="{{site.url_with_lang}}learningLibrary"><div class="bottom-link__img">
+                <img src="{{VIEW}}images/Bottom-link_LL--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+                height:auto" alt="">
+                </div>
+                </a>
+                <h2>{{botLinksLearningTitle}}</h2>
+                 <p>{{botLinksLearningDesc}} <a href="{{site.url_with_lang}}learningLibrary">{{learnMore}}</a></p>
+            </div>
+            <div class="">
+                <a href="{{site.url_with_lang}}lms"><div class="bottom-link__img">
+                    <img src="{{VIEW}}images/bottom-link_LMS--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+                height:auto" alt="">
+                </div>
+                </a>
+                <h2>{{botLinksLmsTitle}}</h2>
+                 <p>{{botLinksLmsDesc}} <a href="{{site.url_with_lang}}lms">{{learnMore}}</a></p>
+            </div>
+            <div class="">
+                <a href="{{site.url_with_lang}}contentCreation"><div class="bottom-link__img">
+                <img src="{{VIEW}}images/Bottom-link_CC--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+                height:auto" alt="">
+                </div></a>
+                <h2>{{botLinksContentTitle}}</h2>
+                 <p>{{botLinksContentDesc}} <a href="{{site.url_with_lang}}contentCreation"> {{learnMore}}</a></p>
+            </div>
+        </div>
+    </div>
+</section>

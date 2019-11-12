@@ -1,0 +1,74 @@
+<div class="inner-header inner-header--certification">
+    <div class="cnt">
+        <h1 class="inner-header__title" id="title-messenger"></h1>
+    </div>
+</div>
+<div class="inner-page learning-page">
+  <div class="cnt">
+    <div class="table list-courses-table">
+      <div class="table__row">
+        <div class="table__col bookmarks-table">
+          <div class="table__cell table__cell--h2" id="title-conversations"></div>
+          <div class="seach-container" id="searchConversations" data-ctrl="searchConversations" rel="searchConversations">
+              <input class="seach_conversations" type="text" placeholder="" id="seach_conversations">
+              <i class="fa fa-search seach-icon" aria-hidden="true" data-handler="onSearchConversation"></i>
+          </div>
+          <div data-ctrl="conversationsList" id="conversationsList" class="conversationsList" rel="conversationsList">
+            <div class="empty-conversations hide"></div>
+            {{#conversations}}
+              <a id="{{conversation_id}}" class="bookmark {{active_class}}" data-handler="onChangeConversation" conversation-name="{{conversation_name}}">{{conversation_name}}{{#unread_messages}}<span class="message">{{unread_messages}}</span>{{/unread_messages}}</a>
+            {{/conversations}}
+          </div>
+        </div>
+        <div class="table__col bookmarks-content-table">
+          <div class="msg-conversation-title"></div>
+          <div class="container-messenger">
+            <div class="col col4 conversations rm-padding">
+              <div id="no-messages" class="empty-conversations hide"></div>
+            </div>
+            <div class="col col12 messages rm-padding">
+              <div class="load-more-messages hidden" id="loadMoreMessages" data-ctrl="loadMoreMessages" rel="loadMoreMessages">
+                  <i class="fa fa-plus hide" data-handler="onLoadMoreMessages" aria-hidden="true"></i>
+                  <i class="fa fa-caret-square-o-up" aria-hidden="true"></i>
+              </div> 
+              <div class="messages-container" id="messagesList" data-ctrl="messagesList" rel="messagesList">
+                  {{#messages}}
+                    {{#own}}
+                      <div class="message own">
+                        <div class="date" group-date="{{message_date}}"></div>
+                        <div class="content own">
+                          <div class='image own'>
+                            <img src="{{config.CDNJson}}opencontent/users/avatars/{{user_code}}--v{{timestamp_value}}.jpg">
+                          </div>
+                          <div class='text own'>{{message}}</div>
+                          <div class='hour own' format-time="{{full_date}}">{{full_date}}</div>
+                        </div>
+                      </div>
+                    {{/own}}
+                    {{^own}}
+                      <div class="message user">
+                        <div class="date" group-date="{{message_date}}"></div>
+                        <div class="content user">
+                          <div class='image user'>
+                            <img src="{{config.CDNJson}}opencontent/users/avatars/{{user_code}}--v{{timestamp_value}}.jpg">
+                          </div>
+                          <div class='text user'>{{message}}</div>
+                          <div class='hour user' format-time="{{full_date}}">{{full_date}}</div>
+                        </div>
+                      </div>
+                    {{/own}}
+                  {{/messages}}
+              </div>
+              <div id="sendMessage" data-ctrl="sendMessage" rel="sendMessage">
+                <textarea id="message-box" placeholder="" class="message-box rm-left-border"></textarea>
+                <div class="send-container">
+                  <div data-handler="onSendMessage" class="send-btn" id="btn-send"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

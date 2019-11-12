@@ -1,0 +1,279 @@
+<div class="list-items_container" style="{{#flatView}}display:none{{/flatView}}">
+<div class="list-items">
+
+  {{#courses}}
+
+      <div class="library-item parent" >
+          {{#isNew}}
+          <div class="library-item__new">{{New}}</div>
+          {{/isNew}}
+
+          <div class="library-item__left">
+            <div class="library-item__content">
+              <div class="library-item__preview onOpenPreview" href="{{url}}" data-handler="onOpenPreview" data-course-id="{{course_id}}" data-lessonid="{{lesson_id}}" data-lesson-type="{{lesson_type}}" data-lesson-url="{{url}}" >
+                  <img  class="library-item__img" src="{{img}}" data-handler="onImgLoadError" data-handler-action="error" alt="{{title}}">
+              </div>
+            </div>
+          </div>
+
+          <div class="library-item__right">
+            <div class="library-item__header">
+                <div class="library-item_content " >
+                  <div class="">
+
+                    <p class="library-item_p_title">
+                      {{#user}}
+                        {{#availableToUser}}
+                          <i class="fa fa-unlock" aria-hidden="true"></i>
+                        {{/availableToUser}}
+                        {{^availableToUser}}
+                          <i class="fa fa-lock" aria-hidden="true"></i>
+                        {{/availableToUser}}
+                      {{/user}}
+                      {{title}}
+                    </p>
+
+                    <div class="library-item-description">
+                      <div class="library-item__preview onOpenPreview library-item-title-previewImg"  href="{{url}}" data-handler="onOpenPreview" data-course-id="{{course_id}}" data-lessonid="{{lesson_id}}" data-lesson-type="{{lesson_type}}" data-lesson-url="{{url}}" >
+                          <img  class="library-item__img" src="{{img}}" data-handler="onImgLoadError" data-handler-action="error" alt="{{title}}">
+                      </div>
+                      <div>
+                        <p class="library-item_p_d newnew"> {{{description}}} </p>
+                      </div>
+                    </div>
+
+                 </div>
+
+                <div class="" >
+                  <div class="">
+
+                    {{^is_events}}
+                    <a  href="{{url}}" class=" btn btn_lib" style="margin-bottom: 6px;">{{mui.pageContent.course.gotocourse}}</a>
+                    {{/is_events}}
+
+                    {{#is_events}}
+                      <div class="event-info" data-event-course-id="{{course_id}}" style="display:inline-block">
+                        {{#is_events_exists}}
+                        <div class="event-select">
+                          <select class="event-selector" data-handler="onSelectEvent">
+                            {{#events}}
+                              <option value="{{event_id}}" class="event-status-{{event_status}}">{{list_name}}</option>
+                            {{/events}}
+                          </select>
+                        </div>
+                        {{/is_events_exists}}
+                      {{^is_events_exists}}
+                        <div class="event-select" style="margin-bottom: 10px">
+                          <select class="event-selector" data-handler="onSelectEvent" disabled>
+                              <option value="" style="text-align: center">{{mui.pageContent.event.not_available}}</option>
+                          </select>
+                        </div>
+
+                      {{/is_events_exists}}
+
+
+                        <div data-role="events">
+                        {{#events}}
+                          <div class="event {{is_hidden}}" data-id="{{event_id}}" data-status="{{event_status}}">
+                            <div class="event-properties">
+                              <div class="event-property">
+                                <span class="event-label"><span class="icon icon-location"></span> {{mui.pageContent.event.address}}:</span>
+                                <span class="value">
+                                  {{address}}
+                                  {{^address}}
+                                    <span class="text-muted">{{mui.pageContent.event.not_set}}</span>
+                                  {{/address}}
+                                </span>
+                              </div>
+                              <div class="event-property">
+                                <span class="event-label"><span class="icon icon-mentor"></span> {{mui.pageContent.event.mentor}}:</span>
+                                <span class="value">
+                                  {{author}}
+                                {{^author}}
+                                  <span class="text-muted">{{mui.pageContent.event.not_set}}</span>
+                                {{/author}}
+                                </span>
+                              </div>
+                              <div class="event-property">
+                                <span class="event-label"><span class="icon icon-language"></span> {{mui.pageContent.course.languages}}:</span>
+                                <span class="value">{{langs}}</span>
+                              </div>
+                              <div class="event-property">
+                                <span class="event-label"><span class="icon icon-left"></span> {{mui.pageContent.event.capacity}}:</span>
+                                <span class="value">{{left}}</span>
+                              </div>
+                            </div>
+                            <div class="event-action-btn">
+                                <a href="#" data-role="eventRegisterBtn" class="course-card__link {{^is_register}}disabled{{/is_register}}"
+                                   data-register="{{is_register}}" data-handler="onSendToApprove">
+                                  {{mui.pageContent.event.register}}
+                                </a>
+                              <div class="event-message" data-role="eventMessage">
+                                {{event_message}}
+                              </div>
+                              <div class="event-status-text" data-role="eventStatus">
+                                {{event_status_text}}
+                              </div>
+                            </div>
+                          </div>
+                        {{/events}}
+                        </div>
+
+                      </div>
+                    {{/is_events}}
+
+                    {{#isRequestAccess}}
+                    <a class="course-card__add-course with-tooltip {{^isAdd}}is_hidden{{/isAdd}}" href="{{myLearningUrl}}"><i class="fa fa-check"></i><span class="tooltip tooltip-top">{{mui.pageContent.course.AddedTooltip}}</span></a>
+                    <span class="course-card__add-course with-tooltip {{#isAdd}}is_hidden{{/isAdd}} onAddCourse" data-handler="onAddCourse" data-course_id="{{course_id}}"><i class="fa fa-plus"></i><span class="tooltip tooltip-top">{{mui.pageContent.course.AddTooltip}}</span></span>
+                    {{/isRequestAccess}}
+
+                  </div>
+
+
+                  <span class="library-item__row">
+                    <p class="library-item_p">
+                      <i class="icon icon-author"></i> <strong>{{Author}}:</strong> {{author}} <br>
+                      {{#runtime}}
+                         <i class="icon icon-runtime"></i> {{runtime}} <br>
+                      {{/runtime}}
+                      {{#lessons}}
+                       <i class="icon icon-lessons"></i> <strong>{{mui.pageContent.course.lessons}}:</strong> {{lessons}} <br >
+                      {{/lessons}}
+                       <i class="fa fa-globe fa-lg"></i> {{formattedLang}}
+                     </p>
+                  </span>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+      </div>
+
+  {{/courses}}
+  </div>
+</div>
+
+
+<div class="flat-items_container" style="{{^flatView}}display:none;{{/flatView}}margin-top:20px">
+  <div class="flat-items">
+    {{#courses}}
+        <div class="flat-item__33">
+          <div class="library-item_noflex" >
+
+              <div style="padding:15px;width:100%;">
+
+                {{#isNew}}
+                  <div class="library-item__new">{{New}}</div>
+                {{/isNew}}
+                <a href="{{url}}">
+                <div class="library-item__content " style="padding-bottom: 10px; min-height: 180px">
+                  <div class="library-item__preview onOpenPreview" href="{{url}}" data-handler="onOpenPreview" data-course-id="{{course_id}}" data-lessonid="{{lesson_id}}" data-lesson-type="{{lesson_type}}" data-lesson-url="{{url}}" >
+                      <img  class="library-item__img" src="{{img}}" data-handler="onImgLoadError" data-handler-action="error" alt="{{title}}">
+                  </div>
+                </div>
+
+                  <div class="library-item__title_flat" style="">
+                    <p class="library-item_p_title_flat"> {{title}}</p>
+                    <div style="clear:both"></div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="tile_footer" style="">
+                <div style=" flex: 1.2; text-align:left">
+                  {{formattedLang}}
+                </div>
+
+                <div  style="flex: .5; text-align:center">
+
+                  {{^is_events}}
+                    <div class="popover__wrapper">
+
+                      <h2 class="popover__title">...</h2>
+                      <div class="popover__content">
+                        <div style="padding:1rem 1rem .5rem 1rem">
+                          <p class="popover__message">{{{description}}}</p>
+                          <div style="display:flex">
+                            <div style="flex:50%">
+                              <p class="popover__message_author"><strong>{{Author}}:</strong> {{author}}</p>
+                            </div>
+                            <div style="flex:50%;text-align:right">
+                              <span class="text-center">
+                              <!--  <a   class="btn btn_lib" style=" padding: 5px; background: #e78234; height: 27px; width: 27px; text-align:center;line-height: 14px;">+</a> -->
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="{{url}}" style="text-decoration: none;" >
+                          <div class="library-item__footerbtn" >
+                            {{goToCourse}}
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  {{/is_events}}
+
+                  {{#is_events}}
+                    <div class="event-info" data-event-course-id="{{course_id}}" style="display:inline-block">
+                      {{#is_events_exists}}
+                        <div class="event-select">
+                          <select class="event-selector" data-handler="onSelectEvent">
+                            {{#events}}
+                              <option value="{{event_id}}" class="event-status-{{event_status}}">{{list_name}}</option>
+                            {{/events}}
+                          </select>
+                        </div>
+                      {{/is_events_exists}}
+                      {{^is_events_exists}}
+                        <div class="event-select" style="margin-bottom: 10px">
+                          <select class="event-selector" data-handler="onSelectEvent" disabled>
+                              <option value="" style="text-align: center">{{mui.pageContent.event.not_available}}</option>
+                          </select>
+                        </div>
+                      {{/is_events_exists}}
+                    </div>
+                  {{/is_events}}
+                </div>
+
+
+                <div style="flex: 1.2; text-align:right">
+                {{#runtime}}<i class="fa fa-clock-o" aria-hidden="true"></i> {{runtime}}{{/runtime}}
+                </div>
+              </div>
+
+
+          </div>
+        </div>
+
+    {{/courses}}
+
+
+
+
+
+
+  </div>
+</div>
+
+{{^courses}}
+<div class="list-items_container" style="{{#flatView}}display:none{{/flatView}}">
+  <div class="list-items">
+    <div style="text-align:center;margin-top:30px">
+      <h2>{{mui.pageContent.course.noResults}}</h2>
+      <h4>{{mui.pageContent.course.noMatches}}</h4>
+      <img src="{{IMG}}kc_Mascot.svg" style="height:620px;">
+    </div>
+  </div>
+</div>
+{{/courses}}
+
+
+{{#pagination.1}}
+<div class="pagination">
+    {{#pagination}}
+    <a class="pagination__item {{#active}}active{{/active}}"  rel="{{#rel}}{{^active}}{{rel}}{{/active}}{{/rel}}"  href="{{url}}">{{caption}}</a>
+    {{/pagination}}
+</div>
+{{/pagination.1}}

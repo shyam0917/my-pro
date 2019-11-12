@@ -1,0 +1,145 @@
+<div class="tab-box">
+  <div class="tab-box__menu">
+    <a href="{{site.url_with_lang}}{{section}}/type/business" class="tab-box__toggle tab-box__toggle--business">
+      <div class="tab-box__toggle-title">
+        {{sign_up.type.business}}
+      </div>
+    </a>
+    <a href="{{site.url_with_lang}}{{section}}/type/government" class="tab-box__toggle tab-box__toggle--government">
+      <div class="tab-box__toggle-title">
+        {{sign_up.type.government}}
+      </div>
+    </a>
+    <a href="{{site.url_with_lang}}{{section}}/type/academic" class="tab-box__toggle tab-box__toggle--academic ">
+      <div class="tab-box__toggle-title">
+        {{sign_up.type.academic}}
+      </div>
+    </a>
+    <a href="{{site.url_with_lang}}{{section}}/type/library" class="tab-box__toggle tab-box__toggle--library">
+      <div class="tab-box__toggle-title">
+        {{sign_up.type.library}}
+      </div>
+    </a>
+    <div class="tab-box__toggle tab-box__toggle--individual tab-box__toggle--active">
+      <div class="tab-box__toggle-title">
+        {{sign_up.type.individual}}
+      </div>
+    </div>
+  </div>
+  <div class="tab-box__enum">
+
+    <div class="tab-box__item tab-box__item--active" id="container">
+
+      <h1 class="tab-box__item-title">
+        {{{sign_up.individual.title}}}
+      </h1>
+      <div class="tab-box__item-subtitle">
+        {{sign_up.individual.requestDescription}}
+      </div>
+
+      <div class="sign-up-form">
+        <div class="sign-up-form__title">{{sign_up.individual.requestTitle}}</div>
+        <div class="sign-up-form__input-row"> <!-- id="request-form" -->
+
+          <form data-handler="onSubmitForm" method="post" action="" id="requestForm" class="individual-plans">
+
+            <input type="hidden" name="formTitle" value="{{formMui.requestTitle}}">
+
+            {{#isUS}}
+            {{#businessForm}}
+            <input type="hidden" name="theme" value="Business account free trial">
+            {{/businessForm}}
+            {{^businessForm}}
+            <input type="hidden" name="theme" value="SignUp international">
+            {{/businessForm}}
+            {{/isUS}}
+
+            {{^isUS}}
+            <input type="hidden" name="theme" value="SignUp international">
+            {{/isUS}}
+
+            <div class="form-row">
+              <span class="input-wrapper">
+                <input
+                  type="text"
+                  class="sign-up-form__input"
+                  value=""
+                  name="name_f"
+                  id="request-form-name-f"
+                  placeholder="{{pageContent.formlabel.firstName}}"
+                  required="true"
+                  data-invalidMessage="{{form.requiredField.invalidFirstName}}"
+                  tabindex="1"
+                />
+              </span>
+              <span class="input-wrapper">
+                <input
+                  type="text"
+                  class="sign-up-form__input"
+                  value=""
+                  name="name_l"
+                  id="request-form-name-l"
+                  placeholder="{{pageContent.formlabel.lastName}}"
+                  required="true"
+                  data-invalidMessage="{{form.requiredField.invalidLastName}}"
+                  tabindex="1"
+                />
+              </span>
+            </div>
+
+            <div class="form-row">
+              <span class="input-wrapper">
+                <input
+                  type="tel"
+                  class="sign-up-form__input"
+                  value=""
+                  name="phone"
+                  id="request-form-phone"
+                  placeholder="{{pageContent.formlabel.phoneLabel}}"
+                  title="{{pageContent.formlabel.phoneTitle}}"
+                  required="true"
+                  data-invalidMessage="{{form.requiredField.invalidPhone}}"
+                  tabindex="3"
+                />
+              </span>
+              <span class="input-wrapper">
+                <input
+                  type="email"
+                  class="sign-up-form__input"
+                  value=""
+                  name="email"
+                  id="request-form-email"
+                  placeholder="{{pageContent.formlabel.email}}"
+                  required="true"
+                  data-invalidMessage="{{form.requiredField.invalidEmail}}"
+                  data-invalidMessageWrongType="{{mui.form.requiredField.invalidTypeEmail}}"
+                  tabindex="4"
+                />
+              </span>
+            </div>
+
+            <div class="form-row">
+                <textarea
+                  class="sign-up-form__textarea"
+                  name="message"
+                  id="request-form-message"
+                  placeholder="{{pageContent.formlabel.trainingNeeds}}"
+                  required="true"
+                  data-invalidMessage="{{form.requiredField.invalidTrainingNeeds}}"
+                  tabindex="5"
+               ></textarea>
+            </div>
+
+            <div class="form-row">
+              <button class="btn btn--sign-up-form" tabindex="7">{{buttonLabel.sendRequest}}</button>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div> <!-- business -->
+
+  </div>
+</div> <!-- tab-box -->

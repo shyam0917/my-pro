@@ -1,0 +1,49 @@
+<div class="inner-header text-align">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 float">
+				<h2 class="inner-header__title">{{mui.txtLabels.sidebarTitle}}</h2>
+				<p class="inner-header__subtitle">{{mui.txtLabels.sidebarText}}</p>
+			</div>
+			<div class="col-md-9 float">
+				<h2 class="inner-header__title">{{Title}}</h2>
+				<p class="inner-header__subtitle">{{Subtitle}}</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="inner-content text-align">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 float" data-ctrl="Sidebar" id="sidebar">
+				Loading sidebar...
+			</div>
+			<div class="col-md-9 float">
+				<div class="panel-b">
+					<div class="row">
+						<div class="col-sm-7">
+							<h3>{{Header1}}</h3>
+							{{{Text1}}}
+							<h3>{{Header2}}</h3>
+							{{{Text2}}}
+							<h3>{{Header3}}</h3>
+							{{{Text3}}}
+						</div>
+						<div class="col-sm-5">
+							<img class="img-responsive" src="{{VIEW}}images/aboutus.png" />
+
+							<ol>
+								<li>{{Legend1}}</li>
+								<li>{{Legend2}}</li>
+								<li>{{Legend3}}</li>
+								<li>{{Legend4}}</li>
+							</ol>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

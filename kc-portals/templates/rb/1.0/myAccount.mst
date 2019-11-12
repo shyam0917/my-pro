@@ -1,0 +1,292 @@
+<div class="inner-top">
+  <div class="cnt">
+    <div class="inner-top__current">
+      <h2 class="inner-top__title">{{mui.pageTitle.myaccount}}</h2>
+      <p class="inner-top__subtitle">{{mui.pageSubTitle.myaccount}}</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="account-page" id="firstloginform">
+  <div class="cnt">
+    <form data-location="myaccount"
+          method="post" action=""
+          id="firstloginform" data-handler="onSubmitForm">
+      <div class="table__row" id="accountForm">
+
+        <div class="generic-table--sidebar">
+
+          <div class="account-image {{#student.extra.avatar}}account-image--avatar-loaded{{/student.extra.avatar}}"
+               id="profile-image">
+
+            <div id="account-image-remove" data-handler="onRemoveAvatar">
+              <i class="fa fa-times-circle" aria-hidden="true"></i> <span>{{mui.pageContent.myAccount.txtLabel.RemoveAvatar}}</span>
+            </div>
+
+            <div class="account-image__wrap">
+              <img src="{{student.avatar}}" alt="" id="profile-image-pic">
+
+              <div class="preload is_hidden" id="profile-image-preload">
+                <img class="preload-ring" src="/images/ring.gif">
+              </div>
+
+              <label for="upload" class="account-image-upload">
+                <span data-name="lesson-caption" class="account-image__choose">
+                  <i class="fa fa-cloud-upload" aria-hidden="true"></i> {{mui.pageContent.myAccount.txtLabel.ChooseImage}}
+                </span>
+
+                <span class="account-image__target">
+                  <i class="fa fa-cloud-download" aria-hidden="true"></i> {{mui.pageContent.myAccount.txtLabel.DropImageHere}}
+                </span>
+
+                <input id="upload" type="file" name="avatar" class="input-data" data-handler="onSelectFile"/>
+              </label>
+            </div>
+          </div>
+
+          <div class="form__row setting__row">
+            <div data-ctrl="Switchers" id="genderSwitcher"></div>
+          </div>
+
+          <div class="form__row setting__row">
+            <label class="form__label" for="firstloginform-login">{{mui.pageContent.formlabel.username}}:</label>
+            <input type="text" class="form__input" value="{{student.username}}"
+                   name="username"
+                   id="firstloginform-login"
+                   placeholder="{{mui.pageContent.formlabel.username}}"
+                   required="true" data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+          </div>
+          <div class="form__row setting__row">
+            <label class="form__label" for="firstloginform-newpassword">{{mui.pageContent.formlabel.password}}:</label>
+            <a class="edit-link" data-handler="onChangePassword" href="#">{{mui.pageContent.myAccount.txtLabel.ChangePassword}}</a>
+          </div>
+        </div>
+
+
+        <div class="generic-table--content">
+          <div class="account-flex-wrap">
+            <div class="account-flex-left">
+
+              <div class="alert alert-danger text-align hidden" id="loginFormMessage"></div>
+
+              <div class="table__cell table__cell--h2">
+                <div class="title-line"><span>{{mui.pageContent.myAccount.txtLabel.MainInformation}}</span></div>
+              </div>
+
+              <!--
+              <div class="form__row">
+                  <label class="form__label" for="firstloginform-firstName">{{mui.pageContent.formlabel.firstName}}:</label>
+                  <input type="text" class="form__input"
+                         value="{{student.first_name}}"
+                         name="first_name" id="firstloginform-firstName"
+                         placeholder="{{mui.pageContent.formlabel.firstName}}"
+                         required="true"
+                         data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+              </div>
+              <div class="form__row">
+                  <label class="form__label" for="firstloginform-lastName">{{mui.pageContent.formlabel.lastName}}:</label>
+                  <input type="text" class="form__input"
+                         value="{{student.last_name}}"
+                         name="last_name" id="firstloginform-lastName"
+                         placeholder="{{mui.pageContent.formlabel.lastName}}"
+                         required="true"
+                         data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+              </div>
+              <div class="form__row">
+                  <label class="form__label" for="firstloginform-employeeID">{{mui.pageContent.formlabel.employee}}:</label>
+                  <input type="text" class="form__input"
+                         value="{{student.employee_id}}"
+                         name="employee_id" id="firstloginform-employeeID"
+                         placeholder="{{mui.pageContent.formlabel.employee}}"
+                         data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+              </div>
+              <div class="form__row">
+                  <label class="form__label" for="firstloginform-nationalID">{{mui.pageContent.formlabel.national}}:</label>
+                  <a class="edit-link" data-handler="onChangeNationalID" href="#">{{mui.buttonLabel.changeNationalID}}</a>
+              </div>
+              <div class="form__row">
+                  <label class="form__label" for="firstloginform-company">{{mui.pageContent.formlabel.company}}:</label>
+                  <input type="text" class="form__input"
+                         value="{{student.company}}"
+                         name="company" id="firstloginform-company"
+                         placeholder="{{mui.pageContent.formlabel.company}}"/>
+              </div>
+              <div class="form__row">
+                  <label class="form__label" for="firstloginform-department">{{mui.pageContent.formlabel.department}}:</label>
+                  <input type="text" class="form__input"
+                         value="{{student.department}}"
+                         name="department" id="firstloginform-department"
+                         placeholder="{{mui.pageContent.formlabel.department}}"/>
+              </div>
+              <div class="form__row">
+                  <label class="form__label" for="firstloginform-position">{{mui.pageContent.formlabel.position}}:</label>
+                  <input type="text" class="form__input"
+                         value="{{student.position}}"
+                         name="position" id="firstloginform-position"
+                         placeholder="{{mui.pageContent.formlabel.position}}"/>
+              </div>
+              <div class="form__row">
+                  <label class="form__label" for="firstloginform-phone">{{mui.pageContent.formlabel.phone}}:</label>
+                  <input type="text" class="form__input"
+                         value="{{student.phone_number}}"
+                         name="phone_number" id="firstloginform-phone"
+                         placeholder="{{mui.pageContent.formlabel.phone}}"/>
+              </div>
+              <div class="form__row">
+                  <label class="form__label" for="firstloginform-email">{{mui.pageContent.formlabel.email}}:</label>
+                  <input type="text" class="form__input"
+                         value="{{student.email}}"
+                         name="email" id="firstloginform-email"
+                         placeholder="{{mui.pageContent.formlabel.email}}"
+                         required="true"
+                         data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+
+              </div>
+              <div data-ctrl="Switchers" id="langSwitcher"></div>
+              -->
+
+              {{#additional}}
+              {{#property_default}}
+              <div class="form__row">
+                <label class="form__label" for="firstloginform-{{name}}">{{label}}:</label>
+                <input type="{{field_type}}" class="form__input"
+                       value="{{value}}"
+                       name="{{name}}" id="firstloginform-{{name}}"
+                       placeholder="{{label}}" {{{readonly}}} {{{required}}} {{{mask}}}
+                       data-invalidMessage="{{mui.form.requiredField.invalidMessage}}"/>
+              </div>
+              {{/property_default}}
+              {{#property_national_id}}
+              {{#edit_in_lms}}
+              <div class="form__row">
+                <label class="form__label" for="firstloginform-nationalID">{{label}}:</label>
+                <a class="edit-link" data-handler="onChangeNationalID" href="#">{{mui.buttonLabel.changeNationalID}}</a>
+              </div>
+              {{/edit_in_lms}}
+              {{/property_national_id}}
+              {{#property_lang}}
+              <div data-ctrl="Switchers" id="langSwitcher"></div>
+              {{/property_lang}}
+              {{/additional}}
+
+
+              <div class="form__row">
+                <div class="form__label">
+                  <input data-handler="onSubmitForm" type="submit" name="submit" value="{{mui.buttonLabel.save}}"
+                         class="btn btn--lg account_btn"/>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="account-flex-right pl2">
+
+
+              {{#subscriptions.length}}
+              <div id="subscriptions" class="mb">
+
+                <div class="table__cell table__cell--h2">
+                  <div class="title-line"><span>{{mui.mylearning.titleSubscriptions}}</span></div>
+                </div>
+
+                {{#subscriptions}}
+                <div class="table__row table__row--hovered">
+                  <div class="table__cell subscriptions-content">
+                    {{^isActive}}
+                    {{mui.mylearning.noActive}}
+                    {{/isActive}}
+
+                    {{#isActive}}
+                    <span class="sbscription-title">{{{title}}}</span>
+                    {{mui.mylearning.active}}
+
+                    {{#licenseCount}}
+                    {{mui.mylearning.licenseWith}} {{{licenseCount}}} {{mui.mylearning.licenseCount}}
+                    {{/licenseCount}}
+
+                    {{^isMarkedCancel}}
+                    <br><span class="change-subs-status">{{mui.mylearning.nextDate}} {{nextDate}}</span>
+                    {{/isMarkedCancel}}
+
+                    {{#isMarkedCancel}}
+                    <br>{{mui.mylearning.expareDate}} {{endDate}}
+                    {{/isMarkedCancel}}
+                    {{/isActive}}
+
+                    {{#isShowCancel}}
+                    <br><br><a data-handler="onCancelSubscription" data-guid="{{guid}}"
+                               class="btn library-item__btn cancel-subscription mb">
+                    {{mui.mylearning.cancelSubscription}} </a>
+                    {{/isShowCancel}}
+                  </div>
+                </div>
+                {{/subscriptions}}
+              </div>
+              {{/subscriptions.length}}
+
+
+              <div class="table__cell table__cell--h2">
+                <div class="title-line"><span>{{mui.licenseTerm}}</span></div>
+              </div>
+
+              <div class="form__row">
+                <label class="form__label">{{mui.mylearning.content.licenseStatus}}:</label>
+                {{#isLicense}}
+                <span class="badge {{^isExpire}}badge-success{{/isExpire}} {{#isExpire}}badge-error{{/isExpire}}">{{licenseStatus}}</span>
+                {{/isLicense}}
+                {{^isLicense}}
+                <span class="badge badge-default">{{licenseStatus}}</span>
+                {{/isLicense}}
+              </div>
+              {{#isLicense}}
+              <div class="form__row">
+                <label class="form__label">{{mui.pageContent.myAccount.txtLabel.ActivationDate}}:</label>
+                <span class="form-value">{{activationDate}}</span>
+              </div>
+              <!--
+                              <div class="form__row">
+                                  <label class="form__label">{{mui.pageContent.myAccount.txtLabel.LicenseDuration}}:</label>
+                                  <span class="form-value">{{licenseDuration}}</span>
+                              </div>
+                              -->
+              <div class="form__row">
+                <label class="form__label">{{mui.pageContent.myAccount.txtLabel.ExpirtaionDate}}:</label>
+                <span class="form-value">{{expirationDate}}</span>
+              </div>
+              {{/isLicense}}
+
+
+              <div class="table__cell table__cell--h2">
+                <div class="title-line"><span>{{mui.pageContent.myAccount.txtLabel.Statistics}}</span></div>
+              </div>
+              <div class="form__row">
+                <label class="form__label">{{mui.pageContent.myAccount.txtLabel.FirstLoginDate}}:</label>
+                <span class="form-value">{{firstLoginDate}}</span>
+              </div>
+              <div class="form__row">
+                <label class="form__label">{{mui.pageContent.myAccount.txtLabel.LastLoginDate}}:</label>
+                <span class="form-value">{{lastLoginDate}}</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </form>
+  </div>
+</div>
+
+<div id="noticeWindow" class="modalWindow noticeWindow" style="display: none;">
+  <div class="content">
+    <a href="{{site.url_with_lang}}" class="logo logo-{{site.language}} text-center">
+      <img src="{{site.logo}}" alt="" title=""/>
+    </a>
+    <div class="text" rel="text"></div>
+    <div class="text-center btns-group">
+      <input type="button" rel="closeOk" value="{{mui.buttonLabel.ok}}" class="button closeNotice">
+    </div>
+  </div>
+</div>

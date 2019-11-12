@@ -1,0 +1,42 @@
+<div class="top-library">
+     <span  id="coursesForCloneMenuBtn">
+        <a
+
+                class='top-library__title'
+                href='#'
+                data-handler='onEnterLibrary'
+
+        >
+          {{mui.login.coursesForClone}}
+            <i class="fa fa-chevron-down"></i></a>
+         </a>
+    </span>
+    <div class="top-library__dropdown" id="coursesForCloneMenu" style="display: none">
+        <div class="cnt">
+            {{#sections}}
+            <div class="top-library__section">
+                <div class="top-library__categories">
+                    {{#items}}
+                    <div class="top-library__category-item">
+                        <a
+                                class="top-library__category-link"
+                                href="{{url}}"
+                                data-handler="onLeaveLibrary"
+                        >
+                            {{name}}
+                        </a>
+                    </div>
+                    {{/items}}
+                </div>
+            </div>
+            {{/sections}}
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

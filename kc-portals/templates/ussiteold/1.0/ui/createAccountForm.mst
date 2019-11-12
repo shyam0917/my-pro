@@ -1,0 +1,74 @@
+<div class="create-form form form--bordered">
+    <div class="form__title">{{mui.createTitle}}</div>
+        <form id="create-account-form" autocomplete="off" data-handler="onSubmitCreateForm">
+
+            {{#isBusiness}}
+
+            <div class="form__row">
+
+                <div class="form__box">
+
+                    <input
+                            type="text"
+                            class="form__input"
+                            id="company"
+                            name="company"
+                            placeholder="{{pageContent.formlabel.company}}"
+                            autocomplete="off"
+                            required="true"
+                            data-invalidMessage="{{form.requiredField.invalidCompany}}"
+                    >
+                    <input type="hidden"  name="type" value="business">
+
+                </div>
+
+            </div>
+
+            {{/isBusiness}}
+
+            <div class="form__row">
+
+                <div class="form__box">
+
+                    <input
+                            type="email"
+                            class="form__input"
+                            id="email"
+                            name="email"
+                            placeholder="{{pageContent.formlabel.email}}"
+                            autocomplete="off"
+                            required="true"
+                            data-invalidMessage="{{form.requiredField.invalidEmail}}"
+                            data-invalidMessageWrongType="{{form.requiredField.invalidTypeEmail}}"
+                    >
+
+                </div>
+
+            </div>
+
+            <div class="form__row">
+
+                <div class="form__box">
+
+                    <input
+                            type="password"
+                            class="form__input"
+                            id="password"
+                            name="password"
+                            placeholder="{{pageContent.formlabel.password}}"
+                            autocomplete="off"
+                            required="true"
+                            data-invalidMessage="{{form.requiredField.invalidPass}}"
+                    >
+
+                </div>
+            </div>
+
+
+            <button class="btn form__btn">
+                <span class="enabled">{{buttonLabel.continue}}</span>
+                <span class="disabled">{{buttonLabel.wait}}</span>
+            </button>
+        </form>
+    </div>
+

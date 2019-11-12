@@ -1,0 +1,184 @@
+
+<div>
+  <div class="print-doc-album">
+
+    <div class="print-reg-form">
+      <div class="print-reg-form__header">
+        <div class="print-reg-form__logo">
+          <img src="{{site.logo}}" alt="">
+        </div>
+        <div class="print-reg-form__title">Arabic Language For Non-Arabs</div>
+        <div class="print-reg-form__position">Facilitator</div>
+        <div class="print-reg-form__person">
+          Hany Fawzi Ibrahim Hifni
+        </div>
+        <div class="print-reg-form__form-name">
+          Registration Form
+        </div>
+        <div class="print-reg-form__form-name-dsc">
+          (Please e-mail your registration to <span>SoftSkillTraining@alj.com</span>)
+        </div>
+      </div>
+
+      <div class="print-reg-form__main print-reg-form__main--header">
+        <div class="print-reg-form__main-row print-reg-form__main-row--title">
+          Course Date
+        </div>
+        <div class="print-reg-form__main-row">
+          <span class="print-reg-form__main-checkaear"></span> 13 - 17 / 08 / 2017
+        </div>
+        <div class="print-reg-form__main-row print-reg-form__main-row--title">
+          <div class="print-reg-form__col-group">
+            <div class="print-reg-form__col print-reg-form__col50">Course Fees</div>
+            <div class="print-reg-form__col print-reg-form__col50">SR 1,500 per participant</div>
+          </div>
+        </div>
+        <div class="print-reg-form__main-row print-reg-form__main-row--dark">
+          <div class="print-reg-form__col-group">
+            <div class="print-reg-form__col print-reg-form__col50">Course Timing</div>
+            <div class="print-reg-form__col print-reg-form__col50">08:00 AM to 05:00 PM</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="print-reg-form__main print-reg-form__main--content">
+        <div class="print-reg-form__main-row print-reg-form__main-row--title">
+          Participant's Information:
+        </div>
+        <div class="print-reg-form__main-row">
+          <div class="print-reg-form__col-group">
+            <div class="print-reg-form__col print-reg-form__col--label">Associate Name</div>
+            <div class="print-reg-form__col"><span>&nbsp;</span></div>
+          </div>
+        </div>
+        <div class="print-reg-form__main-row">
+          <div class="print-reg-form__col-group">
+            <div class="print-reg-form__col print-reg-form__col--label">Associate Number</div>
+            <div class="print-reg-form__col"><span>&nbsp;</span></div>
+          </div>
+        </div>
+        <div class="print-reg-form__main-row">
+          <div class="print-reg-form__col-group">
+            <div class="print-reg-form__col print-reg-form__col--label">Associate Title</div>
+            <div class="print-reg-form__col"><span>&nbsp;</span></div>
+          </div>
+        </div>
+        <div class="print-reg-form__main-row">
+          <div class="print-reg-form__col-group">
+            <div class="print-reg-form__col print-reg-form__col--label">Department Name</div>
+            <div class="print-reg-form__col"><span>&nbsp;</span></div>
+          </div>
+        </div>
+        <div class="print-reg-form__main-row">
+          <div class="print-reg-form__col-group">
+            <div class="print-reg-form__col print-reg-form__col--label">Department Name</div>
+            <div class="print-reg-form__col"><span>&nbsp;</span></div>
+          </div>
+        </div>
+        <div class="print-reg-form__main-row">
+          <div class="print-reg-form__col-group">
+            <div class="print-reg-form__col print-reg-form__col--label">Division \ Center Name</div>
+            <div class="print-reg-form__col"><span>&nbsp;</span></div>
+          </div>
+        </div>
+        <div class="print-reg-form__main-row">
+          <div class="print-reg-form__col-group">
+            <div class="print-reg-form__col print-reg-form__col--label">Associate Mobile Number</div>
+            <div class="print-reg-form__col"><span>&nbsp;</span></div>
+          </div>
+        </div>
+        <div class="print-reg-form__main-row">
+          <div class="print-reg-form__col-group">
+            <div class="print-reg-form__col print-reg-form__col--label">Associate Official E-mail</div>
+            <div class="print-reg-form__col"><span>&nbsp;</span></div>
+          </div>
+        </div>
+
+        <div class="print-reg-form__main-row print-reg-form__main-row--title">
+          Manager Information:
+        </div>
+        <div class="print-reg-form__main-row">
+          <div class="print-reg-form__col-group">
+            <div class="print-reg-form__col print-reg-form__col--label">Manager Name</div>
+            <div class="print-reg-form__col"><span>&nbsp;</span></div>
+          </div>
+        </div>
+        <div class="print-reg-form__main-row">
+          <div class="print-reg-form__col-group">
+            <div class="print-reg-form__col print-reg-form__col--label">Manager Mobile Number</div>
+            <div class="print-reg-form__col"><span>&nbsp;</span></div>
+          </div>
+        </div>
+        <div class="print-reg-form__main-row">
+          <div class="print-reg-form__col-group">
+            <div class="print-reg-form__col print-reg-form__col--label">Manager Official E-mail</div>
+            <div class="print-reg-form__col"><span>&nbsp;</span></div>
+          </div>
+        </div>
+
+        <div class="print-reg-form__main-row print-reg-form__main-row--title print-reg-form__main-row--center">
+          Approvals
+        </div>
+        <div class="print-reg-form__main-row print-reg-form__main-row--signature">
+          <div class="print-course__signature-container">
+            <div class="print-course__signature-row">
+              <div class="print-course__signature-col">
+                <div class="print-course__field">
+                  <label>Associate’s Signature</label>
+                </div>
+              </div>
+              <div class="print-course__signature-col">
+                <div class="print-course__field">
+                  <label>Department Head Signature</label>
+                </div>
+              </div>
+              <div class="print-course__signature-col">
+                <div class="print-course__field">
+                  <label>Direct Supervisor Signature</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="print-reg-form__main print-reg-form__main--footer">
+        <div class="print-reg-form__main-row print-reg-form__main-row--dark print-reg-form__main-row--center">
+          Must be filled by Finance Department,<br>
+          Form will not be processed if this section is not completed.
+        </div>
+        <div class="print-reg-form__main-row">
+          This is to approve availability of budget in total amount of SR ___________(Please fill), and to be charged
+          to BU#:_________________(Please fill).
+        </div>
+        <div class="print-reg-form__main-row">
+          <div class="print-reg-form__col-group">
+            <div class="print-reg-form__col print-reg-form__col--label-w">Accountant Name & Signature</div>
+            <div class="print-reg-form__col"></div>
+          </div>
+        </div>
+        <div class="print-reg-form__main-row">
+          <div class="print-reg-form__col-group">
+            <div class="print-reg-form__col print-reg-form__col--label-w">Accounts Manager/Financial Controller Name & Signature</div>
+            <div class="print-reg-form__col"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="print-reg-form__note">
+        <p class="print-reg-form__note-title">Cancellation:</p>
+        <p class="print-reg-form__note-dsc">Cancellation fees will be charged as follows:</p>
+        <ul class="print-reg-form__note-ul">
+          <li class="print-reg-form__note-li">Cancellation of registration 14 working days prior to start of class – 50%
+            of cost.
+          </li>
+          <li class="print-reg-form__note-li">Cancellation of registration 7 working days prior to start of class – 75%
+            of cost.
+          </li>
+          <li class="print-reg-form__note-li">No-show in the class – 100% of cost</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>

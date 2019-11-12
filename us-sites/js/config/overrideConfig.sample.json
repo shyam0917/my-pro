@@ -1,0 +1,7 @@
+{
+  "version":                    "1.0",
+  "basePath":                   "/",
+  "APIUrl":                     "\/\/api.kc-omarp.d.knowledgecity.com\/v2\/",
+  "LMSUrl":                     "XXX.kc-omarp.d.knowledgecity.com",
+  "LocalStorageStamp":          "20"
+}

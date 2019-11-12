@@ -1,0 +1,204 @@
+.course-item__img--business {
+  background: url(../../images/style/cardinalhealth/course-item-1.jpg) no-repeat center/cover;
+}
+
+.course-item__img--computer {
+  background: url(../../images/style/cardinalhealth/course-item-2.jpg) no-repeat center/cover;
+}
+
+.course-item__img--safety {
+  background: url(../../images/style/cardinalhealth/safety.png) no-repeat center/cover;
+}
+
+.course-item__img--banking {
+  background: url(../../images/style/cardinalhealth/course-item-4.jpg) no-repeat center 0/cover;
+}
+
+.course-item__name:hover {
+  color: #e41f35;
+}
+
+.usermenu > ul > li .submenu__title:hover,
+.usermenu > ul > li > a:hover {
+  background: #e41f35;
+  color: #ffffff;
+}
+
+.usermenu .dropdown-menu > li > a:active, .usermenu .dropdown-menu > li > a:focus, .usermenu .dropdown-menu > li > a:hover {
+  background: #e41f35;
+  color: #333333;
+}
+
+.search-form__open:hover {
+  color: #e41f35;
+}
+
+.search-form__close:hover {
+  color: #e41f35;
+}
+
+.submenu__content li a:hover {
+  background: #e41f35;
+}
+
+.menu > ul > li span > a,
+.menu > ul > li > a {
+  background: #e41f35;
+  color: #ffffff;
+}
+
+.menu > ul > li span > a:active, .menu > ul > li span > a:hover,
+.menu > ul > li > a:active,
+.menu > ul > li > a:hover {
+  color: #333333;
+  background: #ffffff;
+}
+
+.menu > ul > li span > a:focus,
+.menu > ul > li > a:focus {
+  color: #ffffff;
+  background: #e41f35;
+}
+
+.menu > ul > li span > a.active,
+.menu > ul > li > a.active {
+  color: #333333;
+}
+
+.menu > ul > li span > a.active:focus,
+.menu > ul > li > a.active:focus {
+  color: #333333;
+}
+
+.course-card__link:hover {
+  color: #ffffff;
+  border-color: #e41f35;
+  background: #e41f35;
+}
+
+.course-card__link:hover span {
+  color: #ffffff;
+}
+
+.course-card__link:hover i {
+  color: #ffffff;
+}
+
+.lessons-menu__fav .fa-star {
+  color: #e41f35;
+}
+
+.library-menu__category-header a:hover {
+  color: #e41f35;
+}
+
+.library-menu__category-header a:focus {
+  color: #e41f35;
+}
+
+.library-menu__icon:hover .library-menu__minus, .library-menu__icon:hover .library-menu__plus {
+  color: #e41f35;
+}
+
+.course-progress__item.watched {
+  background: #e41f35;
+}
+
+.course-info__tab.active:after, .course-info__tab:hover:after {
+  background: #e41f35;
+}
+
+.course-info__test:hover {
+  border-color: #e41f35 !important;
+  background: #e41f35;
+  color: #ffffff !important;
+}
+
+.course-info__test:focus {
+  color: #ffffff !important;
+}
+
+.pagination li.active > a:hover {
+  border-color: #e41f35;
+}
+
+.bookmarks .bookmark.active {
+  background: #e41f35;
+  color: #333333;
+}
+
+.learning-progress__bar {
+  background: #e41f35;
+}
+
+.button:focus, .button:hover {
+  border-color: #e41f35;
+  color: #ffffff;
+  background: #e41f35;
+}
+
+.course-info__tab.active a:after {
+  background: #e41f35;
+}
+
+.pagination li.active > a:hover {
+  border-color: #e41f35;
+}
+
+.bookmarks .bookmark.active {
+  background: #e41f35;
+  color: #ffffff;
+}
+
+.learning-progress__bar {
+  background: #e41f35;
+}
+
+.faq .question.active .faq-question {
+  border-top-color: #e41f35;
+}
+
+.faq-question {
+  border-left-color: #e41f35;
+}
+
+.faq .question.active .faq-icon {
+  color: #e41f35;
+  border-color: #e41f35;
+}
+
+.faq .question.active .faq-question:hover {
+  border-top-color: #e41f35;
+}
+
+div.title-h1 {
+  border-left-color: #e41f35;
+}
+
+.modal_close:hover {
+  color: #e41f35;
+}
+
+.course-info__tab a.active:after, .course-info__tab a:hover:after {
+  background: #e41f35;
+}
+
+.course-info__test:hover {
+  border-color: #e41f35 !important;
+}
+
+body.ar .faq-question {
+  border-left: none;
+  border-right-color: #e41f35 !important;
+}
+
+.inner-header {
+  background: #ecedeb;
+  border: solid #acadae;
+  border-width: 1px 0;
+  color: #747678;
+}
+
+.modalWindow .content:after {
+  background: #e41f35;
+}

@@ -1,0 +1,12 @@
+<div class="inner-header inner-header--{{class}}">
+	<div class="cnt-wide">
+		<h1 class="inner-header__title">
+			{{^subtitle}}
+			{{title}}
+			{{/subtitle}}
+			{{#subtitle}}
+			{{subtitle}}
+			{{/subtitle}}
+		</h1>
+	</div>
+</div>

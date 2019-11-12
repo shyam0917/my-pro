@@ -1,0 +1,99 @@
+<div class="inner-header inner-header--certification">
+	<div class="cnt">
+		<h1 class="inner-header__title">
+			{{title}}
+		</h1>
+		<p class="inner-header__subtitle">
+			{{subTitle}}
+		</p>
+	</div>
+	<div class="cnt-wide">
+		<div class="inner-page__content certification">
+			<div class="article">
+				<p>{{description}}</p>
+			</div>
+		</div>
+	</div>
+	<div class="inner-page__wrapper">
+		<div class="cnt-wide">
+			<div class="certification-page__content article">
+				<div class="article__row">
+					<div class="article__col article__col--left">
+						<div class="article__col--row" >
+							<h2 class="article__title">{{userTitle}}</h2>
+							<p>{{userDescription}}</p>
+						</div>
+						<div class="article__col--row" >
+							<h2 class="article__title">{{completionTitle}}</h2>
+							<p>{{{completionDescription}}}</p>
+						</div>
+						<div class="article__col--row" >
+							<h2 class="article__title">{{emailTitle}}</h2>
+							<p>{{{emailDescription}}}</p>
+						</div>
+					</div>
+					<div class="article__col certification-page__certificate-col">
+						<img class="certification-page__certificate" src="{{VIEW}}images/Certificate_Small--v{{site.LocalStorageStamp}}.jpg"  alt="" data-handler="onImgLoadError" data-handler-action="error">
+					</div>
+					<div class="article__col article__col--right">
+						<div class="article__col--row" >
+							<h2 class="article__title">{{courseTitle}}</h2>
+							<p>{{{courseDescription}}}</p>
+						</div>
+						<div class="article__col--row" >
+							<h2 class="article__title">{{signatureTitle}}</h2>
+							<p>{{{signatureDescription}}}</p>
+						</div>
+						<div class="article__col--row" >
+							<h2 class="article__title">{{CNTitle}}</h2>
+							<p>{{{CNDescription}}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="how-to-ribbon">
+	<div class="cnt-wide">
+		<div class="how-to__title">
+			<h2>{{howToTitle}}</h2>
+		</div>
+		<img src="{{VIEW}}images/Cert_Steps{{#lang}}_{{lang}}{{/lang}}--v{{site.LocalStorageStamp}}.png" alt="">
+		<div class="how-to__link"><p>{{howToDescription}} <a href="{{site.url_with_lang}}signUp/type/business">{{howToLink}}</a></p></div>
+	</div>
+</div>
+<section class="bottom-links certificate">
+    <div class="cnt-wide">
+    	<div class="bottom-title-wrapper"><h2> {{bottomLinksTitle}}</h2></div>
+        <div class="bot-columns about-us">
+            <div class="">
+                <a href="{{site.url_with_lang}}learningLibrary"><div class="bottom-link__img">
+                <img src="{{VIEW}}images/Bottom-link_LL--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+                height:auto" alt="">
+                </div>
+                </a>
+                <h2>{{botLinksLearningTitle}}</h2>
+                 <p>{{botLinksLearningDesc}} <a href="{{site.url_with_lang}}learningLibrary">{{learnMore}}</a></p>
+            </div>
+            <div class="">
+                <a href="{{site.url_with_lang}}lms"><div class="bottom-link__img">
+                    <img src="{{VIEW}}images/bottom-link_LMS--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+                height:auto" alt="">
+                </div>
+                </a>
+                <h2>{{botLinksLmsTitle}}</h2>
+                 <p>{{botLinksLmsDesc}} <a href="{{site.url_with_lang}}lms">{{learnMore}}</a></p>
+            </div>
+            <div class="">
+                <a href="{{site.url_with_lang}}contentCreation"><div class="bottom-link__img">
+                <img src="{{VIEW}}images/Bottom-link_CC--v{{site.LocalStorageStamp}}.jpg" style="width:100%;
+                height:auto">
+                </div></a>
+                <h2>{{botLinksContentTitle}}</h2>
+                 <p>{{botLinksContentDesc}} <a href="{{site.url_with_lang}}contentCreation"> {{learnMore}}</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+

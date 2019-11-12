@@ -1,0 +1,37 @@
+<div class="inner-header inner-header--certification">
+	<div class="cnt">
+		<h1 class="inner-header__title">
+			{{title}}
+		</h1>
+		<p class="inner-header__subtitle">
+			{{subTitle}}
+		</p>
+	</div>
+</div>
+
+<div class="inner-page  certification-page">
+	<div class="cnt">
+		<div class="inner-page__content">
+			<div class="article">
+				<h2 class="article__title">{{Header1}}</h2>
+				{{{Text1}}}
+			</div>
+		</div>
+	</div>
+	<div class="inner-page__snowed">
+		<div class="cnt">
+			<div class="certification-page__content article">
+				<div class="article__row">
+					<div class="article__col">
+						<h2 class="article__title">{{Header2}}</h2>
+						{{{List1}}}
+					</div>
+					<div class="article__col certification-page__certificate-col">
+						<img class="certification-page__certificate" src="{{page.certificate}}" data-handler="onImgLoadError" data-handler-action="error">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
